@@ -30,11 +30,14 @@ export default {
    ** Global CSS
    */
   css: [],
+  router: {
+    middleware: 'i18n'
+  },
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/i18n.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
