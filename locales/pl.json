@@ -1,3 +1,6 @@
 {
-  "test": "jakubgania.io - pl"
+  "test": "jakubgania.io - pl",
+  "about": {
+    "head": {}
+  }
 }
