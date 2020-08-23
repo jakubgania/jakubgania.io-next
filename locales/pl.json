@@ -1,6 +1,12 @@
 {
-  "test": "jakubgania.io - pl",
+  "home": {
+    "test": "jakubgania.io - pl"
+  },
   "about": {
+    "test": "about me - pl",
+    "head": {}
+  },
+  "experience": {
     "head": {}
   }
 }

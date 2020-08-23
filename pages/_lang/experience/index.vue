@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ $t('about.test') }}
+    experience
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   head() {
     return {
-      title: 'Jakub Gania Software | O mnie',
+      title: 'Jakub Gania Software | Doświadczenie',
       meta: [
         {
           hid: 'description',

@@ -3,8 +3,24 @@
     <div>
       <Logo />
       <h1 class="title">
-        {{ $t('test') }}
+        {{ $t('home.test') }}
       </h1>
+      <NuxtLink :to="$i18n.path('')" class="Header__Link" exact>
+        home
+      </NuxtLink>
+      <NuxtLink :to="$i18n.path('about')" class="Header__Link" exact>
+        about
+      </NuxtLink>
+      <nuxt-link
+        v-if="$i18n.locale === 'pl'"
+        :to="`/de` + $route.fullPath"
+        exact
+      >
+        niemiecki
+      </nuxt-link>
+      <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" exact>
+        polski
+      </nuxt-link>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
