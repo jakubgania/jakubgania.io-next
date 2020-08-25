@@ -290,8 +290,8 @@ export default {
 @media only screen and (max-width: 1264px) {
   .footer-container {
     &__sitemap-section {
-      padding-left: 20px;
-      padding-right: 20px;
+      // padding-left: 20px;
+      // padding-right: 20px;
     }
     &__copyright-section {
       padding-left: 20px;
@@ -310,8 +310,8 @@ export default {
     }
     &__sitemap-section {
       display: block;
-      padding-left: 20px;
-      padding-right: 20px;
+      // padding-left: 20px;
+      // padding-right: 20px;
     }
     &__site-column-section {
       padding-left: 0;
