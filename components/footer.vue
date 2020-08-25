@@ -141,6 +141,14 @@ export default {
               name: 'Projekty',
               link: 'projects',
             },
+            {
+              name: 'Kontakt',
+              link: 'contact',
+            },
+            {
+              name: 'Galeria',
+              link: 'gallery',
+            },
           ],
         },
         {
