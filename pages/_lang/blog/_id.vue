@@ -45,6 +45,9 @@
             </nuxt-link>
           </li>
         </ul>
+        <div>
+          <nuxt-link :to="getLink()">link next</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
@@ -52,14 +55,29 @@
 
 <script>
 export default {
+  scrollToTop: false,
   async asyncData({ $content, params }) {
     const posts = await $content('posts', params.slug)
       .only(['title', 'description', 'slug', 'creationDate'])
+      .sortBy('creationDate', 'desc')
+      .limit(params.id * 3)
       .fetch()
 
     return {
       posts,
     }
+  },
+  // mounted() {
+  //   this.getLink()
+  // },
+  methods: {
+    getLink() {
+      let numb = this.$route.params.id
+      console.log(numb)
+
+      numb++
+      return '/blog/' + numb
+    },
   },
   head() {
     return {

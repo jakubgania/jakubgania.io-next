@@ -6,12 +6,22 @@
     <div class="content-container">
       <template v-if="true">
         <div class="post-title">
-          post title
+          Example post title 2020
+        </div>
+        <div class="additional-info">
+          <div style="width: 33.33%; font-size: 12px;">
+            <strong style="display: block;">Autor</strong>
+            <span style="display: block;">Jakub Gania</span>
+          </div>
+          <div style="width: 33.33%; font-size: 12px;">
+            <strong style="display: block;">Data</strong>
+            <span style="display: block;">19-02-2020 22:04</span>
+          </div>
         </div>
         <div class="post-content">
-          <div>
+          <!-- <div>
             breadcrumb
-          </div>
+          </div> -->
           <nuxt-content :document="post" class="post" />
         </div>
       </template>
@@ -36,6 +46,23 @@ export default {
 }
 </script>
 
+<style>
+.post {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 2;
+  font-size: 17.4px;
+  max-width: 1000px;
+  color: #000;
+}
+@media only screen and (max-width: 600px) {
+  .post {
+    font-size: 14px;
+  }
+}
+</style>
+
 <style lang="scss" scoped>
 .content-container {
   max-width: 1000px;
@@ -43,29 +70,26 @@ export default {
   margin: auto;
 }
 .post-title {
-  font-size: 52px;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  max-width: 800px;
+  font-size: 60px;
+  text-align: left;
+  margin: auto;
   width: 100%;
-  font-weight: 600;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .post-content {
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   padding: 0;
   margin: auto;
   margin-bottom: 100px;
 }
-.post {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  line-height: 2;
-  font-size: 16.8px;
-  padding-top: 20px;
-  max-width: 1000px;
-  color: #000;
+.additional-info {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 960px) {
   .content-container {
@@ -90,9 +114,6 @@ export default {
   }
   .post-content {
     width: 100%;
-  }
-  .post {
-    font-size: 14px;
   }
 }
 </style>
