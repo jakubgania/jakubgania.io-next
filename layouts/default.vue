@@ -1,16 +1,22 @@
 <template>
   <div>
-    <Nuxt />
+    <toolbar-header-component />
+
+    <div style="padding-top: 64px;">
+      <Nuxt />
+    </div>
 
     <footer-component />
   </div>
 </template>
 
 <script>
+import ToolbarHeaderComponent from '@/components/toolbar-header'
 import FooterComponent from '@/components/footer'
 
 export default {
   components: {
+    ToolbarHeaderComponent,
     FooterComponent,
   },
 }
