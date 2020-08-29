@@ -52,7 +52,7 @@
           "
           class="pagination-button-section"
         >
-          <nuxt-link :to="getLink()">
+          <nuxt-link :to="getLink()" class="more-posts-button">
             Następne posty
           </nuxt-link>
         </div>
@@ -217,7 +217,26 @@ export default {
   padding-top: 4px;
 }
 .pagination-button-section {
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 140px;
+  text-align: center;
+}
+.more-posts-button {
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 0.5rem 3rem;
+  color: black;
+  font-size: 12px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #6a82fb, #fc5c7d);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
 }
 
 @media only screen and (max-width: 960px) {
