@@ -1,7 +1,11 @@
 <template>
   <div>
-    <div>
-      image section
+    <div class="top-image-section">
+      <img
+        src="https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/top-image.jpg"
+        alt=""
+        class="top-image"
+      />
     </div>
     <div class="content-container">
       <template v-if="true">
@@ -40,7 +44,7 @@ export default {
   },
   head() {
     return {
-      title: this.post.title,
+      title: this.post.title + ' | Jakub Gania Software',
     }
   },
 }
@@ -91,13 +95,21 @@ export default {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.top-image-section {
+  margin-bottom: 40px;
+}
+.top-image {
+  display: block;
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+}
 @media only screen and (max-width: 960px) {
   .content-container {
     padding-left: 14px;
     padding-right: 14px;
   }
   .post-content {
-    // margin: auto;
     margin-bottom: 60px;
   }
 }
