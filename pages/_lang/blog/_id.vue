@@ -46,7 +46,10 @@
           </li>
         </ul>
         <div
-          v-if="$route.params.id < 4 || $route.params.id == undefined"
+          v-if="
+            $route.params.id < numberOfPagination ||
+            $route.params.id == undefined
+          "
           class="pagination-button-section"
         >
           <nuxt-link :to="getLink()">
@@ -62,24 +65,40 @@
 export default {
   scrollToTop: false,
   async asyncData({ $content, params }) {
+    const paginationValue = 3
     let pageNumber = 1
+    let numberOfPagination = null
+
     if (params.id !== undefined) {
       pageNumber = params.id
+    }
+
+    const numberOfPosts = await $content('posts', params.slug).fetch()
+
+    if (numberOfPosts.length % paginationValue === 0) {
+      numberOfPagination = Math.floor(numberOfPosts.length / paginationValue)
+    }
+
+    if (numberOfPosts.length % paginationValue !== 0) {
+      numberOfPagination =
+        Math.floor(numberOfPosts.length / paginationValue) + 1
     }
 
     const posts = await $content('posts', params.slug)
       .only(['title', 'description', 'slug', 'creationDate'])
       .sortBy('creationDate', 'desc')
-      .limit(pageNumber * 3)
+      .limit(pageNumber * paginationValue)
       .fetch()
 
     return {
       posts,
+      numberOfPagination,
     }
   },
   methods: {
     getLink() {
       let pageNumber = 1
+
       if (this.$route.params.id !== undefined) {
         pageNumber = this.$route.params.id
       }
