@@ -1,11 +1,20 @@
 <template>
   <div v-if="displayHeader()" class="toolbar-header-container">
-    toolbar header
+    <div>
+      <nuxt-link :to="$i18n.path('')">
+        <logo-component :normal-font-size="true" />
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
 <script>
+import LogoComponent from '../components/logo'
+
 export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
   mounted() {
     this.displayHeader()
   },
