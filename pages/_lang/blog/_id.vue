@@ -22,7 +22,7 @@
     <div class="grid grid-rows-1">
       <div class="content-container">
         <div>
-          {{ 'posty - ' + posts.length }}
+          <!-- {{ 'posty - ' + posts.length }} -->
         </div>
 
         <ul>
@@ -45,8 +45,10 @@
             </nuxt-link>
           </li>
         </ul>
-        <div>
-          <nuxt-link :to="getLink()">link next</nuxt-link>
+        <div class="pagination-button-section">
+          <nuxt-link :to="getLink()">
+            Następne posty
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -57,26 +59,30 @@
 export default {
   scrollToTop: false,
   async asyncData({ $content, params }) {
+    let pageNumber = 1
+    if (params.id !== undefined) {
+      pageNumber = params.id
+    }
+
     const posts = await $content('posts', params.slug)
       .only(['title', 'description', 'slug', 'creationDate'])
       .sortBy('creationDate', 'desc')
-      .limit(params.id * 3)
+      .limit(pageNumber * 3)
       .fetch()
 
     return {
       posts,
     }
   },
-  // mounted() {
-  //   this.getLink()
-  // },
   methods: {
     getLink() {
-      let numb = this.$route.params.id
-      console.log(numb)
+      let pageNumber = 1
+      if (this.$route.params.id !== undefined) {
+        pageNumber = this.$route.params.id
+      }
 
-      numb++
-      return '/blog/' + numb
+      pageNumber++
+      return '/blog/' + pageNumber
     },
   },
   head() {
@@ -187,6 +193,9 @@ export default {
   letter-spacing: 1px;
   color: #8c8c8c;
   padding-top: 4px;
+}
+.pagination-button-section {
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 960px) {
