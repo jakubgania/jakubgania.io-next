@@ -21,18 +21,26 @@
         </div>
       </div>
     </div>
-    <h1>Projekty</h1>
-    <ul>
-      <li v-for="project of projects" :key="project.slug">
-        <nuxt-link
-          :to="{ name: 'projects-slug', params: { slug: project.slug } }"
-        >
-          <h2>
-            {{ project.title }}
-          </h2>
-        </nuxt-link>
-      </li>
-    </ul>
+    <div class="list-projects-container">
+      <!-- breadcrumb -->
+      <!-- subpage title section component -->
+      <div class="grid grid-rows-1">
+        example grid
+      </div>
+      <div class="grid grid-rows-1">
+        <ul>
+          <li v-for="project of projects" :key="project.slug">
+            <nuxt-link
+              :to="{ name: 'projects-slug', params: { slug: project.slug } }"
+            >
+              <h5>
+                {{ project.title }}
+              </h5>
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
