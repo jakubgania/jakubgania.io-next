@@ -45,7 +45,10 @@
             </nuxt-link>
           </li>
         </ul>
-        <div v-if="$route.params.id < 4" class="pagination-button-section">
+        <div
+          v-if="$route.params.id < 4 || $route.params.id == undefined"
+          class="pagination-button-section"
+        >
           <nuxt-link :to="getLink()">
             Następne posty
           </nuxt-link>
