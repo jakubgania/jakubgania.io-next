@@ -28,19 +28,26 @@
         <ul>
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
             <nuxt-link
-              :to="{ name: 'blog-slug', params: { slug: post.slug } }"
+              :to="{ name: 'post-slug', params: { slug: post.slug } }"
               class="post-link"
             >
-              <div class="post-main-title">
-                <div class="post-title">
-                  {{ post.title }}
+              <div style="display: flex;">
+                <div class="image-section">
+                  <div class="image-container"></div>
                 </div>
-              </div>
-              <div class="description-section">
-                {{ post.description }}
-              </div>
-              <div class="creation-date">
-                {{ post.creationDate }}
+                <div style="width: 65%; padding-left: 24px;">
+                  <div class="post-main-title">
+                    <div class="post-title">
+                      {{ post.title }}
+                    </div>
+                  </div>
+                  <div class="description-section">
+                    {{ post.description }}
+                  </div>
+                  <div class="creation-date">
+                    {{ post.creationDate }}
+                  </div>
+                </div>
               </div>
             </nuxt-link>
           </li>
@@ -124,7 +131,7 @@ export default {
 
 <style lang="scss" scoped>
 .content-container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
   margin-bottom: 80px;
@@ -174,7 +181,7 @@ export default {
   -webkit-font-smoothing: antialiased;
 }
 .post-link-item {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
@@ -187,7 +194,7 @@ export default {
   font-weight: 500;
   letter-spacing: 0.4px;
   display: flex;
-  padding-top: 2px;
+  // padding-top: 2px;
   padding-bottom: 4px;
 }
 .post-link {
@@ -217,7 +224,7 @@ export default {
   padding-top: 4px;
 }
 .pagination-button-section {
-  margin-top: 80px;
+  margin-top: 120px;
   margin-bottom: 140px;
   text-align: center;
 }
@@ -237,6 +244,15 @@ export default {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
+}
+.image-section {
+  width: 35%;
+}
+.image-container {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 
 @media only screen and (max-width: 960px) {
