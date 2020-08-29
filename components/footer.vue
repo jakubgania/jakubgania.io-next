@@ -155,7 +155,22 @@ export default {
           titleColumn: 'Posty',
           elements: [
             {
-              //
+              name: 'Tylko logo a jednak komponent',
+              link: 'blog/06-12-2019-tylko-logo-a-jednak-komponent',
+            },
+            {
+              name: 'Listopad - podsumowanie',
+              link: 'blog/03-12-2019-listopad-podsumowanie',
+            },
+            {
+              name: 'ITCorner Tech Meetup #5 Jak zostać dobrym seniorem w IT ?',
+              link:
+                'blog/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it',
+            },
+            {
+              name: 'Nieskończone możliwości eksperymentowania i tworzenia',
+              link:
+                'blog/25-11-2019-nieskonczone-mozliwosci-eksperymentowania-i-tworzenia',
             },
           ],
         },
