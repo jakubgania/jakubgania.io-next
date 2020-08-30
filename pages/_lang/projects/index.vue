@@ -29,13 +29,20 @@
       </div>
       <div class="grid grid-rows-1">
         <ul>
-          <li v-for="project of projects" :key="project.slug">
+          <li
+            v-for="project of projects"
+            :key="project.slug"
+            class="post-link-item"
+          >
             <nuxt-link
               :to="{ name: 'projects-slug', params: { slug: project.slug } }"
+              class="post-link"
             >
-              <h5>
-                {{ project.title }}
-              </h5>
+              <div class="post-main-title">
+                <div class="post-title">
+                  {{ project.title }}
+                </div>
+              </div>
             </nuxt-link>
           </li>
         </ul>
@@ -243,6 +250,33 @@ export default {
     padding-left: 12px;
     transition: padding-left 0.2s ease;
   }
+}
+.post-link-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+.post-main-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  display: flex;
+  // padding-top: 2px;
+  padding-bottom: 4px;
+}
+.post-link {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    .post-main-title {
+      color: #06f;
+    }
+  }
+}
+.post-title {
+  font-size: 20px;
 }
 
 @keyframes move {
