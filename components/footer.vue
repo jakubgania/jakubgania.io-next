@@ -2,7 +2,7 @@
   <footer class="footer-container">
     <div class="footer-container__sitemap-section">
       <div class="footer-container__logo-section">
-        logo component
+        <logo-component :normal-font-size="true" />
       </div>
       <div class="footer-container__x">
         <div class="footer-container__sites-section">
@@ -113,7 +113,12 @@
 </template>
 
 <script>
+import LogoComponent from '../components/logo'
+
 export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
   data() {
     return {
       copyrightText: '&copy; 2018 - 2020 Jakub Gania Software',
@@ -178,7 +183,21 @@ export default {
           titleColumn: 'Projekty',
           elements: [
             {
-              //
+              name: 'jakubgania.io',
+              href: 'https://github.com/jakubgania/jakubgania.io',
+            },
+            {
+              name: 'yourcity-frontend',
+              href: 'https://github.com/jakubgania/yourcity-frontend',
+            },
+            {
+              name: 'angular8-omdbapi-movie-search-engine',
+              href:
+                'https://github.com/jakubgania/angular8-omdbapi-movie-search-engine',
+            },
+            {
+              name: 'business-page-project-2',
+              href: 'https://github.com/jakubgania/business-page-project-2',
             },
           ],
         },
@@ -252,8 +271,9 @@ export default {
     font-size: 20px;
   }
   &__site-column-link {
-    color: #232323;
+    color: #8a929c;
     font-size: 12px;
+    font-weight: 500;
     &:hover {
       color: #000;
       transition: color 0.2s ease;
@@ -387,6 +407,10 @@ export default {
     }
     &__dark-theme-switch-section {
       width: 100%;
+    }
+    &__bottom-section {
+      padding-left: 14px;
+      padding-right: 14px;
     }
   }
 }
