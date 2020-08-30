@@ -102,7 +102,7 @@ export default {
 
 <style lang="scss" scoped>
 .top-section-container {
-  font-family: 'Nunito', sans-serif;
+  // font-family: 'Nunito', sans-serif;
   background-color: #f2f2f2;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -114,7 +114,7 @@ export default {
 }
 .img-section {
   width: 30%;
-  margin-bottom: -6px;
+  // margin-bottom: -6px;
 }
 .profile-image {
   width: 90%;

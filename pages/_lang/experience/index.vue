@@ -43,55 +43,52 @@
           <div :key="item.id" class="head-section">
             <h2 class="head-title">
               {{ item.titleSection }}
-              <!-- v-icon -->
             </h2>
           </div>
           <div :key="item.id" class="color-line"></div>
-          <template v-for="(itemSection, index2) in item.sectionData">
-            <div
-              :key="itemSection.id"
-              :class="{ 'border-bottom': index2 < item.sectionData.length - 1 }"
-              class="section-test"
-            >
-              <div class="title-section">
+          <div :key="item.id" class="xtrox">
+            <template v-for="itemSection in item.sectionData">
+              <div :key="itemSection.id" class="section-test">
                 <div class="title-section">
-                  {{ itemSection.date }}
-                </div>
-              </div>
-              <div class="description-section">
-                <div style="margin-bottom: 10px;">
-                  <div class="title-description-section">
-                    {{ itemSection.title }}
-                  </div>
-                  <div class="subtitle-description-section">
-                    {{ itemSection.subtitle }}
+                  <div class="title-text">
+                    {{ itemSection.date }}
                   </div>
                 </div>
-                <div class="description" v-html="itemSection.description" />
-                <div v-if="itemSection.tags" class="tags-container">
-                  <!-- v-chip -->
-                </div>
-                <div v-if="itemSection.icons" class="images-container">
-                  <div
-                    v-for="imageItem in itemSection.icons"
-                    :key="imageItem.id"
-                    class="image-tile"
-                  >
-                    <div class="image-section">
-                      <img
-                        :src="`https://jakubgania.io/data/expirience/technology-icons/${imageItem.path}`"
-                        :alt="imageItem.alt"
-                        class="xghp"
-                      />
+                <div class="description-section">
+                  <div style="margin-bottom: 10px;">
+                    <div class="title-description-section">
+                      {{ itemSection.title }}
                     </div>
-                    <div class="image-description">
-                      {{ imageItem.description }}
+                    <div class="subtitle-description-section">
+                      {{ itemSection.subtitle }}
                     </div>
                   </div>
+                  <div class="description" v-html="itemSection.description" />
+                  <div v-if="itemSection.tags" class="tags-container">
+                    <!-- v-chip -->
+                  </div>
+                  <div v-if="itemSection.icons" class="images-container">
+                    <div
+                      v-for="imageItem in itemSection.icons"
+                      :key="imageItem.id"
+                      class="image-tile"
+                    >
+                      <div class="image-section">
+                        <img
+                          :src="`https://jakubgania.io/data/expirience/technology-icons/${imageItem.path}`"
+                          :alt="imageItem.alt"
+                          class="xghp"
+                        />
+                      </div>
+                      <div class="image-description">
+                        {{ imageItem.description }}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </template>
+            </template>
+          </div>
         </template>
       </div>
     </div>
@@ -148,18 +145,18 @@ div .section .description img {
 }
 .expirience-container {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .information-section {
-  font-family: 'Nunito', sans-serif;
+  // font-family: 'Nunito', sans-serif;
 }
 .top-experience-text {
   text-align: center;
   position: relative;
   z-index: 0;
   font-size: 6vw;
-  font-weight: 500;
-  letter-spacing: 10px;
+  font-weight: 700;
+  letter-spacing: 6px;
   color: #f2f2f2;
   padding-left: 20px;
   display: flex;
@@ -173,14 +170,19 @@ div .section .description img {
   letter-spacing: 0.5px;
 }
 .head-section {
-  margin-top: 40px;
+  // margin-top: 40px;
+}
+.xtrox {
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 .color-line {
   height: 2px;
-  background-image: linear-gradient(to right, #6a11cb, #2575fc, #ee609c);
+  background-image: linear-gradient(101deg, #6a82fb, #fc5c7d);
+  // border-top: 1.5px solid #d6d6d6;
 }
 .section-test {
-  margin-top: 20px;
+  margin-bottom: 60px;
   display: flex;
 }
 .title-section {
@@ -212,12 +214,13 @@ div .section .description img {
 }
 .head-title {
   letter-spacing: 1px;
-  font-size: 48px;
-  padding-bottom: 10px;
+  font-size: 54px;
+  // padding-bottom: 10px;
+  font-weight: 700;
 }
 .border-bottom {
-  padding-bottom: 14px;
-  border-bottom: 1px solid #f2f2f2;
+  // padding-bottom: 90px;
+  // border-bottom: 1px solid #f2f2f2;
 }
 .images-container {
   display: flex;
