@@ -8,22 +8,12 @@
         <li>Jakub Gania</li>
         <li>contact@jakubgania.io</li>
       </ul>
-      <svg style="width: 224px; height: 224px;" viewBox="0 0 24 24">
-        <path :d="mdiEmail" />
-      </svg>
     </div>
   </div>
 </template>
 
 <script>
-import { mdiEmail } from '@mdi/js'
-
 export default {
-  data() {
-    return {
-      mdiEmail,
-    }
-  },
   head() {
     return {
       title: 'Jakub Gania Software | Kontakt',
