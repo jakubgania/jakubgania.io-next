@@ -1,19 +1,21 @@
 <template>
   <div class="content-container">
     <div class="grid grid-rows-1 title-text">
-      about
+      {{ aboutText }}
     </div>
     <div class="section-bottom-title">
       <div class="grid grid-cols-2 grid-flow-col">
-        <div>
-          imag
+        <div class="image-section">
+          <img :src="profileImage" alt="" class="profile-image" />
         </div>
-        <div>
+        <div class="information-section">
           <div>
-            <h1>exmo</h1>
+            <h1 class="full-name">
+              {{ fullname }}
+            </h1>
             <div class="vertical-section">
               <span>
-                about text
+                about
               </span>
             </div>
             <div style="padding-left: 50px;">
@@ -34,10 +36,14 @@
 </template>
 
 <script>
+import profileImage from '../../../assets/images/profile.jpg'
+
 export default {
   data() {
     return {
+      profileImage,
       aboutText: 'About',
+      fullname: 'Jakub Gania',
       description:
         'Nazywam się Jakub Gania. Mieszkam we Wrocławiu. W 2018 roku uzyskałem tytuł inżyniera informatyki z specjalizacją inżyniera systemów informatycznych. Specjalizuję sie w technologiach webowych. Cały czas się uczę i poszerzam swoją wiedzę w różnych obszarach powiązanych z programowaniem. Moje projekty udostępniam na platformie GitHub. Rozwijam się w kierunku Full Stack Web Developer.',
     }
@@ -64,9 +70,10 @@ export default {
   margin: auto;
   position: relative;
   z-index: 0;
+  min-height: 100vh;
 }
 .section-bottom-title {
-  margin-top: -200px;
+  margin-top: -180px;
 }
 .title-text {
   text-align: center;
@@ -99,7 +106,7 @@ export default {
   line-height: 0.01em;
   margin: 10px 0 20px;
   position: absolute;
-  top: 200px;
+  top: 430px;
 }
 .vertical-section span {
   background-color: #fff;
