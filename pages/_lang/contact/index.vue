@@ -1,13 +1,14 @@
 <template>
   <div class="grid grid-cols-1">
     <div class="content-container">
-      <div>
-        <h2>Kontakt</h2>
+      <div class="left-section">
+        2
       </div>
-      <ul>
-        <li>Jakub Gania</li>
-        <li>contact@jakubgania.io</li>
-      </ul>
+      <div class="right-section">
+        <div class="right-section-container">
+          Kontakt
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -35,30 +36,19 @@ export default {
 
 <style lang="scss" scoped>
 .content-container {
-  max-width: 800px;
+  max-width: inherit;
   width: 100%;
   margin: auto;
+  min-height: 100vh;
+  display: flex;
 }
-.email {
-  padding-top: 80px;
-  text-align: center;
-  color: black;
-  letter-spacing: 2px;
-  font-size: 14px;
-  font-weight: 300;
+.left-section {
+  width: 50%;
+  background-color: red;
 }
-.email-link {
-  text-decoration: none;
-  color: #000;
-}
-.email-link:hover {
-  color: #999;
-}
-.email-link-dark-theme {
-  color: #bfbfbf;
-}
-.email-link-dark-theme:hover {
-  color: #fff;
+.right-section {
+  width: 50%;
+  background-color: blue;
 }
 
 @media only screen and (max-width: 960px) {
