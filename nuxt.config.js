@@ -9,6 +9,27 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
+
+  manifest: {
+    lang: 'pl',
+    name: 'Jakub Gania Software',
+    description: '',
+    icons: [
+      {
+        src: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+    theme_color: '#000000',
+    background_color: '#000000',
+  },
+
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -23,8 +44,31 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        conent: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-32x32.png',
+        sizes: '32x32',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-16x16.png',
+        sizes: '16x16',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon.png',
+      },
+    ],
   },
   /*
    ** Global CSS
@@ -64,6 +108,15 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
   ],
+
+  pwa: {
+    meta: {
+      twitterCard: 'summary_large_image',
+      twitterSite: '@jakubgania',
+      twitterCreator: '@jakubgania',
+    },
+  },
+  
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
