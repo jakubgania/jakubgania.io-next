@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-container">
     <nuxt-content :document="project" />
   </div>
 </template>
@@ -20,3 +20,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.content-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+</style>
