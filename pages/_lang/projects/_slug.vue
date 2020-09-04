@@ -3,16 +3,16 @@
     <div class="post-title">
       {{ project.title }}
     </div>
-    <nuxt-content :document="project" />
+    <div class="post-content">
+      <nuxt-content :document="project" />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const project = await $content('projects', params.slug)
-      .only(['title'])
-      .fetch()
+    const project = await $content('projects', params.slug).fetch()
 
     return {
       project,
@@ -31,6 +31,8 @@ export default {
   max-width: 1000px;
   width: 100%;
   margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .post-title {
   max-width: 1000px;
@@ -39,6 +41,9 @@ export default {
   margin: auto;
   width: 100%;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  line-height: 1.0;
+  line-height: 1;
+}
+.post-content {
+  margin-top: 40px;
 }
 </style>
