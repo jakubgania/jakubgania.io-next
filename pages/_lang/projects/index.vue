@@ -57,12 +57,16 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const projects = await $content('projects/pl', params.slug)
+  async asyncData({ $content, params, store }) {
+    let language = store.state.locale
+
+    if (params.lang === 'de') {
+      language = 'de'
+    }
+
+    const projects = await $content('projects/' + language, params.slug)
       .only(['title', 'description', 'slug'])
       .fetch()
-
-    console.log('pure ', params)
 
     return {
       projects,
