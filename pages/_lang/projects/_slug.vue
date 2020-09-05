@@ -11,17 +11,14 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    let lang = 'pl'
+  async asyncData({ $content, params, store }) {
+    let language = store.state.locale
 
     if (params.lang === 'de') {
-      lang = 'de'
+      language = 'de'
     }
 
-    const project = await $content('projects/' + lang, params.slug).fetch()
-
-    console.log('lang ', params.lang)
-    console.log('xdm', project)
+    const project = await $content('projects/' + language, params.slug).fetch()
 
     return {
       project,
