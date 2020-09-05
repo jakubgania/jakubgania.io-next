@@ -35,8 +35,14 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const post = await $content('posts', params.slug).fetch()
+  async asyncData({ $content, params, store }) {
+    let language = store.state.locale
+
+    if (params.lang === 'de') {
+      language = 'de'
+    }
+
+    const post = await $content('posts/' + language, params.slug).fetch()
 
     return {
       post,

@@ -27,10 +27,7 @@
 
         <ul>
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
-            <nuxt-link
-              :to="{ name: 'post-slug', params: { slug: post.slug } }"
-              class="post-link"
-            >
+            <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
               <div style="display: flex;">
                 <div class="image-section">
                   <div class="image-container"></div>
@@ -54,12 +51,13 @@
         </ul>
         <div
           v-if="
-            $route.params.id < numberOfPagination ||
-            $route.params.id == undefined
+            ($route.params.id < numberOfPagination ||
+              $route.params.id == undefined) &&
+            numberOfPagination > 3
           "
           class="pagination-button-section"
         >
-          <nuxt-link :to="getLink()" class="more-posts-button">
+          <nuxt-link :to="$i18n.path(getLink())" class="more-posts-button">
             Następne posty
           </nuxt-link>
         </div>
@@ -71,16 +69,24 @@
 <script>
 export default {
   scrollToTop: false,
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, store }) {
     const paginationValue = 3
     let pageNumber = 1
     let numberOfPagination = null
+    let language = store.state.locale
+
+    if (params.lang === 'de') {
+      language = 'de'
+    }
 
     if (params.id !== undefined) {
       pageNumber = params.id
     }
 
-    const numberOfPosts = await $content('posts', params.slug).fetch()
+    const numberOfPosts = await $content(
+      'posts/' + language,
+      params.slug
+    ).fetch()
 
     if (numberOfPosts.length % paginationValue === 0) {
       numberOfPagination = Math.floor(numberOfPosts.length / paginationValue)
@@ -91,7 +97,7 @@ export default {
         Math.floor(numberOfPosts.length / paginationValue) + 1
     }
 
-    const posts = await $content('posts', params.slug)
+    const posts = await $content('posts/' + language, params.slug)
       .only(['title', 'description', 'slug', 'creationDate'])
       .sortBy('creationDate', 'desc')
       .limit(pageNumber * paginationValue)
@@ -111,7 +117,7 @@ export default {
       }
 
       pageNumber++
-      return '/blog/' + pageNumber
+      return 'blog/' + pageNumber
     },
   },
   head() {
