@@ -25,7 +25,7 @@
       <!-- breadcrumb -->
       <!-- subpage title section component -->
       <div class="grid grid-rows-1">
-        example grid
+        Opis moich projektów programistycznych
       </div>
       <div class="grid grid-rows-1">
         <ul>
@@ -34,8 +34,12 @@
             :key="project.slug"
             class="post-link-item"
           >
+            <!-- $i18n.path(project.slug) -->
+            <!-- :to="{ name: 'projects-slug', params: { slug: project.slug } }" -->
+            <!-- :to="$i18n.path('projects/' + project.slug)" -->
+            <!-- "localePath({ name: 'category-slug', params: { slug: category.slug } })" -->
             <nuxt-link
-              :to="{ name: 'projects-slug', params: { slug: project.slug } }"
+              :to="$i18n.path('projects/' + project.slug)"
               class="post-link"
             >
               <div class="post-main-title">
@@ -54,9 +58,11 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const projects = await $content('projects', params.slug)
+    const projects = await $content('projects/pl', params.slug)
       .only(['title', 'description', 'slug'])
       .fetch()
+
+    console.log('pure ', params)
 
     return {
       projects,
