@@ -73,7 +73,15 @@
             </div>
           </div>
           <div style="text-align: right; width: 50%;">
-            Polski
+            <select v-model="$i18n.locale" class="select-language">
+              <option
+                v-for="(lang, i) in langs"
+                :key="`Lang${i}`"
+                :value="lang"
+              >
+                {{ lang }}
+              </option>
+            </select>
           </div>
         </div>
       </div>
@@ -121,6 +129,7 @@ export default {
   },
   data() {
     return {
+      langs: ['Polish', 'German'],
       copyrightText: '&copy; 2018 - 2020 Jakub Gania Software',
       sites: [
         {
@@ -329,6 +338,10 @@ export default {
   font-size: 12px;
   letter-spacing: 0.6px;
   margin-bottom: 10px;
+}
+.select-language {
+  background: transparent;
+  outline: none;
 }
 @media only screen and (max-width: 1264px) {
   .footer-container {
