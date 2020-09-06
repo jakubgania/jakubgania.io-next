@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-bottom: 100vh;">
+  <div>
     <div class="container-index grid grid-rows-1">
       <div>
         <div class="split split--left">
@@ -99,15 +99,162 @@
         </div>
       </div>
     </div>
+    <div class="section-content-wrapper">
+      <div class="section-content">
+        <div class="section-content-row">
+          <div class="section-content-row__title">
+            <h2>
+              Technologie Webowe
+            </h2>
+          </div>
+          <div class="section-content-row__icons-section">
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiReact" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiVuejs" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiLanguageJavascript" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiLanguageHtml5" :size="44" />
+            </div>
+          </div>
+          <div class="section-content-row__description">
+            {{ desc1 }}
+          </div>
+        </div>
+        <div class="section-content-row">
+          <div class="section-content-row__title">
+            <h2>
+              Technologie Chmurowe
+            </h2>
+          </div>
+          <div class="section-content-row__icons-section">
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiCloudTags" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiGoogleCloud" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiMicrosoftAzure" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiAws" :size="44" />
+            </div>
+          </div>
+          <div class="section-content-row__description">
+            {{ desc2 }}
+          </div>
+        </div>
+        <div class="section-content-row">
+          <div class="section-content-row__title">
+            <h2>
+              Software Engineering
+            </h2>
+          </div>
+          <div class="section-content-row__icons-section">
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiCodeBraces" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiDocker" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiWebpack" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiBash" :size="44" />
+            </div>
+          </div>
+          <div class="section-content-row__description">
+            {{ desc3 }}
+          </div>
+        </div>
+        <div class="section-content-row">
+          <div class="section-content-row__title">
+            <h2>
+              IT i Technologie
+            </h2>
+          </div>
+          <div class="section-content-row__icons-section">
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiServer" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiConsoleLine" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiSourceBranch" :size="44" />
+            </div>
+            <div class="section-content-row__icon-item">
+              <icon-component :path="mdiMicrosoftVisualStudioCode" :size="44" />
+            </div>
+          </div>
+          <div class="section-content-row__description">
+            {{ desc4 }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import {
+  mdiReact,
+  mdiVuejs,
+  mdiLanguageJavascript,
+  mdiLanguageHtml5,
+  mdiCloudTags,
+  mdiGoogleCloud,
+  mdiMicrosoftAzure,
+  mdiAws,
+  mdiBash,
+  mdiDocker,
+  mdiWebpack,
+  mdiServer,
+  mdiCodeBraces,
+  mdiConsoleLine,
+  mdiSourceBranch,
+  mdiMicrosoftVisualStudioCode,
+} from '@mdi/js'
+import IconComponent from '../../components/icon'
+
 export default {
-  methods: {
-    test() {
-      console.log('testt')
-    },
+  components: {
+    'icon-component': IconComponent,
+  },
+  data() {
+    return {
+      mdiReact,
+      mdiVuejs,
+      mdiLanguageJavascript,
+      mdiLanguageHtml5,
+      mdiCloudTags,
+      mdiGoogleCloud,
+      mdiMicrosoftAzure,
+      mdiAws,
+      mdiBash,
+      mdiDocker,
+      mdiWebpack,
+      mdiServer,
+      mdiCodeBraces,
+      mdiConsoleLine,
+      mdiSourceBranch,
+      mdiMicrosoftVisualStudioCode,
+      iconsSize: 44,
+      desc1:
+        'Główne technologie w jaki się specjalizję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt oraz backendowe takie jak Node czy Laravel. Tworzę różny skrypty z użyciem Bash czy Python. Większość mojej pracy i eksperymentów umieszczam na platformie Github.',
+      desc2:
+        'Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatej integrcji wielu komponentów. To naprawdę wiele zalet i możliwości oraz inne podejśćie do budowania złożonych struktór. Jest to kierunek w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga.',
+      desc3:
+        'Dziedina jaką jest inżynieria oprogramowania jest złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, wysublimowane architektóry, bezpieczeńśtwo, bazy danych ... Wymieniać można bez końca a trndy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane.',
+      desc4:
+        'Szeroko pojęte IT i różne inne technologie cały czas zasakują i rozwijają się bardzo szybko. Takie zagadnienia jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko znaleźć duży zbiór danych niewspomagany czy to przez SI czy analizę Big Data. ',
+    }
   },
   head() {
     return {
@@ -146,19 +293,6 @@ export default {
   height: 100%;
   opacity: 0.1;
 }
-// .container-index::after {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   background-image: url(../../assets/images/background-index.jpg);
-//   background-position: center;
-//   background-size: cover;
-//   width: 100%;
-//   height: 100%;
-//   opacity: 0.1;
-// }
 .content-container {
   max-width: 800px;
   width: 100%;
@@ -298,6 +432,52 @@ export default {
   margin-bottom: 4px;
   z-index: 20;
   pointer-events: auto;
+}
+.section-content-wrapper {
+  margin-top: 100vh;
+  background-color: #fafbfc;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: auto;
+}
+.section-content-row {
+  max-width: 50%;
+  width: 100%;
+  padding: 60px;
+
+  &:first-child {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 800;
+    background-image: linear-gradient(101deg, #fc466b, #3f5efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    font-size: 14.4px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+  }
+
+  &__icons-section {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__icon-item {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 960px) {
