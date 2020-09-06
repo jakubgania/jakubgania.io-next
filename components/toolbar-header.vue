@@ -5,15 +5,27 @@
         <logo-component :normal-font-size="true" />
       </nuxt-link>
     </div>
+    <div class="spacer-class" />
+    <div @click="$emit('switchNavigationDrawer')">
+      <icon-component :path="mdiMenu" :size="38" />
+    </div>
   </div>
 </template>
 
 <script>
+import { mdiMenu } from '@mdi/js'
 import LogoComponent from '../components/logo'
+import IconComponent from '../components/icon'
 
 export default {
   components: {
     'logo-component': LogoComponent,
+    'icon-component': IconComponent,
+  },
+  data() {
+    return {
+      mdiMenu,
+    }
   },
   mounted() {
     this.displayHeader()
@@ -39,5 +51,9 @@ export default {
   line-height: 64px;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+}
+.spacer-class {
+  flex-grow: 1 !important;
 }
 </style>

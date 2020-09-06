@@ -1,5 +1,5 @@
 <template>
-  <svg style="width: 224px; height: 224px;" viewBox="0 0 24 24">
+  <svg :style="{ width: size + 'px', height: size + 'px' }" viewBox="0 0 24 24">
     <path :d="path" />
   </svg>
 </template>
@@ -9,9 +9,13 @@ export default {
   props: {
     path: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+    size: {
+      type: Number,
+      default: 24,
+    },
+  },
 }
 </script>
 

@@ -104,6 +104,11 @@
 
 <script>
 export default {
+  methods: {
+    test() {
+      console.log('testt')
+    },
+  },
   head() {
     return {
       title: 'Jakub Gania Software',
