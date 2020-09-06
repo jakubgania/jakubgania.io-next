@@ -58,6 +58,8 @@ export default {
   margin: 6px 0;
 }
 .nav-icon {
+  margin-top: 10px;
+
   &:hover {
     .menu-icon-hamburger {
       background-color: #8c8c8c;

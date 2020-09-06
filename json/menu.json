@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "title": "Strona główna",
+      "path": "/"
+    },
+    {
+      "title": "O mnie",
+      "path": "/about"
+    },
+    {
+      "title": "Blog",
+      "path": "/blog"
+    },
+    {
+      "title": "Projekty",
+      "path": "/projects"
+    },
+    {
+      "title": "Kontakt",
+      "path": "/contact"
+    },
+    {
+      "title": "Galeria",
+      "path": "/gallery"
+    },
+    {
+      "title": "Doświadczenie",
+      "path": "/experience"
+    }
+  ]
+}
