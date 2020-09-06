@@ -199,6 +199,34 @@
         </div>
       </div>
     </div>
+    <div class="social-section">
+      <div class="social-section-container">
+        <div class="social-icon-item">
+          <icon-component :path="mdiGithub" :size="44" />
+          <span class="social-icon-describe">
+            Github
+          </span>
+        </div>
+        <div class="social-icon-item">
+          <icon-component :path="mdiLinkedin" :size="44" />
+          <span class="social-icon-describe">
+            LinkedIn
+          </span>
+        </div>
+        <div class="social-icon-item">
+          <icon-component :path="mdiTwitter" :size="44" />
+          <span class="social-icon-describe">
+            Twitter
+          </span>
+        </div>
+        <div class="social-icon-item">
+          <icon-component :path="mdiYoutube" :size="44" />
+          <span class="social-icon-describe">
+            YouTube
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -220,6 +248,10 @@ import {
   mdiConsoleLine,
   mdiSourceBranch,
   mdiMicrosoftVisualStudioCode,
+  mdiGithub,
+  mdiLinkedin,
+  mdiTwitter,
+  mdiYoutube,
 } from '@mdi/js'
 import IconComponent from '../../components/icon'
 
@@ -245,6 +277,10 @@ export default {
       mdiConsoleLine,
       mdiSourceBranch,
       mdiMicrosoftVisualStudioCode,
+      mdiGithub,
+      mdiLinkedin,
+      mdiTwitter,
+      mdiYoutube,
       iconsSize: 44,
       desc1:
         'Główne technologie w jaki się specjalizję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt oraz backendowe takie jak Node czy Laravel. Tworzę różny skrypty z użyciem Bash czy Python. Większość mojej pracy i eksperymentów umieszczam na platformie Github.',
@@ -478,6 +514,27 @@ export default {
   &__icon-item {
     width: 25%;
   }
+}
+.social-section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.social-section-container {
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+}
+.social-icon-item {
+  padding: 60px;
+  width: 25%;
+  display: inline-flex;
+  line-height: 40px;
+}
+.social-icon-describe {
+  font-size: 10px;
+  margin-left: 20px;
+  letter-spacing: 6px;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 960px) {
