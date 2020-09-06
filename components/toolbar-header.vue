@@ -6,26 +6,20 @@
       </nuxt-link>
     </div>
     <div class="spacer-class" />
-    <div @click="$emit('switchNavigationDrawer')">
-      <icon-component :path="mdiMenu" :size="38" />
+    <div class="nav-icon" @click="$emit('switchNavigationDrawer')">
+      <div class="menu-icon-hamburger" />
+      <div class="menu-icon-hamburger" />
+      <div class="menu-icon-hamburger" />
     </div>
   </div>
 </template>
 
 <script>
-import { mdiMenu } from '@mdi/js'
 import LogoComponent from '../components/logo'
-import IconComponent from '../components/icon'
 
 export default {
   components: {
     'logo-component': LogoComponent,
-    'icon-component': IconComponent,
-  },
-  data() {
-    return {
-      mdiMenu,
-    }
   },
   mounted() {
     this.displayHeader()
@@ -55,5 +49,20 @@ export default {
 }
 .spacer-class {
   flex-grow: 1 !important;
+}
+.menu-icon-hamburger {
+  width: 34px;
+  height: 2px;
+  background-color: #000;
+  transition: background-color 0.2s ease;
+  margin: 6px 0;
+}
+.nav-icon {
+  &:hover {
+    .menu-icon-hamburger {
+      background-color: #8c8c8c;
+      transition: background-color 0.2s ease;
+    }
+  }
 }
 </style>
