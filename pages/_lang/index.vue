@@ -200,30 +200,37 @@
       </div>
     </div>
     <div class="social-section">
-      <div class="social-section-container">
-        <div class="social-icon-item">
-          <icon-component :path="mdiGithub" :size="44" />
-          <span class="social-icon-describe">
-            Github
-          </span>
+      <div class="social-section-wrapper">
+        <div class="social-section-title">
+          <h2>
+            Social
+          </h2>
         </div>
-        <div class="social-icon-item">
-          <icon-component :path="mdiLinkedin" :size="44" />
-          <span class="social-icon-describe">
-            LinkedIn
-          </span>
-        </div>
-        <div class="social-icon-item">
-          <icon-component :path="mdiTwitter" :size="44" />
-          <span class="social-icon-describe">
-            Twitter
-          </span>
-        </div>
-        <div class="social-icon-item">
-          <icon-component :path="mdiYoutube" :size="44" />
-          <span class="social-icon-describe">
-            YouTube
-          </span>
+        <div class="social-section-container">
+          <div class="social-icon-item">
+            <icon-component :path="mdiGithub" :size="44" />
+            <span class="social-icon-describe">
+              Github
+            </span>
+          </div>
+          <div class="social-icon-item">
+            <icon-component :path="mdiLinkedin" :size="44" />
+            <span class="social-icon-describe">
+              LinkedIn
+            </span>
+          </div>
+          <div class="social-icon-item">
+            <icon-component :path="mdiTwitter" :size="44" />
+            <span class="social-icon-describe">
+              Twitter
+            </span>
+          </div>
+          <div class="social-icon-item">
+            <icon-component :path="mdiYoutube" :size="44" />
+            <span class="social-icon-describe">
+              YouTube
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -519,10 +526,12 @@ export default {
   padding-top: 140px;
   padding-bottom: 140px;
 }
-.social-section-container {
-  display: flex;
+.social-section-wrapper {
   max-width: 1600px;
   margin: auto;
+}
+.social-section-container {
+  display: flex;
 }
 .social-icon-item {
   padding: 60px;
@@ -535,6 +544,11 @@ export default {
   margin-left: 20px;
   letter-spacing: 6px;
   font-weight: 900;
+}
+.social-section-title {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 @media only screen and (max-width: 960px) {
