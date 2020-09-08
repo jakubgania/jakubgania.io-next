@@ -199,6 +199,49 @@
         </div>
       </div>
     </div>
+    <div class="blog-section-wrapper">
+      <div class="blog-section-container">
+        <div class="blog-section-title">
+          <h2>
+            BLOG
+          </h2>
+        </div>
+        <div>
+          <ul>
+            <li v-for="post of posts" :key="post.slug" class="post-link-item">
+              <nuxt-link
+                :to="$i18n.path('post/' + post.slug)"
+                class="post-link"
+              >
+                <div style="display: flex;">
+                  <div class="image-section">
+                    <div class="image-container"></div>
+                  </div>
+                  <div style="width: 65%; padding-left: 24px;">
+                    <div class="post-main-title">
+                      <div class="post-title">
+                        {{ post.title }}
+                      </div>
+                    </div>
+                    <div class="description-section">
+                      {{ post.description }}
+                    </div>
+                    <div class="creation-date">
+                      {{ post.creationDate }}
+                    </div>
+                  </div>
+                </div>
+              </nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination-button-section">
+          <nuxt-link :to="$i18n.path('blog')" class="more-posts-button">
+            Więcej postów
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
     <div class="social-section">
       <div class="social-section-wrapper">
         <div class="social-section-title">
@@ -263,6 +306,30 @@ import {
 import IconComponent from '../../components/icon'
 
 export default {
+  async asyncData({ $content, params, store }) {
+    // const paginationValue = 3
+    let language = store.state.locale
+
+    if (params.lang === 'de') {
+      language = 'de'
+    }
+
+    const numberOfPosts = await $content(
+      'posts/' + language,
+      params.slug
+    ).fetch()
+
+    const posts = await $content('posts/' + language, params.slug)
+      .only(['title', 'description', 'slug', 'creationDate'])
+      .sortBy('creationDate', 'desc')
+      .limit(3)
+      .fetch()
+
+    return {
+      posts,
+      numberOfPosts,
+    }
+  },
   components: {
     'icon-component': IconComponent,
   },
@@ -549,6 +616,96 @@ export default {
   font-weight: 800;
   text-align: center;
   margin-bottom: 80px;
+}
+.blog-section-wrapper {
+  margin: auto;
+  // background-color: black;
+}
+.blog-section-container {
+  max-width: 1600px;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.blog-section-title {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 80px;
+  // color: white;
+}
+.post-link-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+.post-main-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  display: flex;
+  // padding-top: 2px;
+  padding-bottom: 4px;
+}
+.post-link {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    .post-main-title {
+      color: #06f;
+    }
+  }
+}
+.post-title {
+  font-size: 20px;
+}
+.description-section {
+  font-size: 14px;
+  padding-top: 4px;
+  letter-spacing: 0.4px;
+  padding-bottom: 10px;
+  // color: white;
+}
+.creation-date {
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #8c8c8c;
+  padding-top: 4px;
+}
+.image-section {
+  width: 35%;
+}
+.image-container {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.pagination-button-section {
+  margin-top: 120px;
+  // margin-bottom: 140px;
+  text-align: center;
+}
+.more-posts-button {
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 0.5rem 3rem;
+  color: black;
+  font-size: 12px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #6a82fb, #fc5c7d);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
 }
 
 @media only screen and (max-width: 960px) {
