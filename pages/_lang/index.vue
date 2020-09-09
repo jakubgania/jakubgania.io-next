@@ -251,11 +251,52 @@
         </div>
         <div class="projects-sections-container">
           <div class="projects-item">
-            section
+            <ul class="project-list">
+              <li>
+                <nuxt-link :to="$i18n.path('projects/jakubgania-io')">
+                  jakubgania.io
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link :to="$i18n.path('projects/python-scripts')">
+                  python-scripts
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link :to="$i18n.path('projects/hypercode-it')">
+                  hypercode-it
+                </nuxt-link>
+              </li>
+            </ul>
           </div>
           <div class="projects-item">
-            section
+            <ul class="project-list">
+              <li>
+                <nuxt-link :to="$i18n.path('projects/business-page-project-2')">
+                  business-page-project-2
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link
+                  :to="
+                    $i18n.path('projects/angular8-omdbapi-movie-search-engine')
+                  "
+                >
+                  angular8-omdbapi-movie-search-engine
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link :to="$i18n.path('projects/yourcity-frontend')">
+                  yourcity-frontend
+                </nuxt-link>
+              </li>
+            </ul>
           </div>
+        </div>
+        <div class="pagination-button-section">
+          <nuxt-link :to="$i18n.path('projects')" class="more-posts-button">
+            Więcej projektów
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -741,6 +782,26 @@ export default {
 }
 .projects-sections-container {
   display: flex;
+}
+.projects-item {
+  width: 50%;
+}
+.projects-item ul {
+  list-style: none;
+  margin-top: 80px;
+}
+.projects-item ul li {
+  margin-bottom: 40px;
+  letter-spacing: 1.2px;
+}
+.projects-item ul li::before {
+  content: '\2022';
+  color: block;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 960px) {
