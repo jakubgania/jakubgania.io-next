@@ -242,6 +242,23 @@
         </div>
       </div>
     </div>
+    <div class="projects-section">
+      <div class="projects-section-wrapper">
+        <div class="projects-section-title">
+          <h2>
+            Projekty
+          </h2>
+        </div>
+        <div class="projects-sections-container">
+          <div class="projects-item">
+            section
+          </div>
+          <div class="projects-item">
+            section
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="social-section">
       <div class="social-section-wrapper">
         <div class="social-section-title">
@@ -706,6 +723,24 @@ export default {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
+}
+.projects-section {
+  max-width: 1600px;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.projects-section-wrapper {
+  margin: auto;
+}
+.projects-section-title {
+  font-weight: 800;
+  text-align: center;
+}
+.projects-sections-container {
+  display: flex;
 }
 
 @media only screen and (max-width: 960px) {
