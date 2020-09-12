@@ -28,11 +28,11 @@
         <ul>
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
             <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
-              <div style="display: flex;">
+              <div class="blog-posts-container">
                 <div class="image-section">
                   <div class="image-container"></div>
                 </div>
-                <div style="width: 65%; padding-left: 24px;">
+                <div class="blog-post-item-eer4">
                   <div class="post-main-title">
                     <div class="post-title">
                       {{ post.title }}
@@ -260,6 +260,14 @@ export default {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
+.blog-posts-container {
+  display: flex;
+  flex-flow: wrap;
+}
+.blog-post-item-eer4 {
+  width: 65%;
+  padding-left: 24px;
+}
 
 @media only screen and (max-width: 960px) {
   .content-container {
@@ -283,6 +291,23 @@ export default {
   }
   .creation-date {
     padding-left: 0;
+  }
+  .image-section {
+    width: 100%;
+  }
+  .blog-section-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .blog-post-item-eer4 {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .post-link-item {
+    margin-bottom: 40px;
   }
 }
 </style>
