@@ -342,9 +342,7 @@
             <div class="trending-grid-item trending-item-1">
               <div
                 class="img-wrap"
-                style="
-                  background-image: url(_nuxt/assets/images/dotted-wawes-light.jpg);
-                "
+                :style="`background-image: url(${Image1})`"
               ></div>
               <div class="img-inner">
                 <header>
@@ -359,9 +357,7 @@
             <div class="trending-grid-item trending-item-2">
               <div
                 class="img-wrap"
-                style="
-                  background-image: url(_nuxt/assets/images/dotted-wawes-light.jpg);
-                "
+                :style="`background-image: url(${Image2})`"
               ></div>
               <div class="img-inner">
                 <header>
@@ -376,9 +372,7 @@
             <div class="trending-grid-item trending-item-3">
               <div
                 class="img-wrap"
-                style="
-                  background-image: url(_nuxt/assets/images/dotted-wawes-light.jpg);
-                "
+                :style="`background-image: url(${Image3})`"
               ></div>
               <div class="img-inner">
                 <header>
@@ -393,9 +387,7 @@
             <div class="trending-grid-item trending-item-4">
               <div
                 class="img-wrap"
-                style="
-                  background-image: url(_nuxt/assets/images/dotted-wawes-light.jpg);
-                "
+                :style="`background-image: url(${Image4})`"
               ></div>
               <div class="img-inner">
                 <header>
@@ -436,6 +428,10 @@ import {
   mdiYoutube,
 } from '@mdi/js'
 import IconComponent from '../../components/icon'
+import Image1 from '../../assets/images/background-home.jpg'
+import Image2 from '../../assets/images/stickers-home.jpg'
+import Image3 from '../../assets/images/keyboard-home.jpeg'
+import Image4 from '../../assets/images/dotted-wawes-light.jpg'
 
 export default {
   async asyncData({ $content, params, store }) {
@@ -467,6 +463,10 @@ export default {
   },
   data() {
     return {
+      Image1,
+      Image2,
+      Image3,
+      Image4,
       mdiReact,
       mdiVuejs,
       mdiLanguageJavascript,
@@ -922,8 +922,8 @@ export default {
   // );
   background: linear-gradient(
     -128deg,
-    rgba(0, 102, 255, 0.6),
-    rgba(252, 92, 125, 0.6)
+    rgba(0, 102, 255, 0.6) 0,
+    rgba(252, 92, 125, 0.6) 100%
   );
 }
 .trending-item-1 {
