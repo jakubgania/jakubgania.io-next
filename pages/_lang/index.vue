@@ -427,6 +427,7 @@ import {
   mdiTwitter,
   mdiYoutube,
 } from '@mdi/js'
+// import $ from 'jquery'
 import IconComponent from '../../components/icon'
 import Image1 from '../../assets/images/background-home.jpg'
 import Image2 from '../../assets/images/stickers-home.jpg'
@@ -724,6 +725,7 @@ export default {
 .social-section {
   padding-top: 140px;
   padding-bottom: 140px;
+  background-color: red;
 }
 .social-section-wrapper {
   max-width: 1600px;
@@ -1092,6 +1094,15 @@ export default {
   .right-part {
     left: 50%;
     top: 140px;
+  }
+  .section-content-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-content-row {
+    max-width: 100%;
+    widows: 100%;
+    padding: 30px;
   }
 }
 </style>

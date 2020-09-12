@@ -2,6 +2,12 @@
   "name": "jakubgania.io-next",
   "version": "1.0.0",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "4000"
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -17,6 +23,7 @@
     "@nuxt/content": "^1.5.0",
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "jquery": "^3.5.1",
     "nuxt": "^2.14.0",
     "vue-i18n": "^8.21.0"
   },
