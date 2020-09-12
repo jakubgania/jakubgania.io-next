@@ -338,7 +338,7 @@
     <div class="images-section">
       <section class="imgages-section-wrapper">
         <div class="trending-grid-items">
-          <nuxt-link to="/">
+          <nuxt-link :to="$i18n.path('blog')">
             <div class="trending-grid-item trending-item-1">
               <div
                 class="img-wrap"
@@ -353,7 +353,7 @@
               </div>
             </div>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link :to="$i18n.path('experience')">
             <div class="trending-grid-item trending-item-2">
               <div
                 class="img-wrap"
@@ -368,7 +368,7 @@
               </div>
             </div>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link :to="$i18n.path('contact')">
             <div class="trending-grid-item trending-item-3">
               <div
                 class="img-wrap"
@@ -383,7 +383,7 @@
               </div>
             </div>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link :to="$i18n.path('gallery')">
             <div class="trending-grid-item trending-item-4">
               <div
                 class="img-wrap"
