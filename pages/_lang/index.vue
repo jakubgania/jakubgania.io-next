@@ -213,11 +213,11 @@
                 :to="$i18n.path('post/' + post.slug)"
                 class="post-link"
               >
-                <div style="display: flex;">
+                <div class="blog-posts-container">
                   <div class="image-section">
                     <div class="image-container"></div>
                   </div>
-                  <div style="width: 65%; padding-left: 24px;">
+                  <div class="blog-post-item-eer4">
                     <div class="post-main-title">
                       <div class="post-title">
                         {{ post.title }}
@@ -725,7 +725,6 @@ export default {
 .social-section {
   padding-top: 140px;
   padding-bottom: 140px;
-  background-color: red;
 }
 .social-section-wrapper {
   max-width: 1600px;
@@ -768,6 +767,14 @@ export default {
   text-align: center;
   margin-bottom: 80px;
   // color: white;
+}
+.blog-posts-container {
+  display: flex;
+  flex-flow: wrap;
+}
+.blog-post-item-eer4 {
+  width: 65%;
+  padding-left: 24px;
 }
 .post-link-item {
   margin-top: 20px;
@@ -869,6 +876,7 @@ export default {
 .projects-item ul li {
   margin-bottom: 40px;
   letter-spacing: 1.2px;
+  // text-overflow: ellipsis;
 }
 .projects-item ul li::before {
   content: '\2022';
@@ -1099,10 +1107,72 @@ export default {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .social-section-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .section-content-row {
     max-width: 100%;
     widows: 100%;
     padding: 30px;
+
+    &:first-child {
+      margin-bottom: initial;
+    }
+
+    &__title {
+      line-height: 1;
+      padding-bottom: 10px;
+    }
+  }
+  .social-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .social-icon-item {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+  }
+  .trending-post-title {
+    font-size: 16px;
+  }
+  .trending-grid-item header {
+    padding: 2em 1.5em 1em 1em;
+  }
+  .projects-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .projects-sections-container {
+    flex-wrap: wrap;
+  }
+  .projects-item {
+    width: 100%;
+  }
+  .projects-item:nth-child(2) ul {
+    margin-top: inherit;
+  }
+  .social-section-title {
+    margin-bottom: 40px;
+  }
+  .image-section {
+    width: 100%;
+  }
+  .blog-section-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .blog-post-item-eer4 {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .post-link-item {
+    margin-bottom: 40px;
   }
 }
 </style>
