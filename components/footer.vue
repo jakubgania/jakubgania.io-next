@@ -101,18 +101,27 @@ export default {
     changeLanguage(e) {
       let route = ''
 
-      if (e.target.value === 'de') {
-        route = `lang-${this.$route.name}`
+      if (this.$route.name === 'index') {
+        this.$router.push({
+          name: 'lang',
+          params: {
+            lang: e.target.value,
+          },
+        })
       } else {
-        route = this.$route.name
-      }
+        if (e.target.value === 'de') {
+          route = `lang-${this.$route.name}`
+        } else {
+          route = this.$route.name
+        }
 
-      this.$router.push({
-        name: route,
-        params: {
-          lang: e.target.value,
-        },
-      })
+        this.$router.push({
+          name: route,
+          params: {
+            lang: e.target.value,
+          },
+        })
+      }
     },
   },
   data() {
