@@ -75,7 +75,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['aos/dist/aos.css',],
   router: {
     middleware: 'i18n'
   },
@@ -83,7 +83,10 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/i18n.js'],
+  plugins: [
+    '~/plugins/i18n.js',
+    { src: '~/plugins/aos', ssr: false },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
