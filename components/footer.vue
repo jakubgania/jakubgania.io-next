@@ -73,13 +73,33 @@
             </div>
           </div>
           <div style="text-align: right; width: 50%;">
-            <select v-model="$i18n.locale" class="select-language">
+            <!-- <label for="language">Language</label>
+            <select
+              v-model="$i18n.locale"
+              class="select-language"
+              name="language"
+              id="language"
+            >
               <option
                 v-for="(lang, i) in langs"
                 :key="`Lang${i}`"
                 :value="lang"
               >
                 {{ lang }}
+              </option>
+            </select> -->
+            <!-- <select @change="changeLanguage" class="select-language">
+              <option value="pl">Polski</option>
+              <option value="de">German</option>
+            </select> -->
+            <select @change="changeLanguage" class="select-language">
+              <option
+                v-for="option in langs"
+                :key="option.value"
+                :value="option.value"
+                :selected="option.value == $i18n.locale"
+              >
+                {{ option.name }}
               </option>
             </select>
           </div>
@@ -127,9 +147,38 @@ export default {
   components: {
     'logo-component': LogoComponent,
   },
+  methods: {
+    changeLanguage(e) {
+      // console.log(this.$route.name)
+      // console.log('lang ', e.target.value)
+      let route = ''
+
+      if (e.target.value === 'de') {
+        route = `lang-${this.$route.name}`
+      } else {
+        route = this.$route.name
+      }
+
+      this.$router.push({
+        name: route,
+        params: {
+          lang: e.target.value,
+        },
+      })
+    },
+  },
   data() {
     return {
-      langs: ['Polish', 'German'],
+      langs: [
+        {
+          name: 'Polish',
+          value: 'pl',
+        },
+        {
+          name: 'Germany',
+          value: 'de',
+        },
+      ],
       copyrightText: '&copy; 2018 - 2020 Jakub Gania Software',
       sites: [
         {
