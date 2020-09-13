@@ -102,12 +102,7 @@ export default {
       let route = ''
 
       if (this.$route.name === 'index') {
-        this.$router.push({
-          name: 'lang',
-          params: {
-            lang: e.target.value,
-          },
-        })
+        this.routerPush('lang', e.target.value)
       } else {
         if (e.target.value === 'de') {
           route = `lang-${this.$route.name}`
@@ -115,13 +110,16 @@ export default {
           route = this.$route.name
         }
 
-        this.$router.push({
-          name: route,
-          params: {
-            lang: e.target.value,
-          },
-        })
+        this.routerPush(route, e.target.value)
       }
+    },
+    routerPush(routeName, languageParam) {
+      this.$router.push({
+        name: routeName,
+        params: {
+          lang: languageParam,
+        },
+      })
     },
   },
   data() {
