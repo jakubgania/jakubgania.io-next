@@ -30,6 +30,57 @@
         </div>
       </template>
     </div>
+    <div class="related-posts">
+      <div class="related-posts-title-section">
+        <span class="related-posts-title">
+          Inne posty
+        </span>
+      </div>
+      <div class="related-posts-wrapper">
+        <div class="related-posts-item">
+          <nuxt-link to="/">
+            <div>
+              <figure class="related-posts-figure">
+                <img
+                  src="https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/top-image.jpg"
+                  alt=""
+                  class="related-posts-image"
+                />
+              </figure>
+            </div>
+            <div class="related-posts-caption">
+              <div class="related-post-item-date">
+                Date 20-08-2020
+              </div>
+              <div class="related-post-item-description">
+                <h4>Example title example title example title post</h4>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+        <div class="related-posts-item">
+          <nuxt-link to="/">
+            <div>
+              <figure class="related-posts-figure">
+                <img
+                  src="https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/top-image.jpg"
+                  alt=""
+                  class="related-posts-image"
+                />
+              </figure>
+            </div>
+            <div class="related-posts-caption">
+              <div class="related-post-item-date">
+                Date 20-08-2020
+              </div>
+              <div class="related-post-item-description">
+                <h4>Example title example title example title post</h4>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -109,6 +160,87 @@ export default {
   width: 100%;
   max-height: 720px;
   object-fit: cover;
+}
+.related-posts {
+  max-width: 2000px;
+  // background-color: red;
+  margin: auto;
+  padding-top: 18vh;
+  padding-bottom: 16vh;
+}
+.related-posts-title-section {
+  margin-bottom: 60px;
+}
+.related-posts-title {
+  font-size: 60px;
+}
+.related-posts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.related-posts-figure {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.related-posts-figure::before {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-top: 52%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  // background: linear-gradient(
+  //   -128deg,
+  //   rgba(0, 102, 255, 0.6) 0,
+  //   rgba(252, 92, 125, 0.6) 100%
+  // );
+}
+.related-posts-image {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.related-posts-caption {
+  margin-top: 20px;
+}
+.related-post-item-date {
+  font-size: 12px;
+  font-weight: 500;
+  transition: padding-left 0.5s ease;
+}
+.related-post-item-description {
+  padding-top: 0.5rem;
+  max-width: 440px;
+  transition: padding-left 0.5s ease;
+  line-height: 1.1;
+}
+.related-posts-item {
+  width: 45%;
+  position: relative;
+
+  &:hover {
+    .related-posts-image {
+      transform: scale(1.1);
+    }
+    .related-post-item-date {
+      padding-left: 10px;
+      transition: padding-left 0.2s ease;
+    }
+    .related-post-item-description {
+      padding-left: 10px;
+      transition: padding-left 0.5s ease;
+    }
+  }
 }
 @media only screen and (max-width: 960px) {
   .content-container {
