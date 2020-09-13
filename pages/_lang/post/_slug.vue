@@ -38,7 +38,7 @@
       </div>
       <div class="related-posts-wrapper">
         <div class="related-posts-item">
-          <nuxt-link to="/">
+          <nuxt-link :to="next.slug">
             <div>
               <figure class="related-posts-figure">
                 <img
@@ -50,16 +50,18 @@
             </div>
             <div class="related-posts-caption">
               <div class="related-post-item-date">
-                Date 20-08-2020
+                {{ next.creationDate }}
               </div>
               <div class="related-post-item-description">
-                <h4>Example title example title example title post</h4>
+                <h4>
+                  {{ next.title }}
+                </h4>
               </div>
             </div>
           </nuxt-link>
         </div>
         <div class="related-posts-item">
-          <nuxt-link to="/">
+          <nuxt-link :to="prev.slug">
             <div>
               <figure class="related-posts-figure">
                 <img
@@ -71,10 +73,12 @@
             </div>
             <div class="related-posts-caption">
               <div class="related-post-item-date">
-                Date 20-08-2020
+                {{ prev.creationDate }}
               </div>
               <div class="related-post-item-description">
-                <h4>Example title example title example title post</h4>
+                <h4>
+                  {{ prev.title }}
+                </h4>
               </div>
             </div>
           </nuxt-link>
@@ -88,6 +92,8 @@
 export default {
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
+    let next = null
+    let prev = null
 
     if (params.lang === 'de') {
       language = 'de'
@@ -95,8 +101,45 @@ export default {
 
     const post = await $content('posts/' + language, params.slug).fetch()
 
+    const [relatedPrev, relatedNext] = await $content('posts/' + language)
+      .only(['title', 'slug', 'creationDate'])
+      .sortBy('creationDate', 'asc')
+      .surround(params.slug)
+      .fetch()
+
+    if (relatedPrev != null && relatedNext != null) {
+      prev = relatedPrev
+      next = relatedNext
+    }
+
+    if (relatedPrev === null) {
+      const related = await $content('posts/' + language)
+        .where({ index: { $ne: post.index } })
+        .only(['title', 'slug', 'creationDate'])
+        .sortBy('creationDate', 'asc')
+        .limit(2)
+        .fetch()
+
+      prev = related[0]
+      next = related[1]
+    }
+
+    if (relatedNext === null) {
+      const related = await $content('posts/' + language)
+        .where({ index: { $ne: post.index } })
+        .only(['title', 'slug', 'creationDate'])
+        .sortBy('creationDate', 'desc')
+        .limit(2)
+        .fetch()
+
+      prev = related[0]
+      next = related[1]
+    }
+
     return {
       post,
+      prev,
+      next,
     }
   },
   head() {
