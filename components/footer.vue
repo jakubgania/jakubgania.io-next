@@ -73,25 +73,6 @@
             </div>
           </div>
           <div style="text-align: right; width: 50%;">
-            <!-- <label for="language">Language</label>
-            <select
-              v-model="$i18n.locale"
-              class="select-language"
-              name="language"
-              id="language"
-            >
-              <option
-                v-for="(lang, i) in langs"
-                :key="`Lang${i}`"
-                :value="lang"
-              >
-                {{ lang }}
-              </option>
-            </select> -->
-            <!-- <select @change="changeLanguage" class="select-language">
-              <option value="pl">Polski</option>
-              <option value="de">German</option>
-            </select> -->
             <select @change="changeLanguage" class="select-language">
               <option
                 v-for="option in langs"
@@ -106,37 +87,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="footer-container__copyright-wrapper">
-      <div class="footer-container__copyright-section">
-        <div class="footer-container__copyright-text">
-          <div v-html="copyrightText" />
-        </div>
-        <div class="footer-container__language-section">
-          <div class="footer-container__language-text">
-            Polski
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div>
-      <div v-for="item in sites" :key="item.id">
-        <nuxt-link :to="$i18n.path(item.link)">
-          {{ item.name }}
-        </nuxt-link>
-      </div>
-    </div>
-    <div>
-      <nuxt-link
-        v-if="$i18n.locale === 'pl'"
-        :to="`/de` + $route.fullPath"
-        exact
-      >
-        niemiecki
-      </nuxt-link>
-      <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" exact>
-        polski
-      </nuxt-link>
-    </div> -->
   </footer>
 </template>
 
@@ -149,8 +99,6 @@ export default {
   },
   methods: {
     changeLanguage(e) {
-      // console.log(this.$route.name)
-      // console.log('lang ', e.target.value)
       let route = ''
 
       if (e.target.value === 'de') {
