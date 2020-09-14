@@ -11,6 +11,9 @@
         <div class="author-description">
           {{ description }}
         </div>
+        <div>
+          <social-icons-component />
+        </div>
       </div>
     </div>
   </div>
@@ -18,8 +21,12 @@
 
 <script>
 import profileImage from '@/assets/images/profile.jpg'
+import SocialIcons from '@/components/social-icons'
 
 export default {
+  components: {
+    'social-icons-component': SocialIcons,
+  },
   data() {
     return {
       profileImage,
