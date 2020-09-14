@@ -83,6 +83,8 @@ export default {
       pageNumber = params.id
     }
 
+    console.log('params slug ', params.slug)
+
     const numberOfPosts = await $content(
       'posts/' + language,
       params.slug

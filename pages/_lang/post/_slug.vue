@@ -84,6 +84,13 @@
           </nuxt-link>
         </div>
       </div>
+      <div class="other-posts-button-section">
+        <div style="text-align: center;">
+          <nuxt-link :to="$i18n.path('blog')" class="other-posts-button">
+            {{ 'wszystkie posty - ' + numberOfPosts }}
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -94,12 +101,15 @@ export default {
     let language = store.state.locale
     let next = null
     let prev = null
+    let numberOfPosts = null
 
     if (params.lang === 'de') {
       language = 'de'
     }
 
     const post = await $content('posts/' + language, params.slug).fetch()
+    const allPosts = await $content('posts/' + language, undefined).fetch()
+    numberOfPosts = allPosts.length
 
     const [relatedPrev, relatedNext] = await $content('posts/' + language)
       .only(['title', 'slug', 'creationDate'])
@@ -140,6 +150,7 @@ export default {
       post,
       prev,
       next,
+      numberOfPosts,
     }
   },
   head() {
@@ -283,6 +294,26 @@ export default {
       padding-left: 10px;
       transition: padding-left 0.5s ease;
     }
+  }
+}
+.other-posts-button-section {
+  margin-top: 180px;
+}
+.other-posts-button {
+  border: 2px solid black;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 2px solid transparent;
+    letter-spacing: 2.8px;
+    transition: all 0.2s ease;
   }
 }
 @media only screen and (max-width: 960px) {
