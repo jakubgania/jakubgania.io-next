@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: Getting started - test long title example post for test
 description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
 creationDate: '26-08-2020 14:20'
 index: 9
