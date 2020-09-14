@@ -36,6 +36,7 @@
           </div> -->
           <nuxt-content :document="post" class="post" />
         </div>
+        <about-creator />
       </template>
     </div>
     <div class="related-posts">
@@ -104,7 +105,12 @@
 </template>
 
 <script>
+import AboutCreator from '@/components/about-creator'
+
 export default {
+  components: {
+    AboutCreator,
+  },
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
     let next = null
