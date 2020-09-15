@@ -3,4 +3,4 @@ title: docker-manager
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

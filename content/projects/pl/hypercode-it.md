@@ -3,4 +3,4 @@ title: hypercode-it
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

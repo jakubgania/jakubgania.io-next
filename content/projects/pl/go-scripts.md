@@ -3,4 +3,4 @@ title: go-scripts
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

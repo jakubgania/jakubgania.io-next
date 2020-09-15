@@ -3,4 +3,4 @@ title: business-page-project-2
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

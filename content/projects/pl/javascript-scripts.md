@@ -4,4 +4,4 @@ description: ''
 keywords: 
 ---
 
-example
+Opis w przygotowaniu.

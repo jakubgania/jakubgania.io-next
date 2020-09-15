@@ -3,4 +3,4 @@ title: github-1
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

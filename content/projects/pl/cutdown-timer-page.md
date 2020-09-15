@@ -3,4 +3,4 @@ title: cutdown-timer-page
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

@@ -3,4 +3,4 @@ title: bem-query-engine
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

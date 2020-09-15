@@ -3,4 +3,4 @@ title: coding-conventions
 description: ''
 ---
 
-example
+Opis w przygotowaniu.

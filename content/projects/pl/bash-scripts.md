@@ -3,4 +3,4 @@ title: bash-scripts
 description: ''
 ---
 
-example
+Opis w przygotowaniu.
