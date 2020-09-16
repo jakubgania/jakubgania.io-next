@@ -1,4 +1,6 @@
 const webpack = require("webpack");
+  
+// const BASE_PATH = process.env.BASE_PATH || '/jakubgania.io/'
 
 export default {
   /*
@@ -77,6 +79,7 @@ export default {
    */
   css: ['aos/dist/aos.css',],
   router: {
+    // base: BASE_PATH,
     middleware: 'i18n'
   },
   /*
