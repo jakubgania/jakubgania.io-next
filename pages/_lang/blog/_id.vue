@@ -70,7 +70,7 @@
 export default {
   scrollToTop: false,
   async asyncData({ $content, params, store }) {
-    const paginationValue = 3
+    const paginationValue = 2
     let pageNumber = 1
     let numberOfPagination = null
     let language = store.state.locale

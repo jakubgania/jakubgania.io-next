@@ -1,11 +1,7 @@
 <template>
   <div>
     <div class="top-image-section">
-      <img
-        src="https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/top-image.jpg"
-        alt=""
-        class="top-image"
-      />
+      <img :src="post.topImageSrc" :alt="post.topImageAlt" class="top-image" />
     </div>
     <div class="content-container">
       <template v-if="true">
