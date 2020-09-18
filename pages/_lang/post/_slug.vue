@@ -47,7 +47,7 @@
             <div>
               <figure class="related-posts-figure">
                 <img
-                  src="https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/top-image.jpg"
+                  :src="next.topImageSrc"
                   alt=""
                   class="related-posts-image"
                 />
@@ -70,7 +70,7 @@
             <div>
               <figure class="related-posts-figure">
                 <img
-                  src="https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/top-image.jpg"
+                  :src="prev.topImageSrc"
                   alt=""
                   class="related-posts-image"
                 />
@@ -122,7 +122,7 @@ export default {
     numberOfPosts = allPosts.length
 
     const [relatedPrev, relatedNext] = await $content('posts/' + language)
-      .only(['title', 'slug', 'creationDate'])
+      .only(['title', 'slug', 'topImageSrc', 'creationDate'])
       .sortBy('creationDate', 'asc')
       .surround(params.slug)
       .fetch()
@@ -135,7 +135,7 @@ export default {
     if (relatedPrev === null) {
       const related = await $content('posts/' + language)
         .where({ index: { $ne: post.index } })
-        .only(['title', 'slug', 'creationDate'])
+        .only(['title', 'slug', 'topImageSrc', 'creationDate'])
         .sortBy('creationDate', 'asc')
         .limit(2)
         .fetch()
@@ -147,7 +147,7 @@ export default {
     if (relatedNext === null) {
       const related = await $content('posts/' + language)
         .where({ index: { $ne: post.index } })
-        .only(['title', 'slug', 'creationDate'])
+        .only(['title', 'slug', 'topImageSrc', 'creationDate'])
         .sortBy('creationDate', 'desc')
         .limit(2)
         .fetch()
@@ -171,7 +171,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .post {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
@@ -180,6 +180,44 @@ export default {
   font-size: 17.4px;
   max-width: 1000px;
   color: #000;
+}
+.nuxt-content a {
+  color: #06f;
+  text-decoration: none;
+}
+.nuxt-content p {
+  margin-bottom: 20px;
+}
+.nuxt-content ul {
+  list-style: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.nuxt-content li {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #06f;
+    position: absolute;
+    top: 14px;
+    left: -18px;
+  }
+}
+.nuxt-content ul li a {
+  overflow-wrap: break-word;
+}
+.nuxt-content p img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.nuxt-content iframe {
+  width: 100%;
+  height: 450px;
 }
 @media only screen and (max-width: 600px) {
   .post {

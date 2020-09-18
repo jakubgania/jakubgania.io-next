@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div
-      class="top-image--light"
-      style="margin-top: -6px; margin-bottom: 40px;"
-    >
+    <div class="top-image--light" style="margin-top: -6px;">
       <div
         data-aos="fade-in"
         data-aos-dealy="100"
@@ -30,7 +27,12 @@
             <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
               <div class="blog-posts-container">
                 <div class="image-section">
-                  <div class="image-container"></div>
+                  <div class="image-container-er">
+                    <div
+                      class="img-wrap"
+                      :style="`background-image: url(${post.topImageSrc})`"
+                    ></div>
+                  </div>
                 </div>
                 <div class="blog-post-item-eer4">
                   <div class="post-main-title">
@@ -53,7 +55,7 @@
           v-if="
             ($route.params.id < numberOfPagination ||
               $route.params.id == undefined) &&
-            numberOfPagination > 3
+            numberOfPagination > 2
           "
           class="pagination-button-section"
         >
@@ -70,7 +72,7 @@
 export default {
   scrollToTop: false,
   async asyncData({ $content, params, store }) {
-    const paginationValue = 2
+    const paginationValue = 4
     let pageNumber = 1
     let numberOfPagination = null
     let language = store.state.locale
@@ -100,10 +102,12 @@ export default {
     }
 
     const posts = await $content('posts/' + language, params.slug)
-      .only(['title', 'description', 'slug', 'creationDate'])
-      .sortBy('creationDate', 'desc')
+      .only(['title', 'topImageSrc', 'description', 'slug', 'creationDate'])
+      .sortBy('index', 'desc')
       .limit(pageNumber * paginationValue)
       .fetch()
+
+    console.log('posts ', posts)
 
     return {
       posts,
@@ -149,7 +153,7 @@ export default {
   height: 40vw;
   min-height: 200px;
   margin-top: -6px;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
   position: relative;
 
   &--dark {
@@ -189,8 +193,8 @@ export default {
   -webkit-font-smoothing: antialiased;
 }
 .post-link-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 60px;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
 }
@@ -198,8 +202,8 @@ export default {
   color: #bfbfbf;
 }
 .post-main-title {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   letter-spacing: 0.4px;
   display: flex;
   // padding-top: 2px;
@@ -254,20 +258,36 @@ export default {
   box-shadow: 2px 1000px 1px #fff inset;
 }
 .image-section {
-  width: 35%;
+  width: 40%;
 }
-.image-container {
+.image-container-er {
   background-color: #f2f2f2;
   position: relative;
   width: 100%;
+}
+.image-container-er::before {
+  display: block;
+  content: '';
+  width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.img-wrap {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
 }
 .blog-posts-container {
   display: flex;
   flex-flow: wrap;
 }
 .blog-post-item-eer4 {
-  width: 65%;
+  width: 60%;
   padding-left: 24px;
 }
 

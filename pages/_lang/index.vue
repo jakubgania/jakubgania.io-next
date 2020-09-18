@@ -215,7 +215,12 @@
               >
                 <div class="blog-posts-container">
                   <div class="image-section">
-                    <div class="image-container"></div>
+                    <div class="image-container-er">
+                      <div
+                        class="img-wrap-blog"
+                        :style="`background-image: url(${post.topImageSrc})`"
+                      ></div>
+                    </div>
                   </div>
                   <div class="blog-post-item-eer4">
                     <div class="post-main-title">
@@ -449,8 +454,8 @@ export default {
     ).fetch()
 
     const posts = await $content('posts/' + language, params.slug)
-      .only(['title', 'description', 'slug', 'creationDate'])
-      .sortBy('creationDate', 'desc')
+      .only(['title', 'topImageSrc', 'description', 'slug', 'creationDate'])
+      .sortBy('index', 'desc')
       .limit(3)
       .fetch()
 
@@ -776,18 +781,11 @@ export default {
   width: 65%;
   padding-left: 24px;
 }
-.post-link-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-  font-family: 'Roboto Mono', monospace;
-}
 .post-main-title {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   letter-spacing: 0.4px;
   display: flex;
-  // padding-top: 2px;
   padding-bottom: 4px;
 }
 .post-link {
@@ -834,7 +832,7 @@ export default {
 .more-posts-button {
   border-radius: 6px;
   font-weight: bold;
-  letter-spacing: 0.2px;
+  letter-spacing: 2px;
   padding: 0.5rem 3rem;
   color: black;
   font-size: 12px;
@@ -847,6 +845,14 @@ export default {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 2px solid transparent;
+    letter-spacing: 2.8px;
+    background-image: none;
+    transition: all 0.2s ease;
+  }
 }
 .projects-section {
   max-width: 1600px;
@@ -1007,6 +1013,41 @@ export default {
   z-index: 3;
   position: absolute;
   padding: 2em 1.5em 1.5em 2em;
+}
+.image-container-er {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.image-container-er::before {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.img-wrap-blog {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.post-link-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+
+  &:hover {
+    .img-wrap-blog {
+      transform: scale(1.1);
+    }
+  }
 }
 
 @media only screen and (max-width: 1100px) {

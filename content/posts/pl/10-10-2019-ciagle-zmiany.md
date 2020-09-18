@@ -1,6 +1,6 @@
 ---
 title: Ciągłe zmiany
-creationDate: '10-10-2019 23:08'
+creationDate: 10-10-2019 23:08
 description: Ciągłe zmiany
 keywords: zmiany, ulepszenia, poprawki, dalszy rozwój
 topImageSrc: ''
