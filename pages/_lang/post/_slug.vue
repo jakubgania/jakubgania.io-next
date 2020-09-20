@@ -318,6 +318,7 @@ export default {
 }
 .related-post-item-date {
   font-size: 12px;
+  letter-spacing: 0.8px;
   font-weight: 500;
   transition: padding-left 0.5s ease;
 }
