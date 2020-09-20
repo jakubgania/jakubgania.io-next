@@ -432,7 +432,6 @@ import {
   mdiTwitter,
   mdiYoutube,
 } from '@mdi/js'
-// import $ from 'jquery'
 import IconComponent from '../../components/icon'
 import Image1 from '../../assets/images/background-home.jpg'
 import Image2 from '../../assets/images/stickers-home.jpg'
@@ -441,7 +440,6 @@ import Image4 from '../../assets/images/dotted-wawes-light.jpg'
 
 export default {
   async asyncData({ $content, params, store }) {
-    // const paginationValue = 3
     let language = store.state.locale
 
     if (params.lang === 'de') {
@@ -499,7 +497,7 @@ export default {
       desc2:
         'Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatej integrcji wielu komponentów. To naprawdę wiele zalet i możliwości oraz inne podejśćie do budowania złożonych struktór. Jest to kierunek w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga.',
       desc3:
-        'Dziedina jaką jest inżynieria oprogramowania jest złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, wysublimowane architektóry, bezpieczeńśtwo, bazy danych ... Wymieniać można bez końca a trndy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane.',
+        'Dziedina jaką jest inżynieria oprogramowania jest złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, wysublimowane architektury, bezpieczeńśtwo, bazy danych ... Wymieniać można bez końca a trndy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane.',
       desc4:
         'Szeroko pojęte IT i różne inne technologie cały czas zasakują i rozwijają się bardzo szybko. Takie zagadnienia jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko znaleźć duży zbiór danych niewspomagany czy to przez SI czy analizę Big Data. ',
     }
@@ -548,7 +546,6 @@ export default {
 .content-section {
   max-width: 1000px;
   width: 100%;
-  // position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -556,8 +553,6 @@ export default {
   padding: 14px;
 }
 .section {
-  // border-top: 2px solid #0066ff;
-  // border-bottom: 2px solid #0066ff;
   padding-top: 80px;
   padding-bottom: 80px;
   min-height: 100px;
@@ -757,7 +752,6 @@ export default {
 }
 .blog-section-wrapper {
   margin: auto;
-  // background-color: black;
 }
 .blog-section-container {
   max-width: 1600px;
@@ -771,7 +765,6 @@ export default {
   font-weight: 800;
   text-align: center;
   margin-bottom: 80px;
-  // color: white;
 }
 .blog-posts-container {
   display: flex;
@@ -806,7 +799,6 @@ export default {
   padding-top: 4px;
   letter-spacing: 0.4px;
   padding-bottom: 10px;
-  // color: white;
 }
 .creation-date {
   text-align: left;
@@ -826,7 +818,6 @@ export default {
 }
 .pagination-button-section {
   margin-top: 120px;
-  // margin-bottom: 140px;
   text-align: center;
 }
 .more-posts-button {
@@ -882,7 +873,6 @@ export default {
 .projects-item ul li {
   margin-bottom: 40px;
   letter-spacing: 1.2px;
-  // text-overflow: ellipsis;
 }
 .projects-item ul li::before {
   content: '\2022';
