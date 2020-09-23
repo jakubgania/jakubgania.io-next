@@ -115,7 +115,15 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@nuxtjs/apollo',
   ],
+
+  apollo: {
+    clientConfigs: {
+      default: '~/plugins/apollo-config.js'
+    },
+    authenticationType: 'Bearer'
+  },
 
   pwa: {
     meta: {

@@ -27,6 +27,9 @@
       <div class="grid grid-rows-1">
         Opis moich projektów programistycznych
       </div>
+      <div>
+        {{ test }}
+      </div>
       <div class="grid grid-rows-1">
         <ul>
           <li
@@ -56,6 +59,24 @@
 </template>
 
 <script>
+import gql from 'graphql-tag'
+
+// const test = gql`
+//   query test() {
+//     viewer {
+//       name
+//     }
+//   }
+// `
+
+const testF = gql`
+  query test {
+    viewer {
+      login
+    }
+  }
+`
+
 export default {
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
@@ -71,6 +92,15 @@ export default {
     return {
       projects,
     }
+  },
+  apollo: {
+    $loadingKey: 'loading',
+    test: {
+      query: testF,
+    },
+  },
+  mounted() {
+    console.log('result ', this.test)
   },
   head() {
     return {
