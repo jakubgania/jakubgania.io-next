@@ -28,7 +28,7 @@
         Opis moich projektów programistycznych
       </div>
       <div>
-        {{ viewer.login }}
+        <!-- {{ viewer.name }} -->
       </div>
       <div class="grid grid-rows-1">
         <ul>
@@ -61,10 +61,54 @@
 <script>
 import gql from 'graphql-tag'
 
-const testF = gql`
+const githubDataQuery = gql`
   query viewer {
     viewer {
-      login
+      namee
+      id
+      updatedAt
+      bio
+      avatarUrl
+      location
+      url
+      pinnedItems(first: 6) {
+        edges {
+          node {
+            ... on Repository {
+              name
+              description
+              homepageUrl
+              pushedAt
+              url
+              openGraphImageUrl
+              usesCustomOpenGraphImage
+              refs(refPrefix: "refs/heads/", last: 3) {
+                nodes {
+                  name
+                  target {
+                    ... on Commit {
+                      history {
+                        totalCount
+                      }
+                      messageHeadline
+                      pushedDate
+                    }
+                  }
+                }
+              }
+              repositoryTopics(first: 100) {
+                edges {
+                  node {
+                    topic {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 `
@@ -87,21 +131,35 @@ export default {
   },
   data() {
     return {
-      test: '',
+      githubData: null,
       loading: 0,
+      error: null,
     }
   },
   apollo: {
     viewer: {
       loadingKey: 'loading',
-      query: testF,
+      query: githubDataQuery,
+      error(error) {
+        this.error = JSON.stringify(error.message)
+        console.log('graphql error message ', error.message)
+      },
     },
-    // test: {
-    // },
-    // update: (data) => data.test,
   },
   mounted() {
     console.log('result ', this.viewer)
+    console.log('githubData ', this.githubData)
+    const featuredRepoList = []
+
+    if (this.viewer) {
+      this.viewer.pinnedItems.edges
+        .map((n) => n.node)
+        .concat()
+        .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
+        .forEach((r) => featuredRepoList.push(r))
+
+      console.log('dddff ', featuredRepoList)
+    }
   },
   head() {
     return {
