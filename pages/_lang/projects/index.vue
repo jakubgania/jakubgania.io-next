@@ -28,7 +28,7 @@
         Opis moich projektów programistycznych
       </div>
       <div>
-        {{ test }}
+        {{ viewer.login }}
       </div>
       <div class="grid grid-rows-1">
         <ul>
@@ -61,16 +61,8 @@
 <script>
 import gql from 'graphql-tag'
 
-// const test = gql`
-//   query test() {
-//     viewer {
-//       name
-//     }
-//   }
-// `
-
 const testF = gql`
-  query test {
+  query viewer {
     viewer {
       login
     }
@@ -93,14 +85,23 @@ export default {
       projects,
     }
   },
+  data() {
+    return {
+      test: '',
+      loading: 0,
+    }
+  },
   apollo: {
-    $loadingKey: 'loading',
-    test: {
+    viewer: {
+      loadingKey: 'loading',
       query: testF,
     },
+    // test: {
+    // },
+    // update: (data) => data.test,
   },
   mounted() {
-    console.log('result ', this.test)
+    console.log('result ', this.viewer)
   },
   head() {
     return {
