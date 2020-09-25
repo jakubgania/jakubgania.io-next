@@ -21,14 +21,80 @@
         </div>
       </div>
     </div>
-    <div class="list-projects-container">
-      <!-- breadcrumb -->
-      <!-- subpage title section component -->
+    <div class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl">
+      <div
+        class="flex flex-col item-center py-4 lg:gap-8 lg:grid lg:grid-cols-3"
+      >
+        <div
+          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm rounded-md bg-gray-90"
+        >
+          <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-80">
+            tags
+          </div>
+          <img
+            :src="data.viewer.avatarUrl"
+            alt="My Avatar"
+            class="w-24 -mt-16 rounded-full shadow-xl"
+          />
+          <h2 class="text-xl font-bold">
+            Jakub Gania
+          </h2>
+          <div class="flex flex-col flex-grow px-2 mt-4">
+            <div v-if="data.viewer.location" class="flex text-gray-30">
+              <div class="flex text-gray-30">
+                <span role="img" aria-label="Graduate Emoji">
+                  🗺️
+                </span>
+                <span class="ml-2">
+                  {{ data.viewer.location }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid w-full grid-cols-3 mt-4 text-xs font-bold uppercase gap-2px"
+          >
+            <a
+              href="https://purepc.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
+            >
+              <span class="ml-1">GitHub</span>
+            </a>
+            <a
+              href="https://purepc.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
+            >
+              <span class="ml-1">LinkedIn</span>
+            </a>
+            <a
+              href="https://purepc.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
+            >
+              <span class="ml-1">YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>{{ data.viewer.name }}</div>
+    </div>
+    <!-- <div class="list-projects-container">
       <div class="grid grid-rows-1">
         Opis moich projektów programistycznych
       </div>
       <div>
-        <!-- {{ viewer.name }} -->
+        {{ data.viewer.name }}
+      </div>
+      <div>
+        {{ data.viewer.bio }}
+      </div>
+      <div>
+        {{ data.viewer.location }}
       </div>
       <div class="grid grid-rows-1">
         <ul>
@@ -37,10 +103,6 @@
             :key="project.slug"
             class="post-link-item"
           >
-            <!-- $i18n.path(project.slug) -->
-            <!-- :to="{ name: 'projects-slug', params: { slug: project.slug } }" -->
-            <!-- :to="$i18n.path('projects/' + project.slug)" -->
-            <!-- "localePath({ name: 'category-slug', params: { slug: category.slug } })" -->
             <nuxt-link
               :to="$i18n.path('projects/' + project.slug)"
               class="post-link"
@@ -54,7 +116,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -64,7 +126,7 @@ import gql from 'graphql-tag'
 const githubDataQuery = gql`
   query viewer {
     viewer {
-      namee
+      name
       id
       updatedAt
       bio
@@ -114,7 +176,7 @@ const githubDataQuery = gql`
 `
 
 export default {
-  async asyncData({ $content, params, store }) {
+  async asyncData({ app, $content, params, store }) {
     let language = store.state.locale
 
     if (params.lang === 'de') {
@@ -125,27 +187,35 @@ export default {
       .only(['title', 'description', 'slug'])
       .fetch()
 
+    const { data } = await app.apolloProvider.defaultClient.query({
+      query: githubDataQuery,
+    })
+
+    console.log('static ', data)
+    console.log('static format', JSON.parse(JSON.stringify(data.viewer)))
+
     return {
       projects,
+      data,
     }
   },
   data() {
     return {
-      githubData: null,
+      githubDataQuery,
       loading: 0,
       error: null,
     }
   },
-  apollo: {
-    viewer: {
-      loadingKey: 'loading',
-      query: githubDataQuery,
-      error(error) {
-        this.error = JSON.stringify(error.message)
-        console.log('graphql error message ', error.message)
-      },
-    },
-  },
+  // apollo: {
+  //   viewer: {
+  //     loadingKey: 'loading',
+  //     query: githubDataQuery,
+  //     error(error) {
+  //       this.error = JSON.stringify(error.message)
+  //       console.log('graphql error message ', error.message)
+  //     },
+  //   },
+  // },
   mounted() {
     console.log('result ', this.viewer)
     console.log('githubData ', this.githubData)
