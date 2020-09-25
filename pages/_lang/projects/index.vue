@@ -80,6 +80,52 @@
             </a>
           </div>
         </div>
+        <div class="flex flex-col h-full col-span-2 gap-4 mt-4 lg:mt-0">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-xl font-bold">
+              Bio
+            </h2>
+            <div
+              class="flex flex-col h-full gap-4 p-4 rounded-md bg-gray-90 lg:mt-0"
+            >
+              <div class="grid grid-flow-row gap-4">
+                <p>
+                  <span>
+                    {{ data.viewer.bio }}
+                  </span>
+                </p>
+                <p>
+                  more text example text more text
+                </p>
+                <p>
+                  more text example text more text
+                </p>
+                <p class="text-lg font-bold">
+                  example text example text
+                </p>
+                <p>
+                  <span role="img" aria-label="inbox emoji" class="mr-1">
+                    📥️
+                  </span>
+                  DMs are open on
+                  <a
+                    class="transition-colors duration-200 text-blue-50 hover:text-blue-40"
+                    href="https://linkedin.com/in/"
+                  >
+                    LinkedIn
+                  </a>
+                  and
+                  <a
+                    class="transition-colors duration-200 text-blue-50 hover:text-blue-40"
+                    href="https://twitter.com/"
+                  >
+                    Twitter
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div>{{ data.viewer.name }}</div>
     </div>
@@ -204,6 +250,17 @@ export default {
       githubDataQuery,
       loading: 0,
       error: null,
+      techTags: [
+        'JavaScript',
+        'TypeScript',
+        'React',
+        'GraphQL',
+        'PWA',
+        'Express',
+        'Nodejs',
+        'SQL',
+        'Cloud'
+      ]
     }
   },
   // apollo: {
