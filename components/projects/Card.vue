@@ -23,15 +23,94 @@
         <div
           class="w-6 my-3 ml-4 border border-l-0 border-r-0 rounded border-gray-70"
         />
+        <div class="px-4 pb-3" style="display: grid;">
+          <div
+            style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
+          >
+            <icon-component :path="mdiMessageProcessingOutline" :size="14" />
+            <div
+              class="w-full truncate"
+              style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
+            >
+              {{ lastCommitMsg }}
+            </div>
+          </div>
+          <div
+            style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
+          >
+            <icon-component :path="mdiClockTimeFiveOutline" :size="14" />
+            <div
+              style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
+            >
+              {{ lastCommitTime }}
+              <span class="text-gray-50">on</span>
+              {{ ' ' }}
+              {{ lastCommitBranch }}
+              <div v-if="lastCommitTime.match(/[ms]/) && false">
+                <span role="img" aria-label="sparkles emoji">
+                  {{ ' ' }}
+                  ✨️
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
+          >
+            <icon-component :path="mdiConsole" :size="14" />
+            <div
+              style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
+            >
+              {{ commitCount }} commits <span class="text-gray-50">on</span>
+              {{ ' ' }}
+              {{ branchCount }} {{ branchCount > 1 ? 'branches' : 'branch' }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div :class="classes.buttons.base">
-      buttons
+      <template v-if="demoLink">
+        <a
+          :href="repoLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          :class="classes.buttons.btn + ' ' + classes.buttons.left"
+        >
+          GITHUB
+        </a>
+        <a
+          :href="demoLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          :class="classes.buttons.btn + ' ' + classes.buttons.right"
+        >
+          LIVE SITE
+        </a>
+      </template>
+      <template v-else>
+        <a
+          :href="repoLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          :class="classes.buttons.btn + ' ' + classes.buttons.only"
+        >
+          GITHUB
+        </a>
+      </template>
     </div>
   </div>
 </template>
 
 <script>
+import moment from 'moment'
+import {
+  mdiMessageProcessingOutline,
+  mdiClockTimeFiveOutline,
+  mdiConsole,
+} from '@mdi/js'
+import IconComponent from '../../components/icon'
+
 export default {
   props: {
     repoData: {
@@ -44,6 +123,9 @@ export default {
       type: Boolean,
       default: true,
     },
+  },
+  components: {
+    'icon-component': IconComponent,
   },
   data() {
     return {
@@ -76,10 +158,24 @@ export default {
       topics: null,
       repoLink: null,
       repoName: null,
+      recentRef: null,
+      lastCommitMsg: null,
+      lastCommitTime: null,
+      lastCommitBranch: null,
+      commitCount: null,
+      branchCount: null,
+      demoLink: null,
+      mdiMessageProcessingOutline,
+      mdiClockTimeFiveOutline,
+      mdiConsole,
     }
   },
   created() {
-    this.topics = null
+    console.log('data in card component ', this.repoData)
+    this.topics = this.repoData.repositoryTopics.edges.map(
+      (e) => e.node.topic.name
+    )
+    console.log('topics ', this.topics)
     this.repoLink = this.repoData.url
     this.repoName = this.repoData.name.includes('frontend')
       ? this.repoData.name
@@ -87,6 +183,22 @@ export default {
           .split('-')
           .join(' ')
       : this.repoData.name.split('-').join(' ')
+
+    this.recentRef = this.repoData.refs.nodes
+      .concat()
+      .sort((a, b) => (a.target.pushDate < b.target.pushDate ? 1 : -1))[0]
+    console.log('recent ref ', this.recentRef)
+    this.lastCommitMsg = this.recentRef.target.messageHeadline
+    console.log('last commit time - before ', this.recentRef.target.pushDate)
+    this.lastCommitTime = moment(this.recentRef.target.pushDate).fromNow()
+    console.log('last commit time ', this.lastCommitTime)
+    this.lastCommitBranch = this.recentRef.name
+    this.commitCount = this.repoData.refs.nodes.reduce(
+      (acc, curr) => acc + curr.target.history.totalCount,
+      0
+    )
+    this.branchCount = this.repoData.refs.nodes.length
+    this.demoLink = this.repoData.homepageUrl
   },
 }
 </script>
