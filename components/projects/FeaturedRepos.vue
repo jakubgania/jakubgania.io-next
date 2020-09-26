@@ -6,15 +6,18 @@
         (last commit {{ lastCommitTime }})
       </div>
     </h2>
-    <div class="grid-grid-cols-1 gap-8 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <!-- lodaing component -->
-      card component
+      <template v-for="item in featuredRepoList">
+        <card-component :key="item.name" :repoData="item" :useImage="true" />
+      </template>
     </div>
   </div>
 </template>
 
 <script>
 import moment from 'moment'
+import CardComponent from './Card'
 
 export default {
   props: {
@@ -24,6 +27,9 @@ export default {
         return {}
       },
     },
+  },
+  components: {
+    'card-component': CardComponent,
   },
   data() {
     return {

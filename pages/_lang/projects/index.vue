@@ -161,7 +161,7 @@ const githubDataQuery = gql`
       avatarUrl
       location
       url
-      pinnedItems(first: 6) {
+      pinnedItems(first: 3) {
         edges {
           node {
             ... on Repository {
