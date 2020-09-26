@@ -107,9 +107,7 @@
           </div>
         </div>
       </div>
-      <div>
-        <!-- pp -->
-      </div>
+      <featured-repos-component :data="data" />
     </div>
     <!-- <div class="list-projects-container">
       <div class="grid grid-rows-1">
@@ -151,6 +149,7 @@
 <script>
 import gql from 'graphql-tag'
 import TopImage from '@/components/projects/TopImage'
+import FeaturedRepos from '@/components/projects/FeaturedRepos'
 
 const githubDataQuery = gql`
   query viewer {
@@ -230,6 +229,7 @@ export default {
   },
   components: {
     'top-image-component': TopImage,
+    'featured-repos-component': FeaturedRepos,
   },
   data() {
     return {
