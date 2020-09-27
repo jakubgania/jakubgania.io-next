@@ -13,9 +13,9 @@
         >
           <div class="overflow-hidden bg-gray-100 rounded p-2px">
             <div class="flex p-1">
-              <div class="w-1.5 h-1.5 rounded-full bg-gray-70" />
-              <div class="w-1.5 h-1.5 ml-1 rounded-full bg-gray-70" />
-              <div class="w-1.5 h-1.5 ml-1 rounded-full bg-gray-70" />
+              <div class="w-2 h-2 rounded-full bg-red-60" />
+              <div class="w-2 h-2 ml-1 rounded-full bg-yellow" />
+              <div class="w-2 h-2 ml-1 rounded-full bg-green-60" />
             </div>
             <div class="relative pb-1/2" style="padding-bottom: 50%;">
               <img
