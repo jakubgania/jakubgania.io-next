@@ -271,6 +271,12 @@ const githubDataQuery = gql`
         }
       }
     }
+    rateLimit {
+      limit
+      cost
+      remaining
+      resetAt
+    }
   }
 `
 
@@ -290,7 +296,6 @@ export default {
       query: githubDataQuery,
     })
 
-    console.log('static ', data)
     console.log('static format', JSON.parse(JSON.stringify(data.viewer)))
 
     return {
@@ -342,8 +347,10 @@ export default {
         .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
         .forEach((r) => featuredRepoList.push(r))
 
-      console.log('dddff ', featuredRepoList)
+      // console.log('dddff ', featuredRepoList)
     }
+
+    console.log('static ', this.data)
   },
   head() {
     return {
