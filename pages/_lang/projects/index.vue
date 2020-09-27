@@ -9,7 +9,9 @@
           class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm rounded-md bg-gray-90"
         >
           <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-80">
-            tags
+            <template v-for="item in techTags">
+              <tag-component :key="item.id" :name="item" />
+            </template>
           </div>
           <img
             :src="data.viewer.avatarUrl"
@@ -149,6 +151,7 @@
 <script>
 import gql from 'graphql-tag'
 import TopImage from '@/components/projects/TopImage'
+import TagComponent from '@/components/projects/Tag'
 import FeaturedRepos from '@/components/projects/FeaturedRepos'
 
 const githubDataQuery = gql`
@@ -229,6 +232,7 @@ export default {
   },
   components: {
     'top-image-component': TopImage,
+    'tag-component': TagComponent,
     'featured-repos-component': FeaturedRepos,
   },
   data() {
