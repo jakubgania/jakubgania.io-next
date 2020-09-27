@@ -122,6 +122,7 @@
         </div>
       </div>
       <featured-repos-component :data="data" />
+      <recent-repos-component :data="data" />
     </div>
     <!-- <div class="list-projects-container">
       <div class="grid grid-rows-1">
@@ -165,6 +166,7 @@ import gql from 'graphql-tag'
 import TopImage from '@/components/projects/TopImage'
 import TagComponent from '@/components/projects/Tag'
 import FeaturedRepos from '@/components/projects/FeaturedRepos'
+import RecentRepos from '@/components/projects/RecentRepos'
 
 const githubDataQuery = gql`
   query viewer {
@@ -214,6 +216,60 @@ const githubDataQuery = gql`
           }
         }
       }
+      repositories(
+        orderBy: { field: PUSHED_AT, direction: ASC }
+        last: 3
+        privacy: PUBLIC
+        isFork: false
+      ) {
+        edges {
+          node {
+            ... on Repository {
+              name
+              description
+              homepageUrl
+              pushedAt
+              url
+              openGraphImageUrl
+              usesCustomOpenGraphImage
+              refs(refPrefix: "refs/heads/", last: 3) {
+                nodes {
+                  name
+                  target {
+                    ... on Commit {
+                      history {
+                        totalCount
+                      }
+                      messageHeadline
+                      pushedDate
+                    }
+                  }
+                }
+              }
+              languages(first: 5) {
+                edges {
+                  node {
+                    name
+                    color
+                  }
+                }
+              }
+              repositoryTopics(first: 5) {
+                edges {
+                  node {
+                    topic {
+                      name
+                    }
+                  }
+                }
+              }
+              pullRequests(first: 5) {
+                totalCount
+              }
+            }
+          }
+        }
+      }
     }
   }
 `
@@ -246,6 +302,7 @@ export default {
     'top-image-component': TopImage,
     'tag-component': TagComponent,
     'featured-repos-component': FeaturedRepos,
+    'recent-repos-component': RecentRepos,
   },
   data() {
     return {
@@ -276,8 +333,6 @@ export default {
   //   },
   // },
   mounted() {
-    console.log('result ', this.viewer)
-    console.log('githubData ', this.githubData)
     const featuredRepoList = []
 
     if (this.viewer) {
