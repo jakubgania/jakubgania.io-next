@@ -3,7 +3,9 @@
     <div :class="classes.base">
       <div :class="classes.head">
         <div :class="classes.tags">
-          tags
+          <template v-for="item in topics.sort().reverse()">
+            <tag-component :key="item.id" :name="item.split('-').join(' ')" />
+          </template>
         </div>
       </div>
       <div class="flex flex-col flex-grow">
@@ -109,6 +111,7 @@ import {
   mdiClockTimeFiveOutline,
   mdiConsole,
 } from '@mdi/js'
+import TagComponent from '../../components/projects/Tag'
 import IconComponent from '../../components/icon'
 
 export default {
@@ -125,6 +128,7 @@ export default {
     },
   },
   components: {
+    'tag-component': TagComponent,
     'icon-component': IconComponent,
   },
   data() {
