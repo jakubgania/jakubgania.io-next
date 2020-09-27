@@ -32,7 +32,7 @@
             </div>
           </div>
           <div
-            class="grid w-full grid-cols-3 mt-4 text-xs font-bold uppercase gap-2px"
+            class="grid w-full grid-cols-3 mt-4 text-xs font-bold uppercase gap-px"
           >
             <a
               href="https://purepc.pl"

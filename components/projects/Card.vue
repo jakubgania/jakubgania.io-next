@@ -3,9 +3,28 @@
     <div :class="classes.base">
       <div :class="classes.head">
         <div :class="classes.tags">
-          <template v-for="item in topics.sort().reverse()">
+          <template v-for="item in topics">
             <tag-component :key="item.id" :name="item.split('-').join(' ')" />
           </template>
+        </div>
+        <div
+          v-if="repoData.usesCustomOpenGraphImage && useImage"
+          class="px-4 mb-4"
+        >
+          <div class="overflow-hidden bg-gray-100 rounded p-2px">
+            <div class="flex p-1">
+              <div class="w-1.5 h-1.5 rounded-full bg-gray-70" />
+              <div class="w-1.5 h-1.5 ml-1 rounded-full bg-gray-70" />
+              <div class="w-1.5 h-1.5 ml-1 rounded-full bg-gray-70" />
+            </div>
+            <div class="relative pb-1/2" style="padding-bottom: 50%;">
+              <img
+                :src="repoData.openGraphImageUrl"
+                :alt="repoName + ' image'"
+                class="absolute object-cover w-full h-full rounded-b-sm"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex flex-col flex-grow">
@@ -149,7 +168,7 @@ export default {
           stat: 'monospace text-xs',
         },
         buttons: {
-          base: 'grid grid-cols-2 gap-2px text-xs font-bold uppercase',
+          base: 'grid gap-px grid-cols-2 text-xs font-bold uppercase',
           icon: 'h-3 w-3 mr-1',
           btn:
             'tracking-wide flex justify-center items-center uppercase font-bold p-1 bg-gray-70 hover:bg-gray-60 hover:text-white border-2 border-transparent focus:outline-none focus:border-gray-10 transition duration-200',
@@ -176,10 +195,10 @@ export default {
   },
   created() {
     console.log('data in card component ', this.repoData)
-    this.topics = this.repoData.repositoryTopics.edges.map(
-      (e) => e.node.topic.name
-    )
-    console.log('topics ', this.topics)
+    this.topics = this.repoData.repositoryTopics.edges
+      .map((e) => e.node.topic.name)
+      .sort()
+      .reverse()
     this.repoLink = this.repoData.url
     this.repoName = this.repoData.name.includes('frontend')
       ? this.repoData.name
