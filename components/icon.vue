@@ -1,5 +1,8 @@
 <template>
-  <svg :style="{ width: size + 'px', height: size + 'px' }" viewBox="0 0 24 24">
+  <svg
+    :style="{ width: size + 'px', height: size + 'px', fill: color }"
+    viewBox="0 0 24 24"
+  >
     <path :d="path" />
   </svg>
 </template>
@@ -14,6 +17,10 @@ export default {
     size: {
       type: Number,
       default: 24,
+    },
+    color: {
+      type: String,
+      default: '#000',
     },
   },
 }

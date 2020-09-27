@@ -98,7 +98,10 @@
           rel="noopener noreferrer"
           :class="classes.buttons.btn + ' ' + classes.buttons.left"
         >
-          GITHUB
+          <icon-component :path="mdiXml" :size="14" :color="'#fff'" />
+          <span style="margin-left: 8px;">
+            GITHUB
+          </span>
         </a>
         <a
           :href="demoLink"
@@ -106,7 +109,10 @@
           rel="noopener noreferrer"
           :class="classes.buttons.btn + ' ' + classes.buttons.right"
         >
-          LIVE SITE
+          <icon-component :path="mdiLinkVariant" :size="14" :color="'#fff'" />
+          <span style="margin-left: 8px;">
+            LIVE SITE
+          </span>
         </a>
       </template>
       <template v-else>
@@ -116,7 +122,10 @@
           rel="noopener noreferrer"
           :class="classes.buttons.btn + ' ' + classes.buttons.only"
         >
-          GITHUB
+          <icon-component :path="mdiXml" :size="14" :color="'#fff'" />
+          <span style="margin-left: 8px;">
+            GITHUB
+          </span>
         </a>
       </template>
     </div>
@@ -129,6 +138,8 @@ import {
   mdiMessageProcessingOutline,
   mdiClockTimeFiveOutline,
   mdiConsole,
+  mdiXml,
+  mdiLinkVariant,
 } from '@mdi/js'
 import TagComponent from '../../components/projects/Tag'
 import IconComponent from '../../components/icon'
@@ -168,7 +179,8 @@ export default {
           stat: 'monospace text-xs',
         },
         buttons: {
-          base: 'grid gap-px grid-cols-2 text-xs font-bold uppercase',
+          base:
+            'grid gap-px grid-cols-2 text-xs font-bold uppercase text-white',
           icon: 'h-3 w-3 mr-1',
           btn:
             'tracking-wide flex justify-center items-center uppercase font-bold p-1 bg-gray-70 hover:bg-gray-60 hover:text-white border-2 border-transparent focus:outline-none focus:border-gray-10 transition duration-200',
@@ -191,6 +203,8 @@ export default {
       mdiMessageProcessingOutline,
       mdiClockTimeFiveOutline,
       mdiConsole,
+      mdiXml,
+      mdiLinkVariant,
     }
   },
   created() {
