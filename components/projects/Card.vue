@@ -33,12 +33,12 @@
             :href="repoLink"
             target="_blank"
             rel="noopener noreferrer"
-            class="transition duration-200 text-gray-20 hover:text-gray-10"
+            class="transition duration-200 text-gray-70 hover:text-gray-10"
           >
             {{ repoName }}
           </a>
         </div>
-        <div class="flex-grow px-4 text-sm text-gray-30">
+        <div class="flex-grow px-4 text-sm text-gray-70">
           {{ repoData.description ? repoData.description : 'No description' }}
         </div>
         <div
@@ -48,7 +48,11 @@
           <div
             style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
           >
-            <icon-component :path="mdiMessageProcessingOutline" :size="14" />
+            <icon-component
+              :path="mdiMessageProcessingOutline"
+              :size="14"
+              :color="'#3c0'"
+            />
             <div
               class="w-full truncate"
               style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
@@ -59,7 +63,11 @@
           <div
             style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
           >
-            <icon-component :path="mdiClockTimeFiveOutline" :size="14" />
+            <icon-component
+              :path="mdiClockTimeFiveOutline"
+              :size="14"
+              :color="'#3c0'"
+            />
             <div
               style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
             >
@@ -78,7 +86,7 @@
           <div
             style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
           >
-            <icon-component :path="mdiConsole" :size="14" />
+            <icon-component :path="mdiConsole" :size="14" :color="'#3c0'" />
             <div
               style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
             >
@@ -166,14 +174,14 @@ export default {
       classes: {
         wrap: 'shadow h-full flex flex-col',
         base:
-          'bg-gray-90 rounded-lg rounded-b-none overflow-hidden flex-grow flex flex-col',
-        head: 'flex flex-col justify-between text-gray-30 bg-gray-80',
+          'bg-gray-30 rounded-lg rounded-b-none overflow-hidden flex-grow flex flex-col',
+        head: 'flex flex-col justify-between text-gray-70 bg-gray-20',
         lastCommit: 'text-xs pt-1',
-        tags: 'flex flex-row flex-wrap-reverse justyfy-center pt-4 pb-2',
+        tags: 'flex flex-row flex-wrap-reverse justyfy-center p-4 pt-4 pb-2',
         info: {
           base: 'pb-4',
           header: 'mt-4 pl-4 font-medium tracking-wider mb-1 truncate',
-          description: 'px-4 text-xs text-gray-10 flex-grow',
+          description: 'px-4 text-xs text-gray-40 flex-grow',
           stats:
             'flex flex-col justify-center pl-4 border-l border-solid border-gray-100 text-gray-30 px-4',
           stat: 'monospace text-xs',

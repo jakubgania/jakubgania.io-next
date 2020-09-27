@@ -6,9 +6,9 @@
         class="flex flex-col item-center py-4 lg:gap-8 lg:grid lg:grid-cols-3"
       >
         <div
-          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm rounded-md bg-gray-90"
+          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm rounded-md bg-gray-30"
         >
-          <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-80">
+          <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-20">
             <template v-for="item in techTags">
               <tag-component :key="item.id" :name="item" />
             </template>
@@ -22,8 +22,8 @@
             Jakub Gania
           </h2>
           <div class="flex flex-col flex-grow px-2 mt-4">
-            <div v-if="data.viewer.location" class="flex text-gray-30">
-              <div class="flex text-gray-30">
+            <div v-if="data.viewer.location" class="flex text-gray-70">
+              <div class="flex text-gray-70">
                 <span role="img" aria-label="Graduate Emoji">
                   🗺️
                 </span>
@@ -42,7 +42,7 @@
               rel="noopener noreferrer"
               class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
             >
-              <span class="ml-1">GitHub</span>
+              <span class="ml-1 text-white">GitHub</span>
             </a>
             <a
               href="https://purepc.pl"
@@ -50,7 +50,7 @@
               rel="noopener noreferrer"
               class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
             >
-              <span class="ml-1">LinkedIn</span>
+              <span class="ml-1 text-white">LinkedIn</span>
             </a>
             <a
               href="https://purepc.pl"
@@ -58,7 +58,7 @@
               rel="noopener noreferrer"
               class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
             >
-              <span class="ml-1">YouTube</span>
+              <span class="ml-1 text-white">YouTube</span>
             </a>
           </div>
         </div>
@@ -68,13 +68,25 @@
               Bio
             </h2>
             <div
-              class="flex flex-col h-full gap-4 p-4 rounded-md bg-gray-90 lg:mt-0"
+              class="flex flex-col h-full gap-4 p-4 rounded-md bg-gray-30 lg:mt-0"
             >
               <div class="grid grid-flow-row gap-4">
                 <p>
                   <span>
                     {{ data.viewer.bio }}
                   </span>
+                </p>
+                <p>
+                  more text example text more text
+                </p>
+                <p>
+                  more text example text more text
+                </p>
+                <p>
+                  more text example text more text
+                </p>
+                <p>
+                  more text example text more text
                 </p>
                 <p>
                   more text example text more text
