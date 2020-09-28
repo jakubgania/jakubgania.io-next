@@ -3,10 +3,10 @@
     <top-image-component />
     <div class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl">
       <div
-        class="flex flex-col item-center py-4 lg:gap-8 lg:grid lg:grid-cols-3"
+        class="flex flex-col item-center py-4 lg:gap-4 lg:grid lg:grid-cols-3"
       >
         <div
-          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm rounded-md bg-gray-30"
+          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm bg-gray-30"
         >
           <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-20">
             <template v-for="item in techTags">
@@ -68,7 +68,7 @@
               Bio
             </h2>
             <div
-              class="flex flex-col h-full gap-4 p-4 rounded-md bg-gray-30 lg:mt-0"
+              class="flex flex-col h-full gap-4 p-4 rounded-lg bg-gray-30 lg:mt-0"
             >
               <div class="grid grid-flow-row gap-4">
                 <p>

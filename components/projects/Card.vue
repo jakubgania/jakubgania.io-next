@@ -11,7 +11,7 @@
           v-if="repoData.usesCustomOpenGraphImage && useImage"
           class="px-4 mb-4"
         >
-          <div class="overflow-hidden bg-gray-100 rounded p-2px">
+          <div class="overflow-hidden bg-gray-100 rounded-lg p-2px">
             <div class="flex p-1">
               <div class="w-2 h-2 rounded-full bg-red-60" />
               <div class="w-2 h-2 ml-1 rounded-full bg-yellow" />
@@ -174,7 +174,7 @@ export default {
       classes: {
         wrap: 'shadow h-full flex flex-col',
         base:
-          'bg-gray-30 rounded-lg rounded-b-none overflow-hidden flex-grow flex flex-col',
+          'bg-gray-30 rounded-b-none overflow-hidden flex-grow flex flex-col',
         head: 'flex flex-col justify-between text-gray-70 bg-gray-20',
         lastCommit: 'text-xs pt-1',
         tags: 'flex flex-row flex-wrap-reverse justyfy-center p-4 pt-4 pb-2',
