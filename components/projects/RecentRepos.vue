@@ -13,7 +13,7 @@
         </span>
       </div>
     </h2>
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-2 lg:grid-cols-3">
       <template v-for="item in repositories">
         <card-component
           :key="item.node.name"

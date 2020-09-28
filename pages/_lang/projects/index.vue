@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="main-projects-container">
     <top-image-component />
     <div class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl">
       <div
-        class="flex flex-col item-center py-4 lg:gap-4 lg:grid lg:grid-cols-3"
+        class="flex flex-col item-center py-4 lg:gap-2 lg:grid lg:grid-cols-3"
       >
         <div
-          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm bg-gray-30"
+          class="flex flex-col items-center h-full gap-4 overflow-hidden text-sm bg-gray-10"
         >
           <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-20">
             <template v-for="item in techTags">
@@ -37,28 +37,34 @@
             class="grid w-full grid-cols-3 mt-4 text-xs font-bold uppercase gap-px"
           >
             <a
-              href="https://purepc.pl"
+              href="https://github.com/jakubgania"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
             >
-              <span class="ml-1 text-white">GitHub</span>
+              <span class="ml-1 text-white">
+                GitHub
+              </span>
             </a>
             <a
-              href="https://purepc.pl"
+              href="https://www.linkedin.com/in/jakubgania"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
             >
-              <span class="ml-1 text-white">LinkedIn</span>
+              <span class="ml-1 text-white">
+                LinkedIn
+              </span>
             </a>
             <a
-              href="https://purepc.pl"
+              href="https://www.youtube.com/channel/UCpRXjQ_FgRfAqP6uIsA7UEQ"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center justify-center p-1 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent bg-gray-70 hover:bg-gray-60 hover:text-white focus:outline-none focus:border-gray-10"
             >
-              <span class="ml-1 text-white">YouTube</span>
+              <span class="ml-1 text-white">
+                YouTube
+              </span>
             </a>
           </div>
         </div>
@@ -67,35 +73,40 @@
             <h2 class="text-xl font-bold">
               Bio
             </h2>
-            <div
-              class="flex flex-col h-full gap-4 p-4 rounded-lg bg-gray-30 lg:mt-0"
-            >
+            <div class="flex flex-col h-full gap-4 p-4 bg-gray-10 lg:mt-0">
               <div class="grid grid-flow-row gap-4">
                 <p>
                   <span>
                     {{ data.viewer.bio }}
                   </span>
                 </p>
-                <p>
-                  more text example text more text
+                <p class="text-xs tracking-wide">
+                  I usually put all the projects I create on my Github profile.
+                  Sometimes they are larger applications and sometimes small
+                  test programs.
                 </p>
-                <p>
-                  more text example text more text
+                <p class="text-xs tracking-wide">
+                  I learn different technologies and try to use the acquired
+                  knowledge in code.
                 </p>
-                <p>
-                  more text example text more text
+                <p class="text-xs tracking-wide">
+                  In addition to programming fullstack applications, I also
+                  create larger or smaller scripts in Bash, Python and
+                  JavaScript.
                 </p>
-                <p>
-                  more text example text more text
+                <p class="text-xs tracking-wide">
+                  Currently, I have the most projects in JavaScript, but I also
+                  use popular libraries and frameworks. I learn Vue, React,
+                  Vuetify, Nuxt or Node all the time.
                 </p>
-                <p>
-                  more text example text more text
+                <p class="text-xs tracking-wide">
+                  Many projects are not very extensive or finished. I will
+                  highlight the most interesting and extensive ones on this
+                  page.
                 </p>
-                <p>
-                  more text example text more text
-                </p>
-                <p class="text-lg font-bold">
-                  example text example text
+                <p class="text-sm">
+                  It is amazing how many possibilities are offered by modern
+                  technologies!
                 </p>
                 <p>
                   <span role="img" aria-label="inbox emoji" class="mr-1">
@@ -124,40 +135,6 @@
       <featured-repos-component :data="data" />
       <recent-repos-component :data="data" />
     </div>
-    <!-- <div class="list-projects-container">
-      <div class="grid grid-rows-1">
-        Opis moich projektów programistycznych
-      </div>
-      <div>
-        {{ data.viewer.name }}
-      </div>
-      <div>
-        {{ data.viewer.bio }}
-      </div>
-      <div>
-        {{ data.viewer.location }}
-      </div>
-      <div class="grid grid-rows-1">
-        <ul>
-          <li
-            v-for="project of projects"
-            :key="project.slug"
-            class="post-link-item"
-          >
-            <nuxt-link
-              :to="$i18n.path('projects/' + project.slug)"
-              class="post-link"
-            >
-              <div class="post-main-title">
-                <div class="post-title">
-                  {{ project.title }}
-                </div>
-              </div>
-            </nuxt-link>
-          </li>
-        </ul>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -178,7 +155,7 @@ const githubDataQuery = gql`
       avatarUrl
       location
       url
-      pinnedItems(first: 3) {
+      pinnedItems(first: 6) {
         edges {
           node {
             ... on Repository {
@@ -203,7 +180,7 @@ const githubDataQuery = gql`
                   }
                 }
               }
-              repositoryTopics(first: 100) {
+              repositoryTopics(first: 50) {
                 edges {
                   node {
                     topic {
@@ -346,8 +323,6 @@ export default {
         .concat()
         .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
         .forEach((r) => featuredRepoList.push(r))
-
-      // console.log('dddff ', featuredRepoList)
     }
 
     console.log('static ', this.data)
@@ -368,6 +343,9 @@ export default {
 </script>
 
 <style lang="scss">
+.main-projects-container {
+  margin-bottom: 140px;
+}
 .content-container {
   width: 100%;
   margin: 0;

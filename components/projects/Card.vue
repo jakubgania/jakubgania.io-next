@@ -33,7 +33,7 @@
             :href="repoLink"
             target="_blank"
             rel="noopener noreferrer"
-            class="transition duration-200 text-gray-70 hover:text-gray-10"
+            class="transition duration-200 text-gray-70 hover:text-gray-30"
           >
             {{ repoName }}
           </a>
@@ -174,7 +174,7 @@ export default {
       classes: {
         wrap: 'shadow h-full flex flex-col',
         base:
-          'bg-gray-30 rounded-b-none overflow-hidden flex-grow flex flex-col',
+          'bg-gray-10 rounded-b-none overflow-hidden flex-grow flex flex-col',
         head: 'flex flex-col justify-between text-gray-70 bg-gray-20',
         lastCommit: 'text-xs pt-1',
         tags: 'flex flex-row flex-wrap-reverse justyfy-center p-4 pt-4 pb-2',
@@ -192,10 +192,9 @@ export default {
           icon: 'h-3 w-3 mr-1',
           btn:
             'tracking-wide flex justify-center items-center uppercase font-bold p-1 bg-gray-70 hover:bg-gray-60 hover:text-white border-2 border-transparent focus:outline-none focus:border-gray-10 transition duration-200',
-          left: 'rounded rounded-t-none rounded-r-none',
-          right:
-            'bg-blue-70 rounded rounded-t-none rounded-l-none hover:bg-blue-60',
-          only: 'rounded rounded-t-none col-span-2',
+          left: 'rounded-t-none rounded-r-none',
+          right: 'bg-blue-70 rounded-t-none rounded-l-none hover:bg-blue-60',
+          only: 'rounded-t-none col-span-2',
         },
       },
       topics: null,

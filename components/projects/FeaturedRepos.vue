@@ -6,7 +6,7 @@
         (last commit {{ lastCommitTime }})
       </div>
     </h2>
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-2 lg:grid-cols-3">
       <!-- lodaing component -->
       <template v-for="item in featuredRepoList">
         <card-component :key="item.name" :repoData="item" :useImage="true" />
