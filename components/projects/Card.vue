@@ -215,7 +215,6 @@ export default {
     }
   },
   created() {
-    // console.log('data in card component ', this.repoData)
     this.topics = this.repoData.repositoryTopics.edges
       .map((e) => e.node.topic.name)
       .sort()
@@ -227,20 +226,13 @@ export default {
           .split('-')
           .join(' ')
       : this.repoData.name.split('-').join(' ')
-
     this.recentRef = this.repoData.refs.nodes
       .concat()
       .sort((a, b) => (a.target.pushDate < b.target.pushDate ? 1 : -1))[0]
-    // console.log('recent ref ', this.recentRef)
     this.lastCommitMsg = this.recentRef.target.messageHeadline
-    // console.log('last commit time - before ', this.recentRef.target.pushDate)
     this.lastCommitTime = moment(this.recentRef.target.pushDate).fromNow()
-    // console.log('last commit time ', this.lastCommitTime)
     this.lastCommitBranch = this.recentRef.name
     this.commitCount = this.repoData.refs.nodes.reduce((acc, curr) => {
-      // console.log('reduce function')
-      // console.log('reduce function value ', curr.name)
-
       if (!curr.name.includes('dependabot')) {
         return acc + curr.target.history.totalCount
       }
