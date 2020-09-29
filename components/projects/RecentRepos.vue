@@ -51,17 +51,8 @@ export default {
     this.lastCommitTime = moment(
       this.data.viewer.repositories.edges.concat().reverse()[0].node.pushedAt
     ).fromNow()
-    // let xmp = JSON.parse(JSON.stringify(this.data.viewer.repositories))
-    // this.repositories = this.data.repositories.edges
-    // this.repositories = JSON.parse(
-    //   JSON.stringify(this.data.viewer.repositories)
-    // )
-    // const temp = JSON.parse(JSON.stringify(this.data.viewer.repositories.edges))
+
     this.repositories = this.data.viewer.repositories.edges
-    console.log(
-      'recent repos component - ',
-      JSON.parse(JSON.stringify(this.data.viewer.repositories))
-    )
   },
 }
 </script>
