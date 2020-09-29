@@ -24,7 +24,6 @@ export default {
       const classnames = [
         'flex flex-row items-center rounded text-xs shadow-md overflow-hidden transition duration-200 select-none mb-2 mr-2',
       ]
-
       const baseColor = 'bg-gray-70 text-gray-20'
       const specialNames = [
         {
@@ -60,7 +59,6 @@ export default {
           classes: 'bg-cyan-70 text-cyan-20',
         },
       ]
-
       const idx = specialNames.findIndex((o) => o.name === name.toLowerCase())
 
       if (idx >= 0) {
