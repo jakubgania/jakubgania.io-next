@@ -238,8 +238,8 @@ export default {
     // console.log('last commit time ', this.lastCommitTime)
     this.lastCommitBranch = this.recentRef.name
     this.commitCount = this.repoData.refs.nodes.reduce((acc, curr) => {
-      console.log('reduce function')
-      console.log('reduce function value ', curr.name)
+      // console.log('reduce function')
+      // console.log('reduce function value ', curr.name)
 
       if (!curr.name.includes('dependabot')) {
         return acc + curr.target.history.totalCount
