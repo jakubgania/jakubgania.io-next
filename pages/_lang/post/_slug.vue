@@ -25,6 +25,14 @@
               {{ post.creationDate }}
             </span>
           </div>
+          <div style="width: 33.33%; font-size: 12px;">
+            <strong style="display: block;">
+              Wyświetlenia
+            </strong>
+            <span style="display: block;">
+              248
+            </span>
+          </div>
         </div>
         <div class="post-content">
           <!-- <div>
