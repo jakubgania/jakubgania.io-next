@@ -44,28 +44,46 @@
           </div>
         </div>
         <div class="footer-container__other-elements">
+          <div class="footer-container__github-button-section">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="git-ref-link"
+            >
+              60 followers
+            </a>
+            <span class="git-ref">
+              |
+            </span>
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="git-ref-link"
+            >
+              98 following
+            </a>
+            <span class="git-ref">
+              |
+            </span>
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="git-ref-link"
+            >
+              82 stars
+            </a>
+          </div>
           <div class="footer-container__dark-theme-switch-section">
             dark theme
-            <!-- <template v-if="$store.state.showDarkModeSwitch">
-              <dark-mode-switch-component />
-            </template> -->
-          </div>
-          <div class="footer-container__github-button-section">
-            github button
-            <!-- <github-button
-              href="https://github.com/jakubgania"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Follow @jakubgania on GitHub"
-            >
-              Follow @jakubgania
-            </github-button> -->
           </div>
         </div>
       </div>
     </div>
     <div class="footer-container__bottom-section">
-      <div style="border-top: 1px solid #262626; padding-top: 60px;">
+      <div style="border-top: 2px solid #e6e6e6; padding-top: 60px;">
         <div style="display: flex;">
           <div style="text-align: left; width: 50%;">
             <div class="footer-container__copyright-text">
@@ -304,13 +322,14 @@ export default {
   }
   &__github-button-section {
     width: 50%;
-    text-align: right;
-    margin-top: 18px;
-    order: 2;
+    text-align: left;
+    // margin-top: 18px;
+    order: 1;
   }
   &__dark-theme-switch-section {
     width: 50%;
-    order: 1;
+    text-align: right;
+    order: 2;
   }
   &__bottom-section {
     // border-top: 1px solid #e6e6e6;
@@ -346,6 +365,26 @@ export default {
 .select-language {
   background: transparent;
   outline: none;
+}
+.git-ref-link {
+  color: #8a929c;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  &:hover {
+    color: #000;
+    transition: color 0.2s ease;
+  }
+  &--dark-theme {
+    &:hover {
+      color: #b3b3b3;
+    }
+  }
+}
+.git-ref {
+  color: #8a929c;
+  font-size: 12px;
+  font-weight: 500;
 }
 @media only screen and (max-width: 1264px) {
   .footer-container {
