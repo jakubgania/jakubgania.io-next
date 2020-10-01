@@ -30,7 +30,7 @@
               Wyświetlenia
             </strong>
             <span style="display: block;">
-              248
+              {{ viewCounter }}
             </span>
           </div>
         </div>
@@ -109,6 +109,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import AboutCreator from '@/components/about-creator'
 
 export default {
@@ -169,6 +170,28 @@ export default {
       prev,
       next,
       numberOfPosts,
+    }
+  },
+  data() {
+    return {
+      viewCounter: null,
+    }
+  },
+  mounted() {
+    if (process.env.NODE_ENV === 'production') {
+      axios
+        .get(process.env.LAMBDA_PRODUCTION_URL_POST_VIEWS_COUNTER)
+        .then((response) => {
+          this.viewCounter = response.data.views
+        })
+    }
+
+    if (process.env.NODE_ENV === 'development') {
+      axios
+        .get(process.env.LAMBDA_DEVELOPMENT_URL_POST_VIEWS_COUNTER)
+        .then((response) => {
+          this.viewCounter = response.data.views
+        })
     }
   },
   head() {
