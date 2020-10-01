@@ -132,7 +132,7 @@ export default {
 
     const [relatedPrev, relatedNext] = await $content('posts/' + language)
       .only(['title', 'slug', 'topImageSrc', 'creationDate'])
-      .sortBy('creationDate', 'asc')
+      .sortBy('index', 'asc')
       .surround(params.slug)
       .fetch()
 
@@ -145,7 +145,7 @@ export default {
       const related = await $content('posts/' + language)
         .where({ index: { $ne: post.index } })
         .only(['title', 'slug', 'topImageSrc', 'creationDate'])
-        .sortBy('creationDate', 'asc')
+        .sortBy('index', 'asc')
         .limit(2)
         .fetch()
 
@@ -157,7 +157,7 @@ export default {
       const related = await $content('posts/' + language)
         .where({ index: { $ne: post.index } })
         .only(['title', 'slug', 'topImageSrc', 'creationDate'])
-        .sortBy('creationDate', 'desc')
+        .sortBy('index', 'desc')
         .limit(2)
         .fetch()
 
