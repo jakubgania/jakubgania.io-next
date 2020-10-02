@@ -409,8 +409,6 @@ export default {
     }
     &__sitemap-section {
       display: block;
-      // padding-left: 20px;
-      // padding-right: 20px;
     }
     &__site-column-section {
       padding-left: 0;
