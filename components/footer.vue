@@ -109,7 +109,24 @@
 </template>
 
 <script>
+import gql from 'graphql-tag'
 import LogoComponent from '../components/logo'
+
+const githubDataQuery = gql`
+  query viewer {
+    viewer {
+      followers {
+        totalCount
+      }
+      following {
+        totalCount
+      }
+      starredRepositories {
+        totalCount
+      }
+    }
+  }
+`
 
 export default {
   components: {
