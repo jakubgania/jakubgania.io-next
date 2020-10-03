@@ -10,16 +10,36 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiReact" :size="iconSize" />
+            <icon-component
+              :path="mdiReact"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiVuejs" :size="iconSize" />
+            <icon-component
+              :path="mdiVuejs"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiLanguageJavascript" :size="iconSize" />
+            <icon-component
+              :path="mdiLanguageJavascript"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiLanguageHtml5" :size="iconSize" />
+            <icon-component
+              :path="mdiLanguageHtml5"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
         </div>
         <div class="section-content-row__description">
@@ -35,16 +55,36 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiCloudTags" :size="iconSize" />
+            <icon-component
+              :path="mdiCloudTags"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiGoogleCloud" :size="iconSize" />
+            <icon-component
+              :path="mdiGoogleCloud"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiMicrosoftAzure" :size="iconSize" />
+            <icon-component
+              :path="mdiMicrosoftAzure"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiAws" :size="iconSize" />
+            <icon-component
+              :path="mdiAws"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
         </div>
         <div class="section-content-row__description">
@@ -60,16 +100,36 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiCodeBraces" :size="iconSize" />
+            <icon-component
+              :path="mdiCodeBraces"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiDocker" :size="iconSize" />
+            <icon-component
+              :path="mdiDocker"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiWebpack" :size="iconSize" />
+            <icon-component
+              :path="mdiWebpack"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiBash" :size="iconSize" />
+            <icon-component
+              :path="mdiBash"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
         </div>
         <div class="section-content-row__description">
@@ -85,18 +145,35 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiServer" :size="iconSize" />
+            <icon-component
+              :path="mdiServer"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiConsoleLine" :size="iconSize" />
+            <icon-component
+              :path="mdiConsoleLine"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component :path="mdiSourceBranch" :size="iconSize" />
+            <icon-component
+              :path="mdiSourceBranch"
+              :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
+            />
           </div>
           <div class="section-content-row__icon-item">
             <icon-component
               :path="mdiMicrosoftVisualStudioCode"
               :size="iconSize"
+              :color="'--component-content-section-description-color'"
+              :var="true"
             />
           </div>
         </div>
@@ -168,7 +245,7 @@ export default {
 <style lang="scss" scoped>
 .section-content-wrapper {
   margin-top: 100vh;
-  background-color: #fafbfc;
+  background-color: var(--component-content-section-background-color);
   padding-top: 140px;
   padding-bottom: 140px;
 }
@@ -204,6 +281,7 @@ export default {
     font-weight: 600;
     letter-spacing: 1.2px;
     line-height: 1.6;
+    color: var(--component-content-section-description-color);
   }
 
   &__icons-section {

@@ -1,8 +1,5 @@
 <template>
-  <svg
-    :style="{ width: size + 'px', height: size + 'px', fill: color }"
-    viewBox="0 0 24 24"
-  >
+  <svg :style="svgStyle" viewBox="0 0 24 24">
     <path :d="path" />
   </svg>
 </template>
@@ -21,6 +18,19 @@ export default {
     color: {
       type: String,
       default: '#000',
+    },
+    var: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    svgStyle() {
+      return {
+        width: this.size + 'px',
+        height: this.size + 'px',
+        fill: this.var ? 'var(' + this.color + ')' : this.color,
+      }
     },
   },
 }

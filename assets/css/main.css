@@ -12,6 +12,8 @@
   --navigation-drawer-social-icons-border-color: #f2f2f2;
   --navigation-drawer-socila-icons-background-color-hover: #f2f2f2;
   --footer-background-color: #fafbfc;
+  --component-content-section-background-color: #fafbfc;
+  --component-content-section-description-color: inherit;
 }
 
 .dark-mode {
@@ -24,4 +26,6 @@
   --navigation-drawer-social-icons-border-color: #262626;
   --navigation-drawer-socila-icons-background-color-hover: #404040;
   --footer-background-color: #000;
+  --component-content-section-background-color: #000;
+  --component-content-section-description-color: #bfbfbf;
 }
