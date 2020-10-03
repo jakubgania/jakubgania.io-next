@@ -226,6 +226,7 @@ module.exports = {
     ]
   },
   theme: {
+    // darkSelector: '.dark-mode',
     colors: {
       /* via IBM Carbon System */
       transparent: 'transparent',

@@ -64,10 +64,7 @@ $scrollbar-thumb-color: #bfbfbf;
   background-color: $scrollbar-thumb-color;
 }
 
-*,
-*::before,
-*::after {
-  // box-sizing: border-box;
-  // margin: 0;
+body {
+  background-color: var(--bg);
 }
 </style>

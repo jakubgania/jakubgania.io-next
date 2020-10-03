@@ -92,7 +92,10 @@
             </a>
           </div>
           <div class="footer-container__dark-theme-switch-section">
-            dark theme
+            <select v-model="$colorMode.preference">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
           </div>
         </div>
       </div>
@@ -318,6 +321,7 @@ export default {
   },
   created() {
     this.getQuery()
+    this.$nuxt.$colorMode.preference = 'light'
   },
   mounted() {
     // this.getQuery()

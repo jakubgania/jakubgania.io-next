@@ -77,7 +77,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['aos/dist/aos.css',],
+  css: [
+    'aos/dist/aos.css',
+    '@/assets/css/main.css',
+  ],
   router: {
     // base: BASE_PATH,
     middleware: 'i18n'
@@ -106,6 +109,7 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '@nuxtjs/color-mode',
   ],
   /*
    ** Nuxt.js modules
@@ -132,6 +136,14 @@ export default {
       twitterSite: '@jakubgania',
       twitterCreator: '@jakubgania',
     },
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    hid: 'nuxt-color-mode-script',
+    classPrefix: '',
+    classSufix: '-mode',
   },
   
   /*

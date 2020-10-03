@@ -1,0 +1,11 @@
+/* :root {
+  --bg: blue;
+} */
+
+.light-mode {
+  --bg: #fff;
+}
+
+.dark-mode {
+  --bg: #000;
+}
