@@ -305,41 +305,7 @@
         </div>
       </div>
     </div>
-    <div class="social-section">
-      <div class="social-section-wrapper">
-        <div class="social-section-title">
-          <h2>
-            Social
-          </h2>
-        </div>
-        <div class="social-section-container">
-          <div class="social-icon-item">
-            <icon-component :path="mdiGithub" :size="44" />
-            <span class="social-icon-describe">
-              Github
-            </span>
-          </div>
-          <div class="social-icon-item">
-            <icon-component :path="mdiLinkedin" :size="44" />
-            <span class="social-icon-describe">
-              LinkedIn
-            </span>
-          </div>
-          <div class="social-icon-item">
-            <icon-component :path="mdiTwitter" :size="44" />
-            <span class="social-icon-describe">
-              Twitter
-            </span>
-          </div>
-          <div class="social-icon-item">
-            <icon-component :path="mdiYoutube" :size="44" />
-            <span class="social-icon-describe">
-              YouTube
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <social-section-component />
     <div class="images-section">
       <section class="imgages-section-wrapper">
         <div class="trending-grid-items">
@@ -427,12 +393,9 @@ import {
   mdiConsoleLine,
   mdiSourceBranch,
   mdiMicrosoftVisualStudioCode,
-  mdiGithub,
-  mdiLinkedin,
-  mdiTwitter,
-  mdiYoutube,
 } from '@mdi/js'
 import IconComponent from '../../components/icon'
+import SocialSectionComponent from '../../components/home/SocialSection'
 import Image1 from '../../assets/images/background-home.jpg'
 import Image2 from '../../assets/images/stickers-home.jpg'
 import Image3 from '../../assets/images/keyboard-home.jpeg'
@@ -464,6 +427,7 @@ export default {
   },
   components: {
     'icon-component': IconComponent,
+    'social-section-component': SocialSectionComponent,
   },
   data() {
     return {
@@ -487,10 +451,6 @@ export default {
       mdiConsoleLine,
       mdiSourceBranch,
       mdiMicrosoftVisualStudioCode,
-      mdiGithub,
-      mdiLinkedin,
-      mdiTwitter,
-      mdiYoutube,
       iconsSize: 44,
       desc1:
         'Główne technologie w jaki się specjalizję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt oraz backendowe takie jak Node czy Laravel. Tworzę różny skrypty z użyciem Bash czy Python. Większość mojej pracy i eksperymentów umieszczam na platformie Github.',
@@ -721,34 +681,6 @@ export default {
   &__icon-item {
     width: 25%;
   }
-}
-.social-section {
-  padding-top: 140px;
-  padding-bottom: 140px;
-}
-.social-section-wrapper {
-  max-width: 1600px;
-  margin: auto;
-}
-.social-section-container {
-  display: flex;
-}
-.social-icon-item {
-  padding: 60px;
-  width: 25%;
-  display: inline-flex;
-  line-height: 40px;
-}
-.social-icon-describe {
-  font-size: 10px;
-  margin-left: 20px;
-  letter-spacing: 6px;
-  font-weight: 900;
-}
-.social-section-title {
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 80px;
 }
 .blog-section-wrapper {
   margin: auto;
