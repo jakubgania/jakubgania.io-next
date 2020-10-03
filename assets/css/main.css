@@ -4,10 +4,12 @@
 
 .light-mode {
   --bg: #fff;
+  --logo-color: #000;
   --footer-background-color: #fafbfc;
 }
 
 .dark-mode {
   --bg: #000;
+  --logo-color: #fff;
   --footer-background-color: #000;
 }

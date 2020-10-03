@@ -34,6 +34,7 @@ export default {
 .logo {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   letter-spacing: 0.6px;
+  color: var(--logo-color);
   &--big-font {
     font-size: 60px;
   }
