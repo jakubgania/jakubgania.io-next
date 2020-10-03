@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .toolbar-header-container {
   height: 64px;
-  background: hsla(0, 0%, 100%, 0.6);
+  background: var(--toolbar-header-container-background-color);
   backdrop-filter: saturate(180%) blur(14px);
   position: fixed;
   top: 0;
@@ -53,7 +53,7 @@ export default {
 .menu-icon-hamburger {
   width: 34px;
   height: 2px;
-  background-color: #000;
+  background-color: var(--menu-icon-hamburger-color);
   transition: background-color 0.2s ease;
   margin: 6px 0;
 }

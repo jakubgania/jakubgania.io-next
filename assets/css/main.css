@@ -5,11 +5,15 @@
 .light-mode {
   --bg: #fff;
   --logo-color: #000;
+  --toolbar-header-container-background-color: hsla(0, 0%, 100%, 0.6);
+  --menu-icon-hamburger-color: #000;
   --footer-background-color: #fafbfc;
 }
 
 .dark-mode {
   --bg: #000;
   --logo-color: #fff;
+  --toolbar-header-container-background-color: hsla(0, 0%, 0%, 0.6);
+  --menu-icon-hamburger-color: #fff;
   --footer-background-color: #000;
 }
