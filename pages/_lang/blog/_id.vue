@@ -51,25 +51,30 @@
             </nuxt-link>
           </li>
         </ul>
-        <div
+        <template
           v-if="
             ($route.params.id < numberOfPagination ||
               $route.params.id == undefined) &&
             numberOfPagination > 2
           "
-          class="pagination-button-section"
         >
-          <nuxt-link :to="$i18n.path(getLink())" class="more-posts-button">
-            Następne posty
-          </nuxt-link>
-        </div>
+          <more-content-button-component
+            :text="'Następne posty'"
+            :link="getLink()"
+          />
+        </template>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import MoreContentButtonComponent from '../../../components/more-content-button'
+
 export default {
+  components: {
+    'more-content-button-component': MoreContentButtonComponent,
+  },
   scrollToTop: false,
   async asyncData({ $content, params, store }) {
     const paginationValue = 4
@@ -232,28 +237,6 @@ export default {
   letter-spacing: 1px;
   color: #8c8c8c;
   padding-top: 4px;
-}
-.pagination-button-section {
-  margin-top: 120px;
-  margin-bottom: 140px;
-  text-align: center;
-}
-.more-posts-button {
-  border-radius: 6px;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-  padding: 0.5rem 3rem;
-  color: black;
-  font-size: 12px;
-  border: solid 2px transparent;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(101deg, #6a82fb, #fc5c7d);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #fff inset;
 }
 .image-section {
   width: 40%;
