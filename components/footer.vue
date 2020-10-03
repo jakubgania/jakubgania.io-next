@@ -331,7 +331,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer-container {
-  background-color: #fafbfc;
+  background-color: var(--footer-background-color);
   padding-top: 3vw;
   padding-bottom: 3vw;
   &--dark-theme {

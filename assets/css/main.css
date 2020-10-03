@@ -4,8 +4,10 @@
 
 .light-mode {
   --bg: #fff;
+  --footer-background-color: #fafbfc;
 }
 
 .dark-mode {
   --bg: #000;
+  --footer-background-color: #000;
 }
