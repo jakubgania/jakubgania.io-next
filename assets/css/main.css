@@ -15,6 +15,9 @@
   --component-content-section-background-color: #fafbfc;
   --component-content-section-description-color: inherit;
   --home-page-top-section-text-color: #000;
+  --home-page-blog-section-title-color: #000;
+  --home-page-blog-section-post-title-color: #000;
+  --home-page-blog-section-post-description: #000;
 }
 
 .dark-mode {
@@ -30,4 +33,7 @@
   --component-content-section-background-color: #000;
   --component-content-section-description-color: #bfbfbf;
   --home-page-top-section-text-color: #fff;
+  --home-page-blog-section-title-color: #fff;
+  --home-page-blog-section-post-title-color: #fff;
+  --home-page-blog-section-post-description: #fff;
 }

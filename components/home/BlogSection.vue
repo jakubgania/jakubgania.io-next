@@ -76,6 +76,7 @@ export default {
   font-weight: 800;
   text-align: center;
   margin-bottom: 80px;
+  color: var(--home-page-blog-section-title-color);
 }
 .blog-posts-container {
   display: flex;
@@ -91,6 +92,7 @@ export default {
   letter-spacing: 0.4px;
   display: flex;
   padding-bottom: 4px;
+  color: var(--home-page-blog-section-post-title-color);
 }
 .post-link {
   text-decoration: none;
@@ -110,6 +112,7 @@ export default {
   padding-top: 4px;
   letter-spacing: 0.4px;
   padding-bottom: 10px;
+  color: var(--home-page-blog-section-post-description);
 }
 .creation-date {
   text-align: left;
