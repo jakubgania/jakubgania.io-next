@@ -6,7 +6,7 @@
           <div class="trending-grid-item trending-item-1">
             <div
               class="img-wrap"
-              :style="`background-image: url(${Image1})`"
+              :style="`background-image: url(${ImageBackgroundHome})`"
             ></div>
             <div class="img-inner">
               <header>
@@ -21,7 +21,7 @@
           <div class="trending-grid-item trending-item-2">
             <div
               class="img-wrap"
-              :style="`background-image: url(${Image2})`"
+              :style="`background-image: url(${ImageStickersHome})`"
             ></div>
             <div class="img-inner">
               <header>
@@ -36,7 +36,7 @@
           <div class="trending-grid-item trending-item-3">
             <div
               class="img-wrap"
-              :style="`background-image: url(${Image3})`"
+              :style="`background-image: url(${ImageKeyboardHome})`"
             ></div>
             <div class="img-inner">
               <header>
@@ -51,7 +51,7 @@
           <div class="trending-grid-item trending-item-4">
             <div
               class="img-wrap"
-              :style="`background-image: url(${Image4})`"
+              :style="`background-image: url(${ImageDottedWawesLight})`"
             ></div>
             <div class="img-inner">
               <header>
@@ -68,18 +68,18 @@
 </template>
 
 <script>
-import Image1 from '../../assets/images/background-home.jpg'
-import Image2 from '../../assets/images/stickers-home.jpg'
-import Image3 from '../../assets/images/keyboard-home.jpeg'
-import Image4 from '../../assets/images/dotted-wawes-light.jpg'
+import ImageBackgroundHome from '../../assets/images/background-home.jpg'
+import ImageStickersHome from '../../assets/images/stickers-home.jpg'
+import ImageKeyboardHome from '../../assets/images/keyboard-home.jpeg'
+import ImageDottedWawesLight from '../../assets/images/dotted-wawes-light.jpg'
 
 export default {
   data() {
     return {
-      Image1,
-      Image2,
-      Image3,
-      Image4,
+      ImageBackgroundHome,
+      ImageStickersHome,
+      ImageKeyboardHome,
+      ImageDottedWawesLight,
     }
   },
 }
