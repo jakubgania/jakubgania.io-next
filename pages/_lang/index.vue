@@ -1066,14 +1066,6 @@ export default {
     left: 50%;
     top: 140px;
   }
-  .section-content-wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .social-section-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .section-content-row {
     max-width: 100%;
     widows: 100%;
@@ -1087,16 +1079,6 @@ export default {
       line-height: 1;
       padding-bottom: 10px;
     }
-  }
-  .social-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .social-icon-item {
-    max-width: 50%;
-    width: 100%;
-    display: flex;
-    padding: 40px;
   }
   .trending-post-title {
     font-size: 16px;

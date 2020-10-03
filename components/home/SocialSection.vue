@@ -124,4 +124,28 @@ export default {
   text-align: center;
   margin-bottom: 80px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .social-section-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .social-icon-item {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-content-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .social-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 </style>
