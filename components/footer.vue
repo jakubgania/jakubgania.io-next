@@ -46,34 +46,49 @@
         <div class="footer-container__other-elements">
           <div class="footer-container__github-button-section">
             <a
-              href="http://"
+              href="https://github.com/jakubgania?tab=followers"
               target="_blank"
               rel="noopener noreferrer"
               class="git-ref-link"
             >
-              60 followers
+              <icon-component
+                :path="mdiChevronRight"
+                :size="12"
+                :color="'#8a929c'"
+              />
+              {{ followers }} followers
             </a>
-            <span class="git-ref">
+            <span class="git-ref" style="margin-left: 4px; margin-right: 4px;">
               |
             </span>
             <a
-              href="http://"
+              href="https://github.com/jakubgania?tab=following"
               target="_blank"
               rel="noopener noreferrer"
               class="git-ref-link"
             >
-              98 following
+              <icon-component
+                :path="mdiChevronRight"
+                :size="12"
+                :color="'#8a929c'"
+              />
+              {{ following }} following
             </a>
-            <span class="git-ref">
+            <span class="git-ref" style="margin-left: 4px; margin-right: 4px;">
               |
             </span>
             <a
-              href="http://"
+              href="https://github.com/jakubgania?tab=stars"
               target="_blank"
               rel="noopener noreferrer"
               class="git-ref-link"
             >
-              82 stars
+              <icon-component
+                :path="mdiChevronRight"
+                :size="12"
+                :color="'#8a929c'"
+              />
+              {{ starredRepositories }} stars
             </a>
           </div>
           <div class="footer-container__dark-theme-switch-section">
@@ -109,8 +124,10 @@
 </template>
 
 <script>
+import { mdiChevronRight } from '@mdi/js'
 import gql from 'graphql-tag'
 import LogoComponent from '../components/logo'
+import IconComponent from '../components/icon'
 
 const githubDataQuery = gql`
   query viewer {
@@ -131,6 +148,7 @@ const githubDataQuery = gql`
 export default {
   components: {
     'logo-component': LogoComponent,
+    'icon-component': IconComponent,
   },
   methods: {
     changeLanguage(e) {
@@ -156,9 +174,34 @@ export default {
         },
       })
     },
+    getQuery() {
+      this.$apollo
+        .query({
+          query: githubDataQuery,
+        })
+        .then(({ data }) => {
+          this.githubData = JSON.parse(JSON.stringify(data.viewer))
+          this.followers = data.viewer.followers.totalCount
+          this.following = data.viewer.following.totalCount
+          this.starredRepositories = data.viewer.starredRepositories.totalCount
+        })
+    },
+  },
+  apollo: {
+    viewer: {
+      loadingKey: 'loading',
+      query: githubDataQuery,
+    },
   },
   data() {
     return {
+      githubDataQuery,
+      mdiChevronRight,
+      githubData: null,
+      viewer: [],
+      followers: null,
+      following: null,
+      starredRepositories: null,
       langs: [
         {
           name: 'Polish',
@@ -273,6 +316,12 @@ export default {
       ],
     }
   },
+  created() {
+    this.getQuery()
+  },
+  mounted() {
+    // this.getQuery()
+  },
 }
 </script>
 
@@ -340,7 +389,8 @@ export default {
   &__github-button-section {
     width: 50%;
     text-align: left;
-    // margin-top: 18px;
+    display: flex;
+    line-height: 1;
     order: 1;
   }
   &__dark-theme-switch-section {
@@ -388,6 +438,7 @@ export default {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.6px;
+  display: flex;
   &:hover {
     color: #000;
     transition: color 0.2s ease;
