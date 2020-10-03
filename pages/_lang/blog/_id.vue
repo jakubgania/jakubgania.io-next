@@ -44,7 +44,7 @@
                     {{ post.description }}
                   </div>
                   <div class="creation-date">
-                    {{ post.creationDate }}
+                    {{ post.creationDate + ' | ' + '422' }}
                   </div>
                 </div>
               </div>
