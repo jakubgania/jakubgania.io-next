@@ -207,82 +207,14 @@
       </div>
     </div>
     <social-section-component />
-    <div class="images-section">
-      <section class="imgages-section-wrapper">
-        <div class="trending-grid-items">
-          <nuxt-link :to="$i18n.path('blog')">
-            <div class="trending-grid-item trending-item-1">
-              <div
-                class="img-wrap"
-                :style="`background-image: url(${Image1})`"
-              ></div>
-              <div class="img-inner">
-                <header>
-                  <p class="trending-post-title">
-                    Blog
-                  </p>
-                </header>
-              </div>
-            </div>
-          </nuxt-link>
-          <nuxt-link :to="$i18n.path('experience')">
-            <div class="trending-grid-item trending-item-2">
-              <div
-                class="img-wrap"
-                :style="`background-image: url(${Image2})`"
-              ></div>
-              <div class="img-inner">
-                <header>
-                  <p class="trending-post-title">
-                    Doświadczenie
-                  </p>
-                </header>
-              </div>
-            </div>
-          </nuxt-link>
-          <nuxt-link :to="$i18n.path('contact')">
-            <div class="trending-grid-item trending-item-3">
-              <div
-                class="img-wrap"
-                :style="`background-image: url(${Image3})`"
-              ></div>
-              <div class="img-inner">
-                <header>
-                  <p class="trending-post-title">
-                    Kontakt
-                  </p>
-                </header>
-              </div>
-            </div>
-          </nuxt-link>
-          <nuxt-link :to="$i18n.path('gallery')">
-            <div class="trending-grid-item trending-item-4">
-              <div
-                class="img-wrap"
-                :style="`background-image: url(${Image4})`"
-              ></div>
-              <div class="img-inner">
-                <header>
-                  <p class="trending-post-title">
-                    Galeria
-                  </p>
-                </header>
-              </div>
-            </div>
-          </nuxt-link>
-        </div>
-      </section>
-    </div>
+    <images-section-component />
   </div>
 </template>
 
 <script>
 import SocialSectionComponent from '../../components/home/SocialSection'
 import ContentSectionComponent from '../../components/home/ContentSection'
-import Image1 from '../../assets/images/background-home.jpg'
-import Image2 from '../../assets/images/stickers-home.jpg'
-import Image3 from '../../assets/images/keyboard-home.jpeg'
-import Image4 from '../../assets/images/dotted-wawes-light.jpg'
+import ImagesSectionComponent from '../../components/home/ImagesSection'
 
 export default {
   async asyncData({ $content, params, store }) {
@@ -311,14 +243,7 @@ export default {
   components: {
     'social-section-component': SocialSectionComponent,
     'content-section-component': ContentSectionComponent,
-  },
-  data() {
-    return {
-      Image1,
-      Image2,
-      Image3,
-      Image4,
-    }
+    'images-section-component': ImagesSectionComponent,
   },
   head() {
     return {
@@ -627,127 +552,6 @@ export default {
   margin-left: -1em;
   font-size: 20px;
 }
-.images-section {
-  //
-}
-.images-section-wrapper {
-  width: 100%;
-}
-.img-wrap {
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.5s;
-}
-.trending-grid-items::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.trending-grid-item {
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-
-  &:hover {
-    .img-wrap {
-      transform: scale(1.1);
-    }
-  }
-}
-.trending-grid-item::before {
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
-  // background: linear-gradient(
-  //   to right,
-  //   rgba(0, 0, 0, 0.75) 0,
-  //   rgba(0, 102, 255, 0.4) 100%
-  // );
-  background: linear-gradient(
-    -128deg,
-    rgba(0, 102, 255, 0.6) 0,
-    rgba(252, 92, 125, 0.6) 100%
-  );
-}
-.trending-item-1 {
-  width: 62%;
-  background-color: #3f5efb;
-  float: left;
-  position: relative;
-}
-.trending-item-1::before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 52%;
-}
-.trending-item-2 {
-  width: 38%;
-  background-color: cadetblue;
-  position: relative;
-  float: left;
-}
-.trending-item-2::before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 45.58%;
-}
-.trending-item-3 {
-  width: 19%;
-  background-color: #fc466b;
-  float: left;
-  position: relative;
-}
-.trending-item-3::before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 78.48101%;
-}
-.trending-item-4 {
-  width: 19%;
-  background-color: #8c8c8c;
-  float: left;
-  position: relative;
-}
-.trending-item-4::before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 78.48101%;
-}
-.img-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.trending-post-title {
-  font-size: 2.25em;
-  color: #fff;
-  line-height: 1.3em;
-  font-weight: 500;
-  margin: 0;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
-  max-width: 100%;
-}
-.trending-grid-item header {
-  display: block;
-  float: none;
-  bottom: 0;
-  z-index: 3;
-  position: absolute;
-  padding: 2em 1.5em 1.5em 2em;
-}
 .image-container-er {
   background-color: #f2f2f2;
   position: relative;
@@ -781,45 +585,6 @@ export default {
     .img-wrap-blog {
       transform: scale(1.1);
     }
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .trending-item-1 {
-    width: 50%;
-  }
-  .trending-item-1::before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: 56.25%;
-  }
-  .trending-item-2 {
-    width: 50%;
-  }
-  .trending-item-2::before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: 56.25%;
-  }
-  .trending-item-3 {
-    width: 50%;
-  }
-  .trending-item-3::before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: 56.25%;
-  }
-  .trending-item-4 {
-    width: 50%;
-  }
-  .trending-item-4::before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: 56.25%;
   }
 }
 
@@ -877,12 +642,6 @@ export default {
   .right-part {
     left: 50%;
     top: 140px;
-  }
-  .trending-post-title {
-    font-size: 16px;
-  }
-  .trending-grid-item header {
-    padding: 2em 1.5em 1em 1em;
   }
   .projects-section {
     padding-top: 60px;
