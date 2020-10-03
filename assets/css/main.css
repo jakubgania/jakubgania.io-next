@@ -7,6 +7,10 @@
   --logo-color: #000;
   --toolbar-header-container-background-color: hsla(0, 0%, 100%, 0.6);
   --menu-icon-hamburger-color: #000;
+  --navigation-drawer-background-color: #fff;
+  --full-screen-cover-color: rgb(33, 33, 33);
+  --navigation-drawer-social-icons-border-color: #f2f2f2;
+  --navigation-drawer-socila-icons-background-color-hover: #f2f2f2;
   --footer-background-color: #fafbfc;
 }
 
@@ -15,5 +19,9 @@
   --logo-color: #fff;
   --toolbar-header-container-background-color: hsla(0, 0%, 0%, 0.6);
   --menu-icon-hamburger-color: #fff;
+  --navigation-drawer-background-color: #1a1a1a;
+  --full-screen-cover-color: #000000;
+  --navigation-drawer-social-icons-border-color: #262626;
+  --navigation-drawer-socila-icons-background-color-hover: #404040;
   --footer-background-color: #000;
 }

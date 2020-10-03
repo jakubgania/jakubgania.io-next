@@ -1,6 +1,6 @@
 <template>
   <div v-if="showDrawerFlag">
-    <div class="xlop" />
+    <div class="full-screen-cover" />
     <div class="navigation-drawer-container">
       <div>
         <div style="height: 60px; line-height: 60px;">
@@ -92,8 +92,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.xlop {
-  background-color: rgb(33, 33, 33);
+.full-screen-cover {
+  background-color: var(--full-screen-cover-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -110,7 +110,7 @@ export default {
   z-index: 99999;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: var(--navigation-drawer-background-color);
   overflow-x: hidden;
   transition: width ease 0.5s;
 
@@ -124,7 +124,7 @@ export default {
 .social-icons-xb {
   width: 100%;
   display: block;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid var(--navigation-drawer-social-icons-border-color);
   position: absolute;
   bottom: 0;
 }
@@ -132,13 +132,7 @@ export default {
   display: flex;
 
   a + a {
-    border-left: 1px solid #f2f2f2;
-  }
-
-  &--dark-theme {
-    a + a {
-      border-left: 1px solid #2f363d;
-    }
+    border-left: 1px solid var(--navigation-drawer-social-icons-border-color);
   }
 }
 .social-link-item {
@@ -150,7 +144,9 @@ export default {
   text-decoration: none;
 
   &:hover {
-    background-color: #f2f2f2;
+    background-color: var(
+      --navigation-drawer-socila-icons-background-color-hover
+    );
     transition: background-color 0.2s ease;
   }
 }
