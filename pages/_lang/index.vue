@@ -100,54 +100,7 @@
       </div>
     </div>
     <content-section-component />
-    <div class="blog-section-wrapper">
-      <div class="blog-section-container">
-        <div class="blog-section-title">
-          <h2>
-            BLOG
-          </h2>
-        </div>
-        <div>
-          <ul>
-            <li v-for="post of posts" :key="post.slug" class="post-link-item">
-              <nuxt-link
-                :to="$i18n.path('post/' + post.slug)"
-                class="post-link"
-              >
-                <div class="blog-posts-container">
-                  <div class="image-section">
-                    <div class="image-container-er">
-                      <div
-                        class="img-wrap-blog"
-                        :style="`background-image: url(${post.topImageSrc})`"
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="blog-post-item-eer4">
-                    <div class="post-main-title">
-                      <div class="post-title">
-                        {{ post.title }}
-                      </div>
-                    </div>
-                    <div class="description-section">
-                      {{ post.description }}
-                    </div>
-                    <div class="creation-date">
-                      {{ post.creationDate }}
-                    </div>
-                  </div>
-                </div>
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
-        <div class="pagination-button-section">
-          <nuxt-link :to="$i18n.path('blog')" class="more-posts-button">
-            Więcej postów
-          </nuxt-link>
-        </div>
-      </div>
-    </div>
+    <blog-section-component :posts="posts" />
     <div class="projects-section">
       <div class="projects-section-wrapper">
         <div class="projects-section-title">
@@ -215,6 +168,7 @@
 import SocialSectionComponent from '../../components/home/SocialSection'
 import ContentSectionComponent from '../../components/home/ContentSection'
 import ImagesSectionComponent from '../../components/home/ImagesSection'
+import BlogSectionComponent from '../../components/home/BlogSection'
 
 export default {
   async asyncData({ $content, params, store }) {
@@ -244,6 +198,7 @@ export default {
     'social-section-component': SocialSectionComponent,
     'content-section-component': ContentSectionComponent,
     'images-section-component': ImagesSectionComponent,
+    'blog-section-component': BlogSectionComponent,
   },
   head() {
     return {
@@ -418,101 +373,6 @@ export default {
   margin-bottom: 4px;
   z-index: 20;
   pointer-events: auto;
-}
-.blog-section-wrapper {
-  margin: auto;
-}
-.blog-section-container {
-  max-width: 1600px;
-  margin: auto;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 140px;
-  padding-bottom: 140px;
-}
-.blog-section-title {
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 80px;
-}
-.blog-posts-container {
-  display: flex;
-  flex-flow: wrap;
-}
-.blog-post-item-eer4 {
-  width: 65%;
-  padding-left: 24px;
-}
-.post-main-title {
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  display: flex;
-  padding-bottom: 4px;
-}
-.post-link {
-  text-decoration: none;
-  color: #000;
-
-  &:hover {
-    .post-main-title {
-      color: #06f;
-    }
-  }
-}
-.post-title {
-  font-size: 20px;
-}
-.description-section {
-  font-size: 14px;
-  padding-top: 4px;
-  letter-spacing: 0.4px;
-  padding-bottom: 10px;
-}
-.creation-date {
-  text-align: left;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #8c8c8c;
-  padding-top: 4px;
-}
-.image-section {
-  width: 35%;
-}
-.image-container {
-  background-color: #f2f2f2;
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-.pagination-button-section {
-  margin-top: 120px;
-  text-align: center;
-}
-.more-posts-button {
-  border-radius: 6px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 0.5rem 3rem;
-  color: black;
-  font-size: 12px;
-  border: solid 2px transparent;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(101deg, #6a82fb, #fc5c7d);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #fff inset;
-  transition: all 0.2s ease;
-
-  &:hover {
-    border: 2px solid transparent;
-    letter-spacing: 2.8px;
-    background-image: none;
-    transition: all 0.2s ease;
-  }
 }
 .projects-section {
   max-width: 1600px;
