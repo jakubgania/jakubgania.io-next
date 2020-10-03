@@ -18,6 +18,8 @@
   --home-page-blog-section-title-color: #000;
   --home-page-blog-section-post-title-color: #000;
   --home-page-blog-section-post-description: #000;
+  --more-content-button-background-color: #fff;
+  --more-content-button-text-color: #000;
 }
 
 .dark-mode {
@@ -36,4 +38,6 @@
   --home-page-blog-section-title-color: #fff;
   --home-page-blog-section-post-title-color: #fff;
   --home-page-blog-section-post-description: #fff;
+  --more-content-button-background-color: #000;
+  --more-content-button-text-color: #fff;
 }

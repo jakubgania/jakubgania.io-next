@@ -31,7 +31,7 @@ export default {
   font-weight: bold;
   letter-spacing: 2px;
   padding: 0.5rem 3rem;
-  color: black;
+  color: var(--more-content-button-text-color);
   font-size: 12px;
   border: solid 2px transparent;
   background-image: linear-gradient(
@@ -41,7 +41,7 @@ export default {
     linear-gradient(101deg, #6a82fb, #fc5c7d);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #fff inset;
+  box-shadow: 2px 1000px 1px var(--more-content-button-background-color) inset;
   transition: all 0.2s ease;
 
   &:hover {
