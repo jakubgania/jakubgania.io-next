@@ -405,6 +405,18 @@ export default {
   .post-content {
     margin-bottom: 60px;
   }
+  .related-posts-title {
+    font-size: 42px;
+  }
+  .related-posts {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+  }
+  .related-posts-item {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .content-container {
@@ -419,6 +431,15 @@ export default {
   }
   .post-content {
     width: 100%;
+  }
+  .related-posts-title {
+    font-size: 34px;
+  }
+  .related-posts {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 8vh;
+    padding-bottom: 6vh;
   }
 }
 </style>
