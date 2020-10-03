@@ -318,7 +318,6 @@ export default {
       Image2,
       Image3,
       Image4,
-      iconsSize: 44,
     }
   },
   head() {
