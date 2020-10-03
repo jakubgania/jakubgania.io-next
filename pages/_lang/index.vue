@@ -333,12 +333,14 @@ export default {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   font-size: 2vw;
   letter-spacing: 0.4px;
+  color: var(--home-page-top-section-text-color);
 }
 .fullname {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   font-size: 2vw;
   letter-spacing: 0.4px;
   margin-bottom: 28px;
+  color: var(--home-page-top-section-text-color);
 }
 .words-section {
   display: grid;
