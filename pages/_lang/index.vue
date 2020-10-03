@@ -152,11 +152,10 @@
             </ul>
           </div>
         </div>
-        <div class="pagination-button-section">
-          <nuxt-link :to="$i18n.path('projects')" class="more-posts-button">
-            Więcej projektów
-          </nuxt-link>
-        </div>
+        <more-content-button-component
+          :text="'Więcej projektów'"
+          :link="'projects'"
+        />
       </div>
     </div>
     <social-section-component />
@@ -169,6 +168,7 @@ import SocialSectionComponent from '../../components/home/SocialSection'
 import ContentSectionComponent from '../../components/home/ContentSection'
 import ImagesSectionComponent from '../../components/home/ImagesSection'
 import BlogSectionComponent from '../../components/home/BlogSection'
+import MoreContentButtonComponent from '../../components/more-content-button'
 
 export default {
   async asyncData({ $content, params, store }) {
@@ -199,6 +199,7 @@ export default {
     'content-section-component': ContentSectionComponent,
     'images-section-component': ImagesSectionComponent,
     'blog-section-component': BlogSectionComponent,
+    'more-content-button-component': MoreContentButtonComponent,
   },
   head() {
     return {
