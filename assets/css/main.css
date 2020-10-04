@@ -37,6 +37,7 @@
   --post-page-post-text-color: #000;
   --post-page-related-posts-section-color: #000;
   --post-page-more-posts-buttons: #000;
+  --author-component-text-color: #000;
 }
 
 .dark-mode {
@@ -74,4 +75,5 @@
   --post-page-post-text-color: #fff;
   --post-page-related-posts-section-color: #fff;
   --post-page-more-posts-buttons: #fff;
+  --author-component-text-color: #fff;
 }

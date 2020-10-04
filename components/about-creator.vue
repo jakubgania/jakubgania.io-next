@@ -57,9 +57,11 @@ export default {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.6px;
+  color: var(--author-component-text-color);
 }
 .author-description {
   font-size: 14px;
   letter-spacing: 0.4;
+  color: var(--author-component-text-color);
 }
 </style>
