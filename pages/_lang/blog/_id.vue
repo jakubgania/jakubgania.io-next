@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top-image--light" style="margin-top: -6px;">
+    <div class="top-image" style="margin-top: -6px;">
       <div
         data-aos="fade-in"
         data-aos-dealy="100"
@@ -156,22 +156,11 @@ export default {
   height: 40vw;
   min-height: 200px;
   margin-top: -6px;
-  // margin-bottom: 80px;
   position: relative;
-
-  &--dark {
-    // background-image: url('../../assets/images/dotted-wawes-dark.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &--light {
-    background-image: var(--blog-page-top-image-path);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-image: var(--blog-page-top-image-path);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .x1 {
   width: 100%;
