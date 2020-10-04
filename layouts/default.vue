@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     switchNavigationDrawer() {
-      console.log('switch navigation drawer')
       this.drawer = !this.drawer
     },
     updateNavigationDrawerValue(value) {
@@ -49,19 +48,16 @@ export default {
 <style lang="scss">
 @import '../assets/styles/fonts.scss';
 
-$scrollbar-track-color: #f4f4f4;
-$scrollbar-thumb-color: #bfbfbf;
-
 ::-webkit-scrollbar-track {
   border-radius: 0;
-  background-color: $scrollbar-track-color;
+  background-color: var(--scrollbar-track-color);
 }
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background-color: $scrollbar-thumb-color;
+  background-color: var(--scrollbar-thumb-color);
 }
 
 body {

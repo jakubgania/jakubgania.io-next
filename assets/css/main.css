@@ -39,6 +39,8 @@
   --post-page-more-posts-buttons: #000;
   --author-component-text-color: #000;
   --social-icons-componet-icon-color: #000;
+  --scrollbar-track-color: #f4f4f4;
+  --scrollbar-thumb-color: #bfbfbf;
 }
 
 .dark-mode {
@@ -78,4 +80,6 @@
   --post-page-more-posts-buttons: #fff;
   --author-component-text-color: #fff;
   --social-icons-componet-icon-color: #fff;
+  --scrollbar-track-color: #4d4d4d;
+  --scrollbar-thumb-color: #1a1a1a;
 }
