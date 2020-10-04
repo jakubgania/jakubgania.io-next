@@ -20,6 +20,7 @@
   --home-page-blog-section-post-description: #000;
   --more-content-button-background-color: #fff;
   --more-content-button-text-color: #000;
+  --home-page-social-icons-section-color: #000;
 }
 
 .dark-mode {
@@ -40,4 +41,5 @@
   --home-page-blog-section-post-description: #fff;
   --more-content-button-background-color: #000;
   --more-content-button-text-color: #fff;
+  --home-page-social-icons-section-color: #fff;
 }

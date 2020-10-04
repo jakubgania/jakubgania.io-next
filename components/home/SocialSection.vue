@@ -14,7 +14,12 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component :path="mdiGithub" :size="44" />
+            <icon-component
+              :path="mdiGithub"
+              :size="44"
+              :color="'--home-page-social-icons-section-color'"
+              :var="true"
+            />
             <span class="social-icon-describe">
               Github
             </span>
@@ -27,7 +32,12 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component :path="mdiLinkedin" :size="44" />
+            <icon-component
+              :path="mdiLinkedin"
+              :size="44"
+              :color="'--home-page-social-icons-section-color'"
+              :var="true"
+            />
             <span class="social-icon-describe">
               LinkedIn
             </span>
@@ -40,7 +50,12 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component :path="mdiTwitter" :size="44" />
+            <icon-component
+              :path="mdiTwitter"
+              :size="44"
+              :color="'--home-page-social-icons-section-color'"
+              :var="true"
+            />
             <span class="social-icon-describe">
               Twitter
             </span>
@@ -53,7 +68,12 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component :path="mdiYoutube" :size="44" />
+            <icon-component
+              :path="mdiYoutube"
+              :size="44"
+              :color="'--home-page-social-icons-section-color'"
+              :var="true"
+            />
             <span class="social-icon-describe">
               YouTube
             </span>
@@ -118,11 +138,13 @@ export default {
   margin-left: 20px;
   letter-spacing: 6px;
   font-weight: 900;
+  color: var(--home-page-social-icons-section-color);
 }
 .social-section-title {
   font-weight: 800;
   text-align: center;
   margin-bottom: 80px;
+  color: var(--home-page-social-icons-section-color);
 }
 
 @media only screen and (max-width: 1200px) {
