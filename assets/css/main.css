@@ -21,6 +21,7 @@
   --more-content-button-background-color: #fff;
   --more-content-button-text-color: #000;
   --home-page-social-icons-section-color: #000;
+  --home-page-projects-section-color: #000;
 }
 
 .dark-mode {
@@ -42,4 +43,5 @@
   --more-content-button-background-color: #000;
   --more-content-button-text-color: #fff;
   --home-page-social-icons-section-color: #fff;
+  --home-page-projects-section-color: #fff;
 }

@@ -391,6 +391,7 @@ export default {
 .projects-section-title {
   font-weight: 800;
   text-align: center;
+  color: var(--home-page-projects-section-color);
 }
 .projects-sections-container {
   display: flex;
@@ -405,6 +406,7 @@ export default {
 .projects-item ul li {
   margin-bottom: 40px;
   letter-spacing: 1.2px;
+  color: var(--home-page-projects-section-color);
 }
 .projects-item ul li::before {
   content: '\2022';
