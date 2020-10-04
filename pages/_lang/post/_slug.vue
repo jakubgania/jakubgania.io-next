@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="top-image-section">
-      <img :src="post.topImageSrc" :alt="post.topImageAlt" class="top-image" />
+      <img
+        id="top-image"
+        :src="post.topImageSrc"
+        :alt="post.topImageAlt"
+        class="top-image"
+      />
     </div>
     <div class="content-container">
       <template v-if="true">

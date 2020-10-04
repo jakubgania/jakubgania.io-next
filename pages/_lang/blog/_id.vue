@@ -1,6 +1,12 @@
 <template>
   <div>
-    <div class="top-image" style="margin-top: -6px;">
+    <div
+      id="top-image"
+      class="top-image"
+      style="margin-top: -6px;"
+      data-type="parallax"
+      data-speed="-2"
+    >
       <div
         data-aos="fade-in"
         data-aos-dealy="100"
@@ -128,6 +134,16 @@ export default {
       pageNumber++
       return 'blog/' + pageNumber
     },
+  },
+  mounted() {
+    const topImageElement = document.querySelector('#top-image')
+
+    window.addEventListener('scroll', function () {
+      const yPosition = -(window.pageYOffset / topImageElement.dataset.speed)
+      const coordinate = '50% ' + yPosition + 'px'
+
+      document.getElementById('top-image').style.backgroundPosition = coordinate
+    })
   },
   head() {
     return {
