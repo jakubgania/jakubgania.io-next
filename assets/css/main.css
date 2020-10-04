@@ -22,6 +22,12 @@
   --more-content-button-text-color: #000;
   --home-page-social-icons-section-color: #000;
   --home-page-projects-section-color: #000;
+  --footer-copyright-color: #000;
+  --footer-select-language-color: #000;
+  --footer-container-line-color: #e6e6e6;
+  --footer-container-link-hover-color: #000;
+  --footer-select-background-color: transparent;
+  --footer-container-border-color: #fff;
 }
 
 .dark-mode {
@@ -44,4 +50,10 @@
   --more-content-button-text-color: #fff;
   --home-page-social-icons-section-color: #fff;
   --home-page-projects-section-color: #fff;
+  --footer-copyright-color: #fff;
+  --footer-select-language-color: #fff;
+  --footer-container-line-color: #8a929c;
+  --footer-container-link-hover-color: #d9d9d9;
+  --footer-select-background-color: #000;
+  --footer-container-border-color: #262626;
 }

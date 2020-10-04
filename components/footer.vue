@@ -91,17 +91,17 @@
               {{ starredRepositories }} stars
             </a>
           </div>
-          <div class="footer-container__dark-theme-switch-section">
-            <select v-model="$colorMode.preference">
+          <!-- <div class="footer-container__dark-theme-switch-section">
+            <select v-model="$colorMode.preference" class="select-options">
               <option value="light">Light</option>
               <option value="dark">Dark</option>
             </select>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
     <div class="footer-container__bottom-section">
-      <div style="border-top: 2px solid #e6e6e6; padding-top: 60px;">
+      <div class="footer-container__line">
         <div style="display: flex;">
           <div style="text-align: left; width: 50%;">
             <div class="footer-container__copyright-text">
@@ -109,7 +109,15 @@
             </div>
           </div>
           <div style="text-align: right; width: 50%;">
-            <select @change="changeLanguage" class="select-language">
+            <select
+              v-model="$colorMode.preference"
+              class="select-options"
+              style="margin-right: 12px;"
+            >
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+            <select @change="changeLanguage" class="select-options">
               <option
                 v-for="option in langs"
                 :key="option.value"
@@ -127,7 +135,7 @@
 </template>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
+import { mdiChevronRight, mdiTranslate, mdiBrightness6 } from '@mdi/js'
 import gql from 'graphql-tag'
 import LogoComponent from '../components/logo'
 import IconComponent from '../components/icon'
@@ -200,6 +208,8 @@ export default {
     return {
       githubDataQuery,
       mdiChevronRight,
+      mdiTranslate,
+      mdiBrightness6,
       githubData: null,
       viewer: [],
       followers: null,
@@ -334,9 +344,7 @@ export default {
   background-color: var(--footer-background-color);
   padding-top: 3vw;
   padding-bottom: 3vw;
-  &--dark-theme {
-    background-color: #101214;
-  }
+  border-top: 1px solid var(--footer-container-border-color);
   &__logo-section {
     width: 30%;
   }
@@ -345,7 +353,6 @@ export default {
     width: 70%;
   }
   &__sitemap-section {
-    // max-width: 1200px;
     width: 100%;
     margin: auto;
     display: flex;
@@ -376,13 +383,8 @@ export default {
     font-size: 12px;
     font-weight: 500;
     &:hover {
-      color: #000;
+      color: var(--footer-container-link-hover-color);
       transition: color 0.2s ease;
-    }
-    &--dark-theme {
-      &:hover {
-        color: #b3b3b3;
-      }
     }
   }
   &__other-elements {
@@ -403,7 +405,6 @@ export default {
     order: 2;
   }
   &__bottom-section {
-    // border-top: 1px solid #e6e6e6;
     padding-left: 10vw;
     padding-right: 10vw;
     width: 100%;
@@ -411,6 +412,10 @@ export default {
   }
   &__copyright-wrapper {
     // border-top: 1px solid #e6e6e6;
+  }
+  &__line {
+    border-top: 1px solid var(--footer-container-line-color);
+    padding-top: 60px;
   }
   &__copyright-section {
     // max-width: 1200px;
@@ -421,11 +426,11 @@ export default {
   }
   &__copyright-text {
     text-align: left;
-    // padding-top: 24px;
-    // padding-bottom: 24px;
+    color: var(--footer-copyright-color);
     letter-spacing: 2px;
     font-weight: 800;
     font-size: 12px;
+    font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   }
 }
 .list-li {
@@ -433,9 +438,13 @@ export default {
   letter-spacing: 0.6px;
   margin-bottom: 10px;
 }
-.select-language {
-  background: transparent;
+.select-options {
+  background: var(--footer-select-background-color);
   outline: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--footer-select-language-color);
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .git-ref-link {
   color: #8a929c;
