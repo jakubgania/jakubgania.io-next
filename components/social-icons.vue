@@ -8,7 +8,12 @@
       rel="noopener noreferrer"
       class="social-icon"
     >
-      <icon-component :path="item.icon" :size="24" />
+      <icon-component
+        :path="item.icon"
+        :size="24"
+        :color="'--social-icons-componet-icon-color'"
+        :var="true"
+      />
     </a>
   </div>
 </template>
