@@ -5,19 +5,24 @@
       <div>
         <div style="height: 60px; line-height: 60px;">
           <button @click="$emit('switchNavigationDrawer')" class="close-button">
-            <icon-component :path="mdiClose" :size="36" />
+            <icon-component
+              :path="mdiClose"
+              :size="36"
+              :color="'--navigation-drawer-close-button-color'"
+              :var="true"
+            />
           </button>
         </div>
         <div style="flex-grow: 1; display: block;">
           <ul v-for="item in items" :key="item.title">
-            <li @click="$emit('switchNavigationDrawer')">
+            <li @click="$emit('switchNavigationDrawer')" class="list-item">
               <nuxt-link :to="item.path" class="link-item">
                 {{ item.title }}
               </nuxt-link>
             </li>
           </ul>
         </div>
-        <div class="social-icons-xb">
+        <div class="social-icons-section">
           <div class="social-links">
             <a
               v-for="(item, index) in socialLinks"
@@ -27,7 +32,11 @@
               rel="noopener noreferrer"
               class="social-link-item"
             >
-              <icon-component :path="socialIcons[index]" />
+              <icon-component
+                :path="socialIcons[index]"
+                :color="'--navigation-drawer-social-icon-color'"
+                :var="true"
+              />
             </a>
           </div>
         </div>
@@ -121,7 +130,12 @@ export default {
     display: block;
   }
 }
-.social-icons-xb {
+.list-item {
+  &:hover {
+    background-color: var(--navigation-drawer-list-item-hover-color);
+  }
+}
+.social-icons-section {
   width: 100%;
   display: block;
   border-top: 1px solid var(--navigation-drawer-social-icons-border-color);

@@ -41,6 +41,9 @@
   --social-icons-componet-icon-color: #000;
   --scrollbar-track-color: #f4f4f4;
   --scrollbar-thumb-color: #bfbfbf;
+  --navigation-drawer-close-button-color: #000;
+  --navigation-drawer-social-icon-color: #000;
+  --navigation-drawer-list-item-hover-color: #f2f2f2; 
 }
 
 .dark-mode {
@@ -82,4 +85,7 @@
   --social-icons-componet-icon-color: #fff;
   --scrollbar-track-color: #4d4d4d;
   --scrollbar-thumb-color: #1a1a1a;
+  --navigation-drawer-close-button-color: #fff;
+  --navigation-drawer-social-icon-color: #fff;
+  --navigation-drawer-list-item-hover-color: #333333;
 }
