@@ -28,6 +28,10 @@
   --footer-container-link-hover-color: #000;
   --footer-select-background-color: transparent;
   --footer-container-border-color: #fff;
+  --blog-page-top-image-path: url('../../assets/images/dotted-wawes-light.jpg');
+  --blog-page-top-image-title-color: #000;
+  --blog-page-post-title-color: #000;
+  --blog-page-post-description-color:
 }
 
 .dark-mode {
@@ -56,4 +60,8 @@
   --footer-container-link-hover-color: #d9d9d9;
   --footer-select-background-color: #000;
   --footer-container-border-color: #262626;
+  --blog-page-top-image-path: url('../../assets/images/dotted-wawes-dark.jpg');
+  --blog-page-top-image-title-color: #fff;
+  --blog-page-post-title-color: #fff;
+  --blog-page-post-description-color: #fff;
 }

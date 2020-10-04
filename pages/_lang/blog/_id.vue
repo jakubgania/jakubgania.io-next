@@ -167,7 +167,7 @@ export default {
   }
 
   &--light {
-    background-image: url('../../../assets/images/dotted-wawes-light.jpg');
+    background-image: var(--blog-page-top-image-path);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +188,7 @@ export default {
 }
 .x3 {
   text-align: center;
-  color: #000;
+  color: var(--blog-page-top-image-title-color);
   text-transform: uppercase;
   font-size: 10vw;
   font-weight: 900;
@@ -209,8 +209,8 @@ export default {
   font-weight: 600;
   letter-spacing: 0.4px;
   display: flex;
-  // padding-top: 2px;
   padding-bottom: 4px;
+  color: var(--blog-page-post-title-color);
 }
 .post-link {
   text-decoration: none;
@@ -230,6 +230,7 @@ export default {
   padding-top: 4px;
   letter-spacing: 0.4px;
   padding-bottom: 10px;
+  color: var(--blog-page-post-description-color);
 }
 .creation-date {
   text-align: left;
