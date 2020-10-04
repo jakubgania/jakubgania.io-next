@@ -31,7 +31,12 @@
   --blog-page-top-image-path: url('../../assets/images/dotted-wawes-light.jpg');
   --blog-page-top-image-title-color: #000;
   --blog-page-post-title-color: #000;
-  --blog-page-post-description-color:
+  --blog-page-post-description-color: #000;
+  --post-page-post-title-color: #000;
+  --post-page-post-additional-info-color: #000;
+  --post-page-post-text-color: #000;
+  --post-page-related-posts-section-color: #000;
+  --post-page-more-posts-buttons: #000;
 }
 
 .dark-mode {
@@ -64,4 +69,9 @@
   --blog-page-top-image-title-color: #fff;
   --blog-page-post-title-color: #fff;
   --blog-page-post-description-color: #fff;
+  --post-page-post-title-color: #fff;
+  --post-page-post-additional-info-color: #fff;
+  --post-page-post-text-color: #fff;
+  --post-page-related-posts-section-color: #fff;
+  --post-page-more-posts-buttons: #fff;
 }

@@ -210,7 +210,7 @@ export default {
   line-height: 2;
   font-size: 17.4px;
   max-width: 1000px;
-  color: #000;
+  color: var(--post-page-post-text-color);
 }
 .nuxt-content a {
   color: #06f;
@@ -271,6 +271,7 @@ export default {
   width: 100%;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   line-height: 1;
+  color: var(--post-page-post-title-color);
 }
 .post-content {
   max-width: 800px;
@@ -285,6 +286,7 @@ export default {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  color: var(--post-page-post-additional-info-color);
 }
 .top-image-section {
   margin-bottom: 40px;
@@ -346,6 +348,7 @@ export default {
 }
 .related-posts-caption {
   margin-top: 20px;
+  color: var(--post-page-related-posts-section-color);
 }
 .related-post-item-date {
   font-size: 12px;
@@ -381,7 +384,8 @@ export default {
   margin-top: 180px;
 }
 .other-posts-button {
-  border: 2px solid black;
+  border: 2px solid var(--post-page-more-posts-buttons);
+  color: var(--post-page-more-posts-buttons);
   padding-left: 44px;
   padding-right: 44px;
   padding-top: 12px;
