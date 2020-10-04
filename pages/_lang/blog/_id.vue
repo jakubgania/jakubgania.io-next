@@ -24,11 +24,13 @@
 
     <div class="grid grid-rows-1">
       <div class="content-container">
-        <div>
-          <!-- {{ 'posty - ' + posts.length }} -->
-        </div>
+        <subpage-title-section-component
+          :title="`{ posty - ${numberOfPosts} }`"
+        />
 
-        <ul>
+        <subpage-description-section-component :description="desc" />
+
+        <ul style="margin-top: 60px;">
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
             <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
               <div class="blog-posts-container">
@@ -76,10 +78,14 @@
 
 <script>
 import MoreContentButtonComponent from '../../../components/more-content-button'
+import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
+import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
 
 export default {
   components: {
     'more-content-button-component': MoreContentButtonComponent,
+    'subpage-title-section-component': SubpageTitleSectionComponent,
+    'subpage-description-section-component': SubpageDescriptionSectionComponent,
   },
   scrollToTop: false,
   async asyncData({ $content, params, store }) {
@@ -121,6 +127,13 @@ export default {
     return {
       posts,
       numberOfPagination,
+      numberOfPosts: numberOfPosts.length,
+    }
+  },
+  data() {
+    return {
+      desc:
+        'Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno i techniczne i nie techniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu.',
     }
   },
   methods: {
