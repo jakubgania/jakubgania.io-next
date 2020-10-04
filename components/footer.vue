@@ -91,12 +91,6 @@
               {{ starredRepositories }} stars
             </a>
           </div>
-          <!-- <div class="footer-container__dark-theme-switch-section">
-            <select v-model="$colorMode.preference" class="select-options">
-              <option value="light">Light</option>
-              <option value="dark">Dark</option>
-            </select>
-          </div> -->
         </div>
       </div>
     </div>
@@ -104,11 +98,6 @@
       <div class="footer-container__line">
         <div style="display: flex;">
           <div style="text-align: left; width: 50%;">
-            <div class="footer-container__copyright-text">
-              <div v-html="copyrightText" />
-            </div>
-          </div>
-          <div style="text-align: right; width: 50%;">
             <select
               v-model="$colorMode.preference"
               class="select-options"
@@ -127,6 +116,11 @@
                 {{ option.name }}
               </option>
             </select>
+          </div>
+          <div style="text-align: right; width: 50%;">
+            <div class="footer-container__copyright-text">
+              <div v-html="copyrightText" />
+            </div>
           </div>
         </div>
       </div>
@@ -333,9 +327,6 @@ export default {
     this.getQuery()
     this.$nuxt.$colorMode.preference = 'light'
   },
-  mounted() {
-    // this.getQuery()
-  },
 }
 </script>
 
@@ -418,14 +409,13 @@ export default {
     padding-top: 60px;
   }
   &__copyright-section {
-    // max-width: 1200px;
     padding-left: 10vw;
     padding-right: 10vw;
     width: 100%;
     margin: auto;
   }
   &__copyright-text {
-    text-align: left;
+    text-align: right;
     color: var(--footer-copyright-color);
     letter-spacing: 2px;
     font-weight: 800;
