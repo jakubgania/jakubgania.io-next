@@ -165,7 +165,8 @@ export default {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  margin-bottom: 80px;
+  margin-top: 100px;
+  margin-bottom: 140px;
 }
 .top-image {
   width: 100%;

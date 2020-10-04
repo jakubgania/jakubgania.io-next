@@ -299,7 +299,7 @@ export default {
 .top-image {
   display: block;
   width: 100%;
-  max-height: 720px;
+  max-height: 740px;
   object-fit: cover;
 }
 .related-posts {
