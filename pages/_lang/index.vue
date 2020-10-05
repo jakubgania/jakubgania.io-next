@@ -226,7 +226,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
@@ -434,41 +434,6 @@ export default {
   margin-left: -1em;
   font-size: 20px;
 }
-.image-container-er {
-  background-color: #f2f2f2;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.image-container-er::before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-.img-wrap-blog {
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.5s;
-}
-.post-link-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-  font-family: 'Roboto Mono', monospace;
-
-  &:hover {
-    .img-wrap-blog {
-      transform: scale(1.1);
-    }
-  }
-}
 
 @media only screen and (max-width: 960px) {
   .technical-word {
@@ -539,23 +504,6 @@ export default {
     margin-top: inherit;
   }
   .social-section-title {
-    margin-bottom: 40px;
-  }
-  .image-section {
-    width: 100%;
-  }
-  .blog-section-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .blog-post-item-eer4 {
-    padding-left: 0;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .post-link-item {
     margin-bottom: 40px;
   }
 }
