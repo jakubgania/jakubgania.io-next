@@ -101,6 +101,15 @@
     </div>
     <content-section-component />
     <blog-section-component :posts="posts" />
+    <img
+      :src="
+        $nuxt.$colorMode.preference === 'light'
+          ? ImageKeyboardLight
+          : ImageKeyboardDark
+      "
+      alt=""
+      style="width: 100%;"
+    />
     <div class="projects-section">
       <div class="projects-section-wrapper">
         <div class="projects-section-title">
@@ -169,6 +178,8 @@ import ContentSectionComponent from '../../components/home/ContentSection'
 import ImagesSectionComponent from '../../components/home/ImagesSection'
 import BlogSectionComponent from '../../components/home/BlogSection'
 import MoreContentButtonComponent from '../../components/more-content-button'
+import ImageKeyboardLight from '../../assets/images/keyboard-light.jpg'
+import ImageKeyboardDark from '../../assets/images/keyboard-dark.jpg'
 
 export default {
   async asyncData({ $content, params, store }) {
@@ -200,6 +211,12 @@ export default {
     'images-section-component': ImagesSectionComponent,
     'blog-section-component': BlogSectionComponent,
     'more-content-button-component': MoreContentButtonComponent,
+  },
+  data() {
+    return {
+      ImageKeyboardLight,
+      ImageKeyboardDark,
+    }
   },
   head() {
     return {
