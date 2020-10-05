@@ -68,7 +68,7 @@
             </div>
             <div class="related-posts-caption">
               <div class="related-post-item-date">
-                {{ next.creationDate }}
+                {{ next.creationDate + ' | ' + 248 }}
               </div>
               <div class="related-post-item-description">
                 <h4>
@@ -91,7 +91,7 @@
             </div>
             <div class="related-posts-caption">
               <div class="related-post-item-date">
-                {{ prev.creationDate }}
+                {{ prev.creationDate + ' | ' + 248 }}
               </div>
               <div class="related-post-item-description">
                 <h4>
