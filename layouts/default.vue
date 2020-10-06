@@ -42,6 +42,9 @@ export default {
       this.drawer = value
     },
   },
+  created() {
+    this.$nuxt.$colorMode.preference = 'light'
+  },
 }
 </script>
 

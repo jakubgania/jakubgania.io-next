@@ -102,11 +102,7 @@
     <content-section-component />
     <blog-section-component :posts="posts" />
     <img
-      :src="
-        $nuxt.$colorMode.preference === 'light'
-          ? ImageKeyboardLight
-          : ImageKeyboardDark
-      "
+      :src="ImageKeyboard($nuxt.$colorMode.preference)"
       alt=""
       style="width: 100%;"
     />
@@ -217,6 +213,11 @@ export default {
       ImageKeyboardLight,
       ImageKeyboardDark,
     }
+  },
+  methods: {
+    ImageKeyboard(colorMode) {
+      return colorMode === 'light' ? ImageKeyboardLight : ImageKeyboardDark
+    },
   },
   head() {
     return {

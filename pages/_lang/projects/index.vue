@@ -1,7 +1,53 @@
 <template>
   <div class="main-projects-container">
     <top-image-component />
-    <div class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl">
+    <div class="change-button-sect">
+      <div class="button-sect">
+        <div @click="changeView('grid')" class="fgt">
+          widok kafelków
+        </div>
+      </div>
+      <div class="button-sect">
+        <div @click="changeView('list')" class="fgt">
+          widok listy
+        </div>
+      </div>
+    </div>
+    <div v-if="view == 'list'" class="list-projects-container">
+      <!-- breadcrumb -->
+      <!-- subpage title section component -->
+      <div class="grid grid-rows-1">
+        Opis moich projektów programistycznych
+      </div>
+      <div class="grid grid-rows-1">
+        <ul>
+          <li
+            v-for="project of projects"
+            :key="project.slug"
+            class="post-link-item"
+          >
+            <!-- $i18n.path(project.slug) -->
+            <!-- :to="{ name: 'projects-slug', params: { slug: project.slug } }" -->
+            <!-- :to="$i18n.path('projects/' + project.slug)" -->
+            <!-- "localePath({ name: 'category-slug', params: { slug: category.slug } })" -->
+            <nuxt-link
+              :to="$i18n.path('projects/' + project.slug)"
+              class="post-link"
+            >
+              <div class="post-main-title">
+                <div class="post-title">
+                  {{ project.title }}
+                </div>
+              </div>
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      v-if="view == 'grid'"
+      class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl"
+    >
       <div
         class="flex flex-col item-center py-4 lg:gap-2 lg:grid lg:grid-cols-3"
       >
@@ -290,6 +336,7 @@ export default {
     return {
       githubDataQuery,
       loading: 0,
+      view: 'grid',
       error: null,
       techTags: [
         'JavaScript',
@@ -303,6 +350,11 @@ export default {
         'Cloud',
       ],
     }
+  },
+  methods: {
+    changeView(viewType) {
+      this.view = viewType
+    },
   },
   // apollo: {
   //   viewer: {
@@ -446,6 +498,43 @@ export default {
 }
 .post-title {
   font-size: 20px;
+}
+.change-button-sect {
+  max-width: 600px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-sect {
+  min-width: 240px;
+  margin: 10px;
+}
+.fgt {
+  cursor: default;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.5rem 3rem;
+  color: var(--more-content-button-text-color);
+  font-size: 12px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #6a82fb, #fc5c7d);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px var(--more-content-button-background-color) inset;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 2px solid transparent;
+    letter-spacing: 2.8px;
+    background-image: none;
+    transition: all 0.2s ease;
+  }
 }
 
 @media only screen and (max-width: 960px) {
