@@ -8,6 +8,11 @@
         class="top-image"
       />
     </div>
+    <div class="top-section-title">
+      <nuxt-link :to="$i18n.path('blog')">
+        | posty |
+      </nuxt-link>
+    </div>
     <div class="content-container">
       <template v-if="true">
         <div class="post-title">
@@ -263,6 +268,20 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+.top-section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 80px;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+  font-style: normal;
+  font-size: 10px;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+
+  &:hover {
+    letter-spacing: 6px;
+  }
+}
 .content-container {
   max-width: 1000px;
   width: 100%;
