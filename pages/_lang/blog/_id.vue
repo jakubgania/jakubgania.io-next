@@ -28,6 +28,14 @@
           :title="`{ posty - ${numberOfPosts} }`"
         />
 
+        <div
+          style="
+            height: 6px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+          "
+        />
+
         <subpage-description-section-component :description="desc" />
 
         <ul style="margin-top: 60px;">
