@@ -25,7 +25,6 @@ export default {
 }
 .title {
   font-weight: 700;
-  border-bottom: 1px solid #000;
   padding-bottom: 14px;
 }
 </style>
