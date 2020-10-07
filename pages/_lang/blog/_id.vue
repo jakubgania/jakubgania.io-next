@@ -75,11 +75,11 @@
           "
         >
           <more-content-button-component
-            id="content"
             :text="'Następne posty'"
             :link="getLink()"
           />
         </template>
+        <div id="content" />
       </div>
     </div>
   </div>
@@ -169,7 +169,9 @@ export default {
 
     if (this.$route.params.id >= 2) {
       const element = document.getElementById('content')
-      element.scrollIntoView()
+      if (element !== null) {
+        element.scrollIntoView()
+      }
     }
   },
   head() {
