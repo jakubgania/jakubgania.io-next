@@ -1,0 +1,1 @@
+npm run generate && aws s3 sync dist/ s3://jakubgania.io
