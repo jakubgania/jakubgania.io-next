@@ -75,6 +75,7 @@
           "
         >
           <more-content-button-component
+            id="content"
             :text="'Następne posty'"
             :link="getLink()"
           />
@@ -90,12 +91,12 @@ import SubpageTitleSectionComponent from '../../../components/SubpageTitleSectio
 import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
 
 export default {
+  scrollToTop: false,
   components: {
     'more-content-button-component': MoreContentButtonComponent,
     'subpage-title-section-component': SubpageTitleSectionComponent,
     'subpage-description-section-component': SubpageDescriptionSectionComponent,
   },
-  scrollToTop: false,
   async asyncData({ $content, params, store }) {
     const paginationValue = 4
     let pageNumber = 1
@@ -165,6 +166,11 @@ export default {
 
       document.getElementById('top-image').style.backgroundPosition = coordinate
     })
+
+    if (this.$route.params.id >= 2) {
+      const element = document.getElementById('content')
+      element.scrollIntoView()
+    }
   },
   head() {
     return {

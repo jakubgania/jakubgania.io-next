@@ -13,7 +13,6 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
-
   manifest: {
     lang: 'pl',
     name: 'Jakub Gania Software',
