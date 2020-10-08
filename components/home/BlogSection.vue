@@ -184,5 +184,9 @@ export default {
   .post-link-item {
     margin-bottom: 40px;
   }
+  .post-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 </style>
