@@ -79,7 +79,7 @@
             :link="getLink()"
           />
         </template>
-        <div id="content" />
+        <div id="content" style="position: relative; top: -600px;" />
       </div>
     </div>
   </div>
@@ -319,6 +319,8 @@ export default {
   .content-container {
     padding-left: 14px;
     padding-right: 14px;
+    margin-top: 40px;
+    margin-bottom: 100px;
   }
   .post-main-title {
     padding-top: 4px;
