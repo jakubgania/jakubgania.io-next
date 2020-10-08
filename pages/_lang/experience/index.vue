@@ -4,7 +4,7 @@
       <div class="top-experience-text">
         <div
           data-aos="fade-right"
-          data-aos-delay="800"
+          data-aos-delay="50"
           data-aos-duration="1200"
           data-aos-once="true"
         >
@@ -12,16 +12,16 @@
         </div>
         <div
           data-aos="zoom-in"
-          data-aos-dealy="400"
+          data-aos-dealy="200"
           data-aos-duration="1200"
           data-aos-once="true"
-          style="width: 100%;"
+          class="experience-text"
         >
           Experience
         </div>
         <div
           data-aos="fade-left"
-          data-aos-dealy="800"
+          data-aos-dealy="50"
           data-aos-duration="1200"
           data-aos-once="true"
         >
@@ -31,7 +31,6 @@
       <top-section-container-component
         :full-name="fullName"
         :personal-data="personalData"
-        :dark-theme="false"
       />
       <div class="information-section">
         <div class="main-description">
@@ -65,7 +64,13 @@
                   </div>
                   <div class="description" v-html="itemSection.description" />
                   <div v-if="itemSection.tags" class="tags-container">
-                    <!-- v-chip -->
+                    <div
+                      v-for="tagItem in itemSection.tags"
+                      :key="tagItem.id"
+                      class="tag-item"
+                    >
+                      {{ tagItem.title }}
+                    </div>
                   </div>
                   <div v-if="itemSection.icons" class="images-container">
                     <div
@@ -146,6 +151,10 @@ div .section .description img {
 .expirience-container {
   width: 100%;
   margin-top: 100px;
+}
+.experience-text {
+  width: 100%;
+  padding: 14px;
 }
 .information-section {
   // font-family: 'Nunito', sans-serif;
@@ -236,19 +245,23 @@ $image-tile-max-height: 160px;
   width: $image-tile-max-height;
   min-height: $image-tile-max-height;
   height: auto;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   transition: transform 0.2s;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 .image-section {
   position: relative;
   width: $image-tile-max-height;
   height: $image-tile-max-height;
   background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .xghp {
-  max-width: $image-tile-max-height;
-  max-height: $image-tile-max-height;
+  max-width: 100px;
+  max-height: 100px;
   position: absolute;
   top: 0;
   left: 0;
@@ -279,6 +292,9 @@ $image-tile-max-height: 160px;
 }
 
 @media only screen and (max-width: 960px) {
+  .experience-text {
+    padding-top: inherit;
+  }
   .content-container {
     padding-left: 14px;
     padding-right: 14px;

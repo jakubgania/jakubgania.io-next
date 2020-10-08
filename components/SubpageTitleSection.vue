@@ -27,4 +27,13 @@ export default {
   font-weight: 700;
   padding-bottom: 14px;
 }
+
+@media only screen and (max-width: 600px) {
+  .title-section {
+    margin-bottom: 10px;
+  }
+  .title h2 {
+    font-size: 28px;
+  }
+}
 </style>

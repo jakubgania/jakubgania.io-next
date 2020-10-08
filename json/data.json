@@ -85,8 +85,8 @@
         "titleSectionIcon": "wrench-outline",
         "sectionData": [
           {
-            "date": "",
-            "title": "Stos technologiczny",
+            "date": "Stos technologiczny",
+            "title": "",
             "subtitle": "",
             "description": "<p>- Vue 2.x, Vuetify, Vuex, Axios, Nuxt, AngularJS 1.x, HTML 5, CSS 3, JavaScript, jQuery</p><p>- PHP 7.x, Symfony 4.2 / 3.4 / 2.8, Twig, Laravel 5.6, Doctrine, SQL</p>",
             "icons": [
@@ -212,8 +212,8 @@
             ]
           },
           {
-            "date": "",
-            "title": "Pojęcia",
+            "date": "Pojęcia",
+            "title": "",
             "subtitle": "",
             "description": "",
             "tags": [
@@ -238,8 +238,8 @@
             ]
           },
           {
-            "date": "",
-            "title": "Podstawowa wiedza:",
+            "date": "Podstawowa wiedza:",
+            "title": "",
             "subtitle": "",
             "description": "<p>- Git, GitLab, Git Bash, Bitbucket</p><p>- Linux Ubuntu 16/18, Google Analytics, phpMyAdmin, Docker, Jira</p><p>- Nginx, Apache</p><p>- Powershell, npm/nvm/yarn, Composer</p><p>- TypeScript, Node.js, Express.js, React, Python</p>",
             "icons": [
@@ -386,8 +386,8 @@
             ]
           },
           {
-            "date": "",
-            "title": "Narzędzia",
+            "date": "Narzędzia",
+            "title": "",
             "subtitle": "",
             "description": "",
             "icons": [
@@ -456,13 +456,13 @@
         "titleSectionIcon": "school",
         "sectionData": [
           {
-            "date": "2019 - do dziś",
+            "date": "2019 - 2020",
             "title": "Studia podyplomowe",
             "subtitle": "",
             "description": "<p>Uczelnia - Wyższa Szkoła Informatyki i Zarządzania \"Copernicus\" we Wrocławiu</p><p>Kierunek - Multi-Cloud Architect</p>"
           },
           {
-            "date": "2018 - do dziś",
+            "date": "2018 - 2020",
             "title": "Magister",
             "subtitle": "",
             "description": "<p>Uczelnia - Wyższa Szkoła Informatyki i Zarządzania \"Copernicus\" we Wrocławiu</p><p>Kierunek - Informatyka</p>"
@@ -479,6 +479,12 @@
         "titleSection": "Certyfikaty",
         "titleSectionIcon": "certificate-outline",
         "sectionData": [
+          {
+            "date": "2019-08",
+            "title": "",
+            "subtitle": "",
+            "description": ""
+          },
           {
             "date": "2019-08",
             "title": "\"Docker - szybki start\"",
