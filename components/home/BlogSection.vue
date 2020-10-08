@@ -176,6 +176,9 @@ export default {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .blog-section-title h2 {
+    font-size: 36px;
+  }
   .blog-post-item-eer4 {
     padding-left: 0;
     width: 100%;

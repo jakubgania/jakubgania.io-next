@@ -249,5 +249,17 @@ export default {
   .trending-grid-item header {
     padding: 2em 1.5em 1em 1em;
   }
+  .trending-item-1::before {
+    padding-top: 100%;
+  }
+  .trending-item-2::before {
+    padding-top: 100%;
+  }
+  .trending-item-3::before {
+    padding-top: 100%;
+  }
+  .trending-item-4::before {
+    padding-top: 100%;
+  }
 }
 </style>

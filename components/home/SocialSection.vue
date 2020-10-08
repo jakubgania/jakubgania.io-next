@@ -168,6 +168,9 @@ export default {
   .social-section-title {
     margin-bottom: 40px;
   }
+  .social-section-title h2 {
+    font-size: 36px;
+  }
   .social-section {
     padding-top: 60px;
     padding-bottom: 60px;

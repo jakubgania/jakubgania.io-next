@@ -498,6 +498,9 @@ export default {
   .projects-sections-container {
     flex-wrap: wrap;
   }
+  .projects-section-title h2 {
+    font-size: 36px;
+  }
   .projects-item {
     width: 100%;
   }
