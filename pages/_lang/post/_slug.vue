@@ -260,6 +260,16 @@ export default {
   width: 100%;
   height: 450px;
 }
+@media only screen and (max-width: 960px) {
+  .nuxt-content ul {
+    padding-left: 18px;
+  }
+  .nuxt-content li {
+    &::before {
+      top: 9px;
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .post {
     font-size: 14px;
@@ -444,9 +454,17 @@ export default {
   }
   .related-posts-item {
     width: 100%;
+    margin-bottom: 60px;
+  }
+  .related-post-item-description h4 {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 600px) {
+  .top-section-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .content-container {
     width: 100%;
     margin-top: 40px;
@@ -461,13 +479,16 @@ export default {
     width: 100%;
   }
   .related-posts-title {
-    font-size: 34px;
+    font-size: 30px;
   }
   .related-posts {
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 8vh;
-    padding-bottom: 6vh;
+    padding-bottom: 8vh;
+  }
+  .other-posts-button-section {
+    margin-top: 80px;
   }
 }
 </style>
