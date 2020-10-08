@@ -131,8 +131,6 @@ export default {
       .limit(pageNumber * paginationValue)
       .fetch()
 
-    console.log('posts ', posts)
-
     return {
       posts,
       numberOfPagination,
