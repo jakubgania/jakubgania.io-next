@@ -64,4 +64,15 @@ export default {
   letter-spacing: 0.4;
   color: var(--author-component-text-color);
 }
+@media only screen and (max-width: 600px) {
+  .author-image {
+    width: 100px;
+  }
+  .author-description-section {
+    padding-left: 20px;
+  }
+  .author-description {
+    font-size: 12px;
+  }
+}
 </style>
