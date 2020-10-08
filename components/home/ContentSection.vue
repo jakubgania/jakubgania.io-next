@@ -326,6 +326,10 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
+  .section-content-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .section-content-row {
     max-width: 100%;
     widows: 100%;
