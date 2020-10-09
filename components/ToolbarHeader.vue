@@ -9,7 +9,6 @@
     <div class="nav-icon" @click="$emit('switchNavigationDrawer')">
       <div class="menu-icon-hamburger" />
       <div class="menu-icon-hamburger" />
-      <div class="menu-icon-hamburger" />
     </div>
   </div>
 </template>
@@ -52,7 +51,7 @@ export default {
 }
 .menu-icon-hamburger {
   width: 34px;
-  height: 2px;
+  height: 1px;
   background-color: var(--menu-icon-hamburger-color);
   transition: background-color 0.2s ease;
   margin: 6px 0;
@@ -65,6 +64,23 @@ export default {
       background-color: #8c8c8c;
       transition: background-color 0.2s ease;
     }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .toolbar-header-container {
+    height: 48px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .toolbar-header-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .menu-icon-hamburger {
+    width: 30px;
+    margin: 8px 0;
   }
 }
 </style>

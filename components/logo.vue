@@ -45,7 +45,7 @@ export default {
 @media only screen and (max-width: 960px) {
   .logo {
     &--normal-font {
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 }
