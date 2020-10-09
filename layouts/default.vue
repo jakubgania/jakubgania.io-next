@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ToolbarHeaderComponent from '@/components/toolbar-header'
+import ToolbarHeaderComponent from '@/components/ToolbarHeader'
 import NavigationDrawerComponent from '@/components/navigation-drawer'
 import FooterComponent from '@/components/footer'
 
