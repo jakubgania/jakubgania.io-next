@@ -460,10 +460,13 @@ export default {
     text-align: center;
   }
   .technical-word {
-    font-size: 5.6vw;
+    font-size: 5.8vw;
   }
   .fullname {
-    font-size: 5.6vw;
+    font-size: 5.8vw;
+  }
+  .link {
+    font-size: 12px;
   }
   .section {
     padding-top: 20px;
