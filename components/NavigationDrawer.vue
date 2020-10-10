@@ -11,12 +11,13 @@
       <div>
         <div style="height: 60px; line-height: 60px;">
           <button @click="$emit('switchNavigationDrawer')" class="close-button">
-            <icon-component
+            <!-- <icon-component
               :path="mdiClose"
               :size="36"
               :color="'--navigation-drawer-close-button-color'"
               :var="true"
-            />
+            /> -->
+            <div class="close-icon" />
           </button>
         </div>
         <div style="flex-grow: 1; display: block;">
@@ -195,5 +196,31 @@ export default {
   margin-right: 10px;
   margin-top: 10px;
   outline: none;
+}
+.close-icon {
+  position: absolute;
+  right: 24px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close-icon:hover {
+  opacity: 1;
+}
+.close-icon::before,
+.close-icon::after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 1px;
+  background-color: #333;
+}
+.close-icon::before {
+  transform: rotate(45deg);
+}
+.close-icon::after {
+  transform: rotate(-45deg);
 }
 </style>

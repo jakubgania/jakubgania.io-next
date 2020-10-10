@@ -82,7 +82,10 @@ export default {
   }
   .menu-icon-hamburger {
     width: 30px;
-    margin: 8px 0;
+    margin: 10px 0;
+  }
+  .nav-icon {
+    margin-top: 8px;
   }
 }
 </style>

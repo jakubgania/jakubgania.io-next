@@ -20,7 +20,7 @@
 
 <script>
 import ToolbarHeaderComponent from '@/components/ToolbarHeader'
-import NavigationDrawerComponent from '@/components/navigation-drawer'
+import NavigationDrawerComponent from '@/components/NavigationDrawer'
 import FooterComponent from '@/components/footer'
 
 export default {
