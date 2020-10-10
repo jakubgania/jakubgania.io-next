@@ -118,17 +118,6 @@ export default {
 }
 </script>
 
-<style>
-.v-enter,
-.v-leave-to {
-  opacity: 0;
-}
-.v-enter-active,
-.v-leave-active {
-  transition: 0.5s;
-}
-</style>
-
 <style lang="scss" scoped>
 .full-screen-cover {
   background-color: var(--full-screen-cover-color);

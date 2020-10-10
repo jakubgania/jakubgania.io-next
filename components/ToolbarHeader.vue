@@ -6,9 +6,11 @@
       </nuxt-link>
     </div>
     <div class="spacer-class" />
-    <div class="nav-icon" @click="$emit('switchNavigationDrawer')">
-      <div class="menu-icon-hamburger" />
-      <div class="menu-icon-hamburger" />
+    <div>
+      <div class="nav-icon" @click="$emit('switchNavigationDrawer')">
+        <div class="menu-icon-hamburger" />
+        <div class="menu-icon-hamburger" />
+      </div>
     </div>
   </div>
 </template>
@@ -25,7 +27,6 @@ export default {
   },
   methods: {
     displayHeader() {
-      console.log(this.$route.name)
       return this.$route.name !== 'index'
     },
   },
@@ -54,10 +55,11 @@ export default {
   height: 1px;
   background-color: var(--menu-icon-hamburger-color);
   transition: background-color 0.2s ease;
-  margin: 6px 0;
+  margin: 8px 0;
 }
 .nav-icon {
-  margin-top: 10px;
+  margin-top: 6px;
+  display: inline-block;
 
   &:hover {
     .menu-icon-hamburger {
