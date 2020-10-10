@@ -1,7 +1,13 @@
 <template>
   <div v-if="showDrawerFlag">
-    <div class="full-screen-cover" />
-    <div class="navigation-drawer-container">
+    <div id="full-screen-cover" class="full-screen-cover" />
+    <div
+      class="navigation-drawer-container"
+      data-aos="fade-left"
+      data-aos-dealy="0"
+      data-aos-duration="150"
+      data-aos-once="true"
+    >
       <div>
         <div style="height: 60px; line-height: 60px;">
           <button @click="$emit('switchNavigationDrawer')" class="close-button">
@@ -97,8 +103,31 @@ export default {
       }
     },
   },
+  mounted() {
+    if (process.browser) {
+      document.body.addEventListener('click', (e) => {
+        if (
+          document.getElementById('full-screen-cover') &&
+          document.getElementById('full-screen-cover').contains(e.target)
+        ) {
+          this.showDrawerFlag = false
+        }
+      })
+    }
+  },
 }
 </script>
+
+<style>
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: 0.5s;
+}
+</style>
 
 <style lang="scss" scoped>
 .full-screen-cover {
@@ -121,7 +150,7 @@ export default {
   right: 0;
   background-color: var(--navigation-drawer-background-color);
   overflow-x: hidden;
-  transition: width ease 0.5s;
+  transition: 0.5s;
 
   & a {
     padding: 12px 8px 8px 27px;
