@@ -226,6 +226,11 @@ export default {
   color: #06f;
   text-decoration: none;
 }
+.nuxt-content h3 {
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 .nuxt-content p {
   margin-bottom: 20px;
 }

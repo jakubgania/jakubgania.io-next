@@ -11,12 +11,6 @@
       <div>
         <div style="height: 60px; line-height: 60px;">
           <button @click="$emit('switchNavigationDrawer')" class="close-button">
-            <!-- <icon-component
-              :path="mdiClose"
-              :size="36"
-              :color="'--navigation-drawer-close-button-color'"
-              :var="true"
-            /> -->
             <div class="close-icon" />
           </button>
         </div>
@@ -53,13 +47,7 @@
 </template>
 
 <script>
-import {
-  mdiGithub,
-  mdiLinkedin,
-  mdiTwitter,
-  mdiYoutube,
-  mdiClose,
-} from '@mdi/js'
+import { mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
 import socialLinksItems from '../json/social-links.json'
 import menuItems from '../json/menu.json'
 import IconComponent from '../components/icon'
@@ -79,7 +67,6 @@ export default {
       socialIcons: [mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube],
       socialLinks: socialLinksItems.data,
       items: menuItems.menu,
-      mdiClose,
     }
   },
   computed: {
@@ -204,6 +191,7 @@ export default {
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  // color: var(--navigation-drawer-close-button-color);
 }
 .close-icon:hover {
   opacity: 1;
