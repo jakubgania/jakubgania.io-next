@@ -1,14 +1,19 @@
 <template>
-  <div class="content-container">
-    <div class="experience-container">
-      <div class="top-experience-text">
+  <div>
+    <!-- <div
+      id="experience"
+      class="top-experience-text"
+      data-type="parallax"
+      data-speed="-6"
+    >
+      <div style="display: flex; margin: auto;">
         <div
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1200"
           data-aos-once="true"
         >
-          <span class="bracket">[</span>
+          <span class="bracket">[ {{ ' ' }}</span>
         </div>
         <div
           data-aos="zoom-in"
@@ -17,7 +22,7 @@
           data-aos-once="true"
           class="experience-text"
         >
-          Experience
+          E x p e r i e n c e
         </div>
         <div
           data-aos="fade-left"
@@ -28,73 +33,104 @@
           <span class="bracket">]</span>
         </div>
       </div>
-      <top-section-container-component
-        :full-name="fullName"
-        :personal-data="personalData"
-      />
-      <div class="information-section">
-        <div class="main-description">
-          <div>
-            {{ description }}
+    </div> -->
+    <div class="content-container">
+      <div class="experience-container">
+        <div class="top-experience-text">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <span class="bracket">[</span>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-dealy="200"
+            data-aos-duration="1200"
+            data-aos-once="true"
+            class="experience-text"
+          >
+            Experience
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-dealy="50"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <span class="bracket">]</span>
           </div>
         </div>
-        <template v-for="item in information">
-          <div :key="item.id" class="head-section">
-            <h2 class="head-title">
-              {{ item.titleSection }}
-            </h2>
+        <top-section-container-component
+          :full-name="fullName"
+          :personal-data="personalData"
+        />
+        <div class="information-section">
+          <div class="main-description">
+            <div>
+              {{ description }}
+            </div>
           </div>
-          <div :key="item.id" class="color-line"></div>
-          <div :key="item.id" class="xtrox">
-            <template v-for="itemSection in item.sectionData">
-              <div :key="itemSection.id" class="section-test">
-                <div class="title-section">
-                  <div class="title-text">
-                    {{ itemSection.date }}
-                  </div>
-                </div>
-                <div class="description-section">
-                  <div style="margin-bottom: 10px;">
-                    <div class="title-description-section">
-                      {{ itemSection.title }}
-                    </div>
-                    <div class="subtitle-description-section">
-                      {{ itemSection.subtitle }}
+          <template v-for="item in information">
+            <div :key="item.id" class="head-section">
+              <h2 class="head-title">
+                {{ item.titleSection }}
+              </h2>
+            </div>
+            <div :key="item.id" class="color-line"></div>
+            <div :key="item.id" class="xtrox">
+              <template v-for="itemSection in item.sectionData">
+                <div :key="itemSection.id" class="section-test">
+                  <div class="title-section">
+                    <div class="title-text">
+                      {{ itemSection.date }}
                     </div>
                   </div>
-                  <div class="description" v-html="itemSection.description" />
-                  <div v-if="itemSection.tags" class="tags-container">
-                    <div
-                      v-for="tagItem in itemSection.tags"
-                      :key="tagItem.id"
-                      class="tag-item"
-                    >
-                      {{ tagItem.title }}
-                    </div>
-                  </div>
-                  <div v-if="itemSection.icons" class="images-container">
-                    <div
-                      v-for="imageItem in itemSection.icons"
-                      :key="imageItem.id"
-                      class="image-tile"
-                    >
-                      <div class="image-section">
-                        <img
-                          :src="`https://jakubgania.io/data/expirience/technology-icons/${imageItem.path}`"
-                          :alt="imageItem.alt"
-                          class="xghp"
-                        />
+                  <div class="description-section">
+                    <div style="margin-bottom: 10px;">
+                      <div class="title-description-section">
+                        {{ itemSection.title }}
                       </div>
-                      <div class="image-description">
-                        {{ imageItem.description }}
+                      <div class="subtitle-description-section">
+                        {{ itemSection.subtitle }}
                       </div>
                     </div>
+                    <div class="description" v-html="itemSection.description" />
+                    <div v-if="itemSection.tags" class="tags-container">
+                      <div
+                        v-for="tagItem in itemSection.tags"
+                        :key="tagItem.id"
+                        class="tag-item"
+                      >
+                        {{ tagItem.title }}
+                      </div>
+                    </div>
+                    <div v-if="itemSection.icons" class="images-container">
+                      <div
+                        v-for="imageItem in itemSection.icons"
+                        :key="imageItem.id"
+                        class="image-tile"
+                      >
+                        <div class="image-section">
+                          <img
+                            :src="`https://jakubgania.io/data/expirience/technology-icons/${imageItem.path}`"
+                            :alt="imageItem.alt"
+                            class="xghp"
+                          />
+                        </div>
+                        <div class="image-description">
+                          {{ imageItem.description }}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </template>
-          </div>
-        </template>
+              </template>
+            </div>
+          </template>
+        </div>
       </div>
     </div>
   </div>
@@ -115,6 +151,15 @@ export default {
       description: jsonData.expirience.sectionPersonalData.description,
       information: jsonData.expirience.information,
     }
+  },
+  mounted() {
+    // const topImageElement = document.querySelector('#experience')
+    // window.addEventListener('scroll', function () {
+    //   console.log('page offset ', window.pageYOffset)
+    //   const yPosition = -(window.pageYOffset / topImageElement.dataset.speed)
+    //   const coordinate = yPosition + 'px'
+    //   document.getElementById('experience').style.letterSpacing = coordinate
+    // })
   },
   head() {
     return {
@@ -235,7 +280,7 @@ div .section .description img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -316,9 +361,21 @@ $image-tile-max-height: 160px;
 }
 
 @media only screen and (max-width: 600px) {
+  .content-container {
+    margin-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section-test {
+    display: block;
+  }
   .information-section {
     padding-left: 14px;
     padding-right: 14px;
+  }
+  .xtrox {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .section {
     display: block;
@@ -339,13 +396,15 @@ $image-tile-max-height: 160px;
     font-size: 20px;
   }
   .title-text {
-    font-size: 16px;
+    font-size: 12px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
   }
   .title-description-section {
     font-size: 16px;
   }
 
-  $image-tile-max-height: 100px;
+  $image-tile-max-height: 80px;
 
   .image-tile {
     width: $image-tile-max-height;
@@ -373,9 +432,6 @@ $image-tile-max-height: 160px;
     padding-left: 20px;
     padding-right: 12px;
     letter-spacing: 8px;
-  }
-  .content-container {
-    margin-bottom: 60px;
   }
 }
 </style>
