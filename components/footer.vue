@@ -96,8 +96,8 @@
     </div>
     <div class="footer-container__bottom-section">
       <div class="footer-container__line">
-        <div style="display: flex;">
-          <div style="text-align: left; width: 50%;">
+        <div class="footer-container__sect">
+          <div class="footer-container__sect-theme">
             <select
               v-model="$colorMode.preference"
               class="select-options"
@@ -117,7 +117,7 @@
               </option>
             </select>
           </div>
-          <div style="text-align: right; width: 50%;">
+          <div class="footer-container__sect-copy">
             <div class="footer-container__copyright-text">
               <div v-html="copyrightText" />
             </div>
@@ -384,7 +384,7 @@ export default {
     margin-top: 30px;
   }
   &__github-button-section {
-    width: 50%;
+    width: 100%;
     text-align: left;
     display: flex;
     line-height: 1;
@@ -407,6 +407,18 @@ export default {
   &__line {
     border-top: 1px solid var(--footer-container-line-color);
     padding-top: 60px;
+  }
+  &__sect {
+    display: flex;
+    align-items: baseline;
+  }
+  &__sect-theme {
+    text-align: left;
+    width: 50%;
+  }
+  &__sect-copy {
+    text-align: right;
+    width: 50%;
   }
   &__copyright-section {
     padding-left: 10vw;
@@ -459,9 +471,16 @@ export default {
 }
 @media only screen and (max-width: 1264px) {
   .footer-container {
+    &__logo-section {
+      width: 100%;
+      padding-left: 10px;
+    }
+    &__x {
+      width: 100%;
+      padding-left: 0;
+    }
     &__sitemap-section {
-      // padding-left: 20px;
-      // padding-right: 20px;
+      display: block;
     }
     &__copyright-section {
       padding-left: 20px;
@@ -473,6 +492,7 @@ export default {
   .footer-container {
     &__logo-section {
       width: 100%;
+      padding-left: 0;
     }
     &__x {
       width: 100%;
@@ -481,13 +501,50 @@ export default {
     &__sitemap-section {
       display: block;
     }
+    &__sites-section {
+      flex-wrap: wrap;
+    }
+    &__site-column-title {
+      font-size: 18px;
+    }
     &__site-column-section {
+      display: block;
       padding-left: 0;
       padding-right: 10px;
+      width: 50%;
     }
     &__copyright-section {
       padding-left: 20px;
       padding-right: 20px;
+    }
+    &__line {
+      padding-top: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .footer-container {
+    &__site-column-title {
+      font-size: 16px;
+    }
+    &__line {
+      padding-top: 40px;
+    }
+    &__sect {
+      display: block;
+    }
+    &__sect-theme {
+      text-align: left;
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    &__sect-copy {
+      text-align: left;
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    &__copyright-text {
+      text-align: left;
     }
   }
 }
@@ -510,10 +567,11 @@ export default {
     }
     &__site-column-section {
       padding-left: 0;
-      width: 50%;
+      width: 100%;
     }
     &__site-column-title {
       font-size: 14px;
+      font-weight: 600;
     }
     &__other-elements {
       display: inline-block;
