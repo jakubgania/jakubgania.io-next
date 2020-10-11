@@ -64,10 +64,10 @@
           <nuxt-link :to="next.slug">
             <div>
               <figure class="related-posts-figure">
-                <img
-                  :src="next.topImageSrc"
-                  alt=""
+                <div
+                  title=""
                   class="related-posts-image"
+                  :style="`background-image: url(${next.topImageSrc})`"
                 />
               </figure>
             </div>
@@ -87,10 +87,10 @@
           <nuxt-link :to="prev.slug">
             <div>
               <figure class="related-posts-figure">
-                <img
-                  :src="prev.topImageSrc"
-                  alt=""
+                <div
+                  title=""
                   class="related-posts-image"
+                  :style="`background-image: url(${prev.topImageSrc})`"
                 />
               </figure>
             </div>
@@ -359,6 +359,11 @@ export default {
   position: relative;
   overflow: hidden;
 }
+// .related-posts-figure::after {
+//   content: '';
+//   display: table;
+//   clear: both;
+// }
 .related-posts-figure::before {
   display: block;
   content: '';
