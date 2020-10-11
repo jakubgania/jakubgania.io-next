@@ -103,7 +103,7 @@
               class="select-options"
               style="margin-right: 12px;"
             >
-              <option value="light">Light</option>
+              <option value="system">Light</option>
               <option value="dark">Dark</option>
             </select>
             <select @change="changeLanguage" class="select-options">
