@@ -33,13 +33,13 @@ export default {
 <style lang="scss" scoped>
 .logo {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  letter-spacing: 0.6px;
+  letter-spacing: 2px;
   color: var(--logo-color);
   &--big-font {
     font-size: 60px;
   }
   &--normal-font {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 960px) {
