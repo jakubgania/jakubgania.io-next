@@ -9,7 +9,7 @@
       data-aos-once="true"
     >
       <div>
-        <div style="height: 60px; line-height: 60px;">
+        <div class="close-icon-section">
           <button @click="$emit('switchNavigationDrawer')" class="close-button">
             <div class="close-icon" />
           </button>
@@ -178,6 +178,10 @@ export default {
   padding-left: 10px;
   font-size: 12.8px;
 }
+.close-icon-section {
+  height: 60px;
+  line-height: 60px;
+}
 .close-button {
   float: right;
   margin-right: 10px;
@@ -210,5 +214,14 @@ export default {
 }
 .close-icon::after {
   transform: rotate(-45deg);
+}
+@media only screen and (max-width: 600px) {
+  .close-icon-section {
+    height: 48px;
+    line-height: 48px;
+  }
+  .close-icon {
+    top: 8px;
+  }
 }
 </style>

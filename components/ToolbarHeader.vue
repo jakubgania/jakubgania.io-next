@@ -52,7 +52,7 @@ export default {
 }
 .menu-icon-hamburger {
   width: 34px;
-  height: 1px;
+  height: 0.5px;
   background-color: var(--menu-icon-hamburger-color);
   transition: background-color 0.2s ease;
   margin: 8px 0;
