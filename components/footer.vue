@@ -103,8 +103,14 @@
               class="select-options"
               style="margin-right: 12px;"
             >
-              <option value="system">Light</option>
-              <option value="dark">Dark</option>
+              <option
+                v-for="option in themes"
+                :key="option.value"
+                :value="option.value"
+                :selected="option.value == $colorMode.preference"
+              >
+                {{ option.name }}
+              </option>
             </select>
             <select @change="changeLanguage" class="select-options">
               <option
@@ -209,6 +215,16 @@ export default {
       followers: null,
       following: null,
       starredRepositories: null,
+      themes: [
+        {
+          name: 'Light',
+          value: 'light',
+        },
+        {
+          name: 'Dark',
+          value: 'dark',
+        },
+      ],
       langs: [
         {
           name: 'Polish',
@@ -323,7 +339,7 @@ export default {
       ],
     }
   },
-  created() {
+  mounted() {
     this.getQuery()
     this.$nuxt.$colorMode.preference = 'light'
   },

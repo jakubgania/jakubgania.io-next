@@ -138,9 +138,10 @@ export default {
   },
 
   colorMode: {
-    preference: 'system',
+    preference: 'light',
     fallback: 'light',
     hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
     classPrefix: '',
     classSufix: '-mode',
   },
