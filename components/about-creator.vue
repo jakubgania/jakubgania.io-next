@@ -2,7 +2,12 @@
   <div class="author-container">
     <div class="author-wrapper">
       <div class="author-image">
-        <img :src="profileImage" alt="" />
+        <img
+          :src="profileImage"
+          alt=""
+          class="w-24 -mt-16 rounded-full shadow-xl"
+          style="margin-top: 8px;"
+        />
       </div>
       <div class="author-description-section">
         <div class="author-fullname">
