@@ -21,7 +21,7 @@
 <script>
 import ToolbarHeaderComponent from '@/components/ToolbarHeader'
 import NavigationDrawerComponent from '@/components/NavigationDrawer'
-import FooterComponent from '@/components/footer'
+import FooterComponent from '@/components/Footer'
 
 export default {
   components: {
