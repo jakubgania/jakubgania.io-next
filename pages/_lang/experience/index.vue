@@ -279,7 +279,7 @@ div .section .description img {
 .images-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -290,7 +290,7 @@ $image-tile-max-height: 160px;
   width: $image-tile-max-height;
   min-height: $image-tile-max-height;
   height: auto;
-  margin-right: 50px;
+  // margin-right: 50px;
   margin-bottom: 50px;
   transition: transform 0.2s;
   // margin-left: auto;
@@ -393,7 +393,7 @@ $image-tile-max-height: 160px;
     font-size: 14px;
   }
   .head-title {
-    font-size: 20px;
+    font-size: 26px;
   }
   .title-text {
     font-size: 12px;
@@ -404,7 +404,7 @@ $image-tile-max-height: 160px;
     font-size: 16px;
   }
 
-  $image-tile-max-height: 80px;
+  $image-tile-max-height: 40px;
 
   .image-tile {
     width: $image-tile-max-height;
@@ -412,6 +412,7 @@ $image-tile-max-height: 160px;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
+    flex: 1 0 20%;
   }
   .image-section {
     width: $image-tile-max-height;

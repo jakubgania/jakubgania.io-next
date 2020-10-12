@@ -49,6 +49,18 @@
         "titleSectionIcon": "laptop-windows",
         "sectionData": [
           {
+            "date": "2019-08 - 2020",
+            "title": "Jakub Gania Software",
+            "subtitle": "Własna działalność gospodarcza",
+            "description": "description description"
+          },
+          {
+            "date": "2020",
+            "title": "Praca magisterska",
+            "subtitle": "",
+            "description": "description description"
+          },
+          {
             "date": "2019-08 - 2019-09",
             "title": "Mindz IT Sp. z o.o. Sp.k.",
             "subtitle": "Junior Web Developer",
@@ -480,9 +492,45 @@
         "titleSectionIcon": "certificate-outline",
         "sectionData": [
           {
-            "date": "2019-08",
-            "title": "",
-            "subtitle": "",
+            "date": "2020-06",
+            "title": "Internet of Things",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+            "description": ""
+          },
+          {
+            "date": "2020-06",
+            "title": "Artificial Intelligence and Machine Learning",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+            "description": ""
+          },
+          {
+            "date": "2020-06",
+            "title": "Advanced of AWS solutions",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+            "description": ""
+          },
+          {
+            "date": "2020-06",
+            "title": "Microsoft Azure",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+            "description": ""
+          },
+          {
+            "date": "2020-06",
+            "title": "Amazon Web Services",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+            "description": ""
+          },
+          {
+            "date": "2020-06",
+            "title": "Google Cloud Platform",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+            "description": ""
+          },
+          {
+            "date": "2020-06",
+            "title": "IBM Cloud",
+            "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
             "description": ""
           },
           {
@@ -516,20 +564,20 @@
         "titleSectionIcon": "translate",
         "sectionData": [
           {
-            "date": "",
-            "title": "Polski",
+            "date": "Polski",
+            "title": "",
             "subtitle": "",
             "description": "Język ojczysty"
           },
           {
-            "date": "",
-            "title": "Niemiecki",
+            "date": "Niemiecki",
+            "title": "",
             "subtitle": "",
             "description": "<p>Poziom - podstawowy</p><p>Od 01.09.2020 intensywny kurs.</p>"
           },
           {
-            "date": "",
-            "title": "Angielski",
+            "date": "Angielski",
+            "title": "",
             "subtitle": "",
             "description": "Poziom - podstawowy"
           }
