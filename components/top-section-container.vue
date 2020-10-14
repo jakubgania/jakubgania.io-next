@@ -123,6 +123,7 @@ export default {
   font-size: 44px;
   text-align: left;
   margin-top: 20px;
+  font-weight: 900;
 }
 .two-column {
   display: flex;

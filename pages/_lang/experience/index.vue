@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dotted-background">
     <!-- <div
       id="experience"
       class="top-experience-text"
@@ -43,7 +43,9 @@
             data-aos-duration="1200"
             data-aos-once="true"
           >
-            <span class="bracket">[</span>
+            <span class="bracket">
+              {
+            </span>
           </div>
           <div
             data-aos="zoom-in"
@@ -60,7 +62,9 @@
             data-aos-duration="1200"
             data-aos-once="true"
           >
-            <span class="bracket">]</span>
+            <span class="bracket">
+              }
+            </span>
           </div>
         </div>
         <top-section-container-component
@@ -187,6 +191,25 @@ div .section .description img {
 </style>
 
 <style lang="scss" scoped>
+// Colors
+$bg-color: hsl(255, 255, 255);
+$dot-color: hsl(0, 0, 0);
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 70px;
+
+.dotted-background {
+  background: linear-gradient(
+        90deg,
+        $bg-color ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+}
 .content-container {
   width: 100%;
   max-width: 1200px;
@@ -211,12 +234,14 @@ div .section .description img {
   font-size: 6vw;
   font-weight: 700;
   letter-spacing: 6px;
-  color: #f2f2f2;
+  // color: #f2f2f2;
+  color: black;
   padding-left: 20px;
   display: flex;
 }
 .bracket {
-  color: #000;
+  // color: #000;
+  color: #f2f2f2;
 }
 .main-description {
   margin-top: 40px;
@@ -231,8 +256,9 @@ div .section .description img {
   margin-bottom: 90px;
 }
 .color-line {
-  height: 2px;
-  background-image: linear-gradient(101deg, #6a82fb, #fc5c7d);
+  // height: 1px;
+  // background-image: linear-gradient(101deg, #6a82fb, #fc5c7d);
+  // background-color: black;
   // border-top: 1.5px solid #d6d6d6;
 }
 .section-test {
@@ -271,6 +297,16 @@ div .section .description img {
   font-size: 54px;
   // padding-bottom: 10px;
   font-weight: 700;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #06f;
+    margin-top: 20px;
+  }
 }
 .border-bottom {
   // padding-bottom: 90px;
