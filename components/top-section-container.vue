@@ -103,9 +103,9 @@ export default {
 <style lang="scss" scoped>
 .top-section-container {
   // font-family: 'Nunito', sans-serif;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   margin-top: 80px;
-  margin-bottom: 80px;
+  // margin-bottom: 140px;
   position: relative;
   z-index: 0;
 }

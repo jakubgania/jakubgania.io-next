@@ -71,6 +71,17 @@
           :full-name="fullName"
           :personal-data="personalData"
         />
+        <div class="social-section">
+          <div class="social-icons-container">
+            <div class="social-item">Github</div>
+            <div class="social-line" />
+            <div class="social-item">LinkedIn</div>
+            <div class="social-line" />
+            <div class="social-item">Youtube</div>
+            <div class="social-line" />
+            <div class="social-item">Twitter</div>
+          </div>
+        </div>
         <div class="information-section">
           <div class="main-description">
             <div>
@@ -223,6 +234,10 @@ $dot-space: 70px;
 .experience-text {
   width: 100%;
   padding: 14px;
+  background: url(../../../assets/images/b1.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
 }
 .information-section {
   // font-family: 'Nunito', sans-serif;
@@ -234,17 +249,36 @@ $dot-space: 70px;
   font-size: 6vw;
   font-weight: 700;
   letter-spacing: 6px;
-  // color: #f2f2f2;
-  color: black;
+  padding-top: 140px;
+  padding-bottom: 140px;
   padding-left: 20px;
   display: flex;
 }
 .bracket {
   // color: #000;
-  color: #f2f2f2;
+  color: #fafafa;
+}
+.social-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.social-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-item {
+  width: 24%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.social-line {
+  border-right: 2px solid black;
+  transform: skewX(-30deg);
 }
 .main-description {
-  margin-top: 40px;
+  // margin-top: 40px;
   line-height: 2;
   letter-spacing: 0.5px;
 }
