@@ -34,9 +34,67 @@
         </div>
       </div>
     </div> -->
+    <div class="top-experience-text">
+      <div style="display: inline-flex;">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1200"
+          data-aos-once="true"
+        >
+          <span class="bracket">
+            {
+          </span>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-dealy="200"
+          data-aos-duration="1200"
+          data-aos-once="true"
+          class="experience-text"
+        >
+          Experience
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-dealy="50"
+          data-aos-duration="1200"
+          data-aos-once="true"
+        >
+          <span class="bracket">
+            }
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="content-container">
       <div class="experience-container">
-        <div class="top-experience-text">
+        <!-- <div class="top-experience-text">
+          <div>
+            <div class="xprt1" />
+            <div class="xprt2" />
+            <div class="xprt3" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-dealy="200"
+            data-aos-duration="1200"
+            data-aos-once="true"
+            class="experience-text"
+          >
+            Experience
+          </div>
+        </div> -->
+        <!-- <div class="top-experience-text-x">
+          <div class="xdrty">
+            <img :src="test" alt="" />
+          </div>
+          <div class="experience-text-x">
+            Experience
+          </div>
+        </div> -->
+        <!-- test -->
+        <!-- <div class="top-experience-text">
           <div
             data-aos="fade-right"
             data-aos-delay="50"
@@ -66,20 +124,52 @@
               }
             </span>
           </div>
-        </div>
+        </div> -->
         <top-section-container-component
           :full-name="fullName"
           :personal-data="personalData"
         />
         <div class="social-section">
           <div class="social-icons-container">
-            <div class="social-item">Github</div>
+            <div class="social-item">
+              <a
+                href="https://github.com/jakubgania"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
             <div class="social-line" />
-            <div class="social-item">LinkedIn</div>
+            <div class="social-item">
+              <a
+                href="https://www.linkedin.com/in/jakubgania"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
             <div class="social-line" />
-            <div class="social-item">Youtube</div>
+            <div class="social-item">
+              <a
+                href="https://twitter.com/jakubgania"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </div>
             <div class="social-line" />
-            <div class="social-item">Twitter</div>
+            <div class="social-item">
+              <a
+                href="https://www.youtube.com/channel/UCpRXjQ_FgRfAqP6uIsA7UEQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Youtube
+              </a>
+            </div>
           </div>
         </div>
         <div class="information-section">
@@ -154,6 +244,7 @@
 <script>
 import TopSectionContainerComponent from '@/components/top-section-container'
 import jsonData from '@/json/data'
+// import test from '../../../assets/images/test-1.png'
 
 export default {
   components: {
@@ -165,6 +256,7 @@ export default {
       fullName: jsonData.expirience.sectionPersonalData.fullName,
       description: jsonData.expirience.sectionPersonalData.description,
       information: jsonData.expirience.information,
+      // test,
     }
   },
   mounted() {
@@ -234,13 +326,18 @@ $dot-space: 70px;
 .experience-text {
   width: 100%;
   padding: 14px;
-  background: url(../../../assets/images/b1.jpg) no-repeat;
+  background: url(../../../assets/images/background-abstract.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: center;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .information-section {
   // font-family: 'Nunito', sans-serif;
+}
+.qwe12 {
+  text-align: center;
+  display: flex;
 }
 .top-experience-text {
   text-align: center;
@@ -249,14 +346,102 @@ $dot-space: 70px;
   font-size: 6vw;
   font-weight: 700;
   letter-spacing: 6px;
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-left: 20px;
+  // display: flex;
+}
+.top-experience-text-x {
+  // text-align: center;
+  // position: relative;
+  // z-index: 0;
+  // font-size: 6vw;
+  // font-weight: 700;
+  // letter-spacing: 6px;
+  // padding-top: 140px;
+  // padding-bottom: 140px;
+  // padding-left: 20px;
   display: flex;
+  line-height: 0.58;
+}
+.experience-text-x {
+  font-size: 6vw;
+  font-weight: 700;
+  letter-spacing: 6px;
+  // background: url(../../../assets/images/.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
 }
 .bracket {
   // color: #000;
   color: #fafafa;
+}
+.xdrty {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-right: 4px;
+}
+.xprt4 {
+  width: 2px;
+  height: 4.2vw;
+  background-color: black;
+  // position: absolute;
+  // top: 237px;
+  // left: 92px;
+  margin-right: 6px;
+}
+.xprt5 {
+  width: 8px;
+  height: 4.2vw;
+  background-color: black;
+  // position: absolute;
+  // top: 237px;
+  // left: 92px;
+  margin-right: 6px;
+}
+.xprt6 {
+  width: 14px;
+  height: 4.2vw;
+  background-color: black;
+  // position: absolute;
+  // top: 237px;
+  // left: 92px;
+  margin-right: 6px;
+}
+.xprt7 {
+  width: 22px;
+  height: 4.2vw;
+  background-color: black;
+  // position: absolute;
+  // top: 237px;
+  // left: 92px;
+  margin-right: 2px;
+}
+.xprt1 {
+  width: 28px;
+  height: 4.2vw;
+  background-color: black;
+  position: absolute;
+  top: 237px;
+  left: 92px;
+}
+.xprt2 {
+  width: 13px;
+  height: 4.2vw;
+  background-color: black;
+  position: absolute;
+  top: 237px;
+  left: 66px;
+}
+.xprt3 {
+  width: 7px;
+  height: 4.2vw;
+  background-color: black;
+  position: absolute;
+  top: 237px;
+  left: 43px;
 }
 .social-section {
   margin-top: 100px;
@@ -272,6 +457,13 @@ $dot-space: 70px;
   letter-spacing: 2px;
   font-size: 12px;
   font-weight: 700;
+  transition: letter-spacing 0.2s ease;
+
+  &:hover {
+    transition: letter-spacing 0.2s ease;
+    letter-spacing: 3px;
+    color: #f30;
+  }
 }
 .social-line {
   border-right: 2px solid black;
@@ -396,16 +588,25 @@ $image-tile-max-height: 160px;
 .tags-container {
   margin-top: 20px;
   margin-bottom: 10px;
+  display: flex;
 }
 .tag-item {
   margin-right: 10px;
   letter-spacing: 1.4px;
   font-size: 12px;
-  padding: 10px;
+  font-weight: 600;
+  padding: 6px;
   padding-left: 14px;
   padding-right: 14px;
+  background-color: #06f;
+  border-radius: 20px;
+  color: #fff;
 }
-
+@media only screen and (max-width: 1800px) {
+  .xdrty {
+    //
+  }
+}
 @media only screen and (max-width: 960px) {
   .experience-text {
     padding-top: inherit;

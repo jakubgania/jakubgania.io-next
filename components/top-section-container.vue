@@ -15,8 +15,29 @@
         <img :src="profileImage" alt="" class="profile-image" />
       </div>
       <div class="personal-data-section">
-        <div class="full-name desktop-version">
+        <!-- <div class="full-name desktop-version">
           {{ fullName }}
+        </div> -->
+        <div class="two-column" style="margin-top: -38px;">
+          <div class="left-column">
+            <div
+              class="item-section"
+              style="font-size: 44px; font-weight: 900; letter-spacing: 28px;"
+            >
+              Jakub
+            </div>
+          </div>
+          <div class="right-column">
+            <div
+              class="item-section"
+              style="font-size: 44px; font-weight: 900; letter-spacing: 28px;"
+            >
+              Gania
+            </div>
+          </div>
+        </div>
+        <div class="two-column">
+          {{ desc }}
         </div>
         <div class="two-column">
           <div class="left-column">
@@ -95,6 +116,8 @@ export default {
     return {
       profileImage,
       counter: 0,
+      desc:
+        'Specjalizuję się w programowaniu webowym. Swoją wiedzę poszerzam z zakresu technologii chmurowych. Ukończyłem studia inżynierskie, magisterskie oraz podyplomowe. Cały czas poznaję różne nowe zagadnienia techniczne oraz eksperymentuję z różnymi projektami. Ta strona zwiera najważniejsze informacje o moim doświadczeniu, używanych technologiach oraz wykształceniu i certyfikatach.',
     }
   },
 }
