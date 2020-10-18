@@ -115,6 +115,7 @@
       style="width: 100%;"
     />
     <projects-section-component />
+    <menu-code-list-component />
     <social-section-component />
     <images-section-component />
   </div>
@@ -127,6 +128,7 @@ import ContentSectionComponent from '../../components/home/ContentSection'
 import ImagesSectionComponent from '../../components/home/ImagesSection'
 import BlogSectionComponent from '../../components/home/BlogSection'
 import ProjectsSectionComponent from '../../components/home/ProjectsSection'
+import MenuCodeListComponent from '../../components/home/MenuCodeList'
 import ImageKeyboardLight from '../../assets/images/keyboard-light.jpg'
 import ImageKeyboardDark from '../../assets/images/keyboard-dark.jpg'
 
@@ -161,6 +163,7 @@ export default {
     'images-section-component': ImagesSectionComponent,
     'blog-section-component': BlogSectionComponent,
     'projects-section-component': ProjectsSectionComponent,
+    'menu-code-list-component': MenuCodeListComponent,
   },
   data() {
     return {
