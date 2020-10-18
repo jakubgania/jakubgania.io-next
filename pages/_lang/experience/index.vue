@@ -1,39 +1,5 @@
 <template>
   <div class="dotted-background">
-    <!-- <div
-      id="experience"
-      class="top-experience-text"
-      data-type="parallax"
-      data-speed="-6"
-    >
-      <div style="display: flex; margin: auto;">
-        <div
-          data-aos="fade-right"
-          data-aos-delay="50"
-          data-aos-duration="1200"
-          data-aos-once="true"
-        >
-          <span class="bracket">[ {{ ' ' }}</span>
-        </div>
-        <div
-          data-aos="zoom-in"
-          data-aos-dealy="200"
-          data-aos-duration="1200"
-          data-aos-once="true"
-          class="experience-text"
-        >
-          E x p e r i e n c e
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-dealy="50"
-          data-aos-duration="1200"
-          data-aos-once="true"
-        >
-          <span class="bracket">]</span>
-        </div>
-      </div>
-    </div> -->
     <div class="top-experience-text">
       <div style="display: inline-flex;">
         <div
@@ -69,62 +35,6 @@
     </div>
     <div class="content-container">
       <div class="experience-container">
-        <!-- <div class="top-experience-text">
-          <div>
-            <div class="xprt1" />
-            <div class="xprt2" />
-            <div class="xprt3" />
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-dealy="200"
-            data-aos-duration="1200"
-            data-aos-once="true"
-            class="experience-text"
-          >
-            Experience
-          </div>
-        </div> -->
-        <!-- <div class="top-experience-text-x">
-          <div class="xdrty">
-            <img :src="test" alt="" />
-          </div>
-          <div class="experience-text-x">
-            Experience
-          </div>
-        </div> -->
-        <!-- test -->
-        <!-- <div class="top-experience-text">
-          <div
-            data-aos="fade-right"
-            data-aos-delay="50"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <span class="bracket">
-              {
-            </span>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-dealy="200"
-            data-aos-duration="1200"
-            data-aos-once="true"
-            class="experience-text"
-          >
-            Experience
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-dealy="50"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <span class="bracket">
-              }
-            </span>
-          </div>
-        </div> -->
         <top-section-container-component
           :full-name="fullName"
           :personal-data="personalData"
@@ -184,7 +94,7 @@
                 {{ item.titleSection }}
               </h2>
             </div>
-            <div :key="item.id" class="color-line"></div>
+            <div :key="item.id"></div>
             <div :key="item.id" class="xtrox">
               <template v-for="itemSection in item.sectionData">
                 <div :key="itemSection.id" class="section-test">
@@ -244,7 +154,6 @@
 <script>
 import TopSectionContainerComponent from '@/components/top-section-container'
 import jsonData from '@/json/data'
-// import test from '../../../assets/images/test-1.png'
 
 export default {
   components: {
@@ -256,7 +165,6 @@ export default {
       fullName: jsonData.expirience.sectionPersonalData.fullName,
       description: jsonData.expirience.sectionPersonalData.description,
       information: jsonData.expirience.information,
-      // test,
     }
   },
   mounted() {
@@ -332,9 +240,6 @@ $dot-space: 70px;
   background-position: center;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
-.information-section {
-  // font-family: 'Nunito', sans-serif;
-}
 .qwe12 {
   text-align: center;
   display: flex;
@@ -349,32 +254,8 @@ $dot-space: 70px;
   padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 20px;
-  // display: flex;
-}
-.top-experience-text-x {
-  // text-align: center;
-  // position: relative;
-  // z-index: 0;
-  // font-size: 6vw;
-  // font-weight: 700;
-  // letter-spacing: 6px;
-  // padding-top: 140px;
-  // padding-bottom: 140px;
-  // padding-left: 20px;
-  display: flex;
-  line-height: 0.58;
-}
-.experience-text-x {
-  font-size: 6vw;
-  font-weight: 700;
-  letter-spacing: 6px;
-  // background: url(../../../assets/images/.jpg) no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-position: center;
 }
 .bracket {
-  // color: #000;
   color: #fafafa;
 }
 .xdrty {
@@ -382,66 +263,6 @@ $dot-space: 70px;
   padding-top: 20px;
   padding-bottom: 60px;
   margin-right: 4px;
-}
-.xprt4 {
-  width: 2px;
-  height: 4.2vw;
-  background-color: black;
-  // position: absolute;
-  // top: 237px;
-  // left: 92px;
-  margin-right: 6px;
-}
-.xprt5 {
-  width: 8px;
-  height: 4.2vw;
-  background-color: black;
-  // position: absolute;
-  // top: 237px;
-  // left: 92px;
-  margin-right: 6px;
-}
-.xprt6 {
-  width: 14px;
-  height: 4.2vw;
-  background-color: black;
-  // position: absolute;
-  // top: 237px;
-  // left: 92px;
-  margin-right: 6px;
-}
-.xprt7 {
-  width: 22px;
-  height: 4.2vw;
-  background-color: black;
-  // position: absolute;
-  // top: 237px;
-  // left: 92px;
-  margin-right: 2px;
-}
-.xprt1 {
-  width: 28px;
-  height: 4.2vw;
-  background-color: black;
-  position: absolute;
-  top: 237px;
-  left: 92px;
-}
-.xprt2 {
-  width: 13px;
-  height: 4.2vw;
-  background-color: black;
-  position: absolute;
-  top: 237px;
-  left: 66px;
-}
-.xprt3 {
-  width: 7px;
-  height: 4.2vw;
-  background-color: black;
-  position: absolute;
-  top: 237px;
-  left: 43px;
 }
 .social-section {
   margin-top: 100px;
@@ -470,7 +291,6 @@ $dot-space: 70px;
   transform: skewX(-30deg);
 }
 .main-description {
-  // margin-top: 40px;
   line-height: 2;
   letter-spacing: 0.5px;
 }
@@ -480,12 +300,6 @@ $dot-space: 70px;
 .xtrox {
   margin-top: 90px;
   margin-bottom: 90px;
-}
-.color-line {
-  // height: 1px;
-  // background-image: linear-gradient(101deg, #6a82fb, #fc5c7d);
-  // background-color: black;
-  // border-top: 1.5px solid #d6d6d6;
 }
 .section-test {
   margin-bottom: 60px;
@@ -521,7 +335,6 @@ $dot-space: 70px;
 .head-title {
   letter-spacing: 1px;
   font-size: 54px;
-  // padding-bottom: 10px;
   font-weight: 700;
 
   &::after {
@@ -533,10 +346,6 @@ $dot-space: 70px;
     background-color: #06f;
     margin-top: 20px;
   }
-}
-.border-bottom {
-  // padding-bottom: 90px;
-  // border-bottom: 1px solid #f2f2f2;
 }
 .images-container {
   display: flex;
@@ -552,11 +361,8 @@ $image-tile-max-height: 160px;
   width: $image-tile-max-height;
   min-height: $image-tile-max-height;
   height: auto;
-  // margin-right: 50px;
   margin-bottom: 50px;
   transition: transform 0.2s;
-  // margin-left: auto;
-  // margin-right: auto;
 }
 .image-section {
   position: relative;
@@ -601,11 +407,6 @@ $image-tile-max-height: 160px;
   background-color: #06f;
   border-radius: 20px;
   color: #fff;
-}
-@media only screen and (max-width: 1800px) {
-  .xdrty {
-    //
-  }
 }
 @media only screen and (max-width: 960px) {
   .experience-text {

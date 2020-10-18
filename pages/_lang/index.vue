@@ -1,5 +1,9 @@
 <template>
   <div>
+    <menu-component
+      :showMenu="showMenu"
+      @switchNavigationDrawer="switchNavigationDrawer"
+    />
     <div class="container-index grid grid-rows-1">
       <div>
         <div class="split split--left">
@@ -9,7 +13,11 @@
                 Jakub Gania
               </div>
               <div class="link-section">
-                <nuxt-link :to="$i18n.path('')" class="link">
+                <nuxt-link
+                  :to="$i18n.path('')"
+                  class="link"
+                  @click.native="showMenu = true"
+                >
                   <span style="color: #f00;">
                     this
                   </span>
@@ -169,6 +177,7 @@
 </template>
 
 <script>
+import MenuComponent from '../../components/home/Menu'
 import SocialSectionComponent from '../../components/home/SocialSection'
 import ContentSectionComponent from '../../components/home/ContentSection'
 import ImagesSectionComponent from '../../components/home/ImagesSection'
@@ -202,6 +211,7 @@ export default {
     }
   },
   components: {
+    'menu-component': MenuComponent,
     'social-section-component': SocialSectionComponent,
     'content-section-component': ContentSectionComponent,
     'images-section-component': ImagesSectionComponent,
@@ -212,11 +222,15 @@ export default {
     return {
       ImageKeyboardLight,
       ImageKeyboardDark,
+      showMenu: false,
     }
   },
   methods: {
     ImageKeyboard(colorMode) {
       return colorMode === 'light' ? ImageKeyboardLight : ImageKeyboardDark
+    },
+    switchNavigationDrawer() {
+      this.showMenu = !this.showMenu
     },
   },
   head() {
@@ -286,7 +300,8 @@ export default {
   transition: letter-spacing 0.2s ease;
   font-size: 14px;
   font-weight: bold;
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: #ffdd1a;
   padding-left: 44px;
   padding-right: 44px;
   padding-top: 14px;
@@ -342,20 +357,20 @@ export default {
   text-align: center;
 }
 .left-part {
-  left: 70%;
+  left: 58%;
 }
 .right-part {
   left: 30%;
 }
 .technical-word {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  font-size: 2vw;
+  font-size: 3vw;
   letter-spacing: 0.4px;
   color: var(--home-page-top-section-text-color);
 }
 .fullname {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  font-size: 2vw;
+  font-size: 3vw;
   letter-spacing: 0.4px;
   margin-bottom: 28px;
   color: var(--home-page-top-section-text-color);
