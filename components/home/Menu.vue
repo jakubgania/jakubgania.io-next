@@ -1,8 +1,6 @@
 <template>
   <div v-show="showDrawerFlag" class="menu-wrapper">
     <div class="content-container-menu">
-      <!-- <subpage-title-section-component :title="title" /> -->
-
       <button @click="$emit('switchNavigationDrawer')" class="close-button">
         <div class="close-icon" />
       </button>
@@ -214,60 +212,6 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-// .link {
-//   text-decoration: none;
-// }
-// .link-text {
-//   color: #000;
-//   letter-spacing: 1.5px;
-//   font-size: 12px;
-//   padding-top: 2px;
-//   padding-bottom: 2px;
-//   font-weight: 500;
-// }
-// .link-text-dark-theme {
-//   color: #0fc;
-// }
-// .link-x {
-//   padding: 0;
-// }
-// .number-line {
-//   color: #d9d9d9;
-// }
-// .link-section:hover {
-//   background-color: #f2f2f2;
-//   padding-left: 12px;
-
-//   .number-line {
-//     margin-left: -12px;
-//   }
-
-//   .xpo {
-//     padding-left: 12px;
-//     transition: padding-left 0.2s ease;
-//   }
-
-//   .link-text-dark-theme {
-//     color: #000;
-//   }
-// }
-// .comma {
-//   color: #69f;
-// }
-// .comma-not {
-//   display: none;
-// }
-// .top-image {
-//   width: 100%;
-//   height: 30vw;
-//   max-height: 940px;
-//   min-height: 200px;
-//   background-image: url('../../assets/images/background.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   margin-bottom: 80px;
-// }
 .list-section {
   position: fixed;
   top: 50%;
@@ -314,22 +258,4 @@ export default {
 .close-icon::after {
   transform: rotate(-45deg);
 }
-
-// @media only screen and (max-width: 960px) {
-//   .content-container {
-//     margin-left: 14px;
-//     margin-right: 14px;
-//   }
-// }
-
-// @media only screen and (max-width: 600px) {
-//   .content-container {
-//     margin-left: 14px;
-//     margin-right: 14px;
-//     margin-bottom: 20px;
-//   }
-//   .top-image {
-//     margin-bottom: 40px;
-//   }
-// }
 </style>
