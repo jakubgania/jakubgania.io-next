@@ -127,4 +127,12 @@ export default {
 .close-icon::after {
   transform: rotate(-45deg);
 }
+
+@media only screen and (max-width: 600px) {
+  .list-item-link:hover {
+    letter-spacing: 8px;
+    transition: letter-spacing 0s ease;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
 </style>
