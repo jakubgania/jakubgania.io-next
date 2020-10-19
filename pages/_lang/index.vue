@@ -13,11 +13,7 @@
                 Jakub Gania
               </div>
               <div class="link-section">
-                <nuxt-link
-                  :to="$i18n.path('')"
-                  class="link"
-                  @click.native="showMenu = true"
-                >
+                <button class="link" @click="showMenu = true" type="button">
                   <span style="color: #f00;">
                     this
                   </span>
@@ -34,7 +30,7 @@
                     (click!)
                   </span>
                   <span>;</span>
-                </nuxt-link>
+                </button>
               </div>
             </div>
           </div>
@@ -253,6 +249,7 @@ export default {
   padding-top: 14px;
   padding-bottom: 14px;
   border-radius: 20px;
+  outline: none;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 
   .parenthesis_empty {
@@ -388,6 +385,12 @@ export default {
   }
   .link {
     font-size: 12px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .link:hover {
+    opacity: 0.7;
+    letter-spacing: 1.2px;
+    transition: letter-spacing 0s ease;
   }
   .section {
     padding-top: 20px;
