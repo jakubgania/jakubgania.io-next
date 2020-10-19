@@ -10,7 +10,7 @@
       @switchNavigationDrawer="switchNavigationDrawer"
     />
 
-    <div style="padding-top: 64px;">
+    <div class="nuxt-container">
       <Nuxt />
     </div>
 
@@ -65,5 +65,13 @@ export default {
 
 body {
   background-color: var(--bg);
+}
+.nuxt-container {
+  padding-top: 64px;
+}
+@media only screen and (max-width: 900px) {
+  .nuxt-container {
+    padding-top: 48px;
+  }
 }
 </style>
