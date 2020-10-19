@@ -216,15 +216,15 @@ export default {
 
 @media only screen and (max-width: 960px) {
   .content-container {
-    margin-left: 14px;
-    margin-right: 14px;
+    // margin-left: 14px;
+    // margin-right: 14px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .content-container {
-    margin-left: 14px;
-    margin-right: 14px;
+    // margin-left: 14px;
+    // margin-right: 14px;
     margin-bottom: 20px;
   }
   .top-image {

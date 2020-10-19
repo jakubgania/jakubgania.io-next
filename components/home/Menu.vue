@@ -82,14 +82,18 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 300px;
 }
 .list-item-link {
   font-size: 12px;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   letter-spacing: 8px;
+  transition: letter-spacing 0.2s ease;
 
   &:hover {
     color: blue;
+    letter-spacing: 10px;
+    transition: letter-spacing 0.2s ease;
   }
 }
 .list-item {
