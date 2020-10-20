@@ -1,7 +1,7 @@
 <template>
   <div class="main-projects-container">
     <top-image-component />
-    <!-- <div class="change-button-sect">
+    <div class="change-button-sect">
       <div class="button-sect">
         <div @click="changeView('grid')" class="fgt">
           widok kafelków
@@ -12,8 +12,8 @@
           widok listy
         </div>
       </div>
-    </div> -->
-    <div v-if="view == 'list'" class="list-projects-container">
+    </div>
+    <div v-show="view == 'list'" class="list-projects-container">
       <!-- breadcrumb -->
       <!-- subpage title section component -->
       <div class="grid grid-rows-1">
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div
-      v-if="view == 'grid'"
+      v-if="view == 'grid' && data"
       class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl"
     >
       <div
@@ -59,16 +59,16 @@
               <tag-component :key="item.id" :name="item" />
             </template>
           </div>
-          <img
+          <!-- <img
             :src="data.viewer.avatarUrl"
             alt="My Avatar"
             class="w-24 -mt-16 rounded-full shadow-xl"
-          />
+          /> -->
           <h2 class="text-xl font-bold">
             Jakub Gania
           </h2>
           <div class="flex flex-col flex-grow px-2 mt-4">
-            <div v-if="data.viewer.location" class="flex text-gray-70">
+            <!-- <div v-if="data.viewer.location" class="flex text-gray-70">
               <div class="flex text-gray-70">
                 <span role="img" aria-label="Graduate Emoji">
                   🗺️
@@ -77,7 +77,7 @@
                   {{ data.viewer.location }}
                 </span>
               </div>
-            </div>
+            </div> -->
           </div>
           <div
             class="grid w-full grid-cols-3 mt-4 text-xs font-bold uppercase gap-px"
@@ -123,7 +123,7 @@
               <div class="grid grid-flow-row gap-4">
                 <p>
                   <span>
-                    {{ data.viewer.bio }}
+                    <!-- {{ data.viewer.bio }} -->
                   </span>
                 </p>
                 <p class="text-xs tracking-wide">
@@ -315,15 +315,8 @@ export default {
       .only(['title', 'description', 'slug'])
       .fetch()
 
-    const { data } = await app.apolloProvider.defaultClient.query({
-      query: githubDataQuery,
-    })
-
-    console.log('static format', JSON.parse(JSON.stringify(data.viewer)))
-
     return {
       projects,
-      data,
     }
   },
   components: {
@@ -349,6 +342,8 @@ export default {
         'SQL',
         'Cloud',
       ],
+      data: null,
+      viewer: {},
     }
   },
   methods: {
@@ -367,17 +362,40 @@ export default {
   //   },
   // },
   mounted() {
-    const featuredRepoList = []
+    this.$apollo
+      .query({
+        query: githubDataQuery,
+      })
+      .then(({ data }) => {
+        // this.data = JSON.parse(JSON.stringify(data))
+        this.data = data
+        // this.viewer = JSON.parse(JSON.stringify(data.viewer))
+        console.log('this data ', this.data)
+        // console.log('this viewer ', this.viewer.pinnedItems)
+        // this.followers = data.viewer.followers.totalCount
+        // this.following = data.viewer.following.totalCount
+        // this.starredRepositories = data.viewer.starredRepositories.totalCount
+      })
 
-    if (this.viewer) {
-      this.viewer.pinnedItems.edges
-        .map((n) => n.node)
-        .concat()
-        .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
-        .forEach((r) => featuredRepoList.push(r))
-    }
+    // const featuredRepoList = []
 
-    console.log('static ', this.data)
+    // if (this.viewer) {
+    //   this.viewer.pinnedItems.edges
+    //     .map((n) => n.node)
+    //     .concat()
+    //     .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
+    //     .forEach((r) => featuredRepoList.push(r))
+    // }
+
+    // console.log('static ', this.data)
+
+    // const { data } = $apolloProvider.defaultClient.query({
+    //   query: githubDataQuery,
+    // })
+
+    // this.data = data
+
+    // console.log('static format', JSON.parse(JSON.stringify(data.viewer)))
   },
   head() {
     return {
@@ -394,7 +412,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main-projects-container {
   margin-bottom: 140px;
 }
@@ -489,6 +507,7 @@ export default {
 .post-link {
   text-decoration: none;
   color: #000;
+  // font-size: 14px;
 
   &:hover {
     .post-main-title {
@@ -497,7 +516,7 @@ export default {
   }
 }
 .post-title {
-  font-size: 20px;
+  font-size: 16px;
 }
 .change-button-sect {
   max-width: 600px;
@@ -551,6 +570,9 @@ export default {
   }
   .change-button-sect {
     display: block;
+  }
+  .post-link {
+    font-size: 14px;
   }
 }
 </style>
