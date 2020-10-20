@@ -4,7 +4,13 @@
       <div class="top-image-container__section">
         <div class="top-image-container__content-section">
           <div class="top-image-container__title">
-            [ projekty ]
+            <span style="font-size: 13vw;">
+              [
+            </span>
+            projekty
+            <span style="font-size: 13vw;">
+              ]
+            </span>
           </div>
         </div>
         <div class="top-image-container__scroll-down-container">
@@ -28,7 +34,7 @@
   margin-bottom: 40px;
 
   $top-image-width: 100%;
-  $top-image-height: 100vh;
+  $top-image-height: calc(100vh - 64px);
 
   &__section {
     width: $top-image-width;
@@ -45,7 +51,7 @@
       background-position: center;
       background-size: cover;
       width: $top-image-width;
-      height: 100vh;
+      height: $top-image-height;
       opacity: 0.5;
       background-attachment: fixed;
     }
@@ -144,6 +150,20 @@
 @keyframes pulse {
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .top-image-container {
+    $top-image-height: calc(100vh - 48px);
+
+    &__section {
+      height: $top-image-height;
+
+      &::after {
+        height: $top-image-height;
+      }
+    }
   }
 }
 </style>

@@ -69,7 +69,7 @@ body {
 .nuxt-container {
   padding-top: 64px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
   .nuxt-container {
     padding-top: 48px;
   }
