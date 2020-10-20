@@ -1,7 +1,7 @@
 <template>
   <div class="main-projects-container">
     <top-image-component />
-    <div class="change-button-sect">
+    <!-- <div class="change-button-sect">
       <div class="button-sect">
         <div @click="changeView('grid')" class="fgt">
           widok kafelków
@@ -12,7 +12,7 @@
           widok listy
         </div>
       </div>
-    </div>
+    </div> -->
     <div v-if="view == 'list'" class="list-projects-container">
       <!-- breadcrumb -->
       <!-- subpage title section component -->
@@ -548,6 +548,9 @@ export default {
   .list-projects-container {
     padding-left: 14px;
     padding-right: 14px;
+  }
+  .change-button-sect {
+    display: block;
   }
 }
 </style>

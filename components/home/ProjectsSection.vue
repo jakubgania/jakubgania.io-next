@@ -62,7 +62,7 @@
 import MoreContentButtonComponent from '../../components/more-content-button'
 
 export default {
-  comments: {
+  components: {
     'more-content-button-component': MoreContentButtonComponent,
   },
 }

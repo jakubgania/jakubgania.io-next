@@ -8,7 +8,11 @@
       <div class="list-section">
         <li v-for="item in items" :key="item.id" style="list-style: none;">
           <ul class="list-item">
-            <nuxt-link :to="item.path" class="list-item-link">
+            <nuxt-link
+              :to="item.path"
+              class="list-item-link"
+              @click.native="showScrollbar()"
+            >
               / {{ item.title }} /
             </nuxt-link>
           </ul>
@@ -53,6 +57,10 @@ export default {
           document.getElementsByTagName('html')[0].style.overflow = 'auto'
         }
       }
+    },
+    showScrollbar() {
+      console.log('show scrollbar')
+      document.getElementsByTagName('html')[0].style.overflow = 'auto'
     },
   },
 }
