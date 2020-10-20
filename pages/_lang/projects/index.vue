@@ -30,10 +30,6 @@
               :key="project.slug"
               class="post-link-item"
             >
-              <!-- $i18n.path(project.slug) -->
-              <!-- :to="{ name: 'projects-slug', params: { slug: project.slug } }" -->
-              <!-- :to="$i18n.path('projects/' + project.slug)" -->
-              <!-- "localePath({ name: 'category-slug', params: { slug: category.slug } })" -->
               <nuxt-link
                 :to="$i18n.path('projects/' + project.slug)"
                 class="post-link"
@@ -354,6 +350,7 @@ export default {
   methods: {
     changeView(viewType) {
       this.view = viewType
+      localStorage.setItem('projectsList', JSON.stringify(viewType))
     },
   },
   // apollo: {
@@ -372,35 +369,14 @@ export default {
         query: githubDataQuery,
       })
       .then(({ data }) => {
-        // this.data = JSON.parse(JSON.stringify(data))
         this.data = data
-        // this.viewer = JSON.parse(JSON.stringify(data.viewer))
-        console.log('this data ', this.data)
-        // console.log('this viewer ', this.viewer.pinnedItems)
-        // this.followers = data.viewer.followers.totalCount
-        // this.following = data.viewer.following.totalCount
-        // this.starredRepositories = data.viewer.starredRepositories.totalCount
       })
 
-    // const featuredRepoList = []
-
-    // if (this.viewer) {
-    //   this.viewer.pinnedItems.edges
-    //     .map((n) => n.node)
-    //     .concat()
-    //     .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
-    //     .forEach((r) => featuredRepoList.push(r))
-    // }
-
-    // console.log('static ', this.data)
-
-    // const { data } = $apolloProvider.defaultClient.query({
-    //   query: githubDataQuery,
-    // })
-
-    // this.data = data
-
-    // console.log('static format', JSON.parse(JSON.stringify(data.viewer)))
+    if (localStorage.getItem('projectsList')) {
+      this.view = JSON.parse(localStorage.getItem('projectsList'))
+    } else {
+      localStorage.setItem('projectsList', JSON.stringify('grid'))
+    }
   },
   head() {
     return {
