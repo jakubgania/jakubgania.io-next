@@ -500,11 +500,17 @@ $image-tile-max-height: 160px;
   .expirience-container {
     margin-top: 40px;
   }
-  .top-experionce-text {
+  .top-experience-text {
     font-size: 8vw;
     padding-left: 20px;
     padding-right: 12px;
     letter-spacing: 8px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .social-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 </style>

@@ -7,7 +7,8 @@
             <img :src="profileImage" alt="" class="profile-image" />
           </div>
           <div class="full-name">
-            {{ fullName }}
+            Jakub <br />
+            Gania
           </div>
         </div>
       </div>
@@ -18,7 +19,7 @@
         <!-- <div class="full-name desktop-version">
           {{ fullName }}
         </div> -->
-        <div class="two-column" style="margin-top: -38px;">
+        <div class="two-column xpoo" style="margin-top: -38px;">
           <div class="left-column">
             <div
               class="item-section"
@@ -147,6 +148,10 @@ export default {
   text-align: left;
   margin-top: 20px;
   font-weight: 900;
+
+  & br {
+    display: none;
+  }
 }
 .two-column {
   display: flex;
@@ -224,8 +229,14 @@ export default {
   .full-name {
     width: 66%;
     font-size: 8vw;
-    padding-left: 12px;
-    text-align: center;
+    letter-spacing: 6px;
+    padding-left: 28px;
+    text-align: left;
+    line-height: 1;
+
+    & br {
+      display: flex;
+    }
   }
   .two-column {
     padding-bottom: 14px;
@@ -249,6 +260,9 @@ export default {
     br {
       display: inline;
     }
+  }
+  .xpoo {
+    display: none;
   }
 }
 </style>
