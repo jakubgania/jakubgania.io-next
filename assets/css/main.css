@@ -43,7 +43,10 @@
   --scrollbar-thumb-color: #bfbfbf;
   --navigation-drawer-close-button-color: #000;
   --navigation-drawer-social-icon-color: #000;
-  --navigation-drawer-list-item-hover-color: #f2f2f2; 
+  --navigation-drawer-list-item-hover-color: #f2f2f2;
+  --home-page-menu-component-background-color: #fff;
+  --home-page-menu-component-text-color: #000;
+  --home-page-menu-component-close-icon-color: #000;
 }
 
 .dark-mode {
@@ -88,4 +91,7 @@
   --navigation-drawer-close-button-color: #fff;
   --navigation-drawer-social-icon-color: #fff;
   --navigation-drawer-list-item-hover-color: #333333;
+  --home-page-menu-component-background-color: #000;
+  --home-page-menu-component-text-color: #fff;
+  --home-page-menu-component-close-icon-color: #fff;
 }

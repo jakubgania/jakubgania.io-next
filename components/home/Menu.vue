@@ -59,7 +59,6 @@ export default {
       }
     },
     showScrollbar() {
-      console.log('show scrollbar')
       document.getElementsByTagName('html')[0].style.overflow = 'auto'
     },
   },
@@ -71,7 +70,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: var(--home-page-menu-component-background-color);
   margin-top: -64px;
   z-index: 8000;
 }
@@ -97,6 +96,7 @@ export default {
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   letter-spacing: 8px;
   transition: letter-spacing 0.2s ease;
+  color: var(--home-page-menu-component-text-color);
 
   &:hover {
     color: blue;
@@ -127,7 +127,7 @@ export default {
   content: ' ';
   height: 33px;
   width: 1px;
-  background-color: #333;
+  background-color: var(--home-page-menu-component-close-icon-color);
 }
 .close-icon::before {
   transform: rotate(45deg);
