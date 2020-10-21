@@ -5,10 +5,6 @@
       "path": "/"
     },
     {
-      "title": "O mnie",
-      "path": "/about"
-    },
-    {
       "title": "Blog",
       "path": "/blog"
     },
@@ -17,16 +13,20 @@
       "path": "/projects"
     },
     {
+      "title": "Doświadczenie",
+      "path": "/experience"
+    },
+    {
       "title": "Kontakt",
       "path": "/contact"
     },
     {
-      "title": "Galeria",
-      "path": "/gallery"
+      "title": "O mnie",
+      "path": "/about"
     },
     {
-      "title": "Doświadczenie",
-      "path": "/experience"
+      "title": "Galeria",
+      "path": "/gallery"
     }
   ]
 }
