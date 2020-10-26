@@ -7,12 +7,12 @@
     <template v-else>
       <div class="change-button-sect">
         <div class="button-sect">
-          <div @click="changeView('grid')" class="fgt">
+          <div class="fgt" @click="changeView('grid')">
             widok kafelków
           </div>
         </div>
         <div class="button-sect">
-          <div @click="changeView('list')" class="fgt">
+          <div class="fgt" @click="changeView('list')">
             widok listy
           </div>
         </div>
@@ -305,6 +305,12 @@ const githubDataQuery = gql`
 `
 
 export default {
+  components: {
+    'top-image-component': TopImage,
+    'tag-component': TagComponent,
+    'featured-repos-component': FeaturedRepos,
+    'recent-repos-component': RecentRepos,
+  },
   async asyncData({ app, $content, params, store }) {
     let language = store.state.locale
 
@@ -319,12 +325,6 @@ export default {
     return {
       projects,
     }
-  },
-  components: {
-    'top-image-component': TopImage,
-    'tag-component': TagComponent,
-    'featured-repos-component': FeaturedRepos,
-    'recent-repos-component': RecentRepos,
   },
   data() {
     return {
@@ -347,6 +347,21 @@ export default {
       viewer: {},
     }
   },
+  mounted() {
+    this.$apollo
+      .query({
+        query: githubDataQuery,
+      })
+      .then(({ data }) => {
+        this.data = data
+      })
+
+    if (localStorage.getItem('projectsList')) {
+      this.view = JSON.parse(localStorage.getItem('projectsList'))
+    } else {
+      localStorage.setItem('projectsList', JSON.stringify('grid'))
+    }
+  },
   methods: {
     changeView(viewType) {
       this.view = viewType
@@ -363,21 +378,6 @@ export default {
   //     },
   //   },
   // },
-  mounted() {
-    this.$apollo
-      .query({
-        query: githubDataQuery,
-      })
-      .then(({ data }) => {
-        this.data = data
-      })
-
-    if (localStorage.getItem('projectsList')) {
-      this.view = JSON.parse(localStorage.getItem('projectsList'))
-    } else {
-      localStorage.setItem('projectsList', JSON.stringify('grid'))
-    }
-  },
   head() {
     return {
       title: 'Jakub Gania Software | Projekty',
