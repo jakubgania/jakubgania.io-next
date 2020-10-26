@@ -21,7 +21,7 @@
 <script>
 import ToolbarHeaderComponent from '@/components/ToolbarHeader'
 import NavigationDrawerComponent from '@/components/NavigationDrawer'
-import FooterComponent from '@/components/footer'
+import FooterComponent from '@/components/Footer'
 
 export default {
   components: {
@@ -69,7 +69,6 @@ body {
 .nuxt-container {
   padding-top: 64px;
 }
-// comment
 @media only screen and (max-width: 960px) {
   .nuxt-container {
     padding-top: 48px;
