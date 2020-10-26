@@ -1,7 +1,7 @@
 <template>
   <div>
     <menu-component
-      :showMenu="showMenu"
+      :show-menu="showMenu"
       @switchNavigationDrawer="switchNavigationDrawer"
     />
     <div class="container-index grid grid-rows-1">
@@ -13,7 +13,7 @@
                 Jakub Gania
               </div>
               <div class="link-section">
-                <button class="link" @click="showMenu = true" type="button">
+                <button class="link" type="button" @click="showMenu = true">
                   <span style="color: #f00;">
                     this
                   </span>
@@ -129,6 +129,15 @@ import ImageKeyboardLight from '../../assets/images/keyboard-light.jpg'
 import ImageKeyboardDark from '../../assets/images/keyboard-dark.jpg'
 
 export default {
+  components: {
+    'menu-component': MenuComponent,
+    'social-section-component': SocialSectionComponent,
+    'content-section-component': ContentSectionComponent,
+    'images-section-component': ImagesSectionComponent,
+    'blog-section-component': BlogSectionComponent,
+    'projects-section-component': ProjectsSectionComponent,
+    'menu-code-list-component': MenuCodeListComponent,
+  },
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
 
@@ -151,15 +160,6 @@ export default {
       posts,
       numberOfPosts,
     }
-  },
-  components: {
-    'menu-component': MenuComponent,
-    'social-section-component': SocialSectionComponent,
-    'content-section-component': ContentSectionComponent,
-    'images-section-component': ImagesSectionComponent,
-    'blog-section-component': BlogSectionComponent,
-    'projects-section-component': ProjectsSectionComponent,
-    'menu-code-list-component': MenuCodeListComponent,
   },
   data() {
     return {
