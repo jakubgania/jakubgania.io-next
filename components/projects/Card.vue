@@ -153,6 +153,10 @@ import TagComponent from '../../components/projects/Tag'
 import IconComponent from '../../components/icon'
 
 export default {
+  components: {
+    'tag-component': TagComponent,
+    'icon-component': IconComponent,
+  },
   props: {
     repoData: {
       type: Object,
@@ -164,10 +168,6 @@ export default {
       type: Boolean,
       default: true,
     },
-  },
-  components: {
-    'tag-component': TagComponent,
-    'icon-component': IconComponent,
   },
   data() {
     return {
