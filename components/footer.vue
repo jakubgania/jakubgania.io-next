@@ -112,7 +112,7 @@
                 {{ option.name }}
               </option>
             </select>
-            <select @change="changeLanguage" class="select-options">
+            <select class="select-options" @change="changeLanguage">
               <option
                 v-for="option in langs"
                 :key="option.value"
@@ -160,43 +160,6 @@ export default {
   components: {
     'logo-component': LogoComponent,
     'icon-component': IconComponent,
-  },
-  methods: {
-    changeLanguage(e) {
-      let route = ''
-
-      if (this.$route.name === 'index') {
-        this.routerPush('lang', e.target.value)
-      } else {
-        if (e.target.value === 'de') {
-          route = `lang-${this.$route.name}`
-        } else {
-          route = this.$route.name
-        }
-
-        this.routerPush(route, e.target.value)
-      }
-    },
-    routerPush(routeName, languageParam) {
-      this.$router.push({
-        name: routeName,
-        params: {
-          lang: languageParam,
-        },
-      })
-    },
-    getQuery() {
-      this.$apollo
-        .query({
-          query: githubDataQuery,
-        })
-        .then(({ data }) => {
-          this.githubData = JSON.parse(JSON.stringify(data.viewer))
-          this.followers = data.viewer.followers.totalCount
-          this.following = data.viewer.following.totalCount
-          this.starredRepositories = data.viewer.starredRepositories.totalCount
-        })
-    },
   },
   apollo: {
     viewer: {
@@ -342,6 +305,43 @@ export default {
   mounted() {
     this.getQuery()
     this.$nuxt.$colorMode.preference = 'light'
+  },
+  methods: {
+    changeLanguage(e) {
+      let route = ''
+
+      if (this.$route.name === 'index') {
+        this.routerPush('lang', e.target.value)
+      } else {
+        if (e.target.value === 'de') {
+          route = `lang-${this.$route.name}`
+        } else {
+          route = this.$route.name
+        }
+
+        this.routerPush(route, e.target.value)
+      }
+    },
+    routerPush(routeName, languageParam) {
+      this.$router.push({
+        name: routeName,
+        params: {
+          lang: languageParam,
+        },
+      })
+    },
+    getQuery() {
+      this.$apollo
+        .query({
+          query: githubDataQuery,
+        })
+        .then(({ data }) => {
+          this.githubData = JSON.parse(JSON.stringify(data.viewer))
+          this.followers = data.viewer.followers.totalCount
+          this.following = data.viewer.following.totalCount
+          this.starredRepositories = data.viewer.starredRepositories.totalCount
+        })
+    },
   },
 }
 </script>
