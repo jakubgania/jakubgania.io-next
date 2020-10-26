@@ -17,8 +17,8 @@
       <template v-for="item in repositories">
         <card-component
           :key="item.node.name"
-          :repoData="item.node"
-          :useImage="true"
+          :repo-data="item.node"
+          :use-image="true"
         />
       </template>
     </div>
@@ -30,6 +30,9 @@ import moment from 'moment'
 import CardComponent from './Card'
 
 export default {
+  components: {
+    'card-component': CardComponent,
+  },
   props: {
     data: {
       type: Object,
@@ -37,9 +40,6 @@ export default {
         return {}
       },
     },
-  },
-  components: {
-    'card-component': CardComponent,
   },
   data() {
     return {
