@@ -417,9 +417,9 @@ export default {
     width: 100%;
     margin: auto;
   }
-  &__copyright-wrapper {
-    // border-top: 1px solid #e6e6e6;
-  }
+  // &__copyright-wrapper {
+  //   border-top: 1px solid #e6e6e6;
+  // }
   &__line {
     border-top: 1px solid var(--footer-container-line-color);
     padding-top: 60px;
