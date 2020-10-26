@@ -1,7 +1,7 @@
 <template>
   <div v-show="showDrawerFlag" class="menu-wrapper">
     <div class="content-container-menu">
-      <button @click="$emit('switchNavigationDrawer')" class="close-button">
+      <button class="close-button" @click="$emit('switchNavigationDrawer')">
         <div class="close-icon" />
       </button>
 
