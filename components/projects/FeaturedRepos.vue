@@ -9,7 +9,7 @@
     <div class="grid grid-cols-1 gap-2 lg:grid-cols-3">
       <!-- lodaing component -->
       <template v-for="item in featuredRepoList">
-        <card-component :key="item.name" :repoData="item" :useImage="true" />
+        <card-component :key="item.name" :repo-data="item" :use-image="true" />
       </template>
     </div>
   </div>
@@ -20,6 +20,9 @@ import moment from 'moment'
 import CardComponent from './Card'
 
 export default {
+  components: {
+    'card-component': CardComponent,
+  },
   props: {
     data: {
       type: Object,
@@ -27,9 +30,6 @@ export default {
         return {}
       },
     },
-  },
-  components: {
-    'card-component': CardComponent,
   },
   data() {
     return {
@@ -46,9 +46,6 @@ export default {
 
     this.lastCommitTime =
       this.data && moment(this.featuredRepoList[0].pushedAt).fromNow()
-  },
-  mounted() {
-    console.log('data ', this.featuredRepoList[0])
   },
 }
 </script>
