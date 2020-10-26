@@ -19,6 +19,9 @@ export default {
       tagWrap: null,
     }
   },
+  created() {
+    this.tagWrap = this.generatorTagWrap(this.name)
+  },
   methods: {
     generatorTagWrap(name) {
       const classnames = [
@@ -69,9 +72,6 @@ export default {
 
       return classnames.join(' ')
     },
-  },
-  created() {
-    this.tagWrap = this.generatorTagWrap(this.name)
   },
 }
 </script>
