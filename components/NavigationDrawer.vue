@@ -10,13 +10,13 @@
     >
       <div>
         <div class="close-icon-section">
-          <button @click="$emit('switchNavigationDrawer')" class="close-button">
+          <button class="close-button" @click="$emit('switchNavigationDrawer')">
             <div class="close-icon" />
           </button>
         </div>
         <div style="flex-grow: 1; display: block;">
           <ul v-for="item in items" :key="item.title">
-            <li @click="$emit('switchNavigationDrawer')" class="list-item">
+            <li class="list-item" @click="$emit('switchNavigationDrawer')">
               <nuxt-link :to="item.path" class="link-item">
                 {{ item.title }}
               </nuxt-link>
@@ -53,14 +53,14 @@ import menuItems from '../json/menu.json'
 import IconComponent from '../components/icon'
 
 export default {
+  components: {
+    'icon-component': IconComponent,
+  },
   props: {
     drawer: {
       type: Boolean,
       default: false,
     },
-  },
-  components: {
-    'icon-component': IconComponent,
   },
   data() {
     return {
@@ -80,17 +80,6 @@ export default {
       },
     },
   },
-  methods: {
-    toggleScrollbar(drawer) {
-      if (process.browser) {
-        if (drawer) {
-          document.getElementsByTagName('html')[0].style.overflow = 'hidden'
-        } else {
-          document.getElementsByTagName('html')[0].style.overflow = 'auto'
-        }
-      }
-    },
-  },
   mounted() {
     if (process.browser) {
       document.body.addEventListener('click', (e) => {
@@ -102,6 +91,17 @@ export default {
         }
       })
     }
+  },
+  methods: {
+    toggleScrollbar(drawer) {
+      if (process.browser) {
+        if (drawer) {
+          document.getElementsByTagName('html')[0].style.overflow = 'hidden'
+        } else {
+          document.getElementsByTagName('html')[0].style.overflow = 'auto'
+        }
+      }
+    },
   },
 }
 </script>
