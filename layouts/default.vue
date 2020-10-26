@@ -34,6 +34,9 @@ export default {
       drawer: false,
     }
   },
+  created() {
+    this.$nuxt.$colorMode.preference = 'light'
+  },
   methods: {
     switchNavigationDrawer() {
       this.drawer = !this.drawer
@@ -41,9 +44,6 @@ export default {
     updateNavigationDrawerValue(value) {
       this.drawer = value
     },
-  },
-  created() {
-    this.$nuxt.$colorMode.preference = 'light'
   },
 }
 </script>
