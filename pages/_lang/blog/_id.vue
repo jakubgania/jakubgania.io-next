@@ -143,18 +143,6 @@ export default {
         'Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno i techniczne i nie techniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu.',
     }
   },
-  methods: {
-    getLink() {
-      let pageNumber = 1
-
-      if (this.$route.params.id !== undefined) {
-        pageNumber = this.$route.params.id
-      }
-
-      pageNumber++
-      return 'blog/' + pageNumber
-    },
-  },
   mounted() {
     const topImageElement = document.querySelector('#top-image')
 
@@ -171,6 +159,18 @@ export default {
         element.scrollIntoView()
       }
     }
+  },
+  methods: {
+    getLink() {
+      let pageNumber = 1
+
+      if (this.$route.params.id !== undefined) {
+        pageNumber = this.$route.params.id
+      }
+
+      pageNumber++
+      return 'blog/' + pageNumber
+    },
   },
   head() {
     return {
