@@ -10,7 +10,7 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiReact"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -18,7 +18,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiVuejs"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -26,7 +26,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiLanguageJavascript"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -34,7 +34,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiLanguageHtml5"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -55,7 +55,7 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiCloudTags"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -63,7 +63,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiGoogleCloud"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -71,7 +71,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiMicrosoftAzure"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -79,7 +79,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiAws"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -100,7 +100,7 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiCodeBraces"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -108,7 +108,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiDocker"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -116,7 +116,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiWebpack"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -124,7 +124,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiBash"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -145,7 +145,7 @@
         </div>
         <div class="section-content-row__icons-section">
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiServer"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -153,7 +153,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiConsoleLine"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -161,7 +161,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiSourceBranch"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -169,7 +169,7 @@
             />
           </div>
           <div class="section-content-row__icon-item">
-            <icon-component
+            <IconComponent
               :path="mdiMicrosoftVisualStudioCode"
               :size="iconSize"
               :color="'--component-content-section-description-color'"
@@ -208,7 +208,7 @@ import IconComponent from '../../components/Icon'
 
 export default {
   components: {
-    'icon-component': IconComponent,
+    IconComponent,
   },
   data() {
     return {
