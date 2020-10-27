@@ -17,7 +17,7 @@
           {{ description }}
         </div>
         <div>
-          <social-icons-component />
+          <SocialIconsComponent />
         </div>
       </div>
     </div>
@@ -26,11 +26,11 @@
 
 <script>
 import profileImage from '@/assets/images/profile.jpg'
-import SocialIcons from '@/components/SocialIcons'
+import SocialIconsComponent from '@/components/SocialIcons'
 
 export default {
   components: {
-    'social-icons-component': SocialIcons,
+    SocialIconsComponent,
   },
   data() {
     return {
