@@ -2,7 +2,7 @@
   <footer class="footer-container">
     <div class="footer-container__sitemap-section">
       <div class="footer-container__logo-section">
-        <logo-component :normal-font-size="true" />
+        <LogoComponent :normal-font-size="true" />
       </div>
       <div class="footer-container__x">
         <div class="footer-container__sites-section">
@@ -51,7 +51,7 @@
               rel="noopener noreferrer"
               class="git-ref-link"
             >
-              <icon-component
+              <IconComponent
                 :path="mdiChevronRight"
                 :size="12"
                 :color="'#8a929c'"
@@ -67,7 +67,7 @@
               rel="noopener noreferrer"
               class="git-ref-link"
             >
-              <icon-component
+              <IconComponent
                 :path="mdiChevronRight"
                 :size="12"
                 :color="'#8a929c'"
@@ -83,7 +83,7 @@
               rel="noopener noreferrer"
               class="git-ref-link"
             >
-              <icon-component
+              <IconComponent
                 :path="mdiChevronRight"
                 :size="12"
                 :color="'#8a929c'"
@@ -158,8 +158,8 @@ const githubDataQuery = gql`
 
 export default {
   components: {
-    'logo-component': LogoComponent,
-    'icon-component': IconComponent,
+    LogoComponent,
+    IconComponent,
   },
   apollo: {
     viewer: {
