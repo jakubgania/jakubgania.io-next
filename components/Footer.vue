@@ -231,6 +231,10 @@ export default {
               name: 'Galeria',
               link: 'gallery',
             },
+            {
+              name: 'Zasoby',
+              link: 'resources',
+            },
           ],
         },
         {

@@ -27,6 +27,10 @@
     {
       "title": "home.menu.galleryPage",
       "path": "gallery"
+    },
+    {
+      "title": "home.menu.resourcesPage",
+      "path": "resources"
     }
   ]
 }
