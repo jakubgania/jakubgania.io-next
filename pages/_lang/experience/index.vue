@@ -35,7 +35,7 @@
     </div>
     <div class="content-container">
       <div class="experience-container">
-        <top-section-container-component
+        <TopSectionContainerComponent
           :full-name="fullName"
           :personal-data="personalData"
         />
