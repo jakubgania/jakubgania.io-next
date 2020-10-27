@@ -152,7 +152,7 @@
 </template>
 
 <script>
-import TopSectionContainerComponent from '@/components/top-section-container'
+import TopSectionContainerComponent from '@/components/TopSectionContainer'
 import jsonData from '@/json/data'
 
 export default {

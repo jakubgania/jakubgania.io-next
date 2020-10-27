@@ -150,7 +150,7 @@ import {
   mdiLinkVariant,
 } from '@mdi/js'
 import TagComponent from '../../components/projects/Tag'
-import IconComponent from '../../components/icon'
+import IconComponent from '../../components/Icon'
 
 export default {
   components: {

@@ -20,7 +20,7 @@
 
 <script>
 import { mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
-import IconComponent from '@/components/icon'
+import IconComponent from '@/components/Icon'
 
 export default {
   components: {

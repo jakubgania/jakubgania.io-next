@@ -26,7 +26,7 @@
 
 <script>
 import profileImage from '@/assets/images/profile.jpg'
-import SocialIcons from '@/components/social-icons'
+import SocialIcons from '@/components/SocialIcons'
 
 export default {
   components: {

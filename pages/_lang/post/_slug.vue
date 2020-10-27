@@ -120,7 +120,7 @@
 
 <script>
 import axios from 'axios'
-import AboutCreator from '@/components/about-creator'
+import AboutCreator from '@/components/AboutCreator'
 
 export default {
   components: {

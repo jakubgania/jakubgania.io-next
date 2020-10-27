@@ -137,8 +137,8 @@
 <script>
 import { mdiChevronRight, mdiTranslate, mdiBrightness6 } from '@mdi/js'
 import gql from 'graphql-tag'
-import LogoComponent from '../components/logo'
-import IconComponent from '../components/icon'
+import LogoComponent from '../components/Logo'
+import IconComponent from '../components/Icon'
 
 const githubDataQuery = gql`
   query viewer {
@@ -345,6 +345,27 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.light-mode {
+  --footer-copyright-color: #000;
+  --footer-select-language-color: #000;
+  --footer-container-line-color: #e6e6e6;
+  --footer-container-link-hover-color: #000;
+  --footer-select-background-color: transparent;
+  --footer-container-border-color: #fff;
+  --footer-background-color: #fafbfc;
+}
+.dark-mode {
+  --footer-copyright-color: #fff;
+  --footer-select-language-color: #fff;
+  --footer-container-line-color: #262626;
+  --footer-container-link-hover-color: #d9d9d9;
+  --footer-select-background-color: #000;
+  --footer-container-border-color: #262626;
+  --footer-background-color: #000;
+}
+</style>
 
 <style lang="scss" scoped>
 .footer-container {

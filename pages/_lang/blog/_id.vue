@@ -86,7 +86,7 @@
 </template>
 
 <script>
-import MoreContentButtonComponent from '../../../components/more-content-button'
+import MoreContentButtonComponent from '../../../components/MoreContentButton'
 import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
 import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
 

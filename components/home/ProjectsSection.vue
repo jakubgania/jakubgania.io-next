@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import MoreContentButtonComponent from '../../components/more-content-button'
+import MoreContentButtonComponent from '../../components/MoreContentButton'
 
 export default {
   components: {

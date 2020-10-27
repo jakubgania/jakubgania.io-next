@@ -204,7 +204,7 @@ import {
   mdiSourceBranch,
   mdiMicrosoftVisualStudioCode,
 } from '@mdi/js'
-import IconComponent from '../../components/icon'
+import IconComponent from '../../components/Icon'
 
 export default {
   components: {

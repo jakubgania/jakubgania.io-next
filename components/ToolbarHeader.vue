@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import LogoComponent from '../components/logo'
+import LogoComponent from '../components/Logo'
 
 export default {
   components: {

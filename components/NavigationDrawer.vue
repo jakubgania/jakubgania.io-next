@@ -50,7 +50,7 @@
 import { mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
 import socialLinksItems from '../json/social-links.json'
 import menuItems from '../json/menu.json'
-import IconComponent from '../components/icon'
+import IconComponent from '../components/Icon'
 
 export default {
   components: {
