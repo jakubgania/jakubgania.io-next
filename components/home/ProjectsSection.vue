@@ -50,7 +50,7 @@
           </ul>
         </div>
       </div>
-      <more-content-button-component
+      <MoreContentButtonComponent
         :text="'Więcej projektów'"
         :link="'projects'"
       />
@@ -63,7 +63,7 @@ import MoreContentButtonComponent from '../../components/MoreContentButton'
 
 export default {
   components: {
-    'more-content-button-component': MoreContentButtonComponent,
+    MoreContentButtonComponent,
   },
 }
 </script>
