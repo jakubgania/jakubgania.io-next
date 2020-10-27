@@ -2,7 +2,7 @@
   <div v-if="displayHeader()" class="toolbar-header-container">
     <div>
       <nuxt-link :to="$i18n.path('')">
-        <logo-component :normal-font-size="true" />
+        <LogoComponent :normal-font-size="true" />
       </nuxt-link>
     </div>
     <div class="spacer-class" />
@@ -20,7 +20,7 @@ import LogoComponent from '../components/Logo'
 
 export default {
   components: {
-    'logo-component': LogoComponent,
+    LogoComponent,
   },
   mounted() {
     this.displayHeader()
