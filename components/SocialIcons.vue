@@ -8,7 +8,7 @@
       rel="noopener noreferrer"
       class="social-icon"
     >
-      <icon-component
+      <IconComponent
         :path="item.icon"
         :size="24"
         :color="'--social-icons-componet-icon-color'"
@@ -24,7 +24,7 @@ import IconComponent from '@/components/Icon'
 
 export default {
   components: {
-    'icon-component': IconComponent,
+    IconComponent,
   },
   data() {
     return {

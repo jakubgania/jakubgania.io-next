@@ -33,7 +33,7 @@
               rel="noopener noreferrer"
               class="social-link-item"
             >
-              <icon-component
+              <IconComponent
                 :path="socialIcons[index]"
                 :color="'--navigation-drawer-social-icon-color'"
                 :var="true"
@@ -54,7 +54,7 @@ import IconComponent from '../components/Icon'
 
 export default {
   components: {
-    'icon-component': IconComponent,
+    IconComponent,
   },
   props: {
     drawer: {
