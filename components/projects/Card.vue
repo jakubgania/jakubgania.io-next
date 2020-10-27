@@ -4,7 +4,7 @@
       <div :class="classes.head">
         <div :class="classes.tags">
           <template v-for="item in topics">
-            <tag-component :key="item.id" :name="item.split('-').join(' ')" />
+            <TagComponent :key="item.id" :name="item.split('-').join(' ')" />
           </template>
         </div>
         <div
@@ -48,7 +48,7 @@
           <div
             style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
           >
-            <icon-component
+            <IconComponent
               :path="mdiMessageProcessingOutline"
               :size="14"
               :color="'#3c0'"
@@ -63,7 +63,7 @@
           <div
             style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
           >
-            <icon-component
+            <IconComponent
               :path="mdiClockTimeFiveOutline"
               :size="14"
               :color="'#3c0'"
@@ -86,7 +86,7 @@
           <div
             style="display: inline-flex; line-height: 12px; margin-bottom: 6px;"
           >
-            <icon-component :path="mdiConsole" :size="14" :color="'#3c0'" />
+            <IconComponent :path="mdiConsole" :size="14" :color="'#3c0'" />
             <div
               style="font-size: 12px; margin-left: 10px; letter-spacing: 0.4px;"
             >
@@ -106,7 +106,7 @@
           rel="noopener noreferrer"
           :class="classes.buttons.btn + ' ' + classes.buttons.left"
         >
-          <icon-component :path="mdiXml" :size="14" :color="'#fff'" />
+          <IconComponent :path="mdiXml" :size="14" :color="'#fff'" />
           <span style="margin-left: 8px;">
             GITHUB
           </span>
@@ -117,7 +117,7 @@
           rel="noopener noreferrer"
           :class="classes.buttons.btn + ' ' + classes.buttons.right"
         >
-          <icon-component :path="mdiLinkVariant" :size="14" :color="'#fff'" />
+          <IconComponent :path="mdiLinkVariant" :size="14" :color="'#fff'" />
           <span style="margin-left: 8px;">
             LIVE SITE
           </span>
@@ -130,7 +130,7 @@
           rel="noopener noreferrer"
           :class="classes.buttons.btn + ' ' + classes.buttons.only"
         >
-          <icon-component :path="mdiXml" :size="14" :color="'#fff'" />
+          <IconComponent :path="mdiXml" :size="14" :color="'#fff'" />
           <span style="margin-left: 8px;">
             GITHUB
           </span>
@@ -154,8 +154,8 @@ import IconComponent from '../../components/Icon'
 
 export default {
   components: {
-    'tag-component': TagComponent,
-    'icon-component': IconComponent,
+    TagComponent,
+    IconComponent,
   },
   props: {
     repoData: {
