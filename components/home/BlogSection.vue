@@ -37,7 +37,7 @@
           </li>
         </ul>
       </div>
-      <more-content-button-component :text="'Więcej postów'" :link="'blog'" />
+      <MoreContentButtonComponent :text="'Więcej postów'" :link="'blog'" />
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ import MoreContentButtonComponent from '../../components/MoreContentButton'
 
 export default {
   components: {
-    'more-content-button-component': MoreContentButtonComponent,
+    MoreContentButtonComponent,
   },
   props: {
     posts: {
