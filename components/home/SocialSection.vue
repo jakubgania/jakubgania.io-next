@@ -14,7 +14,7 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component
+            <IconComponent
               :path="mdiGithub"
               :size="44"
               :color="'--home-page-social-icons-section-color'"
@@ -32,7 +32,7 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component
+            <IconComponent
               :path="mdiLinkedin"
               :size="44"
               :color="'--home-page-social-icons-section-color'"
@@ -50,7 +50,7 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component
+            <IconComponent
               :path="mdiTwitter"
               :size="44"
               :color="'--home-page-social-icons-section-color'"
@@ -68,7 +68,7 @@
             rel="noopener noreferrer"
             style="display: inline-flex;"
           >
-            <icon-component
+            <IconComponent
               :path="mdiYoutube"
               :size="44"
               :color="'--home-page-social-icons-section-color'"
@@ -90,7 +90,7 @@ import IconComponent from '../../components/Icon'
 
 export default {
   components: {
-    'icon-component': IconComponent,
+    IconComponent,
   },
   data() {
     return {
