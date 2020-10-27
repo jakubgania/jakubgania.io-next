@@ -2,9 +2,7 @@
   <div class="blog-section-wrapper">
     <div class="blog-section-container">
       <div class="blog-section-title">
-        <h2>
-          BLOG
-        </h2>
+        <h2 v-text="'BLOG'" />
       </div>
       <div>
         <ul>
