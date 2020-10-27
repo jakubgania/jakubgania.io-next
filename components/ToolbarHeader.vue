@@ -27,7 +27,8 @@ export default {
   },
   methods: {
     displayHeader() {
-      return this.$route.name !== 'index'
+      console.log('dispaly header info ', this.$route)
+      return this.$route.name !== 'index' && this.$route.name !== 'lang'
     },
   },
 }

@@ -18,7 +18,7 @@
           <ul v-for="item in items" :key="item.title">
             <li class="list-item" @click="$emit('switchNavigationDrawer')">
               <nuxt-link :to="item.path" class="link-item">
-                {{ item.title }}
+                {{ $t(item.title) }}
               </nuxt-link>
             </li>
           </ul>

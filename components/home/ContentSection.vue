@@ -4,8 +4,8 @@
       <div class="section-content-row">
         <div class="section-content-row__title">
           <h2>
-            Technologie <br />
-            Webowe
+            {{ $t('home.contentSection[0].title.part1') }} <br />
+            {{ $t('home.contentSection[0].title.part2') }}
           </h2>
         </div>
         <div class="section-content-row__icons-section">
@@ -43,14 +43,14 @@
           </div>
         </div>
         <div class="section-content-row__description">
-          {{ desc1 }}
+          {{ $t('home.contentSection[0].description') }}
         </div>
       </div>
       <div class="section-content-row">
         <div class="section-content-row__title">
           <h2>
-            Technologie <br />
-            Chmurowe
+            {{ $t('home.contentSection[1].title.part1') }} <br />
+            {{ $t('home.contentSection[1].title.part2') }}
           </h2>
         </div>
         <div class="section-content-row__icons-section">
@@ -88,14 +88,14 @@
           </div>
         </div>
         <div class="section-content-row__description">
-          {{ desc2 }}
+          {{ $t('home.contentSection[1].description') }}
         </div>
       </div>
       <div class="section-content-row">
         <div class="section-content-row__title">
           <h2>
-            Software <br />
-            Engineering
+            {{ $t('home.contentSection[2].title.part1') }} <br />
+            {{ $t('home.contentSection[2].title.part2') }}
           </h2>
         </div>
         <div class="section-content-row__icons-section">
@@ -133,14 +133,14 @@
           </div>
         </div>
         <div class="section-content-row__description">
-          {{ desc3 }}
+          {{ $t('home.contentSection[1].description') }}
         </div>
       </div>
       <div class="section-content-row">
         <div class="section-content-row__title">
           <h2>
-            IT i <br />
-            Technologie
+            {{ $t('home.contentSection[3].title.part1') }} <br />
+            {{ $t('home.contentSection[3].title.part2') }}
           </h2>
         </div>
         <div class="section-content-row__icons-section">
@@ -178,7 +178,7 @@
           </div>
         </div>
         <div class="section-content-row__description">
-          {{ desc4 }}
+          {{ $t('home.contentSection[2].description') }}
         </div>
       </div>
     </div>
@@ -229,14 +229,6 @@ export default {
       mdiSourceBranch,
       mdiMicrosoftVisualStudioCode,
       iconSize: 44,
-      desc1:
-        'Główne technologie w jaki się specjalizję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt oraz backendowe takie jak Node czy Laravel. Tworzę różny skrypty z użyciem Bash czy Python. Większość mojej pracy i eksperymentów umieszczam na platformie Github.',
-      desc2:
-        'Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatej integrcji wielu komponentów. To naprawdę wiele zalet i możliwości oraz inne podejśćie do budowania złożonych struktór. Jest to kierunek w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga.',
-      desc3:
-        'Dziedina jaką jest inżynieria oprogramowania jest złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, wysublimowane architektury, bezpieczeńśtwo, bazy danych ... Wymieniać można bez końca a trndy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane.',
-      desc4:
-        'Szeroko pojęte IT i różne inne technologie cały czas zasakują i rozwijają się bardzo szybko. Takie zagadnienia jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko znaleźć duży zbiór danych niewspomagany czy to przez SI czy analizę Big Data. ',
     }
   },
 }

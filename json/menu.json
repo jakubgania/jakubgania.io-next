@@ -1,31 +1,31 @@
 {
   "menu": [
     {
-      "title": "Strona główna",
+      "title": "home.menu.homePage",
       "path": "/"
     },
     {
-      "title": "Blog",
+      "title": "home.menu.blogPage",
       "path": "/blog"
     },
     {
-      "title": "Projekty",
+      "title": "home.menu.projectsPage",
       "path": "/projects"
     },
     {
-      "title": "Doświadczenie",
+      "title": "home.menu.experiencePage",
       "path": "/experience"
     },
     {
-      "title": "Kontakt",
+      "title": "home.menu.contactPage",
       "path": "/contact"
     },
     {
-      "title": "O mnie",
+      "title": "home.menu.aboutPage",
       "path": "/about"
     },
     {
-      "title": "Galeria",
+      "title": "home.menu.galleryPage",
       "path": "/gallery"
     }
   ]
