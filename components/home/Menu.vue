@@ -9,7 +9,7 @@
         <li v-for="item in items" :key="item.id" style="list-style: none;">
           <ul class="list-item">
             <nuxt-link
-              :to="item.path"
+              :to="$i18n.path(item.path)"
               class="list-item-link"
               @click.native="showScrollbar()"
             >
@@ -59,6 +59,7 @@ export default {
       }
     },
     showScrollbar() {
+      this.showDrawerFlag = false
       document.getElementsByTagName('html')[0].style.overflow = 'auto'
     },
   },

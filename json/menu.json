@@ -2,31 +2,31 @@
   "menu": [
     {
       "title": "home.menu.homePage",
-      "path": "/"
+      "path": ""
     },
     {
       "title": "home.menu.blogPage",
-      "path": "/blog"
+      "path": "blog"
     },
     {
       "title": "home.menu.projectsPage",
-      "path": "/projects"
+      "path": "projects"
     },
     {
       "title": "home.menu.experiencePage",
-      "path": "/experience"
+      "path": "experience"
     },
     {
       "title": "home.menu.contactPage",
-      "path": "/contact"
+      "path": "contact"
     },
     {
       "title": "home.menu.aboutPage",
-      "path": "/about"
+      "path": "about"
     },
     {
       "title": "home.menu.galleryPage",
-      "path": "/gallery"
+      "path": "gallery"
     }
   ]
 }

@@ -17,7 +17,7 @@
         <div style="flex-grow: 1; display: block;">
           <ul v-for="item in items" :key="item.title">
             <li class="list-item" @click="$emit('switchNavigationDrawer')">
-              <nuxt-link :to="item.path" class="link-item">
+              <nuxt-link :to="$i18n.path(item.path)" class="link-item">
                 {{ $t(item.title) }}
               </nuxt-link>
             </li>
