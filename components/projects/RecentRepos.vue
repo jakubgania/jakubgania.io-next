@@ -15,7 +15,7 @@
     </h2>
     <div class="grid grid-cols-1 gap-2 lg:grid-cols-3">
       <template v-for="item in repositories">
-        <card-component
+        <CardComponent
           :key="item.node.name"
           :repo-data="item.node"
           :use-image="true"
@@ -31,7 +31,7 @@ import CardComponent from './Card'
 
 export default {
   components: {
-    'card-component': CardComponent,
+    CardComponent,
   },
   props: {
     data: {
