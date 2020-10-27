@@ -24,9 +24,7 @@
 
     <div class="grid grid-rows-1">
       <div class="content-container">
-        <subpage-title-section-component
-          :title="`{ posty - ${numberOfPosts} }`"
-        />
+        <SubpageTitleSectionComponent :title="`{ posty - ${numberOfPosts} }`" />
 
         <div
           style="
@@ -36,7 +34,7 @@
           "
         />
 
-        <subpage-description-section-component :description="desc" />
+        <SubpageDescriptionSectionComponent :description="desc" />
 
         <ul style="margin-top: 60px;">
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
@@ -74,7 +72,7 @@
             numberOfPagination > 2
           "
         >
-          <more-content-button-component
+          <MoreContentButtonComponent
             :text="'Następne posty'"
             :link="getLink()"
           />
@@ -93,9 +91,9 @@ import SubpageDescriptionSectionComponent from '../../../components/SubpageDescr
 export default {
   scrollToTop: false,
   components: {
-    'more-content-button-component': MoreContentButtonComponent,
-    'subpage-title-section-component': SubpageTitleSectionComponent,
-    'subpage-description-section-component': SubpageDescriptionSectionComponent,
+    MoreContentButtonComponent,
+    SubpageTitleSectionComponent,
+    SubpageDescriptionSectionComponent,
   },
   async asyncData({ $content, params, store }) {
     const paginationValue = 4

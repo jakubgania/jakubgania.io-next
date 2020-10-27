@@ -1,26 +1,24 @@
 <template>
   <div>
-    <navigation-drawer-component
+    <NavigationDrawerComponent
       :drawer="drawer"
       @switchNavigationDrawer="switchNavigationDrawer"
       @updateNavigationDrawerValue="updateNavigationDrawerValue"
     />
 
-    <toolbar-header-component
-      @switchNavigationDrawer="switchNavigationDrawer"
-    />
+    <ToolbarHeaderComponent @switchNavigationDrawer="switchNavigationDrawer" />
 
     <div class="nuxt-container">
       <Nuxt />
     </div>
 
-    <footer-component />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import ToolbarHeaderComponent from '@/components/ToolbarHeader'
 import NavigationDrawerComponent from '@/components/NavigationDrawer'
+import ToolbarHeaderComponent from '@/components/ToolbarHeader'
 import FooterComponent from '@/components/Footer'
 
 export default {
