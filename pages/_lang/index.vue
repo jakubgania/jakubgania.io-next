@@ -1,6 +1,6 @@
 <template>
   <div>
-    <menu-component
+    <MenuComponent
       :show-menu="showMenu"
       @switchNavigationDrawer="switchNavigationDrawer"
     />
@@ -103,17 +103,17 @@
         </div>
       </div>
     </div>
-    <content-section-component />
-    <blog-section-component :posts="posts" />
+    <ContentSectionComponent />
+    <BlogSectionComponent :posts="posts" />
     <img
       :src="ImageKeyboard($nuxt.$colorMode.preference)"
       alt=""
       style="width: 100%;"
     />
-    <projects-section-component />
-    <menu-code-list-component />
-    <social-section-component />
-    <images-section-component />
+    <ProjectsSectionComponent />
+    <MenuCodeListComponent />
+    <SocialSectionComponent />
+    <ImagesSectionComponent />
   </div>
 </template>
 
@@ -130,13 +130,13 @@ import ImageKeyboardDark from '../../assets/images/keyboard-dark.jpg'
 
 export default {
   components: {
-    'menu-component': MenuComponent,
-    'social-section-component': SocialSectionComponent,
-    'content-section-component': ContentSectionComponent,
-    'images-section-component': ImagesSectionComponent,
-    'blog-section-component': BlogSectionComponent,
-    'projects-section-component': ProjectsSectionComponent,
-    'menu-code-list-component': MenuCodeListComponent,
+    MenuComponent,
+    SocialSectionComponent,
+    ContentSectionComponent,
+    ImagesSectionComponent,
+    BlogSectionComponent,
+    ProjectsSectionComponent,
+    MenuCodeListComponent,
   },
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
