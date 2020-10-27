@@ -1,6 +1,6 @@
 <template>
   <div class="main-projects-container">
-    <top-image-component />
+    <TopImageComponent />
     <template v-if="!data">
       <div class="loader">Loading...</div>
     </template>
@@ -56,7 +56,7 @@
           >
             <div class="flex flex-wrap justify-center p-4 pb-16 bg-gray-20">
               <template v-for="item in techTags">
-                <tag-component :key="item.id" :name="item" />
+                <TagComponent :key="item.id" :name="item" />
               </template>
             </div>
             <img
@@ -178,8 +178,8 @@
             </div>
           </div>
         </div>
-        <featured-repos-component :data="data" />
-        <recent-repos-component :data="data" />
+        <FeaturedReposComponent :data="data" />
+        <RecentReposComponent :data="data" />
       </div>
     </template>
   </div>
@@ -187,10 +187,10 @@
 
 <script>
 import gql from 'graphql-tag'
-import TopImage from '@/components/projects/TopImage'
+import TopImageComponent from '@/components/projects/TopImage'
 import TagComponent from '@/components/projects/Tag'
-import FeaturedRepos from '@/components/projects/FeaturedRepos'
-import RecentRepos from '@/components/projects/RecentRepos'
+import FeaturedReposComponent from '@/components/projects/FeaturedRepos'
+import RecentReposComponent from '@/components/projects/RecentRepos'
 
 const githubDataQuery = gql`
   query viewer {
@@ -306,10 +306,10 @@ const githubDataQuery = gql`
 
 export default {
   components: {
-    'top-image-component': TopImage,
-    'tag-component': TagComponent,
-    'featured-repos-component': FeaturedRepos,
-    'recent-repos-component': RecentRepos,
+    TopImageComponent,
+    TagComponent,
+    FeaturedReposComponent,
+    RecentReposComponent,
   },
   async asyncData({ app, $content, params, store }) {
     let language = store.state.locale
