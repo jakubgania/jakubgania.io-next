@@ -50,7 +50,7 @@
           </div> -->
           <nuxt-content :document="post" class="post" />
         </div>
-        <about-creator />
+        <AboutCreator />
       </template>
     </div>
     <div class="related-posts">
