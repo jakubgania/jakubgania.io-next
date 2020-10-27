@@ -9,7 +9,7 @@
     <div class="grid grid-cols-1 gap-2 lg:grid-cols-3">
       <!-- lodaing component -->
       <template v-for="item in featuredRepoList">
-        <card-component :key="item.name" :repo-data="item" :use-image="true" />
+        <CardComponent :key="item.name" :repo-data="item" :use-image="true" />
       </template>
     </div>
   </div>
@@ -21,7 +21,7 @@ import CardComponent from './Card'
 
 export default {
   components: {
-    'card-component': CardComponent,
+    CardComponent,
   },
   props: {
     data: {
