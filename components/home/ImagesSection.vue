@@ -10,9 +10,10 @@
             ></div>
             <div class="img-inner">
               <header>
-                <p class="trending-post-title">
-                  Blog
-                </p>
+                <p
+                  v-text="$t('home.gallerySection.blog')"
+                  class="trending-post-title"
+                />
               </header>
             </div>
           </div>
@@ -25,9 +26,10 @@
             ></div>
             <div class="img-inner">
               <header>
-                <p class="trending-post-title">
-                  Doświadczenie
-                </p>
+                <p
+                  v-text="$t('home.gallerySection.experience')"
+                  class="trending-post-title"
+                />
               </header>
             </div>
           </div>
@@ -40,9 +42,10 @@
             ></div>
             <div class="img-inner">
               <header>
-                <p class="trending-post-title">
-                  Kontakt
-                </p>
+                <p
+                  v-text="$t('home.gallerySection.contact')"
+                  class="trending-post-title"
+                />
               </header>
             </div>
           </div>
@@ -55,9 +58,10 @@
             ></div>
             <div class="img-inner">
               <header>
-                <p class="trending-post-title">
-                  Galeria
-                </p>
+                <p
+                  v-text="$t('home.gallerySection.gallery')"
+                  class="trending-post-title"
+                />
               </header>
             </div>
           </div>

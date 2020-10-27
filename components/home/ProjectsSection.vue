@@ -51,7 +51,7 @@
         </div>
       </div>
       <MoreContentButtonComponent
-        :text="'Więcej projektów'"
+        :text="$t('moreContentButton.moreProjects')"
         :link="'projects'"
       />
     </div>

@@ -35,7 +35,10 @@
           </li>
         </ul>
       </div>
-      <MoreContentButtonComponent :text="'Więcej postów'" :link="'blog'" />
+      <MoreContentButtonComponent
+        :text="$t('moreContentButton.morePosts')"
+        :link="'blog'"
+      />
     </div>
   </div>
 </template>

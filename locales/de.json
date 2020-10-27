@@ -55,9 +55,9 @@
     },
     "gallerySection": {
       "blog": "Blog",
-      "experience": "Doświadczenie",
-      "contact": "Contact",
-      "gallery": "Galeria"
+      "experience": "Erfahrung",
+      "contact": "Kontakt",
+      "gallery": "Galerie"
     }
   },
   "about": {
@@ -66,5 +66,9 @@
   },
   "experience": {
     "head": {}
+  },
+  "moreContentButton": {
+    "morePosts": "Mehr Posts",
+    "moreProjects": "Mehr Projekte"
   }
 }
