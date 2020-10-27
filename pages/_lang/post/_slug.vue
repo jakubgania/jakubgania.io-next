@@ -53,7 +53,7 @@
         <AboutCreator />
       </template>
     </div>
-    <div class="related-posts">
+    <div v-if="numberOfPosts > 1" class="related-posts">
       <div class="related-posts-title-section">
         <span class="related-posts-title">
           Inne posty
@@ -140,39 +140,41 @@ export default {
     const allPosts = await $content('posts/' + language, undefined).fetch()
     numberOfPosts = allPosts.length
 
-    const [relatedPrev, relatedNext] = await $content('posts/' + language)
-      .only(['title', 'slug', 'topImageSrc', 'creationDate'])
-      .sortBy('index', 'asc')
-      .surround(params.slug)
-      .fetch()
-
-    if (relatedPrev != null && relatedNext != null) {
-      prev = relatedPrev
-      next = relatedNext
-    }
-
-    if (relatedPrev === null) {
-      const related = await $content('posts/' + language)
-        .where({ index: { $ne: post.index } })
+    if (numberOfPosts > 1) {
+      const [relatedPrev, relatedNext] = await $content('posts/' + language)
         .only(['title', 'slug', 'topImageSrc', 'creationDate'])
         .sortBy('index', 'asc')
-        .limit(2)
+        .surround(params.slug)
         .fetch()
 
-      prev = related[0]
-      next = related[1]
-    }
+      if (relatedPrev != null && relatedNext != null) {
+        prev = relatedPrev
+        next = relatedNext
+      }
 
-    if (relatedNext === null) {
-      const related = await $content('posts/' + language)
-        .where({ index: { $ne: post.index } })
-        .only(['title', 'slug', 'topImageSrc', 'creationDate'])
-        .sortBy('index', 'desc')
-        .limit(2)
-        .fetch()
+      if (relatedPrev === null) {
+        const related = await $content('posts/' + language)
+          .where({ index: { $ne: post.index } })
+          .only(['title', 'slug', 'topImageSrc', 'creationDate'])
+          .sortBy('index', 'asc')
+          .limit(2)
+          .fetch()
 
-      prev = related[0]
-      next = related[1]
+        prev = related[0]
+        next = related[1]
+      }
+
+      if (relatedNext === null) {
+        const related = await $content('posts/' + language)
+          .where({ index: { $ne: post.index } })
+          .only(['title', 'slug', 'topImageSrc', 'creationDate'])
+          .sortBy('index', 'desc')
+          .limit(2)
+          .fetch()
+
+        prev = related[0]
+        next = related[1]
+      }
     }
 
     return {
