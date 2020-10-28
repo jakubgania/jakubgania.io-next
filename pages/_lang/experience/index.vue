@@ -130,7 +130,7 @@
                       >
                         <div class="image-section">
                           <img
-                            :src="`https://jakubgania.io/data/expirience/technology-icons/${imageItem.path}`"
+                            :src="`https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/technology-icons/${imageItem.path}`"
                             :alt="imageItem.alt"
                             class="xghp"
                           />
