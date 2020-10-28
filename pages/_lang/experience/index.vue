@@ -256,7 +256,7 @@ $dot-space: 70px;
   padding-left: 20px;
 }
 .bracket {
-  color: #fafafa;
+  color: #f2f2f2;
 }
 .xdrty {
   display: flex;
@@ -395,6 +395,7 @@ $image-tile-max-height: 160px;
   margin-top: 20px;
   margin-bottom: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 .tag-item {
   margin-right: 10px;
@@ -433,6 +434,21 @@ $image-tile-max-height: 160px;
 }
 
 @media only screen and (max-width: 600px) {
+  // Dimensions
+  $dot-size: 1px;
+  $dot-space: 50px;
+
+  .dotted-background {
+    background: linear-gradient(
+          90deg,
+          $bg-color ($dot-space - $dot-size),
+          transparent 1%
+        )
+        center,
+      linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+      $dot-color;
+    background-size: $dot-space $dot-space;
+  }
   .content-container {
     margin-bottom: 60px;
     padding-left: 0;

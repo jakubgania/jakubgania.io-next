@@ -38,7 +38,9 @@
           </div>
         </div>
         <div class="two-column">
-          {{ desc }}
+          <p class="description-text">
+            {{ desc }}
+          </p>
         </div>
         <div class="two-column">
           <div class="left-column">
@@ -156,6 +158,7 @@ export default {
 .two-column {
   display: flex;
   margin-top: 25px;
+  padding-right: 20px;
 }
 .left-column {
   width: 50%;
@@ -241,6 +244,10 @@ export default {
   .two-column {
     padding-bottom: 14px;
   }
+  .description-text {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
   .mobile-version {
     display: inline;
   }
@@ -257,6 +264,8 @@ export default {
     display: none;
   }
   .personal-data-title-section {
+    font-size: 14px;
+
     br {
       display: inline;
     }

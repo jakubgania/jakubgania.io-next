@@ -40,13 +40,13 @@
             "date": "2019-08 - 2020",
             "title": "Jakub Gania Software",
             "subtitle": "Własna działalność gospodarcza",
-            "description": "description description"
+            "description": ""
           },
           {
             "date": "2020",
             "title": "Praca magisterska",
-            "subtitle": "",
-            "description": "description description"
+            "subtitle": "Analiza i optymalizacja nowoczesnych technik tworzenia aplikacji webowych",
+            "description": ""
           },
           {
             "date": "2019-08 - 2019-09",
@@ -64,13 +64,13 @@
             "date": "2018 - do dziś",
             "title": "Aplikacja internetowa - yourcity.io (w ciągłym rozwoju)",
             "subtitle": "Obecnie tworzę nową wersję całkowicie od zera",
-            "description": "<p>Aplikacja typu SPA z podziałem na frontend i backend </p><p>Technologie frontendowe:</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>(m.in. Vue.js - 2.5, Vuex - 3.0.1, Vuetify - 1.2.4, NUXT - 2.0, i18n - 0.18)</li></ul></p><p>Technologie backend:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>(Express- 4.16, Mongoose- 5.3, Facebook API), Nginx 1.15, Docker 17.12</li></ul></p>"
+            "description": "<p>Aplikacja typu SPA z podziałem na frontend i backend </p><p>Technologie frontendowe:</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Vue.js - 2.5</li><li>Vuex - 3.0.1</li><li>Vuetify - 1.2.4</li><li>NUXT - 2.0</li><li>i18n - 0.18</li></ul></p><p>Technologie backend:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Express- 4.16</li><li>Mongoose- 5.3</li><li>Facebook API</li><li>Nginx 1.15</li><li>Docker 17.12</li></ul></p>"
           },
           {
             "date": "2018 - do dziś",
             "title": "Strona prywatna - jakubgania.io + blog",
             "subtitle": "Projekt w ciągłym rozwoju, uzupełniany o nowe sekcje i artykłu (posty/wpisy)",
-            "description": "<p>Strona z informacjami o mnie oraz moich projektach.</p><p>Stos technologiczny - Nuxt 2.9, @nuxtjs/vuetify 1.8, @nuxtjs/axios 5.6</p>"
+            "description": "<p>Strona z informacjami o mnie oraz moich projektach.</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Stos technologiczny - Nuxt 2.9</li><li>@nuxtjs/vuetify 1.8</li><li>@nuxtjs/axios 5.6</li></ul></p>"
           },
           {
             "date": "2018",
