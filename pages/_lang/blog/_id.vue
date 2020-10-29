@@ -29,8 +29,8 @@
         <div
           style="
             height: 6px;
-            border-top: 1px solid #000;
-            border-bottom: 1px solid #000;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
           "
         />
 
@@ -58,7 +58,23 @@
                     {{ post.description }}
                   </div>
                   <div class="creation-date">
-                    {{ post.creationDate + ' | ' + '422' }}
+                    <!-- {{ post.creationDate + ' | ' + '422' }} -->
+                    <IconComponent
+                      :path="mdiClockOutline"
+                      :size="12"
+                      :color="'#8c8c8c'"
+                    />
+                    <span style="margin-left: 4px; margin-right: 4px;">
+                      {{ post.creationDate + ' | ' }}
+                    </span>
+                    <IconComponent
+                      :path="mdiTrendingUp"
+                      :size="12"
+                      :color="'#8c8c8c'"
+                    />
+                    <span style="margin-left: 6px;">
+                      {{ '424' }}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -84,9 +100,11 @@
 </template>
 
 <script>
+import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import MoreContentButtonComponent from '../../../components/MoreContentButton'
 import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
 import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
+import IconComponent from '../../../components/Icon'
 
 export default {
   scrollToTop: false,
@@ -94,6 +112,7 @@ export default {
     MoreContentButtonComponent,
     SubpageTitleSectionComponent,
     SubpageDescriptionSectionComponent,
+    IconComponent,
   },
   async asyncData({ $content, params, store }) {
     const paginationValue = 4
@@ -137,6 +156,8 @@ export default {
   },
   data() {
     return {
+      mdiClockOutline,
+      mdiTrendingUp,
       desc:
         'Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno i techniczne i nie techniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu.',
     }
@@ -236,12 +257,13 @@ export default {
   color: #bfbfbf;
 }
 .post-main-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0.4px;
+  letter-spacing: 1.2px;
   display: flex;
   padding-bottom: 4px;
   color: var(--blog-page-post-title-color);
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .post-link {
   text-decoration: none;
@@ -254,7 +276,7 @@ export default {
   }
 }
 .post-title {
-  font-size: 20px;
+  margin-top: -8px;
 }
 .description-section {
   font-size: 14px;
@@ -269,6 +291,8 @@ export default {
   letter-spacing: 1px;
   color: #8c8c8c;
   padding-top: 4px;
+  display: flex;
+  line-height: 1;
 }
 .image-section {
   width: 40%;
