@@ -40,6 +40,31 @@
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
             <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
               <div class="blog-posts-container">
+                <div class="blog-post-item-eer4 mobile-xs-a">
+                  <div class="post-main-title">
+                    <div class="post-title">
+                      {{ post.title }}
+                    </div>
+                  </div>
+                  <div class="creation-date">
+                    <IconComponent
+                      :path="mdiClockOutline"
+                      :size="12"
+                      :color="'#b3b3b3'"
+                    />
+                    <span style="margin-left: 4px; margin-right: 4px;">
+                      {{ post.creationDate + ' | ' }}
+                    </span>
+                    <IconComponent
+                      :path="mdiTrendingUp"
+                      :size="12"
+                      :color="'#b3b3b3'"
+                    />
+                    <span style="margin-left: 6px;">
+                      {{ '424' }}
+                    </span>
+                  </div>
+                </div>
                 <div class="image-section">
                   <div class="image-container-er">
                     <div
@@ -49,32 +74,33 @@
                   </div>
                 </div>
                 <div class="blog-post-item-eer4">
-                  <div class="post-main-title">
-                    <div class="post-title">
-                      {{ post.title }}
+                  <div class="mobile-xs-b">
+                    <div class="post-main-title">
+                      <div class="post-title">
+                        {{ post.title }}
+                      </div>
+                    </div>
+                    <div class="creation-date">
+                      <IconComponent
+                        :path="mdiClockOutline"
+                        :size="12"
+                        :color="'#b3b3b3'"
+                      />
+                      <span style="margin-left: 4px; margin-right: 4px;">
+                        {{ post.creationDate + ' | ' }}
+                      </span>
+                      <IconComponent
+                        :path="mdiTrendingUp"
+                        :size="12"
+                        :color="'#b3b3b3'"
+                      />
+                      <span style="margin-left: 6px;">
+                        {{ '424' }}
+                      </span>
                     </div>
                   </div>
                   <div class="description-section">
                     {{ post.description }}
-                  </div>
-                  <div class="creation-date">
-                    <!-- {{ post.creationDate + ' | ' + '422' }} -->
-                    <IconComponent
-                      :path="mdiClockOutline"
-                      :size="12"
-                      :color="'#8c8c8c'"
-                    />
-                    <span style="margin-left: 4px; margin-right: 4px;">
-                      {{ post.creationDate + ' | ' }}
-                    </span>
-                    <IconComponent
-                      :path="mdiTrendingUp"
-                      :size="12"
-                      :color="'#8c8c8c'"
-                    />
-                    <span style="margin-left: 6px;">
-                      {{ '424' }}
-                    </span>
                   </div>
                 </div>
               </div>
@@ -289,8 +315,9 @@ export default {
   text-align: left;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #8c8c8c;
+  color: #b3b3b3;
   padding-top: 4px;
+  padding-bottom: 10px;
   display: flex;
   line-height: 1;
 }
@@ -327,11 +354,20 @@ export default {
   width: 60%;
   padding-left: 24px;
 }
+.mobile-xs-a {
+  display: none;
+}
+.mobile-xs-b {
+  display: inherit;
+}
 
 @media only screen and (max-width: 960px) {
   .content-container {
     padding-left: 14px;
     padding-right: 14px;
+  }
+  .post-main-title {
+    font-size: 18px;
   }
 }
 
@@ -369,6 +405,12 @@ export default {
   }
   .post-link-item {
     margin-bottom: 40px;
+  }
+  .mobile-xs-a {
+    display: block;
+  }
+  .mobile-xs-b {
+    display: none;
   }
 }
 </style>
