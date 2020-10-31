@@ -23,11 +23,26 @@
                       {{ post.title }}
                     </div>
                   </div>
+                  <div class="creation-date">
+                    <IconComponent
+                      :path="mdiClockOutline"
+                      :size="12"
+                      :color="'#b3b3b3'"
+                    />
+                    <span style="margin-left: 4px; margin-right: 4px;">
+                      {{ post.creationDate + ' | ' }}
+                    </span>
+                    <IconComponent
+                      :path="mdiTrendingUp"
+                      :size="12"
+                      :color="'#b3b3b3'"
+                    />
+                    <span style="margin-left: 6px;">
+                      {{ '186' }}
+                    </span>
+                  </div>
                   <div class="description-section">
                     {{ post.description }}
-                  </div>
-                  <div class="creation-date">
-                    {{ post.creationDate + ' | ' + '218' }}
                   </div>
                 </div>
               </div>
@@ -44,11 +59,14 @@
 </template>
 
 <script>
+import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import MoreContentButtonComponent from '../../components/MoreContentButton'
+import IconComponent from '../../components/Icon'
 
 export default {
   components: {
     MoreContentButtonComponent,
+    IconComponent,
   },
   props: {
     posts: {
@@ -57,6 +75,12 @@ export default {
         return {}
       },
     },
+  },
+  data() {
+    return {
+      mdiClockOutline,
+      mdiTrendingUp,
+    }
   },
 }
 </script>
@@ -123,12 +147,13 @@ export default {
   padding-left: 24px;
 }
 .post-main-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.4px;
   display: flex;
   padding-bottom: 4px;
   color: var(--home-page-blog-section-post-title-color);
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .post-link {
   text-decoration: none;
@@ -141,7 +166,7 @@ export default {
   }
 }
 .post-title {
-  font-size: 20px;
+  margin-top: -8px;
 }
 .description-section {
   font-size: 14px;
@@ -154,8 +179,11 @@ export default {
   text-align: left;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #8c8c8c;
+  color: #b3b3b3;
   padding-top: 4px;
+  display: flex;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 .image-section {
   width: 35%;

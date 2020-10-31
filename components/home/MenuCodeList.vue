@@ -35,7 +35,7 @@
       style="font-weight: 600;"
     >
       <template v-if="item.path">
-        <nuxt-link :to="item.path" class="link">
+        <nuxt-link :to="$i18n.path(item.path)" class="link">
           <div class="link-x">
             <template v-if="index * 3 + 1 + 3 < 10">
               &nbsp;
@@ -57,7 +57,7 @@
               class="link-text"
               style="font-family: 'Roboto Mono', monospace;"
             >
-              {{ "'" + item.title + "'" }}
+              {{ "'" + $t(item.title) + "'" }}
             </span>
           </div>
           <div class="link-x">

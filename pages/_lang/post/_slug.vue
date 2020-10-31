@@ -122,6 +122,9 @@
                   :size="12"
                   :color="'#000'"
                 />
+                <span style="margin-left: 6px;">
+                  {{ '424' }}
+                </span>
               </div>
               <div class="related-post-item-description">
                 <h4>

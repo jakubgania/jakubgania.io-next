@@ -1,35 +1,35 @@
 {
   "menu": [
     {
-      "title": "home.menu.homePage",
+      "title": "home.menuSection.homePage",
       "path": ""
     },
     {
-      "title": "home.menu.blogPage",
+      "title": "home.menuSection.blogPage",
       "path": "blog"
     },
     {
-      "title": "home.menu.projectsPage",
+      "title": "home.menuSection.projectsPage",
       "path": "projects"
     },
     {
-      "title": "home.menu.experiencePage",
+      "title": "home.menuSection.experiencePage",
       "path": "experience"
     },
     {
-      "title": "home.menu.contactPage",
+      "title": "home.menuSection.contactPage",
       "path": "contact"
     },
     {
-      "title": "home.menu.aboutPage",
+      "title": "home.menuSection.aboutPage",
       "path": "about"
     },
     {
-      "title": "home.menu.galleryPage",
+      "title": "home.menuSection.galleryPage",
       "path": "gallery"
     },
     {
-      "title": "home.menu.resourcesPage",
+      "title": "home.menuSection.resourcesPage",
       "path": "resources"
     }
   ]
