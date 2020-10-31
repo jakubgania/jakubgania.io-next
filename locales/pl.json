@@ -71,17 +71,19 @@
   "resources": {
     "title": "",
     "dataLinks": {
-      "categories": "Kategorien",
-      "programming": "Programmierung",
+      "categories": "Kategorie",
+      "programming": "Programowanie",
       "software": "Software",
       "google": "Google",
-      "technologicalPortals": "Technologische Portale",
-      "blogs": "Technologie-Blogs",
+      "technologicalPortals": "Portale technologiczne",
+      "blogs": "Blog",
       "youtube": "Youtube",
-      "cryptocurrencies": "Kryptowährungen",
-      "githubCommands": "Github Empfehlung",
-      "dockerCommands": "Docker Empfehlung",
-      "otherCommands": "Andere Empfehlung"
+      "security": "Bezpieczeństwo",
+      "programmingTasks": "Zadania programistyczne",
+      "cryptocurrencies": "Kryptowaluty",
+      "githubCommands": "Github - polecenia",
+      "dockerCommands": "Docker - polecenia",
+      "otherCommands": "Inne"
     }
   },
   "moreContentButton": {

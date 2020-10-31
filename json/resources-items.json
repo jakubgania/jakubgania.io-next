@@ -2,7 +2,7 @@
   "resources_items": [
     {
       "section_id": "programming",
-      "section_name": "",
+      "section_name": "resources.dataLinks.programming",
       "resource_addresses": [
         {
           "url": "https://vuejs.org/"
@@ -32,7 +32,7 @@
     },
     {
       "section_id": "software",
-      "section_name": "Software",
+      "section_name": "resources.dataLinks.software",
       "resource_addresses": [
         {
           "url": "https://atom.io/"
@@ -80,7 +80,7 @@
     },
     {
       "section_id": "google",
-      "section_name": "Google",
+      "section_name": "resources.dataLinks.google",
       "resource_addresses": [
         {
           "url": "https://material.io/tools/icons/?style=baseline"
@@ -95,7 +95,7 @@
     },
     {
       "section_id": "technology-portals",
-      "section_name": "Portale technologiczne",
+      "section_name": "resources.dataLinks.technologicalPortals",
       "resource_addresses": [
         {
           "url": "https://www.purepc.pl/"
@@ -116,7 +116,7 @@
     },
     {
       "section_id": "blogs",
-      "section_name": "Blogi",
+      "section_name": "resources.dataLinks.blogs",
       "resource_addresses": [
         {
           "url": "https://www.flynerd.pl/"
@@ -128,7 +128,7 @@
     },
     {
       "section_id": "youtube",
-      "section_name": "Youtube",
+      "section_name": "resources.dataLinks.youtube",
       "resource_addresses": [
         {
           "title": "overment",
@@ -182,7 +182,7 @@
     },
     {
       "section_id": "security",
-      "section_name": "Bezpieczeństwo",
+      "section_name": "resources.dataLinks.security",
       "resource_addresses": [
         {
           "url": "https://niebezpiecznik.pl/"
@@ -194,7 +194,7 @@
     },
     {
       "section_id": "cryptocurrency",
-      "section_name": "Kryptowaluty",
+      "section_name": "resources.dataLinks.cryptocurrencies",
       "resource_addresses": [
         {
           "url": "https://coinmarketcap.com/"
@@ -206,7 +206,7 @@
     },
     {
       "section_id": "programming-tasks",
-      "section_name": "Programming tasks",
+      "section_name": "resources.dataLinks.programmingTasks",
       "resource_addresses": [
         {
           "url": "https://pl.spoj.com/"
@@ -215,7 +215,7 @@
     },
     {
       "section_id": "github-commands",
-      "section_name": "GitHub commands",
+      "section_name": "resources.dataLinks.githubCommands",
       "resource_addresses": [
         {
           "title": "git init",
@@ -265,7 +265,7 @@
     },
     {
       "section_id": "docker-commands",
-      "section_name": "Docker commands",
+      "section_name": "resources.dataLinks.dockerCommands",
       "resource_addresses": [
         {
           "title": "docker ps",
@@ -299,7 +299,7 @@
     },
     {
       "section_id": "other-commands",
-      "section_name": "Other commands",
+      "section_name": "resources.dataLinks.otherCommands",
       "resource_addresses": [
         {
           "title": "site:website_address",

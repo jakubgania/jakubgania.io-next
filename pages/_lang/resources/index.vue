@@ -7,14 +7,14 @@
     <div v-for="item in linksData" :key="item.id">
       <a :href="'#' + item.section_id" style="text-decoration: none;">
         <div class="listing-link">
-          {{ item.section_name }}
+          {{ $t(item.section_name) }}
         </div>
       </a>
     </div>
 
     <div v-for="item in linksData" :key="item.id" class="link-section">
       <div :id="item.section_id" class="link-section-title">
-        {{ item.section_name }}
+        {{ $t(item.section_name) }}
       </div>
       <div
         v-for="(resource, index) in item.resource_addresses"
