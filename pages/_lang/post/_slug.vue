@@ -115,7 +115,7 @@
                   :color="'#000'"
                 />
                 <span style="margin-left: 4px; margin-right: 4px;">
-                  {{ next.creationDate }}
+                  {{ next.creationDate + ' | ' }}
                 </span>
                 <IconComponent
                   :path="mdiTrendingUp"
@@ -484,6 +484,10 @@ export default {
   transition: padding-left 0.5s ease;
   line-height: 1.1;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+
+  & h4 {
+    font-size: 24px;
+  }
 }
 .related-posts-item {
   width: 45%;
