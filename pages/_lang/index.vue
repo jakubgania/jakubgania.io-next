@@ -243,7 +243,8 @@ export default {
   transition: letter-spacing 0.2s ease;
   font-size: 14px;
   font-weight: bold;
-  background-color: #ffdd1a;
+  // background-color: #ffdd1a;
+  background-color: #f3f3f6;
   padding-left: 44px;
   padding-right: 44px;
   padding-top: 14px;
