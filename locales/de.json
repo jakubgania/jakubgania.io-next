@@ -68,6 +68,19 @@
   "experience": {
     "head": {}
   },
+  "resources": {
+    "title": "",
+    "dataLinks": {
+      "categories": "Kategorie",
+      "programming": "Programowanie",
+      "software": "Software",
+      "google": "Google",
+      "technologicalPortals": "Portale Technologiczne",
+      "blogs": "Blogi",
+      "youtube": "Youtube",
+      "cryptocurrencies": "Kryptowaluty"
+    }
+  },
   "moreContentButton": {
     "morePosts": "Mehr Posts",
     "moreProjects": "Mehr Projekte"

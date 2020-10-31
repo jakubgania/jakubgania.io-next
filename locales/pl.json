@@ -68,6 +68,22 @@
   "experience": {
     "head": {}
   },
+  "resources": {
+    "title": "",
+    "dataLinks": {
+      "categories": "Kategorien",
+      "programming": "Programmierung",
+      "software": "Software",
+      "google": "Google",
+      "technologicalPortals": "Technologische Portale",
+      "blogs": "Technologie-Blogs",
+      "youtube": "Youtube",
+      "cryptocurrencies": "Kryptowährungen",
+      "githubCommands": "Github Empfehlung",
+      "dockerCommands": "Docker Empfehlung",
+      "otherCommands": "Andere Empfehlung"
+    }
+  },
   "moreContentButton": {
     "morePosts": "Więcej postów",
     "moreProjects": "Więcej projektów"
