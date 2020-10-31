@@ -1,5 +1,41 @@
 <template>
   <div>
+    <div>
+      <div class="top-section-title">
+        <nuxt-link :to="$i18n.path('blog')">
+          | posty |
+        </nuxt-link>
+      </div>
+      <div class="post-title">
+        {{ post.title }}
+      </div>
+      <div class="additional-info">
+        <div style="width: 33.33%; font-size: 12px;">
+          <strong style="display: block;">
+            Autor
+          </strong>
+          <span style="display: block;">
+            Jakub Gania
+          </span>
+        </div>
+        <div style="width: 33.33%; font-size: 12px;">
+          <strong style="display: block;">
+            Data
+          </strong>
+          <span style="display: block;">
+            {{ post.creationDate }}
+          </span>
+        </div>
+        <div style="width: 33.33%; font-size: 12px;">
+          <strong style="display: block;">
+            Wyświetlenia
+          </strong>
+          <span style="display: block;">
+            {{ viewCounter }}
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="top-image-section">
       <img
         id="top-image"
@@ -8,17 +44,17 @@
         class="top-image"
       />
     </div>
-    <div class="top-section-title">
+    <div v-show="false" class="top-section-title">
       <nuxt-link :to="$i18n.path('blog')">
         | posty |
       </nuxt-link>
     </div>
     <div class="content-container">
       <template v-if="true">
-        <div class="post-title">
+        <div v-show="false" class="post-title">
           {{ post.title }}
         </div>
-        <div class="additional-info">
+        <div v-show="false" class="additional-info">
           <div style="width: 33.33%; font-size: 12px;">
             <strong style="display: block;">
               Autor
@@ -73,7 +109,19 @@
             </div>
             <div class="related-posts-caption">
               <div class="related-post-item-date">
-                {{ next.creationDate + ' | ' + 248 }}
+                <IconComponent
+                  :path="mdiClockOutline"
+                  :size="12"
+                  :color="'#000'"
+                />
+                <span style="margin-left: 4px; margin-right: 4px;">
+                  {{ next.creationDate }}
+                </span>
+                <IconComponent
+                  :path="mdiTrendingUp"
+                  :size="12"
+                  :color="'#000'"
+                />
               </div>
               <div class="related-post-item-description">
                 <h4>
@@ -96,7 +144,22 @@
             </div>
             <div class="related-posts-caption">
               <div class="related-post-item-date">
-                {{ prev.creationDate + ' | ' + 248 }}
+                <IconComponent
+                  :path="mdiClockOutline"
+                  :size="12"
+                  :color="'#000'"
+                />
+                <span style="margin-left: 4px; margin-right: 4px;">
+                  {{ prev.creationDate + ' | ' }}
+                </span>
+                <IconComponent
+                  :path="mdiTrendingUp"
+                  :size="12"
+                  :color="'#000'"
+                />
+                <span style="margin-left: 6px;">
+                  {{ '424' }}
+                </span>
               </div>
               <div class="related-post-item-description">
                 <h4>
@@ -119,12 +182,15 @@
 </template>
 
 <script>
+import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import axios from 'axios'
 import AboutCreator from '@/components/AboutCreator'
+import IconComponent from '../../../components/Icon'
 
 export default {
   components: {
     AboutCreator,
+    IconComponent,
   },
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
@@ -186,6 +252,8 @@ export default {
   },
   data() {
     return {
+      mdiClockOutline,
+      mdiTrendingUp,
       viewCounter: null,
     }
   },
@@ -335,7 +403,7 @@ export default {
 .top-image {
   display: block;
   width: 100%;
-  max-height: 740px;
+  max-height: 800px;
   object-fit: cover;
 }
 .related-posts {
@@ -350,6 +418,9 @@ export default {
 }
 .related-posts-title {
   font-size: 60px;
+  font-weight: 800;
+  // font-family: 'Roboto Mono', monospace;
+  // font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .related-posts-wrapper {
   display: flex;
@@ -401,12 +472,15 @@ export default {
   letter-spacing: 0.8px;
   font-weight: 500;
   transition: padding-left 0.5s ease;
+  display: flex;
+  line-height: 1;
 }
 .related-post-item-description {
   padding-top: 0.5rem;
-  max-width: 440px;
+  max-width: 460px;
   transition: padding-left 0.5s ease;
   line-height: 1.1;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
 .related-posts-item {
   width: 45%;
@@ -447,6 +521,12 @@ export default {
     transition: all 0.2s ease;
   }
 }
+// @media only screen and (max-width: 2000px) {
+//   .content-container {
+//     padding-left: 14px;
+//     padding-right: 14px;
+//   }
+// }
 @media only screen and (max-width: 960px) {
   .content-container {
     padding-left: 14px;
