@@ -35,8 +35,8 @@
             <IconComponent
               :path="mdiLinkedin"
               :size="44"
-              :color="'--home-page-social-icons-section-color'"
-              :var="true"
+              :color="'#0077b5'"
+              :var="false"
             />
             <span class="social-icon-describe">
               LinkedIn
@@ -53,8 +53,8 @@
             <IconComponent
               :path="mdiTwitter"
               :size="44"
-              :color="'--home-page-social-icons-section-color'"
-              :var="true"
+              :color="'#55acee'"
+              :var="false"
             />
             <span class="social-icon-describe">
               Twitter
@@ -71,8 +71,8 @@
             <IconComponent
               :path="mdiYoutube"
               :size="44"
-              :color="'--home-page-social-icons-section-color'"
-              :var="true"
+              :color="'#cd201f'"
+              :var="false"
             />
             <span class="social-icon-describe">
               YouTube

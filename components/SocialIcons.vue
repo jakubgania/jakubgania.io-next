@@ -56,6 +56,8 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 14px;
 }
 .social-icon {
   &:hover {

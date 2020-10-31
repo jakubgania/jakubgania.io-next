@@ -62,11 +62,14 @@ export default {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.6px;
+  padding-bottom: 10px;
   color: var(--author-component-text-color);
 }
 .author-description {
-  font-size: 14px;
-  letter-spacing: 0.4;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
   color: var(--author-component-text-color);
 }
 @media only screen and (max-width: 600px) {
