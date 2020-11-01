@@ -14,13 +14,13 @@ z szeroko pojętym designem, wyglądem i całą reprezentacją wizualną. Zaproj
 (tak mi się wydaje) nie ma tego jednego idealnego rozwiązania. Są obserwacje, badania, eksperymenty i dobieranie odpowiednich zachowań do danych wymagań. Czasem okazuje się, kiedy chcemy wyjść poza to, że coś ma kolor i jakiś kształt np. kwadratowy czy prostokątny to mamy
 do czynienia z dużą ilością informacji obfitującymi w wiele pojęć.
 
-![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://jakubgania.io/data/blog/posts/15-02-2020-uxui-design-zoptymalizowany/book-1.jpg)
+![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/book-1.jpg)
 
 [UXUI Design Zoptymalizowany - Manual Book](https://helion.pl/ksiazki/uxui-design-zoptymalizowany-manual-book-chris-badura,dezopm.htm#format/d)
 
 Książka ma łącznie 336 stron. Jak na książkę traktującą o UXUI jest oczywiście ładna. Okładka i grafiki w środku są kolorowe, a czcionka którą jest napisana to [Quicksand](https://fonts.google.com/specimen/Quicksand) więc odbiór wizualny jest bardzo pozytywny.
 
-![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://jakubgania.io/data/blog/posts/15-02-2020-uxui-design-zoptymalizowany/book-2.jpg)
+![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/book-2.jpg)
 
 &nbsp;&nbsp;
 
@@ -62,7 +62,7 @@ W książce są poruszone takie kwestie jak m.in. :
 Nie jest to kompletny spis treści. Zagadnień jest sporo, w każdym rodziale jest wszystko opisane w ciekawy sposób. Autor w wielu kwestiach 'zwraca się' do czytelnika. W wielu kwestiach również motywuje ! Zawarł on wiele przykładów na zasadzie jakiejś analogii.
 Bardzo przyjemnie czytało mi się tą książkę i ze względu na to, że jest fajnie zaprojektowana - mam tutaj na myśli czcionkę. Cała tematyka była dla mnie ciekawa i na pewno dała mi szerszy pogląd na kwestie UX i UI. Myślę, że za niedługi czas do niej powrócę.
 
-![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://jakubgania.io/data/blog/posts/15-02-2020-uxui-design-zoptymalizowany/book-3.jpg)
+![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/book-3.jpg)
 
 Działy i tematy, które szczególnie mi się podobały to :
 
@@ -116,7 +116,7 @@ Omówienie idei projektowania złożonych struktur od najmniejszcyh komponentów
 komponenty - jak formularze czy po prostu elementy widoków. Do zalet takiego podejścia można zaliczyć reużywalność oraz łatwiejsze wprowadzanie zmian, ponieważ zmiana
 danego elementu w jakiś sposób, zmieni go we wszystkich miejscach gdzie występuje. Pociąga to za sobą również tworzenie mniej specyficznych komponentów.
 
-![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://jakubgania.io/data/blog/posts/15-02-2020-uxui-design-zoptymalizowany/book-4.jpg)
+![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/book-4.jpg)
 
 Poza wieloma sentencjami i cytatami jedna myśl bardzo mi się spodobała. Może to taka 'oczywista oczywistość' ale :
 
@@ -130,7 +130,7 @@ Proste a prawdziwe :O.
 
 Warto jeszcze nadmienić, że wraz z tą książką można kupić drugą tzw. Workshop Book od tego samego autora. W książce tej znajdują się materiały do wykonania części zadań z Manual Booka.
 
-![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://jakubgania.io/data/blog/posts/15-02-2020-uxui-design-zoptymalizowany/workshop-book.jpg)
+![UXUI Design Zoptymalizowany Manual Book - Chris Badura](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/workshop-book.jpg)
 
 ###### Podziękowania dla autora za udostępnienie powyższej grafiki.
 

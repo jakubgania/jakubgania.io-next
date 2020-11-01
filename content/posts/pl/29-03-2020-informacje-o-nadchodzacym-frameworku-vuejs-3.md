@@ -29,14 +29,14 @@ Poniżej konferencja na której twórca Vue - Evan You opowiada o nadchodzących
 
 Obecna wersja to [v2.6.11](https://github.com/vuejs/vue/releases/tag/v2.6.11).
 
-![Vue.js - v2.6.11](https://jakubgania.io/data/blog/posts/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/current-release.PNG)
+![Vue.js - v2.6.11](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/current-release.PNG)
 
 Według wcześniejszych informacji wersja trzecia miała ukazać się w pierwszym kwartale roku 2020. Jednak
 tak się nie stało, a sama prezentacja nowej wersji odbędzie się w późniejszym czasie. Dużo informacji
 o tym co się dzieje i co jest planowane jest zawarte w Roadmapie umieszczonej w repozytorium projektu,
 w zakładce Projects.
 
-![Vue.js - Roadmap](https://jakubgania.io/data/blog/posts/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/roadmap.PNG)
+![Vue.js - Roadmap](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/roadmap.PNG)
 
 Na początek **FAQ**
 
@@ -52,7 +52,7 @@ terminów. W ich odczuciu kod musi być na tyle dopracowany żeby nadawał się 
 Autorzy zalecją zapozanie z [RFC](https://github.com/vuejs/rfcs/pulls). Jest to lista zaproponowanych
 i przesłanych zmian przez członków zespołu.
 
-![vuejs/rfcs](https://jakubgania.io/data/blog/posts/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/rfcs.PNG)
+![vuejs/rfcs](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/rfcs.PNG)
 
 Dla każdego zgłoszenia w RFC jest opisana m.in. ścieżka migracji.
 
@@ -105,11 +105,11 @@ w drugim kwartale. Do tego czasu będą cały czas trwać prace nad rozwojem now
 
 Następna wersja Vue rozwijana jest w tym repozytorium - [vue-next](https://github.com/vuejs/vue-next).
 
-![vuejs/vue-next repository](https://jakubgania.io/data/blog/posts/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/vue-next-repo.PNG)
+![vuejs/vue-next repository](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/vue-next-repo.PNG)
 
 Obecna wydanie jest oznaczone jako [v3.0.0-alpha.10](https://github.com/vuejs/vue-next/releases/tag/v3.0.0-alpha.10).
 
-![vuejs/vue-next release](https://jakubgania.io/data/blog/posts/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/vue-next.PNG)
+![vuejs/vue-next release](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/vue-next.PNG)
 
 ### Propagacja wiedzy o Vue
 

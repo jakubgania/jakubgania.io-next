@@ -10,10 +10,10 @@ index: 25
 
 W marcu napisałem następujące posty :
 
-- [Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/blog/03-03-2020-programista-na-rozmowie-kwalifikacyjnej)
-- [Meetup ng-wroclaw #33](https://jakubgania.io/blog/11-03-2020-meetup-ng-wroclaw-33)
-- [Luty - podsumowanie](https://jakubgania.io/blog/27-03-2020-luty-podsumowanie)
-- [Informacje o nadchodzącym frameworku Vue.js 3](https://jakubgania.io/blog/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3)
+- [Programista na rozmowie kwalifikacyjnej](/post/03-03-2020-programista-na-rozmowie-kwalifikacyjnej)
+- [Meetup ng-wroclaw #33](/post/11-03-2020-meetup-ng-wroclaw-33)
+- [Luty - podsumowanie](/post/27-03-2020-luty-podsumowanie)
+- [Informacje o nadchodzącym frameworku Vue.js 3](/post/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3)
 
 Jeden o książce, jeden o meetupie, kolejny z podsumowaniem miesiąca poprzedniego i jeszcze związany z 
 nachodzącym frameworkiem Vue.js w wersji 3 - takie podsumowanie dostępnych w sieci informacji.
@@ -45,9 +45,9 @@ mierze kod z tutoriala, na którym bazowałem, ale sam kod będę jeszcze przera
 
 Link do repozytorium - [realtime-chat-app](https://github.com/jakubgania/realtime-chat-app)
 
-![real time chat app](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/real-time-chat-1.PNG)
+![real time chat app](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/real-time-chat-1.PNG)
 
-![real time chat app](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/real-time-chat-2.PNG)
+![real time chat app](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/real-time-chat-2.PNG)
 
 Na githubie też spędziłem chwilę czasu, ponieważ w końcu wziąłem i ogarnąłem część repozytoriów.
 Ogranąłem w takim sensie, że albo dodałem opisy o co chodzi w danym repo - dodałem tagi, albo jeśli
@@ -59,7 +59,7 @@ irytowało mnie to, że jednak trzeba po deploy znowu ręcznie jeszcze nastawia�
 to zwykle bywa, przez przypadek zobaczyłem, że da się to zrealizować właśnie z wykorzystaniem pliku CNAME
 automatycznie i była duża ekscytacja. Niby pierdoła ale łaaaał ;d.
 
-![Github pinned repositories](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/github-pinned.PNG)
+![Github pinned repositories](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/github-pinned.PNG)
 
 Ale pomimo porządków i tak w wolnej chwili będę musiał jeszcze poogarniać.
 
@@ -93,27 +93,27 @@ w związku z poszukiwaniem prelegentów na maj i czerwiec. Cóż, przypuszczam, 
 wszelkie sprawy z meetupami i same meetupy nie będą w jakikolwiek sposób realizowane :( :O . W końcu
 cały świat obecnie przechodzi potężny kryzys.
 
-![Serverless #9 Wrocław Meetup](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/serverless-1.jpg)
+![Serverless #9 Wrocław Meetup](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/serverless-1.jpg)
 
 Jednak co do tematów na meetupie. Pierwszy to - jak napisać i po co custom runntime? Czyli co, jak, po co,
 kiedy, dlaczego - na takie pytania były odpowiedzi w tej prezentacji.
 
-![Serverless #9 Wrocław Meetup](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/serverless-2.jpg)
+![Serverless #9 Wrocław Meetup](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/serverless-2.jpg)
 
-![Serverless #9 Wrocław Meetup](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/serverless-3.jpg)
+![Serverless #9 Wrocław Meetup](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/serverless-3.jpg)
 
-![Serverless #9 Wrocław Meetup](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/serverless-4.jpg)
+![Serverless #9 Wrocław Meetup](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/serverless-4.jpg)
 
 Na spotkaniu były również dostępne naklejki, a właściwie cała góra naklejek i to bardzo różnych i ciekawych :D.
 Kilkoma się poczęstowałem.
 
-![Serverless #9 Wrocław Meetup - naklejki](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/stickers.jpeg)
+![Serverless #9 Wrocław Meetup - naklejki](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/stickers.jpeg)
 
 23 marca oglądałem jeszcze ciekawy webinar również z tematyki serverless. Cały temat brzmiał następująco :
 Przeglądarka WWW w Lambdzie - jak użyć serverless do webscrapingu. Był prowadzany również przez Pawła
 Zubkiewicza, który również prowadził jedną z prezentacji na meetupie serverless #9.
 
-![Jak użyć serverless do webscrapingu ?](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/webinar.jpg)
+![Jak użyć serverless do webscrapingu ?](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/webinar.jpg)
 
 Jeśli chodzi o książki to zacząłem czytać nową, jakiś czas temu kupioną - Platforma Node.js Przewodnik
 webdevelopera. Książka ogólnie o node i ekosystemie js oraz jest w niej realizowany większy projekt,
@@ -125,7 +125,7 @@ Reactem frontend żyje. W tym artykule są rozważania odnośnie współczesnych
 po stronie frontendu. Pozostałe tematy są też bardzo ciekawe, ponieważ jest o rozwiązaniu podobnym o OpenCV, jest
 artykuł o tym jak stworzyć własną kryptowalutę i jest również klasyfikacja obrazów z TensorFlow.
 
-![programista 1/2020 (88)](https://jakubgania.io/data/blog/posts/06-04-2020-marzec-podsumowanie/programista.jpg)
+![programista 1/2020 (88)](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/programista.jpg)
 
 Na koniec ciekawostka. Założyłem kanał na Youtube ! :D . Na samym kanale jeszcze nic ciekawego nie ma,
 jednak z czasem będę dodawał jakieś filmiki powiązane z programowaniem, czy IT. Nie będę raczej tworzył

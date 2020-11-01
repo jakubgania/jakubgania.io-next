@@ -4,12 +4,14 @@
       Kategorie
     </div>
 
-    <div v-for="item in linksData" :key="item.id">
-      <a :href="'#' + item.section_id" style="text-decoration: none;">
-        <div class="listing-link">
-          {{ $t(item.section_name) }}
-        </div>
-      </a>
+    <div style="margin-bottom: 20px;">
+      <div v-for="item in linksData" :key="item.id">
+        <a :href="'#' + item.section_id" style="text-decoration: none;">
+          <div class="listing-link">
+            {{ $t(item.section_name) }}
+          </div>
+        </a>
+      </div>
     </div>
 
     <div v-for="item in linksData" :key="item.id" class="link-section">
@@ -23,11 +25,13 @@
       >
         <div>
           <a :href="resource.url" target="_blank" class="link-resource">
-            {{
-              resource.title
-                ? index + 1 + '. ' + resource.title
-                : index + 1 + '. ' + resource.url
-            }}
+            <p class="format-link">
+              {{
+                resource.title
+                  ? index + 1 + '. ' + resource.title
+                  : index + 1 + '. ' + resource.url
+              }}
+            </p>
           </a>
         </div>
         <div v-if="resource.description">
@@ -48,13 +52,6 @@ export default {
     return {
       title: '',
       linksData: jsonData.resources_items,
-    }
-  },
-  mounted() {
-    console.log('json data ', jsonData)
-
-    for (const item of jsonData.resources_items) {
-      console.log('item ', item.resource_addresses)
     }
   },
   head() {
@@ -81,11 +78,14 @@ export default {
 .content-container {
   max-width: 800px;
   width: 100%;
-  margin: auto;
+  // margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 .title-category {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   margin-bottom: 14px;
   letter-spacing: 2px;
@@ -104,7 +104,7 @@ export default {
   margin-bottom: 24px;
 }
 .link-section-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -120,6 +120,11 @@ export default {
   &:hover {
     color: #01aca7;
   }
+}
+.format-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .resource-description {
   font-size: 14px;

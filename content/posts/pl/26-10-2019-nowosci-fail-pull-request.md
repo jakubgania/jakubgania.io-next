@@ -3,7 +3,7 @@ title: Nowości, fail, pull request
 creationDate: '26-10-2019 23:51'
 description: Nowości, fail, pull request
 keywords: fail, pull request, zmiany, nowości
-topImageSrc: ''
+topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/26-10-2019-nowosci-fail-pull-request/top-image.png'
 topImageAlt: ''
 index: 3
 ---

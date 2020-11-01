@@ -38,7 +38,7 @@ Kilka słów o prowadzących :
 
 Miejsce na panel dyskusyjny. Wyglądało co najmniej jak studio do nagrań wywiadów :D. Oświetlenie :bulb:, kamery :video_camera:, rejestrator dźwięku :iphone:, mikrofon :microphone:, widownia, listy z pytaniami i tematami, po prostu wszystko. Uruchomiona była również specjalna aplikacja, za pomocą której można było na bieżąco pisać pytania do mówców, które następnie były widoczne dla nich na laptopie.
 
-![Meetup ng-wroclaw #33 - PGS Software](https://jakubgania.io/data/blog/posts/11-03-2020-meetup-ng-wroclaw-33/pgs-software.jpg)
+![Meetup ng-wroclaw #33 - PGS Software](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-03-2020-meetup-ng-wroclaw-33/pgs-software.jpg)
 
 To jaki w ogóle był temat tego spotkania ?
 

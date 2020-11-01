@@ -150,11 +150,11 @@ W styczniu również miałem okazję uczestniczyć w dwóch procesach rekrutacyj
 Obie fimry relizowały ciekawe projekty. Jednak w przypadku drugiej firmy miałem również do wykonania ciekawy projekt z wykorzystaniem Angulara. Była to prosta aplikacja symulująca działanie platformy do wyszukiwania informacji o filmach. Jednym z wymagań było umieszczenie projektu na githubie - repozytorium projektu można zobaczyć tutaj =>
 [angular8-omdbapi-movie-search-engine](https://github.com/jakubgania/angular8-omdbapi-movie-search-engine).
 
-![angular8-omdbapi-movie-search-engine](https://jakubgania.io/data/blog/posts/19-02-2020-styczen-podsumowanie/screen-1.png)
+![angular8-omdbapi-movie-search-engine](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/screen-1.png)
 
 ### Konkurs sekuraka
 
-Sekurak oragnizował konkurs na zdjęcie z książką, o której niedawno zrobiłem krótki wpis => [Bezpieczeństwo aplikacji webowych - SECURITUM](https://jakubgania.io/blog/22-12-2019-bezpieczenstwo-aplikacji-webowych)
+Sekurak oragnizował konkurs na zdjęcie z książką, o której niedawno zrobiłem krótki wpis => [Bezpieczeństwo aplikacji webowych - SECURITUM](/post/22-12-2019-bezpieczenstwo-aplikacji-webowych)
 
 ### Uczelnia
 
@@ -167,11 +167,11 @@ Więcej infromacji :
 
 Podsumowując- jest to interesujący temat na wpis, ale na pewno trzeba znaleźć na niego więcej czasu oraz szerzej się z nim zapoznać.
 
-![Uneral Engine 4 - Logo](https://jakubgania.io/data/blog/posts/19-02-2020-styczen-podsumowanie/ue4-logo.png)
+![Uneral Engine 4 - Logo](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/ue4-logo.png)
 
 W ramach przedmiotu Bezpieczeństwo systemów webowych przygotowałem prezentację pod tytułem - JWT + HTTP / 2.0 zaś na przedmiot Systemy dziedzinowych baz danych trzeba było przygotować prezentecję i zaliczyć test. Także z każdego przedmioty coś trzeba było porobić.
 
-![JWT + HTTP / 2.0](https://jakubgania.io/data/blog/posts/19-02-2020-styczen-podsumowanie/prezentacja.PNG)
+![JWT + HTTP / 2.0](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/prezentacja.PNG)
 
 W notatkach odnotowałem 30 stycznia awarię Google Analytics. Nie wiem jak duży był problem oraz jak długo to trwało, jednak z tego co widziałem w internecie, ludzie z różnych zakątków świata zgłaszali podobne objawy, które po kilku godzinach minęły. Problem był taki, że nie było możliwości obejrzenia swoich wszystkich zakładek w dashboardzie. Po zalogowaniu do konta - wyskakiwał komunikat o braku uprawnień.
 
@@ -179,7 +179,7 @@ W notatkach odnotowałem 30 stycznia awarię Google Analytics. Nie wiem jak duż
 
 Przez pozostałą część czasu tworzyłem jeszcze inny projekt. Właściwie było to odnowienie projektu utworzonego już kilka lat temu. Zmienioe zostały technologie oraz ogólnie design.
 
-![okna-system-serwis](https://jakubgania.io/data/blog/posts/19-02-2020-styczen-podsumowanie/okna-system-serwis.PNG)
+![okna-system-serwis](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/okna-system-serwis.PNG)
 
 Powyżej screen z kawałka strony. Na przestrzeni kilku lat bardzo zmieniło się moje podejście do robienia nawet takich prostych stron z informacjami. Obecnie strona czeka na wdrożenie.
 
@@ -194,7 +194,7 @@ rozpoczęciu pisania tekstów w sekcji z artykułami. Mam coraz więcej pomysł�
 Jeśli chodzi o uczęszczanie na meetupy to miałem okazję być na spotkaniu w PGS. Był to meetup organizowany w ramach grupy WrocławJUG - "Testy jednostkowe na pełnym wypasie", który był prowadzony przez Bartka "Koziołka" Kuczyńskiego.
 Było wiele ciekawej wiedzy od podstaw do bardziej zaawansowanych koncepcji.
 
-![150. WrocławJUG - Testy Jednostkowe na pełnym wypasie - Bartek "Koziołek" Kuczyński | PGS SOFTWARE](https://jakubgania.io/data/blog/posts/19-02-2020-styczen-podsumowanie/pgs-meetup.jpg)
+![150. WrocławJUG - Testy Jednostkowe na pełnym wypasie - Bartek "Koziołek" Kuczyński | PGS SOFTWARE](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/pgs-meetup.jpg)
 
 Uczestniczyłem również w webinarze o następującym tytule - Azure i deployment kodu - czyli od zera do bohater. Był to meetup organizowany w ramach grupy 25th Level Code Wrocław. Prelegent Filip Syguła
 pokazywał przykładowy projekt wykorzystujący chmurę Azure.

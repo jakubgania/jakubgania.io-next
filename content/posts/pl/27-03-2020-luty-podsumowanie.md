@@ -13,7 +13,7 @@ znaczenia. Jaki był więc luty dla mnie ? Hmm, nie był to ani miesiąc bardzo 
 zupełnie nic się nie działo. Na samym początku, czyli 1 lutego zacząłem czytać książkę JavaScript -
 programowanie dla zaawansowanych.
 
-![JavaScript - Programowanie Zaawansowane](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/book-1.jpg)
+![JavaScript - Programowanie Zaawansowane](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/book-1.jpg)
 
 Książka pochodzi z 2016 roku i oczywiście są w niej zawarte trochę starsze rzeczy, jednak wiele innych
 koncepcji jest aktualnych do dzisiaj i na pewno poczytanie o tym zwiększa ogólną wiedzę. Wraz z rozpoczęciem
@@ -23,7 +23,7 @@ czytania książki doszedłem do wniosku, że muszę pewne części przeczytać 
 działanie całego kodu i ogólny sens.
 
 Aktywność na Githubie w lutym.
-![Github aktywność - luty](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/github-luty.PNG)
+![Github aktywność - luty](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/github-luty.PNG)
 
 Bardziej znaczącym projektem, który realizowałem jeszcze w lutym jest projekt strony
 [okna-system-serwis.pl](https://okna-system-serwis.pl). Jest to realizacja projektu, który już około
@@ -32,7 +32,7 @@ technologie, strona się zestarzała, a przede wszystkim moje umiejętności wzr
 innego. Co prawda sama strona nie realizuje nic bardziej zaawansownego - jest to statyczna strona
 informacyjna.
 
-![Okna-System-Serwis](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/okna-system-serwis.PNG)
+![Okna-System-Serwis](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/okna-system-serwis.PNG)
 
 Następną kwestią była moja stale rosnąca frustracja do Windowsa. Tak, chodzi o system operacyjny
 Windows, który jest dla mnie wraz z upływem czasu coraz bardziej frustrujący/denerwujący/wkurzający
@@ -47,18 +47,18 @@ Konkurs był związany z książką, która jakiś czas temu została wydana i n
 zdjęcie. Więcej można zobaczyć i przeczytać tutaj =>
 [Wyniki konkursu na zdjęcie książki sekuraka](https://sekurak.pl/wyniki-konkursu-na-zdjecie-ksiazki-sekuraka/)
 
-![Sekurark - koszulka](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/tshirt-sekurak.jpg)
+![Sekurark - koszulka](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/tshirt-sekurak.jpg)
 
 Zdjęcia (można było wysłać kilka, nie tylko jedno), które zostały wysłane na konkurs :
 
-![Sekurak - zdjęcie na konkurs](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/konkurs-1.jpg)
+![Sekurak - zdjęcie na konkurs](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/konkurs-1.jpg)
 To właśnie powyższe zdjęcie zostało wybrane jako lepsze.
 
-![Sekurak - zdjęcie na konkurs](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/konkurs-2.jpg)
+![Sekurak - zdjęcie na konkurs](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/konkurs-2.jpg)
 
 Udało mi się załapać do listy wygranych i otrzymałem koszulkę ! :D Z czego oczywiście bardzo się cieszę.
 
-Napisałem również post o książce [UXUI Design Zoptymalizowany](https://jakubgania.io/blog/15-02-2020-uxui-design-zoptymalizowany),
+Napisałem również post o książce [UXUI Design Zoptymalizowany](/post/15-02-2020-uxui-design-zoptymalizowany),
 ale przed wydaniem posta na bloga skontaktowałem się na LinkedIn z autorem książki i wysłałem mu do
 wglądu post, czy jest ok, czy mogę udostępnić fragmenty książki itp. Bardzo pozytywnie się zaskoczyłem,
 ponieważ pan Chris nie dość, że pochwalił samą treść posta, to zaproponował podesłanie lepszej jakości
@@ -68,7 +68,7 @@ nie musiałbym się z nim konsultować (chociaż sam zachęcał do kontaktu w ks
 posta, dodał go również na swojej facebookowej grupie liczącej prawie 3000 osób ! :D. To było już dla
 mnie w ogóle wielkie zaskoczenie i bardzo miłe wyróżnienie.
 
-![Akademia-UXUI](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/facebook-akademia-uxui.PNG)
+![Akademia-UXUI](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/facebook-akademia-uxui.PNG)
 
 W lutym, również w końcu wziąłem i ogarnąłem temat związany z Github Pages. Nie jest to nic skomplikowanego
 jednak poczytałem o tym więcej, zobaczyłem do czego służy, jakie daje możliwości oraz w końcu sam
@@ -86,11 +86,11 @@ uruchomiłem kilka stron w oparciu o ten mechanizm m.in. takie jak :
 29 lutego zacząłem pisać kolejnego posta o książce - Programista na rozmowie kwalifikacyjnej. W okolicy
 10 lutego kupiłem również nową książkę - Vue.js w akcji.
 
-![Vue.js w akcji](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/book-2.jpg)
+![Vue.js w akcji](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/book-2.jpg)
 
 Oraz zacząłem czytać książkę o Node.js.
 
-![Platforma Node.js. Przewodnik webdevelopera. Wydanie III](https://jakubgania.io/data/blog/posts/27-03-2020-luty-podsumowanie/book-3.jpg)
+![Platforma Node.js. Przewodnik webdevelopera. Wydanie III](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/book-3.jpg)
 
 Poza tymi głównymi zdarzeniami oczywyście był szereg pomniejszych czynności, jak różne zmiany w kilku
 repozytoriach na Githubie, czytanie róznych artykułów technicznych i technologicznych.

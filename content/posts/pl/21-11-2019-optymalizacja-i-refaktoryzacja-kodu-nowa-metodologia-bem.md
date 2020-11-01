@@ -2,7 +2,7 @@
 title: Optymalizacja i refaktoryzacja kodu, nowa podstrona, metodologia BEM
 creationDate: '21-11-2019 00:40'
 description: Optymalizacja i refaktoryzacja kodu, nowa podstrona, metodologia BEM
-topImageSrc: ''
+topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/21-11-2019-optymalizacja-i-refaktoryzacja-kodu-nowa-podstrona-metodologia-bem/top-image.PNG'
 topImageAlt: ''
 keywords: optymalizacja, refaktoryzacja, kod, nowa podstrona, metodologia, bem
 index: 8

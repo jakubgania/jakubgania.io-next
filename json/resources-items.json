@@ -177,6 +177,110 @@
         {
           "title": "PHPers",
           "url": "https://www.youtube.com/user/PHPersPL/videos"
+        },
+        {
+          "title": "commaai archive",
+          "url": "https://www.youtube.com/c/commaaiarchive/videos"
+        },
+        {
+          "title": "search_query=kubernetes+blue+green+deployment",
+          "url": "https://www.youtube.com/results?search_query=kubernetes+blue+green+deployment"
+        },
+        {
+          "title": "Clever Programmer",
+          "url": "https://www.youtube.com/c/CleverProgrammer/videos"
+        },
+        {
+          "title": "Web Development In 2020 - A Practical Guide",
+          "url": "https://www.youtube.com/watch?v=0pThnRneDjw"
+        },
+        {
+          "title": "Web Developer Roadmap 2020 | A Guide To Starting A Career In Web Development",
+          "url": "https://www.youtube.com/watch?v=iogabydg2y0"
+        },
+        {
+          "title": "Angular, React, Vue and Co: Web Components and Mini Apps",
+          "url": "https://www.youtube.com/watch?v=QGo_EBjCoyI"
+        },
+        {
+          "title": "Animated Login Form Using HTML & CSS & JQurey",
+          "url": "https://www.youtube.com/watch?v=ZvU57lTnNgo"
+        },
+        {
+          "title": "Special Programs in C − Pyramid of Stars",
+          "url": "https://www.youtube.com/watch?v=KdM6OrvcjPI"
+        },
+        {
+          "title": "Button With Awesome Hover Effects Using HTML & CSS",
+          "url": "https://www.youtube.com/watch?v=SP0wAmjbaQ4"
+        },
+        {
+          "title": "Axios Crash Course | HTTP Library",
+          "url": "https://www.youtube.com/watch?v=6LyagkoRWYA"
+        },
+        {
+          "title": "Design Principles of Vue 3.0 by Evan You",
+          "url": "https://www.youtube.com/watch?v=WLpLYhnGqPA&feature=emb_title"
+        },
+        {
+          "title": "Vue.js With TypeScript A Beginners Guide",
+          "url": "https://www.youtube.com/watch?v=CQAQkHuulTU"
+        },
+        {
+          "title": "Pathfinding Visualizer Tutorial (software engineering project)",
+          "url": "https://www.youtube.com/watch?v=msttfIHHkak"
+        },
+        {
+          "title": "The Future of JavaScript - New Features and Disruptive Trends in 2020",
+          "url": "https://www.youtube.com/watch?v=f0DrPLKf6Ro"
+        },
+        {
+          "title": "search_query=javascript+crash+course",
+          "url": "https://www.youtube.com/results?search_query=javascript+crash+course"
+        },
+        {
+          "title": "JavaScript Crash Course For Beginners",
+          "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c"
+        },
+        {
+          "title": "Object-oriented Programming in JavaScript: Made Super Simple | Mosh",
+          "url": "https://www.youtube.com/watch?v=PFmuCDHHpwk"
+        },
+        {
+          "title": "Realtime Chat With Users & Rooms - Socket.io, Node & Express",
+          "url": "https://www.youtube.com/watch?v=jD7FnbI76Hg"
+        },
+        {
+          "title": "Fireship",
+          "url": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA/videos"
+        },
+        {
+          "title": "Node JS - Scaling Applications - Clusters",
+          "url": "https://www.youtube.com/watch?v=Iz0MFOKmmDY"
+        },
+        {
+          "title": "Setting Up VSCode For Python Programming",
+          "url": "https://www.youtube.com/watch?v=W--_EOzdTHk"
+        },
+        {
+          "title": "How to Set Up Python in Visual Studio Code on Windows 10",
+          "url": "https://www.youtube.com/watch?v=dNFgRUD2w68"
+        },
+        {
+          "title": "Tech With Tim",
+          "url": "https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/videos"
+        },
+        {
+          "title": "SysOps / DevOps Polska",
+          "url": "https://www.youtube.com/c/SysOpsDevOpsPolska/videos"
+        },
+        {
+          "title": "15 Vanilla Javascript Projects",
+          "url": "https://www.youtube.com/watch?v=c5SIG7Ie0dM"
+        },
+        {
+          "title": "AWS Lambda + DynamoDB Example Tutorial (2018)",
+          "url": "https://www.youtube.com/watch?v=usgK4KsdNWM"
         }
       ]
     },
@@ -210,6 +314,319 @@
       "resource_addresses": [
         {
           "url": "https://pl.spoj.com/"
+        }
+      ]
+    },
+    {
+      "section_id": "various-websites",
+      "section_name": "resources.dataLinks.variousWebsites",
+      "resource_addresses": [
+        {
+          "url": "https://dev.to/x-team/how-to-stand-out-with-your-github-profile-300f"
+        },
+        {
+          "url": "https://dev.to/flippedcoding/what-is-infrastructure-as-code-iac-461c"
+        },
+        {
+          "url": "https://dev.to/razcodes/how-to-host-a-static-website-with-aws-s3-and-ssl-using-cloudfront-3e37"
+        },
+        {
+          "url": "https://github.com/helloroman/helloroman"
+        },
+        {
+          "url": "https://docs.emmet.io/cheat-sheet/"
+        },
+        {
+          "url": "https://github-readme-stats.vercel.app/api?username=jakubgania&count_private=true"
+        },
+        {
+          "url": "http://youmightnotneedjquery.com/"
+        },
+        {
+          "url": "https://codepen.io/eighthday/pen/MKqBjX"
+        },
+        {
+          "url": "https://michalsnik.github.io/aos/"
+        },
+        {
+          "url": "https://webgradients.com/"
+        },
+        {
+          "url": "https://www.freecodecamp.org/news/how-to-use-flat-file-data-in-a-static-nuxt-app/"
+        },
+        {
+          "url": "https://github.com/nuxt-community/apollo-module/issues/339"
+        },
+        {
+          "url": "https://apollo.vuejs.org/api/smart-query.html#options"
+        },
+        {
+          "url": "https://github.com/apollographql/apollo-client/pull/1475/files"
+        },
+        {
+          "url": "https://github.com/nuxt-community/apollo-module#asyncdatafetch-method-of-page-component"
+        },
+        {
+          "url": "https://github.com/nuxt-community/apollo-module/issues/99"
+        },
+        {
+          "url": "https://developer.github.com/"
+        },
+        {
+          "url": "https://github.com/vuejs/vue-apollo/blob/master/docs/guide/ssr.md#component-prefetching"
+        },
+        {
+          "url": "https://www.apollographql.com/docs/devtools/apollo-config/"
+        },
+        {
+          "url": "https://apollo.vuejs.org/guide/apollo/queries.html#simple-query"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/61277352/nuxt-apollo-module-request-authorization-header-with-double-bearer"
+        },
+        {
+          "url": "https://www.apollographql.com/blog/use-apollo-in-your-vuejs-app-89812429d8b2/"
+        },
+        {
+          "url": "https://hasura.io/learn/graphql/vue/queries/3-handle-errors/"
+        },
+        {
+          "url": "https://medium.com/better-programming/learn-graphql-by-building-a-github-client-15c312932e65"
+        },
+        {
+          "url": "https://stackabuse.com/building-graphql-apis-with-vue-js-and-apollo-client/"
+        },
+        {
+          "url": "https://codesandbox.io/s/to8bs?file=/pages/post/_slug.vue"
+        },
+        {
+          "url": "https://www.npmjs.com/package/@nuxtjs/apollo"
+        },
+        {
+          "url": "https://github.com/nuxt-community/apollo-module"
+        },
+        {
+          "url": "https://dev.to/debs_obrien/graphql-and-nuxt-1010"
+        },
+        {
+          "url": "https://medium.com/swlh/create-deploy-a-serverless-react-app-to-s3-cloudfront-on-aws-4f83fa605ff0"
+        },
+        {
+          "url": "https://blogs.halodoc.io/deploy-static-web-application-using-s3-and-cloudfront/"
+        },
+        {
+          "url": "https://github.com/nuxt/nuxt.js/issues/1305"
+        },
+        {
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-build-a-blog-with-vue-graphql-and-apollo-client"
+        },
+        {
+          "url": "https://github.com/mapbox/node-sqlite3/issues/866"
+        },
+        {
+          "url": "https://github.com/benface/tailwindcss-typography"
+        },
+        {
+          "url": "https://codesandbox.io/s/github/nuxt/nuxt.js/tree/dev/examples/i18n?from-embed=&file=/layouts/default.vue:201-221"
+        },
+        {
+          "url": "https://developers.facebook.com/"
+        },
+        {
+          "url": "https://blog.consdata.tech/2018/01/17/aws-serverless-programming.html"
+        },
+        {
+          "url": "https://github.com/nuxt-company/demo-blog-nuxt-content/tree/master/content/articles"
+        },
+        {
+          "url": "https://github.com/nuxt-company/demo-blog-nuxt-content"
+        },
+        {
+          "url": "https://developer.github.com/v4/guides/resource-limitations/"
+        },
+        {
+          "url": "https://tailwindcss.com/docs/background-color#app"
+        },
+        {
+          "url": "https://blog.netcetera.com/how-to-create-guarded-routes-for-your-react-app-d2fe7c7b6122"
+        },
+        {
+          "url": "https://api.slack.com/tutorials/aws-lambda"
+        },
+        {
+          "url": "https://aws.amazon.com/blogs/security/how-to-create-an-aws-iam-policy-to-grant-aws-lambda-access-to-an-amazon-dynamodb-table/"
+        },
+        {
+          "url": "https://dev.to/gtanyware/lambda-and-dynamodb-the-first-steps-228"
+        },
+        {
+          "url": "https://dev.to/graphqleditor/most-popular-graphql-servers-3h5l"
+        },
+        {
+          "url": "https://dzone.com/articles/building-a-nodejs-service-with-aws-lambda-dynamodb"
+        },
+        {
+          "url": "https://nuxtjs.org/blog/moving-from-nuxtjs-dotenv-to-runtime-config/"
+        },
+        {
+          "url": "https://morioh.com/p/47cbe20ac7e9"
+        },
+        {
+          "url": "https://github.com/nuxt/nuxt.js/issues/4544"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ReservedWords.html"
+        },
+        {
+          "url": "https://www.markotomic.com/dynamodb-for-javascript-cheatsheet/"
+        },
+        {
+          "url": "https://thewebspark.com/2018/08/22/how-create-a-serverless-website-using-aws-lambda-aws-s3-aws-api-gateway-and-aws-dynamodb-with-node-js-full-tutorial/"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#putItem-property"
+        },
+        {
+          "url": "https://medium.com/quick-code/node-js-restful-api-with-dynamodb-local-7e342a934a24"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/33942945/error-invalidparametertype-expected-params-itempid-to-be-a-structure-in-dyn"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/31916488/how-to-put-an-item-in-aws-dynamodb-using-aws-lambda-with-node-js/31926772"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/19073991/dynamodb-node-aws-sdk-simple-getitem-call"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.NodeJs.03.html"
+        },
+        {
+          "url": "https://www.fernandomc.com/posts/eight-examples-of-fetching-data-from-dynamodb-with-node/"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html"
+        },
+        {
+          "url": "https://www.freecodecamp.org/news/using-lambda-functions-as-cronjobs/"
+        },
+        {
+          "url": "https://www.telerik.com/blogs/passing-variables-to-css-on-a-vue-component"
+        },
+        {
+          "url": "https://www.npmjs.com/package/@nuxtjs/color-mode"
+        },
+        {
+          "url": "https://medium.com/better-programming/dark-and-light-themes-with-tailwind-css-and-nuxt-js-2ffd2178aad5"
+        },
+        {
+          "url": "https://docs.amplify.aws/cli/auth/overview"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/41915438/node-js-aws-dynamodb-updateitem"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/28449363/why-is-this-http-request-not-working-on-aws-lambda"
+        },
+        {
+          "url": "https://www.codegram.com/blog/nuxt-typescript-apollo-a-bumpy-road/"
+        },
+        {
+          "url": "https://dev.to/lennythedev/show-off-your-github-repos-in-your-gatsby-site-using-graphql-421l"
+        },
+        {
+          "url": "https://dev.to/snird/how-to-become-a-data-engineer-complete-learning-path-46be"
+        },
+        {
+          "url": "https://dev.to/hb/top-10-vscode-extensions-as-a-web-developer-m3f"
+        },
+        {
+          "url": "https://dev.to/ender_minyard/full-stack-developer-s-roadmap-2k12"
+        },
+        {
+          "url": "https://colorlib.com/wp/resume-website-templates/"
+        },
+        {
+          "url": "https://colorlib.com/wp/wp-content/uploads/sites/2/leven-resume-website-template.jpg"
+        },
+        {
+          "url": "https://cms-assets.tutsplus.com/uploads/users/1223/posts/33877/image/Desmond.jpg"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/5d/69/f8/5d69f8ea910b34ec029057ff390a1726.jpg"
+        },
+        {
+          "url": "https://freefrontend.com/assets/img/html-resume-templates/resume-in-html-and-css.png"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/36695438/detect-click-outside-div-using-javascript"
+        },
+        {
+          "url": "https://9elements.com/blog/pure-css-diagonal-layouts/"
+        },
+        {
+          "url": "https://www.bornfight.com/blog/"
+        },
+        {
+          "url": "https://www.robinwieruch.de/about"
+        },
+        {
+          "url": "https://mherman.org/blog/dockerizing-a-react-app/"
+        },
+        {
+          "url": "https://www.robinwieruch.de/docker-create-react-app-development"
+        },
+        {
+          "url": "https://www.howtoforge.com/aws-lambda-function-to-start-and-stop-ec2-instance/"
+        },
+        {
+          "url": "https://medium.com/@auchenberg/live-edit-and-debug-your-react-apps-directly-from-vs-code-without-leaving-the-editor-3da489ed905f"
+        },
+        {
+          "url": "https://developer.github.com/v4/explorer/"
+        },
+        {
+          "url": "https://github.com/imjoshellis/imjoshellis.com/blob/master/src/app/components/RecentRepos.tsx"
+        },
+        {
+          "url": "https://github.com/imjoshellis/imjoshellis.com/blob/master/src/app/components/Card.tsx"
+        },
+        {
+          "url": "https://github.com/imjoshellis/imjoshellis.com/blob/master/tailwind.config.js"
+        },
+        {
+          "url": "https://imjoshellis.com/"
+        },
+        {
+          "url": "https://dev.to/dre4success/ssh-to-an-ec2-instance-from-vs-code-2707"
+        },
+        {
+          "url": "https://blog.opendigerati.com/vscode-with-remote-ssh-2387bb021cdd"
+        },
+        {
+          "url": "https://letswp.io/remote-development-visual-studio-code-amazon-ec2/",
+          "description": "visual studio code on ec2 - amazon"
+        },
+        {
+          "url": "https://medium.com/@christyjacob4/using-vscode-remotely-on-an-ec2-instance-7822c4032cff"
+        },
+        {
+          "url": "https://code.visualstudio.com/blogs/2019/05/02/remote-development"
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/remote/ssh"
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/remote/remote-overview"
+        },
+        {
+          "url": "https://dev.to/codingsafari/how-to-setup-a-remote-development-server-46ln"
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/remote/faq"
+        },
+        {
+          "url": "https://www.telerik.com/blogs/10-tips-to-increase-your-productivity-when-coding-in-vuejs"
         }
       ]
     },

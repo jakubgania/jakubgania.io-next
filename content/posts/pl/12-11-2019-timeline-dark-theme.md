@@ -2,7 +2,7 @@
 title: Timeline, Dark Theme
 creationDate: '12-11-2019 00:12'
 description: Timeline i Dark Theme
-topImageSrc: ''
+topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/12-11-2019-timeline-dark-theme/top-image.jpg'
 topImageAlt: ''
 keywords: dark, theme, dark theme, ciemny motyw, oś czasu, timeline
 index: 6

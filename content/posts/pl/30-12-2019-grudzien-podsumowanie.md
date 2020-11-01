@@ -12,7 +12,7 @@ Ostatni miesiąc tego roku. Grudzień to czas, kiedy przychodzi do nas
 Święty Mikołaj :santa:, 24 grudnia obchodzimy Wigilię i Boże Narodzenie :christmas_tree:,
 a potem już tylko odliczamy dni do Sylwestra :champagne:, który kończy rok. To wiele zadań, obowiązków i przygotowań. To różne wyjazdy - bliższe lub dalsze, do rodziny i najbliższych. Jest to czas, w którym nie ma już (zazwyczaj) aż tak dużej intensyfikacji jeśli chodzi o pracę i projekty.
 
-![Christmas tree - Dortmund 2019](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/xtree.jpg)
+![Christmas tree - Dortmund 2019](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/xtree.jpg)
 
 Pomimo różnych okoliczności, każdego dnia starałem się rozwijać
 i ulepszać swoją stronę. Bardzo dużych zmian nie ma, jednak jak zawsze są dziesiątki modyfikacji i drobne poprawki.
@@ -24,7 +24,7 @@ Jest to o tyle ciekawe, że wcześniej nie zauważyłem problemu jaki ostatnio w
 Co się wtedy dzieje z każdą stroną, którą dodamy ?
 Tworzy się pewnego rodzaju miniaturka strony z widokiem jakiejś grafiki lub loga strony i tytułem danej strony, która jest linkowana wraz z jej opisem.
 
-![Twitter screen](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/twitter-1.PNG)
+![Twitter screen](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/twitter-1.PNG)
 
 Czyli tworzy się podgląd strony z podstawowymi informacjami.
 
@@ -43,23 +43,23 @@ Dlatego rozwiązanie problemu z błędnie wyświetlającym się podglądem stron
 Po implementacji i wdrożeniu na serwer wszystko zaczęło dobrze działać - o czym można się przekonać, np. w validatorze Twitter'a :
 
 Przykład podstrony bez meta tagów Open Graph
-![Twitter validator - bad](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/twitter-validator-bad.PNG)
+![Twitter validator - bad](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/twitter-validator-bad.PNG)
 
 Przykład podstrony z zastosowanymi meta tagami Open Graph
-![Twitter validator - good](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/twitter-validator-good.PNG)
+![Twitter validator - good](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/twitter-validator-good.PNG)
 
 Cóż, z powyższego opisu dałoby radę stworzyć cały artykuł o tym zagadnieniu. Natomiast spotkałem się z tego typu problemem i przedstawiłem to skrótowo - w kilku zdaniach.
 
 ## Linkedin i Twitter
 
-Tak, w końcu zacząłem 'atakować' Twitter'a i Linkedin'a. Atakować w pojęciu takim, że zacząłem (nieśmiało) udostępniać swoje posty, które tworzę w ramach bloga. Samego Twitter'a nie miałem nigdy wcześniej, ale w końcu założyłem konto po niedawnym [meetup'ie](https://jakubgania.io/blog/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it). Mam różne wrażenia i spostrzeżenia co do tego działania. Jest to "temat rzeka", dlatego możliwe, że stworzę o tym post w niedalekiej przyszłości. 
+Tak, w końcu zacząłem 'atakować' Twitter'a i Linkedin'a. Atakować w pojęciu takim, że zacząłem (nieśmiało) udostępniać swoje posty, które tworzę w ramach bloga. Samego Twitter'a nie miałem nigdy wcześniej, ale w końcu założyłem konto po niedawnym [meetup'ie](/post/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it). Mam różne wrażenia i spostrzeżenia co do tego działania. Jest to "temat rzeka", dlatego możliwe, że stworzę o tym post w niedalekiej przyszłości. 
 
 ## Preloader
 
 Dodałem również preloader, który jest widoczny, kiedy w przeglądarce wywołamy jakąś z podstron mojej strony. Nie zawsze jest on wyświetlany. Zależy to od pamięci cache i szybkości połączenia internetowego. Już kiedyś to rozważałem, ale nie dodałem. W końcu przyszedł jakiś impuls i stworzyłem komponent z preloaderm.
 
 Preloader jest animowany - tutaj jest tylko poglądowy screen
-![Preloader](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/preloader.png)
+![Preloader](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/preloader.png)
 
 ## Emoji :D
 
@@ -83,8 +83,8 @@ Ostatnio również zacząłem implementować nową podstronę pod ścieżką /do
 
 ## Windows 10 Pro
 
-![Windows 10 Pro](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/windows-10-pro.PNG)
+![Windows 10 Pro](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/windows-10-pro.PNG)
 
 Jedną ze znaczących zmian w ostatnim czasie jest dla mnie migracja z Windowsa w wersji Home na wersję Pro. Poza kilkoma szczegółami, które różnią te wersje, oczywiście najważniejszą dla mnie z punktu widzenia programisty jest wsparcie dla Hyper-V w wersji Pro a co za tym idzie możliwość zainstalowania i uruchomienia oprogramowania [Docker Desktop](https://docs.docker.com/docker-for-windows/install/).
 
-![Docker Desktop](https://jakubgania.io/data/blog/posts/30-12-2019-grudzien-podsumowanie/docker-desktop.PNG)
+![Docker Desktop](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/docker-desktop.PNG)

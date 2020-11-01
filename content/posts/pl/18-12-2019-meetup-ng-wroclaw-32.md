@@ -84,6 +84,3 @@ się różnymi ciekawymi naklejkami.
 
 Dostępny jest również kanał na Youtube - [Angular Wroclaw](https://www.youtube.com/channel/UCRifHGV65iEi3ElmejaMtYQ/videos),
 ale obecnie są na nim tylko dwa nagrania z meetupów - ostatnie sprzed 10 miesięcy.
-
-
-

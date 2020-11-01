@@ -3,7 +3,7 @@ title: Przemyślenia
 creationDate: '13-11-2019 22:54'
 description: Przemyślenia
 keywords: przemyślenia, notatka
-topImageSrc: ''
+topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-11-2019-przemyslenia/top-image.jpg'
 topImageAlt: ''
 index: 7
 ---

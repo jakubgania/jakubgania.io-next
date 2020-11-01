@@ -12,7 +12,7 @@ Rozmowy kwalifikacyjne to temat rzeka. Prawdopodobnie większość ludzi miała 
 Różni bywają też rekruterzy (lub ludzie pełniący ich rolę, gdy dana firma nie ma dedykowanego działu HR), z którymi mamy **przyjemność** rozmawiać/dyskutować. W tym poście opowiem trochę o książce, która jest na zdjęciu głównym, czyli
 [Programista na rozmowie kwalifikacyjnej](https://helion.pl/ksiazki/programista-na-rozmowie-kwalifikacyjnej-dariusz-kalbarczyk-bartlomiej-naroznik-milosz-pi,prorkw.htm#format/d). Sama książka zainteresowała mnie w sumie z czterech powodów. Pierwszym z nich było to, że jest o rozmowach kwalifikacyjnych, a ponieważ sam szukam pracy od jakiegoś czasu - pomyślałem, że warto przeczytać książkę o takiej tematyce, w celu zdobycia nowej wiedzy. Drugim z powodów było to, że została ona niedawno wydana - koniec 2019 roku. Trzecim natomiast jest to, że poza częścią opowiadającą o samych rozmowach kwalifikacyjnych, jest w niej również część techniczna, gdzie są zgromadzone różne pytania i odpowiedzi odnośne technologii czy zagadnień technicznych (aczkolwiek dużo z zakresu, który bardzo mnie interesuje czyli tematy frontendowe). Czwartym powodem było to, że jednym z autorów jest Pan Dariusz Kalbarczyk, którego kojarzę ze środowiska związanego z JS/Angular, a konkretniej z filmów na Youtube, gdzie były udostępnione jego wystąpienia - co również mnie zaintrygowało. Powyższe czynniki zachęciły mnie do zakupu i przeczytania tej książki i tak też zrobiłem.
 
-![Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-1.jpg)
+![Programista na rozmowie kwalifikacyjnej](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-1.jpg)
 
 Kilka zdań o samych autorach :
 
@@ -40,7 +40,7 @@ Kilka zdań o samych autorach :
 
 &nbsp;&nbsp;
 
-![Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-2.jpg)
+![Programista na rozmowie kwalifikacyjnej](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-2.jpg)
 
 *"Wszystkim programistom, którzy zostali niesłusznie odrzuceni na rozmowie rekrutacyjnej."*
 
@@ -50,7 +50,7 @@ Książka składa się z dwóch części. Pierwsza jest ogólnie o całej tematy
 
 Główne tematy poruszone w książce :
 
-![Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-3.jpg)
+![Programista na rozmowie kwalifikacyjnej](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-3.jpg)
 
 ### Część I
 
@@ -62,7 +62,7 @@ Główne tematy poruszone w książce :
 - Kluczowe 60 minut
 - Łatwe, trudne, głupie - o pytaniach rekrutacyjnych
 
-![Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-4.jpg)
+![Programista na rozmowie kwalifikacyjnej](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-4.jpg)
 
 ### Część II
 
@@ -84,9 +84,9 @@ Główne tematy poruszone w książce :
 
 Jak widać, część druga - techniczna, jest większa.
 
-![Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-5.jpg)
+![Programista na rozmowie kwalifikacyjnej](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-5.jpg)
 
-![Programista na rozmowie kwalifikacyjnej](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-6.jpg)
+![Programista na rozmowie kwalifikacyjnej](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/book-6.jpg)
 
 Mój egzemplarz książki niestety był trochę uszkodzony, aczkolwiek była to jedyna sztuka dostępna od ręki w Empiku, więc postanowiłem nie wybrzydzać i zakupiłem z tą drobną wadą, chociaż zawsze zwracam uwagę na to, żeby książka :blue_book: nie była w żaden sposób uszkodzona - najlepiej w stanie idealnym tak jak wyjeżdża z drukarni :D.
 
@@ -95,7 +95,7 @@ o bezrobocie. I tutaj jest zaznaczone, że programiście może być łatwiej na 
 dostępnych i używanych technologii jest mnóstwo. Niektóre są bardziej pożądane i lepiej opłacalne, inne zaś są mniej używane. Nie w każdej firmie pracuje się komfortowo, nie wszystkie firmy jednakowo dbają o pracowników. W najlepszych firmach, przykładowo w tych, gdzie pracują najlepsi programiści i gdzie dba się o nich - konkurencja podczas rekrutacji jest spora.
 Dlatego warto mieć wiedzę o tym, jak skutecznie przejść przez rozmowę rekrutacyjną. Tak mniej więcej brzmi wstęp który zachęca do lektury.
 
-![justjoin.it - Wrocław](https://jakubgania.io/data/blog/posts/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/justjoin-it-wroclaw.PNG)
+![justjoin.it - Wrocław](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/justjoin-it-wroclaw.PNG)
 
 [justjoin.it - Wrocław](https://justjoin.it/wroclaw)
 
