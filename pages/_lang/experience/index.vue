@@ -167,15 +167,6 @@ export default {
       information: jsonData.expirience.information,
     }
   },
-  mounted() {
-    // const topImageElement = document.querySelector('#experience')
-    // window.addEventListener('scroll', function () {
-    //   console.log('page offset ', window.pageYOffset)
-    //   const yPosition = -(window.pageYOffset / topImageElement.dataset.speed)
-    //   const coordinate = yPosition + 'px'
-    //   document.getElementById('experience').style.letterSpacing = coordinate
-    // })
-  },
   head() {
     return {
       title: 'Jakub Gania Software | Doświadczenie',
