@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div style="margin-left: 10px; margin-right: 10px;">
       <div class="top-section-title">
         <nuxt-link :to="$i18n.path('blog')">
           | posty |
@@ -290,7 +290,7 @@ export default {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   letter-spacing: 0.2px;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 17.4px;
   max-width: 1000px;
   color: var(--post-page-post-text-color);
@@ -301,8 +301,10 @@ export default {
 }
 .nuxt-content h3 {
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   font-weight: bold;
+  font-size: 24px;
 }
 .nuxt-content p {
   margin-bottom: 20px;
@@ -339,6 +341,10 @@ export default {
   height: 450px;
 }
 @media only screen and (max-width: 960px) {
+  .nuxt-content h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .nuxt-content ul {
     padding-left: 18px;
   }
@@ -349,6 +355,11 @@ export default {
   }
 }
 @media only screen and (max-width: 600px) {
+  .nuxt-content h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .post {
     font-size: 14px;
   }
@@ -411,16 +422,17 @@ export default {
 }
 .related-posts {
   max-width: 2000px;
-  // background-color: red;
   margin: auto;
   padding-top: 18vh;
   padding-bottom: 16vh;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .related-posts-title-section {
   margin-bottom: 60px;
 }
 .related-posts-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   // font-family: 'Roboto Mono', monospace;
   // font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
@@ -542,14 +554,19 @@ export default {
   .post-content {
     margin-bottom: 60px;
   }
+  .other-posts-button-section {
+    margin-top: 80px;
+  }
   .related-posts-title {
-    font-size: 42px;
+    font-size: 40px;
   }
   .related-posts {
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 8vh;
-    padding-bottom: 6vh;
+    padding-bottom: 10vh;
+    padding-left: 0;
+    padding-right: 0;
   }
   .related-posts-item {
     width: 100%;
@@ -584,7 +601,7 @@ export default {
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-bottom: 10vh;
   }
   .other-posts-button-section {
     margin-top: 80px;
