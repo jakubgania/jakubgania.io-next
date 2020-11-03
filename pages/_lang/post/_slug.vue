@@ -540,12 +540,11 @@ export default {
     transition: all 0.2s ease;
   }
 }
-// @media only screen and (max-width: 2000px) {
-//   .content-container {
-//     padding-left: 14px;
-//     padding-right: 14px;
-//   }
-// }
+@media only screen and (max-width: 1200px) {
+  .post-title {
+    font-size: 52px;
+  }
+}
 @media only screen and (max-width: 960px) {
   .content-container {
     padding-left: 14px;
@@ -553,6 +552,9 @@ export default {
   }
   .post-content {
     margin-bottom: 60px;
+  }
+  .post-title {
+    font-size: 44px;
   }
   .other-posts-button-section {
     margin-top: 80px;
