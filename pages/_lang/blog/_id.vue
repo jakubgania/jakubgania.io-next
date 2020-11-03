@@ -302,7 +302,7 @@ export default {
   }
 }
 .post-title {
-  margin-top: -8px;
+  line-height: 1;
 }
 .description-section {
   font-size: 14px;
