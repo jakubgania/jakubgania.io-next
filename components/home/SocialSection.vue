@@ -151,6 +151,8 @@ export default {
   .social-section-container {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .social-icon-item {
     max-width: 50%;
@@ -161,6 +163,10 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
+  .social-section-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .section-content-wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
