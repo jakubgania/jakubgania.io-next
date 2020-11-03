@@ -9,15 +9,7 @@
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
             <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
               <div class="blog-posts-container">
-                <div class="image-section">
-                  <div class="image-container-er">
-                    <div
-                      class="img-wrap-blog"
-                      :style="`background-image: url(${post.topImageSrc})`"
-                    ></div>
-                  </div>
-                </div>
-                <div class="blog-post-item-eer4">
+                <div class="mobile-xs-a">
                   <div class="post-main-title">
                     <div class="post-title">
                       {{ post.title }}
@@ -40,6 +32,41 @@
                     <span style="margin-left: 6px;">
                       {{ '186' }}
                     </span>
+                  </div>
+                </div>
+                <div class="image-section">
+                  <div class="image-container-er">
+                    <div
+                      class="img-wrap-blog"
+                      :style="`background-image: url(${post.topImageSrc})`"
+                    ></div>
+                  </div>
+                </div>
+                <div class="blog-post-item-eer4">
+                  <div class="mobile-xs-b">
+                    <div class="post-main-title">
+                      <div class="post-title">
+                        {{ post.title }}
+                      </div>
+                    </div>
+                    <div class="creation-date">
+                      <IconComponent
+                        :path="mdiClockOutline"
+                        :size="12"
+                        :color="'#b3b3b3'"
+                      />
+                      <span style="margin-left: 4px; margin-right: 4px;">
+                        {{ post.creationDate + ' | ' }}
+                      </span>
+                      <IconComponent
+                        :path="mdiTrendingUp"
+                        :size="12"
+                        :color="'#b3b3b3'"
+                      />
+                      <span style="margin-left: 6px;">
+                        {{ '186' }}
+                      </span>
+                    </div>
                   </div>
                   <div class="description-section">
                     {{ post.description }}
@@ -143,7 +170,7 @@ export default {
   }
 }
 .blog-post-item-eer4 {
-  width: 65%;
+  width: 60%;
   padding-left: 24px;
 }
 .post-main-title {
@@ -166,7 +193,8 @@ export default {
   }
 }
 .post-title {
-  margin-top: -8px;
+  // margin-top: -8px;
+  line-height: 1;
 }
 .description-section {
   font-size: 14px;
@@ -186,13 +214,29 @@ export default {
   margin-bottom: 8px;
 }
 .image-section {
-  width: 35%;
+  width: 40%;
 }
 .image-container {
   background-color: #f2f2f2;
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.mobile-xs-a {
+  display: none;
+}
+.mobile-xs-b {
+  display: inherit;
+}
+
+@media only screen and (max-width: 960px) {
+  .blog-section-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .post-main-title {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -219,6 +263,12 @@ export default {
   .post-title {
     font-size: 16px;
     font-weight: 600;
+  }
+  .mobile-xs-a {
+    display: block;
+  }
+  .mobile-xs-b {
+    display: none;
   }
 }
 </style>
