@@ -192,12 +192,12 @@ export default {
   bottom: 0;
 }
 .trending-post-title {
-  font-size: 2.25em;
+  font-size: 2em;
   color: #fff;
   line-height: 1.3em;
   font-weight: 500;
   margin: 0;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+  // text-shadow: 1px 1px rgb(224, 185, 9);
   max-width: 100%;
 }
 .trending-grid-item header {
@@ -244,6 +244,11 @@ export default {
     content: '';
     width: 100%;
     padding-top: 56.25%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .trending-post-title {
+    font-size: 1.8em;
   }
 }
 @media only screen and (max-width: 600px) {
