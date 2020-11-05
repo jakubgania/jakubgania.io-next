@@ -66,11 +66,11 @@ Bardzo przyjemnie czytało mi się tą książkę i ze względu na to, że jest 
 
 Działy i tematy, które szczególnie mi się podobały to :
 
-#### UX vs UI
+### UX vs UI
 
 Czyli dogłębne wyjaśnienie co, jak, dlaczego, co różni te pojęcia oraz skąd to się w ogóle wzięło.
 
-#### Heurystyki Nielsena
+### Heurystyki Nielsena
 
 Czyli dziesięć pryncypi zdefiniowanych przez Jakoba Nielsena, jednego z najbardziej uznanych i znanych specjalistów w dziedzinie użyteczności. Jest to dobry punkt wyjściowy do zagadnień związanych z User Experience. Heurstyki te były definiowane w latach
 dziewiędziesiątych, zatem na przestrzeni czasu i zmian ich waga w niektórych przypadkach przestała być aż tak znacząca.
@@ -96,21 +96,21 @@ Oczywiście każda zasada jest opisana i zilustrowana w książce.
 
 &nbsp;&nbsp;
 
-#### Adaptive Web Design - AWD
+### Adaptive Web Design - AWD
 
 Z tym pojęciem wcześniej się nie spotkałem, jednak wiedziałem w czym rzecz, natomiast nie znałem określenia na to. W każdym razie interfejsy adaptacyjne to takie, które ukrywają zbędne z perspektywy sposobu życia elementy interfejsu czy contentu. Przy takim podejściu
 użytkownik zawsze powinien mieć możliwość dotarcia do tych treści czy funkcji za pomocą jednego tapnięcia. Do zastosowania tego podejścia należy mieć bardzo dobrze zbadaną grupę odbiorców i zdefiniowane wymagania.
 
-#### Google Material Design && Apple Human Interface Design && Microsoft System Fluent Design
+### Google Material Design && Apple Human Interface Design && Microsoft System Fluent Design
 
 Zestawienie podejść do projektowania interfesjów trzech potężnych firm technologicznych. Każda z nich podchodzi do tego w inny sposób.
 
-#### Wearable Design
+### Wearable Design
 
 Czyli 'urządzenia ubieralne' to zegarki sportowe, bransoletki, słuchawki czy okulary i inne tego typu rzeczy, które zawierają w sobie jakiś rodzaj komputera. Autor tutaj opisując całą idee zaznacza, że osoba która wyspecjalizuje się w tworzeniu interfejsów
 dla tego typu urządzeń w przyszłości może być bardzo pożądanym fachowcem.
 
-#### Atomic Design
+### Atomic Design
 
 Omówienie idei projektowania złożonych struktur od najmniejszcyh komponentów - czyli elementów, które są porównane do atomów. One tworzą coraz bardziej skomplikowane
 komponenty - jak formularze czy po prostu elementy widoków. Do zalet takiego podejścia można zaliczyć reużywalność oraz łatwiejsze wprowadzanie zmian, ponieważ zmiana

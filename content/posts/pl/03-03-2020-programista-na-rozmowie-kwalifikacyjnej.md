@@ -101,7 +101,7 @@ Dlatego warto mieć wiedzę o tym, jak skutecznie przejść przez rozmowę rekru
 
 Na powyższej grafice oferty pracy z Wrocławia i okolic. Jak widać na obrazku, jednych technologii jest dużo innych zdecydowanie mniej. Oczywiście z te proporcje cały czas są dynamiczne i zróżnicowane ze względu na miasta.
 
-#### Rozdział 1.
+### Rozdział 1.
 
 W tym rozdziale zostało omówione pytanie "Po co, jak często i czy w ogóle chodzić na rozmowy rekrutacyjne ?" . Jest tu również opisany przypadek, kiedy programiści pracujący wiele lat w jednej firmie, nie przechodzą rozmów kwalifikacyjnych przechodząc do innej firmy, ponieważ dzieje się to w wyniku polecenia przez kogoś, z kim wcześniej pracowali i kto wiedział co potrafią. Jednak zaznaczono, że jest to niezwykle rzadki przypadek w stosunku do całej ilości ludzi zmieniających pracę i rekrutujacych się. Oczywiście na rozmowy rekrutacyjne trzeba chodzić, gdy szuka się nowej pracy lub chce się zmienić obecną. Jest jeszcze sytuacja, w której uczestniczy się w rozmowie rekrutacyjnej dla testu swoich możliwości oraz tego co inna firma może zaoferować. Czasem daje to nowe kontakty i doświadczenie (każda rozmowa to chociaż kawałek nowego doświadczenia). Minusem chodzenia na rozmowwy testowe, z których nic więcej nie wyniknie, jest w pewnym sensie strata czasu, ale co ważniejsze - jest to nie do końca w porządku wobec osób/firm rekrutujących, ponieważ oni zakładają otwartość na zmiany, przeznaczają na to również sporo czasu. Jeśli końcowo to wszystko ma być przepalone tylko na testy, to nie jest to dobra praktyka.
 
@@ -122,7 +122,7 @@ Pierwsze przytoczone w książce badania zostały przeprowadzone na dużą skal�
 
 Natomiast drugie przytoczone badanie, to analiza w Silicon Valley grupy 50 000 programistów. Badania wykonała profesor Kathryn Shaw ze swoim zespołem ze Stanford Business School. Cała analiza wykazała, że osoby które w swojej karierze zawodowej związali się conajmniej raz na przynajmniej pięć lat z tym samym pracodawcą, średnio rocznie otrzymywali 8% podwyżyki, pozostali zaś 5%.
 
-#### Rozdział 2.
+### Rozdział 2.
 
 W drugim rozdziale mowa jest o wyborze firmy oraz stanowiska. Na początkowej drodze kariery, wyborem firmy będzie kierował przypadek. Natomiast wraz ze stażem sami będziemy przeglądać różnorodne firmy albo one będą zgłaszać się do nas. Pierwszą kwestią jaka się pojawia, to wybór między firmą Polską a zagraniczną. Będą się one różnić przede wszystkim
 zarobkami. Na wyższe wynagrodzenie można liczyć w firmach z kapitałem zagranicznym. Potwierdzają to praktycznie wszystkie przeprowadzone badania wynagrodzeń. Przeprowadzane one przez firmy Sedlak & Sedlak corocznie wykazały, że firmy polskie płacą mniej swoim pracownikom, niż firmy zagraniczne o około 40%. W branżach IT i telekomunikacji różnice te są jeszcze większe i sięgają nawet 50 - 60%.
@@ -140,7 +140,7 @@ Jeszcze inne kwestie poruszone w tym rozdziale to :
 - jaka technologia, jaka warstwa
 - etat czy kontrakt
 
-#### Rozdział 3.
+### Rozdział 3.
 
 *"Istnieją badania, mówiące o tym, że przeciętny czas, jaki poświęca rekruter na lekturę jednego CV, to sześć sekund."*
 
@@ -160,7 +160,7 @@ Natomiast jeżeli chodzi już o konstrukcję samego CV to są na początku wymie
 
 Następnie do końca rodziału opisane są przydatne i zbędne elementy w CV oraz jak napisać CV w sytuacji gdy nie ma się czym go wypełnić w wystarczjącej ilości. Z takim problemem spotykają się zazwyczaj osoby z małym stażem lub rozpoczynające karierę.
 
-#### Rozdział 4.
+### Rozdział 4.
 
 Czyli jak współpracować z rekruterami.
 
@@ -194,11 +194,11 @@ Za co można trafić na czarną listę u rekrutera ? Jest w książce wymieniony
 - niezjawienie się na rozmowie rekrutacyjnej - bez uprzedzenia, bez podania uzasadnienia nieobecności
 - wyraźne i bezdyskusyjne kłamstwo w CV dotyczące zawartych w nim faktów
 
-#### Rozdział 5.
+### Rozdział 5.
 
 Przygotowanie do rozmowy. Rodział piąty jest bardzo krótki, w jego skład wchodzą zaledwie cztery strony. Jest tutaj początkowo omówiona sytuacja - jak zachować się przy pierwszej rozmowie telefonicznej, podczas której rekruter może już wyciągnąć pewne wnioski o osobie, z którą rozmawia. Oczywiście tak jak w każdym przypadku, należy starać się sensownie odpowiadać na postawione pytania. Bardzo ważne jest również jakie warunki będą do rozmowy, ponieważ może być tak, że kandydat, do którego dzwoni rekruter nie ma kompletnie odpowiedniej sytuacji do prowadzenia dialogu. Następną kwestią poruszoną w tym rodziale jest reasearch na temat firmy, do której aplikujemy. Należy przed rozmową i właściwie przed zaaplikowaniem (ale wiemy jak to bywa) zrobić rozeznanie i zobaczyć, jakie informacje są dostępne w sieci o miejscu, gdzie chcemy się dostać lub gdzie lada dzień pójdziemy na rozmowę. Można w ten sposób często znaleźć dużo ciekawych i przydatnych infromacji. Z drugiej strony z własnego doświadczenia już wiem, że wszelkie portale z opiniami są zazwyczaj takim miejscem, gdzie pojawiają się kompletnie skrajne opinie i ciężko coś z nich wywnioskować. Spotkałem się z wieloma osobami, które zalecają raczej patrzeć na tego typu rozwiązania z przymróżeniem oka. Po research firmy warto zrobić research na ... swój temat ! Można zobaczyć od czasu do czasu jakie informacje o nas samych posiada sieć. Następnie w celu jeszcze lepszego opanowania wszystkich informacji i w celu zachowania spójności, powinno przeczytać się CV, które zostało wysłane do danej firmy oraz jeszcze raz przestudiować opis stanowiska i wszelkie wymagania jakie są wypisane w ogłoszeniu. Już na takim etapie mogą pojawić się jakieś pytania do zadania na rozmowie.
 
-#### Rozdział 6.
+### Rozdział 6.
 
 Tytuł rozdziału szóstego to - kluczowe 60 minut. Pierwsza sprawa to wygląd, ocena wizualna następuje w głowie każdego człowieka już po kilku sekundach, więc nie można zaniedbać tego asepktu. Czasami w mailu ze szczegółami dotyczącymi rozmowy rekrutacyjniej, dopisane jest, że nie jest narzucony dress code, jednak rozmowa to sytuacja, gdzie należy się odpowiednio zaprezentować i na pewno lepiej jest wyglądać bardziej schludnie, czysto i poważnie, niż jakoś luźno czy po prostu nieodpowiednio do danej sytuacji.
 
@@ -241,7 +241,7 @@ Pytać należy o wszelkie kwestie związane z firmą i przyszłą pracą, jednak
 
 referencje
 
-#### Rozdział 7.
+### Rozdział 7.
 
 Łatwe, trudne, głupie. Rozdział o pytaniach rekrutacyjnych.
 
