@@ -69,7 +69,7 @@
                   <div class="image-container-er">
                     <div
                       class="img-wrap"
-                      :style="`background-image: url(${post.topImageSrc})`"
+                      :style="`background-image: url(${post.thumbnail})`"
                     ></div>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default {
     }
 
     const posts = await $content('posts/' + language, params.slug)
-      .only(['title', 'topImageSrc', 'description', 'slug', 'creationDate'])
+      .only(['title', 'thumbnail', 'description', 'slug', 'creationDate'])
       .sortBy('index', 'desc')
       .limit(pageNumber * paginationValue)
       .fetch()

@@ -3,6 +3,7 @@ title: UXUI Design Zoptymalizowany - Manual Book
 datetime: 15-02-2020 18:04
 description: UXUI Design Zoptymalizowany - NIETYLKO DLA DESIGNERÓW
 keywords: ux, ui, uxui, design
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/top-image.jpg'
 topImageAlt: 'UXUI Design Zoptymalizowany Manual Book - Chris Badura'
 index: 18

@@ -3,6 +3,7 @@ title: 'Meetup ng-wroclaw #33'
 creationDate: 11-03-2020 14:46
 description: 'Kolejne - 33 spotkanie w ramach grupy ng-wroclaw w firmie PGS Software. Temat - organizacja kodu w aplikacjach typu Enterprise.'
 keywords: meetup, ng-wroclaw, wroclavia, pgs software, angular
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-03-2020-meetup-ng-wroclaw-33/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-03-2020-meetup-ng-wroclaw-33/top-image.jpg'
 topImageAlt: 'Meetup ng-wroclaw #33'
 index: 21

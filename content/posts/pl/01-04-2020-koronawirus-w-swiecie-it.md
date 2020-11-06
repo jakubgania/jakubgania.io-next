@@ -3,6 +3,7 @@ title: 'Koronawirus w świecie IT'
 creationDate: 01-04-2020 14:04
 description: 'W tym poście zebrałem informacje jakie ostatnio pojawiają się w kontekście świata IT oraz rozprzestrzeniającego się koronawirusa. Post jest dosyć długi i zawiera dużo linków do innych portali.'
 keywords: blog, it, post, it, wirus, koronawirus
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/01-04-2020-koronawirus-w-swiecie-it/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/01-04-2020-koronawirus-w-swiecie-it/top-image.PNG'
 topImageAlt: 'Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)'
 index: 24

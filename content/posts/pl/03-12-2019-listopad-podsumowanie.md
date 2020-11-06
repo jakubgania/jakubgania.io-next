@@ -3,6 +3,7 @@ title: Listopad - podsumowanie
 datetime: 03-12-2019 01:48
 description: 'I kolejny miesiąc minął. Aż niemożliwe że już jest grudzień ... Myślę że co miesiąc postaram się przygotować takie podsumowanie miesiąca poprzedniego. To dla mnie też będzie dobra metoda, żeby z jednej strony dokumentować w ramach bloga swoje postępy a z drugiej będzie po prostu wiadomo co się działo.'
 keywords: listopad, podsumowanie, plany, meetup, posty, blog, ulepszenia
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-12-2019-listopad-podsumowanie/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-12-2019-listopad-podsumowanie/top-image.png'
 topImageAlt: 'Google Analytics - Audience Overview in October'
 index: 11
@@ -14,7 +15,7 @@ poprzedniego. To dla mnie też będzie dobra metoda, żeby z jednej strony
 dokumentować w ramach bloga swoje postępy a z drugiej będzie po prostu wiadomo
 co się działo.
 
-## Posty
+### Posty
 
 Napisałem i udostępniłem siedem postów. Nawet do momentu jak piszę ten post,
 to nie wiedziałem, że aż tyle tego powstało.
@@ -45,7 +46,7 @@ ciekawa sytuacja dla mnie biorąc pod uwagę, że dotychczas na stronę dużo we
 było np. z Ameryki, Chin, Indonezji czy w ogóle kompletnie innych krajów niż Polska.
 Na pewno też sam temat jest ciekawy dla ludzi z branży IT więc to mogło tak zadziałać.
 
-## Meetupy
+### Meetupy
 
 Byłem na dwóch, chciałem być na czterech ... :D . No ale niestety w jeden dzień
 tak się złożyło, że w tym samym czasie były trzy tematycznie super meetupy i 
@@ -59,7 +60,7 @@ No ale meetupy na których byłem to :
 O meetupie z grupy ng-wroclaw jeszcze planuję zrobić posta w którym omówię i samą
 grupę, tematykę i meetupa.
 
-## Kolejne zmiany i ulepszenia
+### Kolejne zmiany i ulepszenia
 
 Oczywiście jeśli chodzi o projekt strony to również było sporo zmian.
 Zmiany wizualne zaszły głównie na stronie do wyświetlania postów. Zniknął
@@ -97,7 +98,7 @@ urządzeniach mobilnych.
 
 Wszystkie zmiany można zobaczyć w repo na [githubie](https://github.com/jakubgania/jakubgania.io/commits/development-v2)
 
-## Plany
+### Plany
 
 A w planach jest nowa (kolejna) podstrona, którą chcę stworzyć z myślą
 o artykułach. Różnić się będą one od bloga tym, że tam chciałbym omawiać dane

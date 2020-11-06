@@ -3,12 +3,13 @@ title: Przemyślenia
 creationDate: '13-11-2019 22:54'
 description: Przemyślenia
 keywords: przemyślenia, notatka
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-11-2019-przemyslenia/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-11-2019-przemyslenia/top-image.jpg'
 topImageAlt: ''
 index: 7
 ---
 
-## blog
+### blog
 
 Jeśli chodzi o samego bloga, pojawiło się już kilka postów. Ja cały czas zgłębiam
 tajniki pisania i tworzenia postów, w ogóle się wkręciłem na tyle, że zacząłem
@@ -31,7 +32,7 @@ parsery do nich i po prostu się różnią.
 
 Jest to obaszer wiedzy, który będę jeszcze zgłębiał.
 
-## serwer
+### serwer
 
 Z nim nic się nie stało, jednak powoli zacząłem robić pewne porządki w plikach
 za, które zabierałem się od dłuższego czasu. Część już zrobiłem ale muszę
@@ -42,7 +43,7 @@ Chcę również usprawnić proces deploymentu strony tzn. w jakimś podstawowym 
 zautomatyzować (aczkolwiek bez używania dedykowanych narzędzi CI/CD) tak po prostu
 na warunki domowe.
 
-## github insights
+### github insights
 
 Tak z ciekawostek. W zakładce github->insights->contributors w repozytorium
 [jakubgania.io](https://github.com/jakubgania/jakubgania.io) można zobaczyć, że

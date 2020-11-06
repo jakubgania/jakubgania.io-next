@@ -3,6 +3,7 @@ title: 'Meetup - ng-wroclaw #32'
 creationDate: 18-12-2019 00:04
 description: 'Już prawie trzy tygodnie temu odbył się kolejny meetup grupy Angular Wrocław. Jest to grupa poświęcona jak sama nazwa wskazuje, głównie technologii Angular ale i nie tylko, ponieważ na meetupach były nieraz poruszane inne tematy dla web developerów.'
 keywords: meetup, wrocław, angular, pgs
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/18-12-2019-meetup-ng-wroclaw-32/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/18-12-2019-meetup-ng-wroclaw-32/top-image.jpg'
 topImageAlt: 'PGS Software - Wrocław'
 index: 14
@@ -23,7 +24,7 @@ innego miasta czy innego kraju.
 
 ![PGS Software - Meetup](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/18-12-2019-meetup-ng-wroclaw-32/pgs.jpg)
 
-## The secrets behind Angular's lightning speed
+### The secrets behind Angular's lightning speed
 
 Pierwszą prezentację poprowadził Max Koretskyi - [@maxkoretskyi](https://twitter.com/maxkoretskyi).
 Wspiera on różne projekty takie jak np. Angular czy React, a na githubie ma wiele
@@ -42,7 +43,7 @@ Na pewno do tego typu prezentacji przyda się dogłębnie przeanalizować kilka 
 typu artykułów i zrozumieć je dobrze -
 [JavaScript Engine](https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf).
 
-## Storybook - implementacja w komercyjnym projekcie
+### Storybook - implementacja w komercyjnym projekcie
 
 Druga prezentacja. Prowadził ją [Marcin Mirecki](https://www.linkedin.com/in/marcin-mirecki-8747718b/),
 który jak wynika z danych na profilu Linkedin jest frontend developerem w firmie
@@ -63,7 +64,7 @@ komponentów. Pokazał on kilka przykładowych komponentów i opowiedział jak w
 projekcie podchodzono do projektowania większych komponentów z mniejszych częśći
 składowych - czyli komponentów, które nazywamy komponentami atomowymi.
 
-## Pizza + Networking
+### Pizza + Networking
 
 Oczywiście ostatnim elementem wielu meetupuów jest pizza && networking i tak też
 jest w tym przypadku. Ponieważ meetup odbywa się w już wręcz legendarnej ;d 'kuchni' -

@@ -3,6 +3,7 @@ title: Programista na rozmowie kwalifikacyjnej
 creationDate: 03-03-2020 19:48
 description: Recenzja książki - Programista na rozmowie kwalifikacyjnej. W poście prezentuję tematy jakie są poruszone w książce.
 keywords: programista, rozmowa, kwalifikacyjna
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/top-image.jpg'
 topImageAlt: 'Programista na rozmowie kwalifikacyjnej'
 index: 20

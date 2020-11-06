@@ -3,6 +3,7 @@ title: Dark Theme Github
 creationDate: '11-11-2019 23:00'
 description: Dark Theme Github
 keywords: dark, theme, dark theme, github, ciemny motyw
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-11-2019-dark-theme-github/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-11-2019-dark-theme-github/top-image.png'
 topImageAlt: 'GitHub - dark theme'
 index: 5
@@ -30,7 +31,7 @@ motyw na wszystkich podstronach githuba, oraz umożliwia sterowanie różnymi
 paramaterami i dzięki temu można zmieniać wygląd różnych elementów z osobna.
 Posiada również predefiniowane style podświetlania składni m.in style One Dark.
 
-## Instalacja
+### Instalacja
 
 Wchodzimy na tą [stronę](https://add0n.com/stylus.html) i na górnej belce po prawej
 stronie wybieramy przeglądrkę dla, której chcemy zainstalować rozszerzenie Stylus.

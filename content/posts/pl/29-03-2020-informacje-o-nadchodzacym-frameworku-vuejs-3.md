@@ -3,6 +3,7 @@ title: 'Informacje o nadchodzącym frameworku Vue.js 3'
 creationDate: 29-03-2020 14:04
 description: Trochę informacji o nadchodzącej wersji frameworka Vue.js 3. Opisuję informacje dostępne w repozytorium projektu.
 keywords: vue, informacje, post, blog
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/top-image.PNG'
 topImageAlt: 'Vue.js - Logo'
 index: 23

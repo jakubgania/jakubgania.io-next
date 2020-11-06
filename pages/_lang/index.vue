@@ -151,7 +151,7 @@ export default {
     ).fetch()
 
     const posts = await $content('posts/' + language, params.slug)
-      .only(['title', 'topImageSrc', 'description', 'slug', 'creationDate'])
+      .only(['title', 'thumbnail', 'description', 'slug', 'creationDate'])
       .sortBy('index', 'desc')
       .limit(3)
       .fetch()

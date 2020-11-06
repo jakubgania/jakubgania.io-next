@@ -3,6 +3,7 @@ title: Nieskończone możliwości eksperymentowania i tworzenia
 creationDate: 25-11-2019 00:16
 description: 'Ostatnio w jednym z postów wspomniałem, że nie będzie już większych rzeczy do zaimplementowania w ramach mojej strony. Jednak cały czas dodaję lub zmieniam jakieś elementy. I nie są to zmiany kosmetyczne, ponieważ modyfikacji lub dodaniu ulegają większe partie kodu.'
 keywords: nowy post, przemyślenia, eksperymenty, pasja, motywacja, tworzenie, twórca
+thumbnail: ''
 topImageSrc: ''
 topImageAlt: ''
 index: 9

@@ -3,6 +3,7 @@ title: Apple Mac Pro && Pro Display XDR
 creationDate: 13-12-2019 02:00
 description: 'Osobiście nie mam i nigdy nie miałem żadnego urządzenia z logo Apple, jednak zawsze obserwuję wszelkie nowości związane ze sprzętem, ekosystemem i softwarem, który wypuszcza lub prezentuje Apple na różnych konferencjach co jakiś czas.'
 keywords: apple
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/top-image.png'
 topImageAlt: 'Apple Mac Pro && Pro Display XDR'
 index: 13
@@ -28,7 +29,7 @@ nie dam wykrzykników ;d).
 
 ![Apple Mac Pro](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/mac-pro-1.jpg)
 
-## 250 000 zł - ale dlaczego ?
+### 250 000 zł - ale dlaczego ?
 
 No właśnie, co zawiera konfiguracja w tej kwocie ? Parametry są konkretne,
 a końcową kwotę winduje: procesor, RAM, i karty graficzne. Warto nadmienić,
@@ -62,7 +63,7 @@ jeszcze, że wkrótce również będzie dostępna wersja do montażu w szafie se
 Obecnie tylko widać, że cena będzie startować od 30 499 zł. 
 
 
-## konfiguracja bazowa - 27 999 zł
+### konfiguracja bazowa - 27 999 zł
 
 Parametry bazowej konfiguracji :
 
@@ -84,7 +85,7 @@ podstawowej tak naprawdę powinno być tam te 4 TB SSD, które obecnie są maksi
 
 ![Apple Mac Pro](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/mac-pro-2.jpg)
 
-## Pro Display XDR (Extreme Dynamic Range)
+### Pro Display XDR (Extreme Dynamic Range)
 
 ![Apple Pro Display XDR](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/apple-pro-display-xdr.jpg)
 
@@ -120,7 +121,7 @@ Szkło nanostrukturalne jest po prostu matowe i powinno bardziej rozpraszać
 Monitor można przymocować za pomocą uchwytu VESA dostępnego za 999 zł lub można
 dokupić podstawkę ...
 
-## Pro Stand
+### Pro Stand
 
 To następny bardzo kontrowersyjny element dostępny wraz z premierą monitora.
 Dlaczego ? Bo to Apple. No i co ? No i to że cena, a co innego ?
@@ -134,7 +135,7 @@ na poziomie ~ 14 400 zł.
 
 Również podoba mi się design podstawki, jest świetny.
 
-## Youtube
+### Youtube
 
 Na Youtubie pojawiło się dużo materiałów, gdzie jest pokazany unboxing i testy
 nowych sprzętów Apple, warto zobaczyć m.in. 
@@ -145,7 +146,7 @@ nowych sprzętów Apple, warto zobaczyć m.in.
 
 @[youtube](https://www.youtube.com/watch?v=CUFB8xVJ9iM)
 
-## Dune Pro
+### Dune Pro
 
 Warto jeszcze wspomnieć o projekcie [Dune Pro](https://www.dunecase.com/).
 Jest to zbiórka crowdfundingowa, która odbyła się na platformie [Indiegogo](https://www.indiegogo.com/).
@@ -161,7 +162,7 @@ się różnią od ryginału. Można w tej obudowie złożyć normalny komputer.
 zobaczyć na stronie. W styczniu 2020 ma nastąpić światowa wysyłka już z normalnej
 produkcji.
 
-## Tarka
+### Tarka
 
 Tak, tarka do tarcia. Takie porównania pojawiły się po konferencji WWDC, gdzie
 zapowiedziano sprzęt i pokazano pierwszy raz. Obudowa nowego Maca po prostu
@@ -174,7 +175,7 @@ obudowy i monitorów. Jest po prostu niesamowity :). Tak samo zresztą jak w
 przypadku innych produtków Apple, wygląd jest bardzo ciekawy, estetyczny
 i nowoczesny. Ja to tak odbieram.
 
-## Mac Pro vs PC
+### Mac Pro vs PC
 
 Ogólnie pojawia się jeszcze kwestia ceny i konfiguracji w kontekście komputerów
 klasycznych. Myślę, że poniższy obrazek doskonale przedstawia sytuację.
@@ -218,7 +219,7 @@ Apple do granic możliwości optymalizuje swoją platformę, swój software, kt�
 działa na niewielkiej liczbie urządzeń w przeciwieństwie do Windowsa, który działa
 na kompletnie przeróżnych konfiguracjach sprzętowych.
 
-## Kto to kupi ?
+### Kto to kupi ?
 
 Głównymi odbiorcami/klientami w przypadku takich sprzętów nie są 'zwyczajni ludzie'.
 Są to firmy, które robią specjalistyczne rzeczy, lub które używają specjalistycznego
@@ -231,7 +232,7 @@ pieniądze" i zazwyczaj zwraca się z nawiązką w niedługiej perspektywie czas
 Swoją drogą, ceny Macbooka szesnastocalowego nawet 'dopasionego', przy cenie nowej
 stacji są jakieś takie 'niskie' :D.
 
-## Inne portale
+### Inne portale
 
 Tak jak napisałem wcześniej, pojawił się cały szereg artykułów na ten teamt.
 Oto kilka z nich :

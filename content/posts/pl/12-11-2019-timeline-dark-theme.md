@@ -2,13 +2,14 @@
 title: Timeline, Dark Theme
 creationDate: '12-11-2019 00:12'
 description: Timeline i Dark Theme
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/12-11-2019-timeline-dark-theme/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/12-11-2019-timeline-dark-theme/top-image.jpg'
 topImageAlt: ''
 keywords: dark, theme, dark theme, ciemny motyw, oś czasu, timeline
 index: 6
 ---
 
-## timeline
+### Timeline
 
 Tak jak w tytule, to dwie główne nowości na stronie. Pierwsza z nich to podstrona
 o nazwie [timeline](https://jakubgania.io/timeline). Zawiera ona graficzną
@@ -26,7 +27,7 @@ mieszkałem.
 
 Myślę że takie kwestie z przeszłości jeszcze kiedyś rozwinę w jakiś wpisach.
 
-## dark theme
+### Dark theme
 
 Drugą z nowości jest w końcu działający tryb ciemny czyli z ang. dark theme.
 Ponieważ moja strona również domyślnie jest właściwie cała biała na pewno ten tryb

@@ -3,6 +3,7 @@ title: 'Luty - podsumowanie'
 creationDate: 27-03-2020 20:08
 description: Podsumowanie z kolejnego miesiąca. Tym razem opisuję książki jakie czytałem oraz projekty, które ostatnio miałem okazję robić. Wspominam również o konkursie, w którym wygrałem koszulkę Sekuraka.
 keywords: podsumowanie, post, blog, luty, książka, node.js, vue.js, konkurs, wygrana
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/top-image.jpg'
 topImageAlt: 'keyboard, code, mouse, cup, desk'
 index: 22

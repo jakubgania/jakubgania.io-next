@@ -2,20 +2,21 @@
 title: Optymalizacja i refaktoryzacja kodu, nowa podstrona, metodologia BEM
 creationDate: '21-11-2019 00:40'
 description: Optymalizacja i refaktoryzacja kodu, nowa podstrona, metodologia BEM
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/21-11-2019-optymalizacja-i-refaktoryzacja-kodu-nowa-podstrona-metodologia-bem/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/21-11-2019-optymalizacja-i-refaktoryzacja-kodu-nowa-podstrona-metodologia-bem/top-image.PNG'
 topImageAlt: ''
 keywords: optymalizacja, refaktoryzacja, kod, nowa podstrona, metodologia, bem
 index: 8
 ---
 
-## optymalizacja i refaktoryzacja
+### Optymalizacja i refaktoryzacja
 
 Tak jak w tytule cały czas przeprowadzam zmiany związane z kodem.
 Jest tego dość sporo biorąc pod uwagę całą stronę, ale wiadomo wszystko
 trzeba realizować stopniowo.
 
 
-## metodologia BEM
+### Metodologia BEM
 
 Jedną z kolejnych rzeczy jaką zacząłem robić to stosowanie metodologii
 [BEM](https://en.bem.info/methodology/).
@@ -29,7 +30,7 @@ i pewnie jeszcze będę nie raz czytał, żeby dobrze zrozumieć jak stosować t
 rozwiązanie.
 
 
-## experince
+### Experince
 
 Nowa podstrona - [experience](https://jakubgania.io/experience), czyli doświadczenie,
 to strona gdzie zrobiłem coś na wzór CV. Zebrałem informacje o swoim doświadczeniu,
@@ -37,7 +38,7 @@ edukacji, certyfikatach, technologiach itp. Na pewno z czasem będzie również
 modyfikowana mniej lub bardziej.
 
 
-## optymalizacja
+### Optymalizacja
 
 Na tej samej podstronie o której mowa wyżej, dokonałem optymalizacji związanej
 z wyodrębnieniem części kodu do osobnego komponentu o nazwie top-section-container.
@@ -54,24 +55,24 @@ W tym przypadku, dało się to zastąpić kodem CSS, co działa o wiele szybciej
 ma praktycznie opóźnienia przy renderowaniu danego elementu.
 
 
-## o mnie
+### O mnie
 
 W tej sekcji, dodano przycisk z linkiem do strony z doświadczeniem. Na samej
 podstronie poczyniłem wiele drobnych poprawek związanych z formatowaniem tekstu tzn.
 opisu o mnie oraz dodane zostały poprawki związane z ciemnym motywem.
 
 
-## subpage-title-section
+### Subpage-title-section
 
 W tym komponencie dodałem większy padding dolny żeby odsunąć napis od lini dolnej.
 
 
-## sitemap.xml
+### sitemap.xml
 
 Aktualizacja pliku sitemap.xml o nową stronę czyli - [experience](https://jakubgania.io/experience)
 
 
-## system blogowy
+### System blogowy
 
 Tutaj właściwie nie doszło do zmiany jednak rozważam opcję zmiany formatownia formatu
 ścieżek do postów z :

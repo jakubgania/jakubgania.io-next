@@ -3,6 +3,7 @@ title: Tylko logo a jednak komponent
 creationDate: 06-12-2019 11:50
 description: Tylko logo a jednak komponent
 keywords: logo, komponent, zmiana, kod, koncpecja
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-12-2019-tylko-logo-a-jednak-komponent/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-12-2019-tylko-logo-a-jednak-komponent/top-image.PNG'
 topImageAlt: 'Visual Studio Code - Logo component code'
 index: 12

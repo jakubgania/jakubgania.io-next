@@ -3,6 +3,7 @@ title: 'Marzec - podsumowanie'
 creationDate: 06-04-2020 23:40
 description: W marcu napisałem cztery nowe posty oraz pewną część czasu siedziałem nad projektami. Ogarnąłem trochę Githuba oraz zacząłem czytać nową książkę.
 keywords: marzec, podsumowanie, blog, post, rekrutacja, meetup, github
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/top-image.jpg'
 topImageAlt: 'art'
 index: 25

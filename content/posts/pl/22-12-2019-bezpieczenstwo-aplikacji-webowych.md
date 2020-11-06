@@ -3,6 +3,7 @@ title: 'Bezpieczeństwo aplikacji webowych - SECURITUM'
 creationDate: 22-12-2019 02:28
 description: 'Bezpieczeństwo systemów komputerowych i aplikacji czy to webowych czy desktopowych czy mobilnych to oczywiście bez wątpienia bardzo ważna kwestia w obecnych czasach. Złożoność oprogramowania stale rośnie oraz dochodzi do sytuacji w której oprogramowanie zarządza lub steruje naprawdę wieloma wrażliwymi procesami.'
 keywords: security
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/22-12-2019-bezpieczenstwo-aplikacji-webowych/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/22-12-2019-bezpieczenstwo-aplikacji-webowych/top-image.jpg'
 topImageAlt: 'Bezpieczeństwo aplikacji webowych - SECURITUM'
 index: 15

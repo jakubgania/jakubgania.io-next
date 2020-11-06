@@ -3,6 +3,7 @@ title: 'ITCorner Tech Meetup #5 Jak zostać dobrym seniorem w IT ?'
 creationDate: 29-11-2019 00:14
 description: 'Nie raz zastanawiałem się, lub właściwie bardziej starałem się zdefiniować kim tak naprawdę jest senior developer, jakie on posiada cechy, co go wyróżnia od mida czy juniora.'
 keywords: itcorner, meetup, tech, sernior, it, wrocław
+thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/top-image.jpg'
 topImageAlt: ''
 index: 10
@@ -31,7 +32,7 @@ jako zapamiętana myśl czy notatka jednak czytając całość, każdy powinien 
 sens wszystkiego i co do czego nawiązuje. Pierwszy raz na meetupie równolegle
 słuchałem i robiłem notatki w miarę możliwości.
 
-## ITCorner Tech Meetup
+### ITCorner Tech Meetup
 
 ![ITCorner Tech Meetup](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/it-corner.jpg)
 
@@ -44,7 +45,7 @@ zrzeszający około 60 firm technologicznych.
 Jest to świetna inicjatywa, ponieważ można uczestniczyć w prezentacjach, gdzie
 wypowiadają się ludzie z różnych firm z różnym doświadczeniem i wiedzą.
 
-## Jak zostać dobrym seniorem ?
+### Jak zostać dobrym seniorem ?
 
 Taka była główna tematyka tego spotkania. Było w sumie 4 prelegentów i każdy
 omawiał inny temat.
@@ -54,7 +55,7 @@ omawiał inny temat.
 - Kto to jest “senior developer”?, Wojciech M. Gańcza, C++ Senior Software Developer w VM.PL Software House
 - Senior vs. DX, Maciej Stasiełuk, CTO/Software Architect w Vazco
 
-## Pierwsza prezentacja
+### Pierwsza prezentacja
 
 ![Jak zostać dobrym seniorem](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/jak-zostac-seniorem.jpg)
 
@@ -109,7 +110,7 @@ najbardziej nowoczesne i najbardziej reklamowane.
 *Prawdziwa wiedza to znajomość przyczyn*
 **Arystoteles**
 
-## Druga prezentacja
+### Druga prezentacja
 
 ![Modelowanie rozwoju](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/modelowanie-rozwoju.jpg)
 
@@ -145,7 +146,7 @@ nie do końca dana technologia jest dla nas, może jakieś trendy się pozmienia
 Można sobie stworzyć mapę z obaszarami i kierunkami do rozwoju, szczegółową,
 opisaną. Bardzo fajna koncepcja, której też nie byłem świadomy.
 
-## Trzecia prezentacja
+### Trzecia prezentacja
 
 ![Kim jest senior developer](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/kim-jest-senior-developer.jpg)
 
@@ -201,7 +202,7 @@ Scrum master pilnuje tylko, żeby projekt szedł do przodu - on nie jest do zarz
 zespołem.
 
 
-## Czwarta prezentacja
+### Czwarta prezentacja
 
 DX - developer experience
 
@@ -278,7 +279,7 @@ Inne porady :
 - postarać się, żeby dług technologiczny był jak najniższy
 - wymiana wiedzy, wspólna analiza problemów
 
-## Panel dyskusyjny
+### Panel dyskusyjny
 
 Ostatnim etapem był panel dyskusyjny,w którym prelegenci odpowiadali na różne
 pytania od słuchaczy.
@@ -312,7 +313,7 @@ Czy deployment jest dobrą metryką ? To zależy.
 To zależy od charakteru projektu i po prostu tego jak często trzeba wydawać nową
 wersję.
 
-## Pizza && networking
+### Pizza && networking
 
 Cały meetup był naprawdę fajny i ciekawy. Pokazał mi on jak zagadnienie senior developera
 postrzegają ludzie będący już nim lub w ogóle prowadzący własne firmy.

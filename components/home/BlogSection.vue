@@ -38,7 +38,7 @@
                   <div class="image-container-er">
                     <div
                       class="img-wrap-blog"
-                      :style="`background-image: url(${post.topImageSrc})`"
+                      :style="`background-image: url(${post.thumbnail})`"
                     ></div>
                   </div>
                 </div>
