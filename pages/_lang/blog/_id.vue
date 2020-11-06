@@ -26,15 +26,11 @@
       <div class="content-container">
         <SubpageTitleSectionComponent :title="`{ posty - ${numberOfPosts} }`" />
 
-        <div
-          style="
-            height: 6px;
-            border-top: 1px solid #f2f2f2;
-            border-bottom: 1px solid #f2f2f2;
-          "
-        />
+        <div style="height: 1px; border-top: 1px solid #f2f2f2;" />
 
         <SubpageDescriptionSectionComponent :description="desc" />
+
+        <div style="height: 1px; border-top: 1px solid #f2f2f2;" />
 
         <ul style="margin-top: 60px;">
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
@@ -189,14 +185,14 @@ export default {
     }
   },
   mounted() {
-    const topImageElement = document.querySelector('#top-image')
+    // const topImageElement = document.querySelector('#top-image')
 
-    window.addEventListener('scroll', function () {
-      const yPosition = -(window.pageYOffset / topImageElement.dataset.speed)
-      const coordinate = '50% ' + yPosition + 'px'
+    // window.addEventListener('scroll', function () {
+    //   const yPosition = -(window.pageYOffset / topImageElement.dataset.speed)
+    //   const coordinate = '50% ' + yPosition + 'px'
 
-      document.getElementById('top-image').style.backgroundPosition = coordinate
-    })
+    //   document.getElementById('top-image').style.backgroundPosition = coordinate
+    // })
 
     if (this.$route.params.id >= 2) {
       const element = document.getElementById('content')

@@ -4,6 +4,9 @@
       <div class="blog-section-title">
         <h2 v-text="'BLOG'" />
       </div>
+      <div style="text-align: center; margin-bottom: 60px; margin-top: -50px;">
+        <span class="number-of-posts" v-text="`| posty - ${numberOfPosts} |`" />
+      </div>
       <div>
         <ul>
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
@@ -101,6 +104,10 @@ export default {
       default: () => {
         return {}
       },
+    },
+    numberOfPosts: {
+      type: Number,
+      default: 0,
     },
   },
   data() {
@@ -220,6 +227,12 @@ export default {
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.number-of-posts {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 700;
 }
 .mobile-xs-a {
   display: none;

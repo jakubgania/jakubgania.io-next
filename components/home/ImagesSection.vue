@@ -125,16 +125,16 @@ export default {
   position: relative;
   z-index: 2;
   pointer-events: none;
-  // background: linear-gradient(
-  //   to right,
-  //   rgba(0, 0, 0, 0.75) 0,
-  //   rgba(0, 102, 255, 0.4) 100%
-  // );
   background: linear-gradient(
-    -128deg,
-    rgba(0, 102, 255, 0.6) 0,
-    rgba(252, 92, 125, 0.6) 100%
+    to right,
+    rgba(0, 0, 0, 0.75) 0,
+    rgba(0, 102, 255, 0.4) 100%
   );
+  // background: linear-gradient(
+  //   -128deg,
+  //   rgba(0, 102, 255, 0.6) 0,
+  //   rgba(252, 92, 125, 0.6) 100%
+  // );
 }
 .trending-item-1 {
   width: 62%;
