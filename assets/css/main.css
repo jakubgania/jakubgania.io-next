@@ -21,7 +21,7 @@
   --more-content-button-text-color: #000;
   --home-page-social-icons-section-color: #000;
   --home-page-projects-section-color: #000;
-  --blog-page-top-image-path: url('../../assets/images/dotted-wawes-light.jpg');
+  --blog-page-top-image-path: url('../../assets/images/dotted-wawes-light-webp.webp');
   --blog-page-top-image-title-color: #000;
   --blog-page-post-title-color: #000;
   --blog-page-post-description-color: #000;
@@ -61,7 +61,7 @@
   --more-content-button-text-color: #fff;
   --home-page-social-icons-section-color: #fff;
   --home-page-projects-section-color: #fff;
-  --blog-page-top-image-path: url('../../assets/images/dotted-wawes-dark.jpg');
+  --blog-page-top-image-path: url('../../assets/images/dotted-wawes-dark-webp.webp');
   --blog-page-top-image-title-color: #fff;
   --blog-page-post-title-color: #fff;
   --blog-page-post-description-color: #fff;

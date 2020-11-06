@@ -125,8 +125,8 @@ import ImagesSectionComponent from '../../components/home/ImagesSection'
 import BlogSectionComponent from '../../components/home/BlogSection'
 import ProjectsSectionComponent from '../../components/home/ProjectsSection'
 import MenuCodeListComponent from '../../components/home/MenuCodeList'
-import ImageKeyboardLight from '../../assets/images/keyboard-light.jpg'
-import ImageKeyboardDark from '../../assets/images/keyboard-dark.jpg'
+import ImageKeyboardLight from '../../assets/images/keyboard-light-webp.webp'
+import ImageKeyboardDark from '../../assets/images/keyboard-dark-webp.webp'
 
 export default {
   components: {
@@ -206,7 +206,8 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../../assets/images/background-index.jpg);
+  // background-image: url(../../assets/images/background-index.jpg);
+  background-image: url(../../assets/images/background-index-webp.webp);
   background-position: center;
   background-size: cover;
   width: 100%;

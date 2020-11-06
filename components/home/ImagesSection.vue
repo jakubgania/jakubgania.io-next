@@ -72,10 +72,10 @@
 </template>
 
 <script>
-import ImageBackgroundHome from '../../assets/images/background-home.jpg'
-import ImageStickersHome from '../../assets/images/stickers-home.jpg'
-import ImageKeyboardHome from '../../assets/images/keyboard-home.jpeg'
-import ImageDottedWawesLight from '../../assets/images/dotted-wawes-light.jpg'
+import ImageBackgroundHome from '../../assets/images/home/images-section/background-home-webp.webp'
+import ImageStickersHome from '../../assets/images/home/images-section/stickers-home-webp.webp'
+import ImageKeyboardHome from '../../assets/images/home/images-section/keyboard-home-webp.webp'
+import ImageDottedWawesLight from '../../assets/images/home/images-section/dotted-wawes-webp.webp'
 
 export default {
   data() {

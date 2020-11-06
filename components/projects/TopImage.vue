@@ -47,7 +47,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../../assets/images/stickers.jpg);
+      background-image: url(../../assets/images/stickers-webp.webp);
       background-position: center;
       background-size: cover;
       width: $top-image-width;
