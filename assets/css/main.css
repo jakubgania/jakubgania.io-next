@@ -40,6 +40,7 @@
   --home-page-menu-component-background-color: #fff;
   --home-page-menu-component-text-color: #000;
   --home-page-menu-component-close-icon-color: #000;
+  --home-page-cheveron-color: #000;
 }
 
 .dark-mode {
@@ -80,4 +81,5 @@
   --home-page-menu-component-background-color: #000;
   --home-page-menu-component-text-color: #fff;
   --home-page-menu-component-close-icon-color: #fff;
+  --home-page-cheveron-color: #fff;
 }

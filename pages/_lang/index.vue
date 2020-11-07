@@ -395,7 +395,7 @@ export default {
       top: 0;
       height: 100%;
       width: 51%;
-      background: #000;
+      background: var(--home-page-cheveron-color);
     }
 
     &::before {
