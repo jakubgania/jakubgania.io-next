@@ -1,6 +1,6 @@
 ---
 title: Listopad - podsumowanie
-datetime: 03-12-2019 01:48
+creationDate: 03-12-2019 01:48
 description: 'I kolejny miesiąc minął. Aż niemożliwe że już jest grudzień ... Myślę że co miesiąc postaram się przygotować takie podsumowanie miesiąca poprzedniego. To dla mnie też będzie dobra metoda, żeby z jednej strony dokumentować w ramach bloga swoje postępy a z drugiej będzie po prostu wiadomo co się działo.'
 keywords: listopad, podsumowanie, plany, meetup, posty, blog, ulepszenia
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-12-2019-listopad-podsumowanie/thumbnail.png'

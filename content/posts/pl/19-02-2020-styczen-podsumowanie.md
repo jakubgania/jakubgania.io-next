@@ -1,6 +1,6 @@
 ---
 title: Styczeń - podsumowanie
-datetime: 19-02-2020 22:04
+creationDate: 19-02-2020 22:04
 description: 'Pierwszy miesiąc nowego roku, czyli styczeń mija w moim odczuciu zawsze najszybciej. Tak było i tym razem, ponieważ dopiero co był sylwester, a już jest luty ... Styczniowe podsumowanie zaliczyło spore opóźnienie z powodu kilku przyczyn. Jednak takie podsumowania są dla mnie ważnym elementem i postanowiłem nie odpuszczać postu za styczeń, a napisać go teraz.'
 keywords: styczeń, podsumowanie, miesiąc
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/thumbnail.jpg'
