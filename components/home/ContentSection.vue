@@ -236,10 +236,10 @@ export default {
 
 <style lang="scss" scoped>
 .section-content-wrapper {
-  margin-top: 100vh;
+  margin-top: calc(100vh - 64px);
   background-color: var(--component-content-section-background-color);
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 .section-content {
   display: flex;
@@ -259,7 +259,8 @@ export default {
   &__title {
     margin-bottom: 24px;
     font-weight: 800;
-    background-image: linear-gradient(101deg, #fc466b, #3f5efb);
+    // background-image: linear-gradient(101deg, #fc466b, #3f5efb);
+    background-image: linear-gradient(101deg, #001e72, #55d2f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -319,6 +320,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .section-content-wrapper {
+    margin-top: calc(100vh - 48px);
     padding-top: 60px;
     padding-bottom: 60px;
   }
