@@ -1,5 +1,9 @@
 <template>
   <div>
+    <client-only>
+      <PortalRulesAlertComponent />
+    </client-only>
+
     <NavigationDrawerComponent
       :drawer="drawer"
       @switchNavigationDrawer="switchNavigationDrawer"
@@ -17,12 +21,14 @@
 </template>
 
 <script>
+import PortalRulesAlertComponent from '@/components/PortalRulesAlert'
 import NavigationDrawerComponent from '@/components/NavigationDrawer'
 import ToolbarHeaderComponent from '@/components/ToolbarHeader'
 import FooterComponent from '@/components/Footer'
 
 export default {
   components: {
+    PortalRulesAlertComponent,
     ToolbarHeaderComponent,
     NavigationDrawerComponent,
     FooterComponent,

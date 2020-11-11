@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "Windows",
+      "path": "/windows"
+    },
+    {
+      "title": "Chrome",
+      "path": "/chrome"
+    },
+    {
+      "title": "Chrome DevTools",
+      "path": "/chrome-dev-tools"
+    },
+    {
+      "title": "Firefox",
+      "path": "/firefox"
+    },
+    {
+      "title": "Visual Studio Code",
+      "path": "/visual-studio-code"
+    },
+    {
+      "title": "Postman",
+      "path": "/postman"
+    },
+    {
+      "title": "Linux terminal",
+      "path": "/linux-terminal"
+    },
+    {
+      "title": "PhpStorm",
+      "path": "/phpstorm"
+    }
+  ]
+}

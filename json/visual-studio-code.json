@@ -1,0 +1,550 @@
+{
+  "name": "Visual Studio Code",
+  "description": "Keyboard shortcuts for Windows",
+  "source": [
+    {
+      "url": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
+    }
+  ],
+  "items": [
+    {
+      "sectionName": "General",
+      "data": [
+        {
+          "shortcut": "Ctrl + Shift + P, F1",
+          "description": "Show command palette"
+        },
+        {
+          "shortcut": "Ctrl + P",
+          "description": "Quick open, go to file ..."
+        },
+        {
+          "shortcut": "Ctrl + Shift + N",
+          "description": "New window/instance"
+        },
+        {
+          "shortcut": "Ctrl + Shift + W",
+          "description": "Close window/instance"
+        },
+        {
+          "shortcut": "Ctrl + ,",
+          "description": "User settings"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + S",
+          "description": "Keyboard shortcuts"
+        }
+      ]
+    },
+    {
+      "sectionName": "Basic editing",
+      "data": [
+        {
+          "shortcut": "Ctrl + X",
+          "description": "Cut line (empty selection)"
+        },
+        {
+          "shortcut": "Ctrl + C",
+          "description": "Copy line (empty selection)"
+        },
+        {
+          "shortcut": "Alt + arrow up / arrow down",
+          "description": "Move line up/down"
+        },
+        {
+          "shortcut": "Shift + Alt + arrow down/arrow up",
+          "description": "Copy line up/down"
+        },
+        {
+          "shortcut": "Ctrl + Shift + K",
+          "description": "Delete line"
+        },
+        {
+          "shortcut": "Ctrl + Enter",
+          "description": "Insert line below"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Enter",
+          "description": "Insert line above"
+        },
+        {
+          "shortcut": "Ctrl + Shift + \"",
+          "description": "Jump to matching bracket"
+        },
+        {
+          "shortcut": "Ctrl + ] / [",
+          "description": "Indent/outdent line"
+        },
+        {
+          "shortcut": "Home / End",
+          "description": "Go to beginning/end of line"
+        },
+        {
+          "shortcut": "Ctrl + Home",
+          "description": "Go to beginning of file"
+        },
+        {
+          "shortcut": "Ctrl + End",
+          "description": "Go to end of file"
+        },
+        {
+          "shortcut": "Ctrl + arrow up / arrow down",
+          "description": "Scroll line up/down"
+        },
+        {
+          "shortcut": "Alt + PgUp / PgDn",
+          "description": "Scroll page up/down"
+        },
+        {
+          "shortcut": "Ctrl + Shift + [",
+          "description": "Fold (collapse) region"
+        },
+        {
+          "shortcut": "Ctrl + Shift + ]",
+          "description": "Unfold (uncollapse) region"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + [",
+          "description": "Fold (collapse) all subregions"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + ]",
+          "description": "Unfold (uncollpase) all subregions"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + 0",
+          "description": "Fold (collapse) all regions"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + J",
+          "description": "Unfold (uncollapse) all regions"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + C",
+          "description": "Add line comment"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + U",
+          "description": "Remove line comment"
+        },
+        {
+          "shortcut": "Ctrl + /",
+          "description": "Toggle line commment"
+        },
+        {
+          "shortcut": "Shift + Alt + A",
+          "description": "Toggle block comment"
+        },
+        {
+          "shortcut": "Alt + Z",
+          "description": "Toggle word wrap"
+        }
+      ]
+    },
+    {
+      "sectionName": "Navigation",
+      "data": [
+        {
+          "shortcut": "Ctrl + T",
+          "description": "Show all symbols"
+        },
+        {
+          "shortcut": "Ctrl + G",
+          "description": "Go to line"
+        },
+        {
+          "shortcut": "Ctrl + P",
+          "description": "Go to file"
+        },
+        {
+          "shortcut": "Ctrl + Shift + O",
+          "description": "Go to symbol"
+        },
+        {
+          "shortcut": "Ctrl + Shift + M",
+          "description": "Show problems panel"
+        },
+        {
+          "shortcut": "F8",
+          "description": "Go to next error or warning"
+        },
+        {
+          "shortcut": "Shift + F8",
+          "description": "Go to previous error or warning"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Tab",
+          "description": "Navigate editor group history"
+        },
+        {
+          "shortcut": "Alt + arrow left / arrow right",
+          "description": "Go back/forward"
+        },
+        {
+          "shortcut": "Ctrl + M",
+          "description": "Toggle Tab moves focus"
+        }
+      ]
+    },
+    {
+      "sectionName": "Search and replace",
+      "data": [
+        {
+          "shortcut": "Ctrl + F",
+          "description": "Find"
+        },
+        {
+          "shortcut": "Ctrl + H",
+          "description": "Replace"
+        },
+        {
+          "shortcut": "F3 / Shift + F3",
+          "description": "Find next / previous"
+        },
+        {
+          "shortcut": "Alt + Enter",
+          "description": "Select all occurences of Find match"
+        },
+        {
+          "shortcut": "Ctrl + D",
+          "description": "Add selection to next Find match"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + D",
+          "description": "Move last selection to next Find match"
+        },
+        {
+          "shortcut": "Alt + C / R / W",
+          "description": "Toggle case-sensitive / regex / whole word"
+        }
+      ]
+    },
+    {
+      "sectionName": "Multi-cursor and selection",
+      "data": [
+        {
+          "shortcut": "Alt + Click",
+          "description": "Insert cursor"
+        },
+        {
+          "shortcut": "Ctrl + Alt + arrow up / arrow down",
+          "description": "Insert cursor above / below"
+        },
+        {
+          "shortcut": "Ctrl + U",
+          "description": "Undo last cursor operation"
+        },
+        {
+          "shortcut": "Shift + Alt + I",
+          "description": "Insert cursor at end of each line selected"
+        },
+        {
+          "shortcut": "Ctrl + L",
+          "description": "Select current line"
+        },
+        {
+          "shortcut": "Ctrl + Shift + L",
+          "description": "Select all occurrences of current selection"
+        },
+        {
+          "shortcut": "Ctrl + F2",
+          "description": "Select all occurences of current word"
+        },
+        {
+          "shortcut": "Shift + Alt + arrow right",
+          "description": "Expand selection"
+        },
+        {
+          "shortcut": "Shift + Alt + arrow left",
+          "description": "Shrink selection"
+        },
+        {
+          "shortcut": "Shift + Alt + (drag mouse)",
+          "description": "Column (box) selection"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Alt + (arrow key)",
+          "description": "Column (box) selection"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Alt + PgUp / PgDn",
+          "description": "Column (box) selection page up/down"
+        }
+      ]
+    },
+    {
+      "sectionName": "Rich languages editing",
+      "data": [
+        {
+          "shortcut": "Ctrl + Space",
+          "description": "Trigger suggestion"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Space",
+          "description": "Trigger parameter hints"
+        },
+        {
+          "shortcut": "Shift + Alt + F",
+          "description": "Format document"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + F",
+          "description": "Format selection"
+        },
+        {
+          "shortcut": "F12",
+          "description": "Go to definition"
+        },
+        {
+          "shortcut": "Alt + F12",
+          "description": "Peek definition"
+        },
+        {
+          "shortcut": "Ctrl + K F12",
+          "description": "Open definition to the side"
+        },
+        {
+          "shortcut": "Ctrl + .",
+          "description": "Quick fix"
+        },
+        {
+          "shortcut": "Shift + F12",
+          "description": "Show references"
+        },
+        {
+          "shortcut": "F2",
+          "description": "Rename symbol"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + X",
+          "description": "Trim trailing whitespace"
+        },
+        {
+          "shortcut": "Ctrl + K M",
+          "description": "Change file language"
+        }
+      ]
+    },
+    {
+      "sectionName": "Editor management",
+      "data": [
+        {
+          "shortcut": "Ctrl + F4, Ctrl + W",
+          "description": "Close editor"
+        },
+        {
+          "shortcut": "Ctrl + K F",
+          "description": "Close folder"
+        },
+        {
+          "shortcut": "Ctrl + \"",
+          "description": "Split editor"
+        },
+        {
+          "shortcut": "Ctrl + 1 / 2 / 3",
+          "description": "Focus into 1st, 2nd or 3rd editor group"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + arrow left / arrow right",
+          "description": "Focus into previous/next editor group"
+        },
+        {
+          "shortcut": "Ctrl + Shift + PgUp / PgDn",
+          "description": "Move editor left/right"
+        },
+        {
+          "shortcut": "Ctrl + K arrow left / arrow right",
+          "description": "Move active editor group"
+        }
+      ]
+    },
+    {
+      "sectionName": "File management",
+      "data": [
+        {
+          "shortcut": "Ctrl + N",
+          "description": "New file"
+        },
+        {
+          "shortcut": "Ctrl + O",
+          "description": "Open file"
+        },
+        {
+          "shortcut": "Ctrl + S",
+          "description": "Save"
+        },
+        {
+          "shortcut": "Ctrl + Shift + S",
+          "description": "Save as"
+        },
+        {
+          "shortcut": "Ctrl + K S",
+          "description": "Save all"
+        },
+        {
+          "shortcut": "Ctrl + F4",
+          "description": "Close"
+        },
+        {
+          "shortcut": "Ctrl + K Ctrl + W",
+          "description": "Close All"
+        },
+        {
+          "shortcut": "Ctrl + Shift + T",
+          "description": "Reopen closed editor"
+        },
+        {
+          "shortcut": "Ctrl + K Enter",
+          "description": "Keep preview mode editor open"
+        },
+        {
+          "shortcut": "Ctrl + Tab",
+          "description": "Open next"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Tab",
+          "description": "Open previous"
+        },
+        {
+          "shortcut": "Ctrl + K P",
+          "description": "Copy path of active file"
+        },
+        {
+          "shortcut": "Ctrl + K R",
+          "description": "Reveal active file in Explore"
+        },
+        {
+          "shortcut": "Ctrl + K O",
+          "description": "Show active file in new window/instance"
+        }
+      ]
+    },
+    {
+      "sectionName": "Dispaly",
+      "data": [
+        {
+          "shortcut": "F11",
+          "description": "Toggle full screen"
+        },
+        {
+          "shortcut": "Shift + Alt + 0",
+          "description": "Toggle editor layoput (horizontal/vartical)"
+        },
+        {
+          "shortcut": "Ctrl + = / -",
+          "description": "Zoom in/out"
+        },
+        {
+          "shortcut": "Ctrl + B",
+          "description": "Toggle sidebar visibility"
+        },
+        {
+          "shortcut": "Ctrl + Shift + E",
+          "description": "Show explorer / toggle focus"
+        },
+        {
+          "shortcut": "Ctrl + Shift + F",
+          "description": "Show search"
+        },
+        {
+          "shortcut": "Ctrl + Shift + G",
+          "description": "Show source control"
+        },
+        {
+          "shortcut": "Ctrl + Shift + D",
+          "description": "Show debug"
+        },
+        {
+          "shortcut": "Ctrl + Shift + X",
+          "description": "Show extensions"
+        },
+        {
+          "shortcut": "Ctrl + Shift + H",
+          "description": "Replace in files"
+        },
+        {
+          "shortcut": "Ctrl + Shift + J",
+          "description": "Toogle search details"
+        },
+        {
+          "shortcut": "Ctrl + Shift + U",
+          "description": "Show output panel"
+        },
+        {
+          "shortcut": "Ctrl + Shift + V",
+          "description": "Open markdown preview"
+        },
+        {
+          "shortcut": "Ctrl + K V",
+          "description": "Open markdown preview to the side"
+        },
+        {
+          "shortcut": "Ctrl + K Z",
+          "description": "Zen mode (Esc Esc to exit)"
+        }
+      ]
+    },
+    {
+      "sectionName": "Debug",
+      "data": [
+        {
+          "shortcut": "F9",
+          "description": "Toggle breakpoint"
+        },
+        {
+          "shortcut": "F5",
+          "description": "Start/Continue"
+        },
+        {
+          "shortcut": "Shift + F5",
+          "description": "Stop"
+        },
+        {
+          "shortcut": "F11 / Shift + F11",
+          "description": "Stop into/out"
+        },
+        {
+          "shortcut": "F10",
+          "description": "Step over"
+        },
+        {
+          "shortcut": "Ctrl + K cTRL + I",
+          "description": "Stop hover"
+        }
+      ]
+    },
+    {
+      "sectionName": "Integrated terminal",
+      "data": [
+        {
+          "shortcut": "Ctrl + `",
+          "description": "Show integrated terminal"
+        },
+        {
+          "shortcut": "Ctrl + Shift + `",
+          "description": "Create new terminal"
+        },
+        {
+          "shortcut": "Ctrl + C",
+          "description": "Copy selection"
+        },
+        {
+          "shortcut": "Ctrl + V",
+          "description": "Paste into active terminal"
+        },
+        {
+          "shortcut": "Ctrl + arrow up / arrow down",
+          "description": "Scroll up/down"
+        },
+        {
+          "shortcut": "Shift + PgUp / PgDn",
+          "description": "Scroll page up/down"
+        },
+        {
+          "shortcut": "Ctrl + Home / End",
+          "description": "Scroll to top/bottom"
+        }
+      ]
+    }
+  ]
+}

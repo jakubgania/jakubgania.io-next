@@ -210,12 +210,13 @@ export default {
   top: 0;
   left: 0;
   // background-image: url(../../assets/images/background-index.jpg);
-  background-image: url(../../assets/images/background-index-webp.webp);
+  // background-image: url(../../assets/images/background-index-webp.webp);
+  background-image: url(../../assets/images/test-908.webp);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 .content-container {
   max-width: 800px;
