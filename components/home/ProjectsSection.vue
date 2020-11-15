@@ -50,10 +50,20 @@
           </ul>
         </div>
       </div>
-      <MoreContentButtonComponent
-        :text="$t('moreContentButton.moreProjects')"
-        :link="'projects'"
-      />
+      <div style="display: flex;">
+        <div style="width: 50%;">
+          <MoreContentButtonComponent
+            :text="$t('moreContentButton.moreProjects')"
+            :link="'projects'"
+          />
+        </div>
+        <div style="width: 50%;">
+          <MoreContentButtonComponent
+            text="Wszystkie projekty"
+            :link="'projects?view=list'"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>

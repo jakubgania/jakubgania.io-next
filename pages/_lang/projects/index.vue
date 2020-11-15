@@ -1,13 +1,10 @@
 <template>
   <div class="main-projects-container">
     <TopImageComponent />
-    <template v-if="!data">
-      <div class="loader">Loading...</div>
-    </template>
-    <template v-else>
+    <template>
       <div class="change-button-sect">
         <div class="button-sect">
-          <div class="fgt" @click="changeView('grid')">
+          <div class="fgt" @click="changeView('github')">
             widok kafelków
           </div>
         </div>
@@ -44,8 +41,11 @@
           </ul>
         </div>
       </div>
+      <template v-if="!data">
+        <div class="loader">Loading...</div>
+      </template>
       <div
-        v-if="view == 'grid' && data"
+        v-if="view == 'github' && data"
         class="max-w-xs py-8 mx-auto md:max-w-sm lg:max-w-5xl"
       >
         <div
@@ -343,29 +343,62 @@ export default {
         'SQL',
         'Cloud',
       ],
-      data: null,
+      data: false,
+      flag: false,
       viewer: {},
     }
   },
   mounted() {
-    this.$apollo
-      .query({
-        query: githubDataQuery,
-      })
-      .then(({ data }) => {
-        this.data = data
-      })
+    // this.$apollo
+    //   .query({
+    //     query: githubDataQuery,
+    //   })
+    //   .then(({ data }) => {
+    //     this.data = data
+    //   })
+    if (this.view === 'github') {
+      this.getApolloData()
+      this.flag = true
+    }
 
-    if (localStorage.getItem('projectsList')) {
-      this.view = JSON.parse(localStorage.getItem('projectsList'))
-    } else {
-      localStorage.setItem('projectsList', JSON.stringify('grid'))
+    // if (localStorage.getItem('projectsList')) {
+    //   this.view = JSON.parse(localStorage.getItem('projectsList'))
+    // } else {
+    //   localStorage.setItem('projectsList', JSON.stringify('grid'))
+    // }
+  },
+  created() {
+    if (this.$route.query.view === 'github') {
+      this.view = 'github'
+    }
+
+    if (this.$route.query.view === 'list') {
+      this.view = 'list'
     }
   },
   methods: {
     changeView(viewType) {
       this.view = viewType
-      localStorage.setItem('projectsList', JSON.stringify(viewType))
+      console.log('viewer ', this.viewer)
+      // localStorage.setItem('projectsList', JSON.stringify(viewType))
+      if (this.flag === false) {
+        this.getApolloData()
+      }
+
+      window.history.replaceState(
+        {},
+        '',
+        '/' + this.$store.state.locale + '/projects?view=' + this.view
+      )
+    },
+    getApolloData() {
+      this.$apollo
+        .query({
+          query: githubDataQuery,
+        })
+        .then(({ data }) => {
+          this.data = data
+        })
     },
   },
   // apollo: {

@@ -336,7 +336,6 @@ export default {
   },
   methods: {
     getLocale() {
-      console.log('stroe state locale ', this.$store.state.locale)
       return this.$store.state.locale
     },
     changeLanguage(e) {
