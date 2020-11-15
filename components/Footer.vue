@@ -21,7 +21,14 @@
                   :key="element.id"
                   class="list-li"
                 >
-                  <template v-if="element.link || element.link === ''">
+                  <template
+                    v-if="
+                      element.lang
+                        ? (element.link || element.link === '') &&
+                          element.lang === getLocale()
+                        : element.link || element.link === ''
+                    "
+                  >
                     <nuxt-link
                       :to="$i18n.path(element.link)"
                       class="footer-container__site-column-link"
@@ -41,6 +48,14 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div style="margin-left: 10px; margin-top: 20px; font-size: 12px;">
+          <div v-if="$store.state.locale === 'pl'">
+            <nuxt-link to="/de">DE</nuxt-link>
+          </div>
+          <div v-if="$store.state.locale === 'de'">
+            <nuxt-link to="/">PL</nuxt-link>
           </div>
         </div>
         <div class="footer-container__other-elements">
@@ -241,22 +256,31 @@ export default {
           titleColumn: 'Posty',
           elements: [
             {
+              lang: 'pl',
               name: 'Tylko logo a jednak komponent',
               link: 'post/06-12-2019-tylko-logo-a-jednak-komponent',
             },
             {
+              lang: 'pl',
               name: 'Listopad - podsumowanie',
               link: 'post/03-12-2019-listopad-podsumowanie',
             },
             {
+              lang: 'pl',
               name: 'ITCorner Tech Meetup #5 Jak zostać dobrym seniorem w IT ?',
               link:
                 'post/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it',
             },
             {
+              lang: 'pl',
               name: 'Nieskończone możliwości eksperymentowania i tworzenia',
               link:
                 'post/25-11-2019-nieskonczone-mozliwosci-eksperymentowania-i-tworzenia',
+            },
+            {
+              lang: 'de',
+              name: 'Start',
+              link: 'post/hello',
             },
           ],
         },
@@ -311,6 +335,10 @@ export default {
     this.$nuxt.$colorMode.preference = 'light'
   },
   methods: {
+    getLocale() {
+      console.log('stroe state locale ', this.$store.state.locale)
+      return this.$store.state.locale
+    },
     changeLanguage(e) {
       let route = ''
 

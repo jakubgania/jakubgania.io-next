@@ -1,12 +1,19 @@
-export const state = () => ({
-  locales: ['pl', 'de'],
-  locale: 'pl',
-})
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-export const mutations = {
-  SET_LANG(state, locale) {
-    if (state.locales.includes(locale)) {
-      state.locale = locale
-    }
-  },
-}
+Vue.use(Vuex)
+
+export default () =>
+  new Vuex.Store({
+    state: {
+      locales: ['pl', 'de'],
+      locale: 'pl',
+    },
+    mutations: {
+      SET_LANG(state, locale) {
+        if (state.locales.includes(locale)) {
+          state.locale = locale
+        }
+      },
+    },
+  })

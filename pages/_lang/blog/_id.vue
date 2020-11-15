@@ -193,6 +193,7 @@ export default {
 
     //   document.getElementById('top-image').style.backgroundPosition = coordinate
     // })
+    // test
 
     if (this.$route.params.id >= 2) {
       const element = document.getElementById('content')

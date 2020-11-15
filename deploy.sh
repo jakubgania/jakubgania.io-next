@@ -1,1 +1,1 @@
-npm run generate && aws s3 sync dist/ s3://jakubgania.io
+npm run generate && aws s3 sync dist/ s3://jakubgania.io --acl public-read
