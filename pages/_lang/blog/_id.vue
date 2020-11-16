@@ -103,18 +103,30 @@
             </nuxt-link>
           </li>
         </ul>
-        <template
-          v-if="
-            ($route.params.id < numberOfPagination ||
-              $route.params.id == undefined) &&
-            numberOfPagination > 2
-          "
-        >
-          <MoreContentButtonComponent
-            :text="'Następne posty'"
-            :link="getLink()"
-          />
-        </template>
+        <div style="display: flex;">
+          <div style="width: 50%;">
+            <template v-if="$route.params.id > 1">
+              <MoreContentButtonComponent
+                :text="'< Poprzednie'"
+                :link="prevLink()"
+              />
+            </template>
+          </div>
+          <div style="width: 50%;">
+            <template
+              v-if="
+                ($route.params.id < numberOfPagination ||
+                  $route.params.id == undefined) &&
+                numberOfPagination > 2
+              "
+            >
+              <MoreContentButtonComponent
+                :text="'Następne >'"
+                :link="getLink()"
+              />
+            </template>
+          </div>
+        </div>
         <div id="content" style="position: relative; top: -600px;" />
       </div>
     </div>
@@ -129,7 +141,7 @@ import SubpageDescriptionSectionComponent from '../../../components/SubpageDescr
 import IconComponent from '../../../components/Icon'
 
 export default {
-  scrollToTop: false,
+  scrollToTop: true,
   components: {
     MoreContentButtonComponent,
     SubpageTitleSectionComponent,
@@ -137,7 +149,7 @@ export default {
     IconComponent,
   },
   async asyncData({ $content, params, store }) {
-    const paginationValue = 4
+    const paginationValue = 6
     let pageNumber = 1
     let numberOfPagination = null
     let language = store.state.locale
@@ -164,10 +176,19 @@ export default {
         Math.floor(numberOfPosts.length / paginationValue) + 1
     }
 
+    // const posts = await $content('posts/' + language, params.slug)
+    //   .only(['title', 'thumbnail', 'description', 'slug', 'creationDate'])
+    //   .sortBy('index', 'desc')
+    //   .limit(pageNumber * paginationValue)
+    //   .fetch()
+
+    pageNumber = pageNumber - 1
+
     const posts = await $content('posts/' + language, params.slug)
       .only(['title', 'thumbnail', 'description', 'slug', 'creationDate'])
       .sortBy('index', 'desc')
-      .limit(pageNumber * paginationValue)
+      .skip(pageNumber * paginationValue)
+      .limit(paginationValue)
       .fetch()
 
     return {
@@ -203,6 +224,16 @@ export default {
     }
   },
   methods: {
+    prevLink() {
+      let pageNumber = 1
+
+      if (this.$route.params.id !== undefined) {
+        pageNumber = this.$route.params.id
+      }
+
+      pageNumber = pageNumber - 1
+      return 'blog/' + pageNumber
+    },
     getLink() {
       let pageNumber = 1
 

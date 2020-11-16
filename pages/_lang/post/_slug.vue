@@ -2,9 +2,18 @@
   <div>
     <div style="margin-left: 10px; margin-right: 10px;">
       <div class="top-section-title">
-        <nuxt-link :to="$i18n.path('blog')">
-          | posty |
-        </nuxt-link>
+        <div style="line-height: 1.5; display: flex; margin-left: 5px;">
+          <nuxt-link
+            :to="$i18n.path('blog')"
+            style="margin-right: 14px; color: #06f;"
+          >
+            Blog home
+          </nuxt-link>
+          <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
+          <span style="margin-left: 14px;">
+            Blog post
+          </span>
+        </div>
       </div>
       <div class="post-title">
         {{ post.title }}
@@ -185,7 +194,7 @@
 </template>
 
 <script>
-import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
+import { mdiChevronRight, mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import axios from 'axios'
 import AboutCreator from '@/components/AboutCreator'
 import IconComponent from '../../../components/Icon'
@@ -255,6 +264,7 @@ export default {
   },
   data() {
     return {
+      mdiChevronRight,
       mdiClockOutline,
       mdiTrendingUp,
       viewCounter: null,
@@ -368,17 +378,20 @@ export default {
 
 <style lang="scss" scoped>
 .top-section-title {
-  text-align: center;
+  max-width: 800px;
+  // text-align: center;
   margin-bottom: 60px;
   margin-top: 80px;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   font-style: normal;
   font-size: 10px;
-  text-transform: lowercase;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 4px;
 
   &:hover {
-    letter-spacing: 6px;
+    // letter-spacing: 6px;
+    // color: dark
   }
 }
 .content-container {

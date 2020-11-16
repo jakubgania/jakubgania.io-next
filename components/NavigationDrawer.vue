@@ -132,7 +132,8 @@ export default {
   & a {
     padding: 12px 8px 8px 27px;
     text-decoration: none;
-    color: #818181;
+    // color: #818181;
+    color: black;
     display: block;
   }
 }
@@ -171,10 +172,10 @@ export default {
   }
 }
 .link-item {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #8c8c8c;
+  font-family: monospace;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
   padding-left: 10px;
   font-size: 12.8px;
 }
