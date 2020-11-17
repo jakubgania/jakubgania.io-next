@@ -68,12 +68,18 @@ export default {
 
 <style lang="scss" scoped>
 .menu-wrapper {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
+  // transform: translate3d(0, 0, 0);
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  display: block;
   background-color: var(--home-page-menu-component-background-color);
   margin-top: -64px;
-  z-index: 8000;
+  z-index: 999999999;
 }
 .content-container-menu {
   max-width: 800px;

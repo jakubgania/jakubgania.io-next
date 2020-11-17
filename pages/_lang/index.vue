@@ -327,6 +327,7 @@ export default {
 .words-section {
   display: grid;
   text-align: left;
+  line-height: 1.2;
 }
 .social-icons-section {
   position: fixed;
