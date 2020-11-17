@@ -170,6 +170,12 @@ export default {
       ImageKeyboardLight,
       ImageKeyboardDark,
       showMenu: false,
+      head: {
+        description:
+          'Jakub Gania Software - Full Stack Web Developer. Vue.js, Vuex, Vuetify, TypeScript, NUXT, HTML, CSS, Node.js, PHP, Laravel, Symfony, Nginx, Docker.',
+        keywords:
+          'software, developer, it, programmer, coder, www, web, website, frontend, backend, full stack, software engineer, fullstack web developer ,vue.js, vuex, vuetify, typescript, nuxt.js, html, css, node.js, php, laravel, symfony, nginx, apache, server, blog, docker, github',
+      },
     }
   },
   methods: {
@@ -183,6 +189,37 @@ export default {
   head() {
     return {
       title: 'Jakub Gania Software',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.head.description,
+        },
+        {
+          name: 'keywords',
+          content: this.head.keywords,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.head.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+      ],
     }
   },
 }

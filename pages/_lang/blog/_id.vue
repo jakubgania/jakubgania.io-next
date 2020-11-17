@@ -254,6 +254,30 @@ export default {
           name: 'description',
           content: 'custom description',
         },
+        {
+          name: 'keywords',
+          content: 'posty, wpisy, notatki, blog',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Jakub Gania Software | Blog',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io/blog',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Zapraszam do czytania postów w ramach mojego bloga.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
       ],
     }
   },
