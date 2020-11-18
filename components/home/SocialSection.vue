@@ -182,7 +182,7 @@ export default {
     padding-bottom: 60px;
   }
   .social-icon-item {
-    padding: 30px;
+    padding: 10px;
   }
 }
 </style>

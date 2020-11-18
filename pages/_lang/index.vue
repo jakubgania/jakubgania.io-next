@@ -400,7 +400,10 @@ export default {
 .x-top-image-container {
   &__scroll-down-container {
     position: absolute;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     bottom: calc(0px + 56px);
     width: 24px;
     height: 24px;
@@ -498,10 +501,10 @@ export default {
     text-align: center;
   }
   .technical-word {
-    font-size: 5.8vw;
+    font-size: 6.4vw;
   }
   .fullname {
-    font-size: 5.8vw;
+    font-size: 6.4vw;
   }
   .link {
     font-size: 12px;
@@ -531,12 +534,12 @@ export default {
     }
   }
   .left-part {
-    top: 60%;
+    top: 50%;
     left: 50%;
   }
   .right-part {
     left: 50%;
-    top: 140px;
+    top: 90px;
   }
   .social-section-title {
     margin-bottom: 40px;

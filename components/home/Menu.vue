@@ -144,8 +144,11 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
+  .list-item-link {
+    letter-spacing: 4px;
+  }
   .list-item-link:hover {
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     transition: letter-spacing 0s ease;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
