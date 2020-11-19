@@ -290,6 +290,49 @@ export default {
   head() {
     return {
       title: this.post.title + ' | Jakub Gania Software',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description,
+        },
+        {
+          name: 'keywords',
+          content: this.post.keywords,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.post.title + ' | Jakub Gania Software',
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Jakub Gania Software',
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'article',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io' + this.$route.path,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.post.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.post.thumbnail
+            ? this.post.thumbnail
+            : 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+      ],
     }
   },
 }
