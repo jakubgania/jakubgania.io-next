@@ -24,6 +24,21 @@
 
     <div class="grid grid-rows-1">
       <div class="content-container">
+        <div class="top-section-title">
+          <div style="line-height: 1.5; display: flex; margin-left: 5px;">
+            <nuxt-link
+              :to="$i18n.path('')"
+              style="margin-right: 14px; color: #06f;"
+            >
+              Home
+            </nuxt-link>
+            <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
+            <span style="margin-left: 14px;">
+              Blog
+            </span>
+          </div>
+        </div>
+
         <SubpageTitleSectionComponent :title="`{ posty - ${numberOfPosts} }`" />
 
         <div style="height: 1px; border-top: 1px solid #f2f2f2;" />
@@ -134,7 +149,7 @@
 </template>
 
 <script>
-import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
+import { mdiChevronRight, mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import MoreContentButtonComponent from '../../../components/MoreContentButton'
 import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
 import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
@@ -199,6 +214,7 @@ export default {
   },
   data() {
     return {
+      mdiChevronRight,
       mdiClockOutline,
       mdiTrendingUp,
       desc:
@@ -285,6 +301,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.top-section-title {
+  max-width: 1200px;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+  font-style: normal;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 4px;
+}
 .content-container {
   max-width: 1200px;
   width: 100%;
@@ -413,6 +440,18 @@ export default {
   display: inherit;
 }
 
+@media only screen and (max-width: 1240px) {
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .top-section-title {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
 @media only screen and (max-width: 960px) {
   .content-container {
     padding-left: 14px;
@@ -429,6 +468,10 @@ export default {
     padding-right: 14px;
     margin-top: 40px;
     margin-bottom: 100px;
+  }
+  .top-section-title {
+    margin-bottom: 30px;
+    margin-top: 0;
   }
   .post-main-title {
     padding-top: 4px;

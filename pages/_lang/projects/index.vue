@@ -418,7 +418,36 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'custom description',
+          content: 'Projekty',
+        },
+        {
+          name: 'keywords',
+          content: 'projekty',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Projekty | Jakub Gania Software',
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Jakub Gania Software',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io/projects',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Opis moich projektów',
+        },
+        {
+          hid: 'og:image',
+          proprty: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
         },
       ],
     }

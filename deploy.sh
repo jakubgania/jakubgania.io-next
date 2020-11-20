@@ -1,1 +1,1 @@
-npm run generate && aws s3 sync dist/ s3://jakubgania.io --acl public-read
+npm run generate && aws s3 sync dist/ s3://jakubgania.io --acl public-read && aws cloudfront create-invalidation --distribution-id E17CX6FX98SWR2 --paths "/*"
