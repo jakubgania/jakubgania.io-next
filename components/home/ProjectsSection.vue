@@ -50,14 +50,14 @@
           </ul>
         </div>
       </div>
-      <div style="display: flex;">
-        <div style="width: 50%;">
+      <div class="buttons-section">
+        <div class="buttons-section__item">
           <MoreContentButtonComponent
             :text="$t('moreContentButton.moreProjects')"
             :link="'projects'"
           />
         </div>
-        <div style="width: 50%;">
+        <div class="buttons-section__item">
           <MoreContentButtonComponent
             text="Wszystkie projekty"
             :link="'projects?view=list'"
@@ -119,6 +119,13 @@ export default {
   margin-left: -1em;
   font-size: 20px;
 }
+.buttons-section {
+  display: flex;
+
+  &__item {
+    width: 50%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .projects-section {
@@ -136,6 +143,13 @@ export default {
   }
   .projects-item:nth-child(2) ul {
     margin-top: inherit;
+  }
+  .buttons-section {
+    display: block;
+
+    &__item {
+      width: 100%;
+    }
   }
 }
 </style>

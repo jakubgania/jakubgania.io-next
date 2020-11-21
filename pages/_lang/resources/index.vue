@@ -1,5 +1,20 @@
 <template>
   <div class="content-container">
+    <div class="top-section-title">
+      <div style="line-height: 1.5; display: flex; margin-left: 5px;">
+        <nuxt-link
+          :to="$i18n.path('')"
+          style="margin-right: 14px; color: #06f;"
+        >
+          Home
+        </nuxt-link>
+        <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
+        <span style="margin-left: 14px;">
+          Zasoby
+        </span>
+      </div>
+    </div>
+
     <div class="title-category">
       Kategorie
     </div>
@@ -45,11 +60,17 @@
 </template>
 
 <script>
+import { mdiChevronRight } from '@mdi/js'
 import jsonData from '@/json/resources-items'
+import IconComponent from '../../../components/Icon'
 
 export default {
+  components: {
+    IconComponent,
+  },
   data() {
     return {
+      mdiChevronRight,
       title: '',
       linksData: jsonData.resources_items,
     }
@@ -106,8 +127,20 @@ export default {
   // margin: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  // margin-top: 100px;
   margin-bottom: 100px;
+}
+.top-section-title {
+  max-width: 1200px;
+  // text-align: center;
+  margin-bottom: 80px;
+  padding-top: 60px;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+  font-style: normal;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 4px;
 }
 .title-category {
   font-size: 22px;
@@ -168,6 +201,10 @@ export default {
   .content-container {
     padding-left: 14px;
     padding-right: 14px;
+  }
+  .top-section-title {
+    margin-bottom: 20px;
+    padding-top: 20px;
   }
   .link-section-title {
     font-size: 18px;

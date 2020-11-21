@@ -524,12 +524,12 @@ export default {
     padding-top: 0;
 
     &--left {
-      height: 280px;
+      height: 250px;
     }
 
     &--right {
-      top: 280px;
-      height: 360px;
+      top: 240px;
+      height: 320px;
       overflow-y: hidden;
     }
   }
@@ -539,7 +539,7 @@ export default {
   }
   .right-part {
     left: 50%;
-    top: 90px;
+    top: 120px;
   }
   .social-section-title {
     margin-bottom: 40px;

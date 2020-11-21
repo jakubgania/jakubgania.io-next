@@ -1,5 +1,19 @@
 <template>
   <div class="content-container">
+    <div class="top-section-title">
+      <div style="line-height: 1.5; display: flex; margin-left: 5px;">
+        <nuxt-link
+          :to="$i18n.path('')"
+          style="margin-right: 14px; color: #06f;"
+        >
+          Home
+        </nuxt-link>
+        <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
+        <span style="margin-left: 14px;">
+          Galeria
+        </span>
+      </div>
+    </div>
     <div v-if="fullScreenImage" class="full-screen-image-wrapper">
       <button class="close-button" @click="closeFullScreenImage()">
         <div class="close-icon" />
@@ -19,11 +33,17 @@
 </template>
 
 <script>
+import { mdiChevronRight } from '@mdi/js'
 import ImageKeyboardHome from '../../../assets/images/keyboard-light-webp.webp'
+import IconComponent from '../../../components/Icon'
 
 export default {
+  components: {
+    IconComponent,
+  },
   data() {
     return {
+      mdiChevronRight,
       ImageKeyboardHome,
       fullScreenImage: false,
       fullImageUrl: null,
@@ -66,6 +86,18 @@ export default {
   max-width: 1000px;
   width: 100%;
   margin: auto;
+}
+.top-section-title {
+  max-width: 1000px;
+  // text-align: center;
+  margin-bottom: 10px;
+  padding-top: 80px;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+  font-style: normal;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 4px;
 }
 .images-container {
   margin-top: 100px;
@@ -120,5 +152,12 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: 90vh;
+}
+@media only screen and (max-width: 600px) {
+  .top-section-title {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-left: 10px;
+  }
 }
 </style>

@@ -239,18 +239,13 @@ div .section .description img {
   max-width: 1200px;
   // text-align: center;
   margin-bottom: 10px;
-  margin-top: 80px;
+  padding-top: 80px;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   font-style: normal;
   font-size: 10px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 4px;
-
-  &:hover {
-    // letter-spacing: 6px;
-    // color: dark
-  }
 }
 
 // Colors
@@ -485,9 +480,22 @@ $image-tile-max-height: 160px;
 }
 
 @media only screen and (max-width: 600px) {
+  .top-section-title {
+    max-width: 1200px;
+    // text-align: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+    font-style: normal;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+    letter-spacing: 4px;
+  }
+
   // Dimensions
   $dot-size: 1px;
-  $dot-space: 50px;
+  $dot-space: 40px;
 
   .dotted-background {
     background: linear-gradient(

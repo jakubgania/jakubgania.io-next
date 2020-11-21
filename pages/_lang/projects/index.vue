@@ -375,6 +375,10 @@ export default {
     if (this.$route.query.view === 'list') {
       this.view = 'list'
     }
+
+    if (this.view !== 'github' && this.view !== 'list') {
+      this.view = 'github'
+    }
   },
   methods: {
     changeView(viewType) {

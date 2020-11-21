@@ -51,4 +51,10 @@ export default {
     transition: all 0.2s ease;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .pagination-button-section {
+    margin-top: 60px;
+  }
+}
 </style>
