@@ -1,5 +1,10 @@
 <template>
   <div class="content-container">
+    <BreadcrumbsComponent
+      parent-page-path=""
+      parent-page-title="Home"
+      child-page-title="Shortcuts"
+    />
     <ul>
       <li v-for="item in shortcuts" :key="item.id">
         <nuxt-link :to="`/shortcuts` + item.path" class="link">
@@ -12,8 +17,12 @@
 
 <script>
 import shortcutsList from '../../../json/list-of-shortcuts.json'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
+  components: {
+    BreadcrumbsComponent,
+  },
   data() {
     return {
       shortcuts: shortcutsList.data,

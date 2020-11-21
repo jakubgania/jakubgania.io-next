@@ -2,6 +2,12 @@
   <div class="main-projects-container">
     <TopImageComponent />
     <template>
+      <BreadcrumbsComponent
+        parent-page-path=""
+        parent-page-title="Home"
+        child-page-title="Projekty"
+        :max-width-wrapper="1000"
+      />
       <div class="change-button-sect">
         <div class="button-sect">
           <div class="fgt" @click="changeView('github')">
@@ -191,6 +197,7 @@ import TopImageComponent from '@/components/projects/TopImage'
 import TagComponent from '@/components/projects/Tag'
 import FeaturedReposComponent from '@/components/projects/FeaturedRepos'
 import RecentReposComponent from '@/components/projects/RecentRepos'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 const githubDataQuery = gql`
   query viewer {
@@ -310,6 +317,7 @@ export default {
     TagComponent,
     FeaturedReposComponent,
     RecentReposComponent,
+    BreadcrumbsComponent,
   },
   async asyncData({ app, $content, params, store }) {
     let language = store.state.locale

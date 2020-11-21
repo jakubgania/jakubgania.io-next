@@ -1,5 +1,10 @@
 <template>
   <div class="content-container">
+    <BreadcrumbsComponent
+      parent-page-path="projects"
+      parent-page-title="Projekty"
+      child-page-title="Post"
+    />
     <div class="post-title">
       {{ project.title }}
     </div>
@@ -10,7 +15,12 @@
 </template>
 
 <script>
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
+
 export default {
+  components: {
+    BreadcrumbsComponent,
+  },
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
 

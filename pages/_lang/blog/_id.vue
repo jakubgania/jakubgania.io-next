@@ -24,20 +24,11 @@
 
     <div class="grid grid-rows-1">
       <div class="content-container">
-        <div class="top-section-title">
-          <div style="line-height: 1.5; display: flex; margin-left: 5px;">
-            <nuxt-link
-              :to="$i18n.path('')"
-              style="margin-right: 14px; color: #06f;"
-            >
-              Home
-            </nuxt-link>
-            <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
-            <span style="margin-left: 14px;">
-              Blog
-            </span>
-          </div>
-        </div>
+        <BreadcrumbsComponent
+          parent-page-path=""
+          parent-page-title="Home"
+          child-page-title="Blog"
+        />
 
         <SubpageTitleSectionComponent :title="`{ posty - ${numberOfPosts} }`" />
 
@@ -149,7 +140,8 @@
 </template>
 
 <script>
-import { mdiChevronRight, mdiClockOutline, mdiTrendingUp } from '@mdi/js'
+import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 import MoreContentButtonComponent from '../../../components/MoreContentButton'
 import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
 import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
@@ -158,6 +150,7 @@ import IconComponent from '../../../components/Icon'
 export default {
   scrollToTop: true,
   components: {
+    BreadcrumbsComponent,
     MoreContentButtonComponent,
     SubpageTitleSectionComponent,
     SubpageDescriptionSectionComponent,
@@ -214,7 +207,6 @@ export default {
   },
   data() {
     return {
-      mdiChevronRight,
       mdiClockOutline,
       mdiTrendingUp,
       desc:
@@ -301,22 +293,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.top-section-title {
-  max-width: 1200px;
-  margin-bottom: 80px;
-  margin-top: 20px;
-  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  font-style: normal;
-  font-size: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 4px;
-}
 .content-container {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  margin-top: 100px;
   margin-bottom: 140px;
 }
 .top-image {

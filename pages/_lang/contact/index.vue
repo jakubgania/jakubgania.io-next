@@ -1,5 +1,10 @@
 <template>
   <div class="content-container">
+    <BreadcrumbsComponent
+      parent-page-path=""
+      parent-page-title="Home"
+      child-page-title="Kontakt"
+    />
     <div class="main-title">
       Kontakt
     </div>
@@ -10,7 +15,12 @@
 </template>
 
 <script>
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
+
 export default {
+  components: {
+    BreadcrumbsComponent,
+  },
   head() {
     return {
       title: 'Jakub Gania Software | Kontakt',

@@ -1,19 +1,10 @@
 <template>
   <div class="content-container">
-    <div class="top-section-title">
-      <div style="line-height: 1.5; display: flex; margin-left: 5px;">
-        <nuxt-link
-          :to="$i18n.path('')"
-          style="margin-right: 14px; color: #06f;"
-        >
-          Home
-        </nuxt-link>
-        <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
-        <span style="margin-left: 14px;">
-          Zasoby
-        </span>
-      </div>
-    </div>
+    <BreadcrumbsComponent
+      parent-page-path=""
+      parent-page-title="Home"
+      child-page-title="Zasoby"
+    />
 
     <div class="title-category">
       Kategorie
@@ -60,17 +51,15 @@
 </template>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
 import jsonData from '@/json/resources-items'
-import IconComponent from '../../../components/Icon'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
   components: {
-    IconComponent,
+    BreadcrumbsComponent,
   },
   data() {
     return {
-      mdiChevronRight,
       title: '',
       linksData: jsonData.resources_items,
     }
@@ -129,18 +118,6 @@ export default {
   margin-right: auto;
   // margin-top: 100px;
   margin-bottom: 100px;
-}
-.top-section-title {
-  max-width: 1200px;
-  // text-align: center;
-  margin-bottom: 80px;
-  padding-top: 60px;
-  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  font-style: normal;
-  font-size: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 4px;
 }
 .title-category {
   font-size: 22px;

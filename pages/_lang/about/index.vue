@@ -1,5 +1,10 @@
 <template>
   <div class="content-container">
+    <BreadcrumbsComponent
+      parent-page-path=""
+      parent-page-title="Home"
+      child-page-title="O mnie"
+    />
     <div class="grid grid-rows-1 title-text">
       {{ aboutText }}
     </div>
@@ -37,8 +42,12 @@
 
 <script>
 import profileImage from '../../../assets/images/profile.jpg'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
+  components: {
+    BreadcrumbsComponent,
+  },
   data() {
     return {
       profileImage,
@@ -125,7 +134,7 @@ export default {
   line-height: 0.01em;
   margin: 10px 0 20px;
   position: absolute;
-  top: 430px;
+  top: 525px;
 }
 .vertical-section span {
   background-color: #fff;

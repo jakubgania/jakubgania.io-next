@@ -1,19 +1,10 @@
 <template>
   <div class="dotted-background">
-    <div class="top-section-title">
-      <div style="line-height: 1.5; display: flex; margin-left: 5px;">
-        <nuxt-link
-          :to="$i18n.path('')"
-          style="margin-right: 14px; color: #06f;"
-        >
-          Home
-        </nuxt-link>
-        <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
-        <span style="margin-left: 14px;">
-          Doświadczenie
-        </span>
-      </div>
-    </div>
+    <BreadcrumbsComponent
+      parent-page-path=""
+      parent-page-title="Home"
+      child-page-title="Doświadczenie"
+    />
     <div class="top-experience-text">
       <div style="display: inline-flex;">
         <div
@@ -166,19 +157,17 @@
 </template>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
 import TopSectionContainerComponent from '@/components/TopSectionContainer'
 import jsonData from '@/json/data'
-import IconComponent from '../../../components/Icon'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
   components: {
-    IconComponent,
+    BreadcrumbsComponent,
     TopSectionContainerComponent,
   },
   data() {
     return {
-      mdiChevronRight,
       personalData: jsonData.expirience.sectionPersonalData,
       fullName: jsonData.expirience.sectionPersonalData.fullName,
       description: jsonData.expirience.sectionPersonalData.description,
@@ -235,19 +224,6 @@ div .section .description img {
 </style>
 
 <style lang="scss" scoped>
-.top-section-title {
-  max-width: 1200px;
-  // text-align: center;
-  margin-bottom: 10px;
-  padding-top: 80px;
-  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  font-style: normal;
-  font-size: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 4px;
-}
-
 // Colors
 $bg-color: hsl(255, 255, 255);
 $dot-color: hsl(0, 0, 0);
@@ -297,7 +273,7 @@ $dot-space: 70px;
   font-size: 6vw;
   font-weight: 700;
   letter-spacing: 6px;
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 120px;
   padding-left: 20px;
 }
@@ -480,19 +456,6 @@ $image-tile-max-height: 160px;
 }
 
 @media only screen and (max-width: 600px) {
-  .top-section-title {
-    max-width: 1200px;
-    // text-align: center;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-    font-style: normal;
-    font-size: 10px;
-    margin-left: 10px;
-    margin-right: auto;
-    letter-spacing: 4px;
-  }
-
   // Dimensions
   $dot-size: 1px;
   $dot-space: 40px;

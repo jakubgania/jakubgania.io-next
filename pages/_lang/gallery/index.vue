@@ -1,19 +1,10 @@
 <template>
   <div class="content-container">
-    <div class="top-section-title">
-      <div style="line-height: 1.5; display: flex; margin-left: 5px;">
-        <nuxt-link
-          :to="$i18n.path('')"
-          style="margin-right: 14px; color: #06f;"
-        >
-          Home
-        </nuxt-link>
-        <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
-        <span style="margin-left: 14px;">
-          Galeria
-        </span>
-      </div>
-    </div>
+    <BreadcrumbsComponent
+      parent-page-path=""
+      parent-page-title="Home"
+      child-page-title="Galeria"
+    />
     <div v-if="fullScreenImage" class="full-screen-image-wrapper">
       <button class="close-button" @click="closeFullScreenImage()">
         <div class="close-icon" />
@@ -33,17 +24,15 @@
 </template>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
 import ImageKeyboardHome from '../../../assets/images/keyboard-light-webp.webp'
-import IconComponent from '../../../components/Icon'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
   components: {
-    IconComponent,
+    BreadcrumbsComponent,
   },
   data() {
     return {
-      mdiChevronRight,
       ImageKeyboardHome,
       fullScreenImage: false,
       fullImageUrl: null,
