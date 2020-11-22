@@ -5,10 +5,23 @@
       parent-page-title="Home"
       child-page-title="Shortcuts"
     />
-    <ul>
-      <li v-for="item in shortcuts" :key="item.id">
-        <nuxt-link :to="`/shortcuts` + item.path" class="link">
-          {{ item.title }}
+    <div class="title-section">
+      <h2>
+        Shortcuts
+      </h2>
+    </div>
+    <div class="top-description">
+      <p>
+        Przydatne skróty klawiaturowe do różnych programów i systemów
+        operacyjnych. Lista stale aktualizowana.
+      </p>
+    </div>
+    <ul class="links-section">
+      <li v-for="item in shortcuts" :key="item.id" class="link-text">
+        <nuxt-link :to="`/shortcuts` + item.path">
+          <span>
+            {{ item.title }}
+          </span>
         </nuxt-link>
       </li>
     </ul>
@@ -33,13 +46,21 @@ export default {
 
 <style lang="scss" scoped>
 .content-container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
 }
-.link {
-  text-align: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.title-section {
+  margin-bottom: 40px;
+}
+.top-description {
+  margin-bottom: 80px;
+}
+.links-section {
+  margin-bottom: 100px;
+}
+.link-text {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 </style>
