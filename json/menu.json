@@ -31,6 +31,10 @@
     {
       "title": "home.menuSection.resourcesPage",
       "path": "resources"
+    },
+    {
+      "title": "home.menuSection.shortcuts",
+      "path": "shortcuts"
     }
   ]
 }

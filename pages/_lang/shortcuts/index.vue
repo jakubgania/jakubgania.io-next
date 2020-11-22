@@ -41,6 +41,42 @@ export default {
       shortcuts: shortcutsList.data,
     }
   },
+  head() {
+    return {
+      title: 'Jakub Gania Software | Shortcuts',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Zasoby',
+        },
+        {
+          name: 'keywords',
+          content: '',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Shortcuts | Jakub Gania Software',
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'https://jakubgania.io/shortcuts',
+        },
+        {
+          hid: 'og:description',
+          proprty: 'og:description',
+          content: 'Shortcuts',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+      ],
+    }
+  },
 }
 </script>
 

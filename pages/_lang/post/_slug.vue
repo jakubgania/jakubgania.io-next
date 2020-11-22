@@ -1,20 +1,12 @@
 <template>
   <div>
     <div style="margin-left: 10px; margin-right: 10px;">
-      <div class="top-section-title">
-        <div style="line-height: 1.5; display: flex; margin-left: 5px;">
-          <nuxt-link
-            :to="$i18n.path('blog')"
-            style="margin-right: 14px; color: #06f;"
-          >
-            Blog home
-          </nuxt-link>
-          <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
-          <span style="margin-left: 14px;">
-            Blog post
-          </span>
-        </div>
-      </div>
+      <BreadcrumbsComponent
+        parent-page-path="blog"
+        parent-page-title="Blog home"
+        child-page-title="Blog post"
+        :max-width-wrapper="800"
+      />
       <div class="post-title">
         {{ post.title }}
       </div>
@@ -194,15 +186,17 @@
 </template>
 
 <script>
-import { mdiChevronRight, mdiClockOutline, mdiTrendingUp } from '@mdi/js'
+import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import axios from 'axios'
 import AboutCreator from '@/components/AboutCreator'
 import IconComponent from '../../../components/Icon'
+import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
   components: {
     AboutCreator,
     IconComponent,
+    BreadcrumbsComponent,
   },
   async asyncData({ $content, params, store }) {
     let language = store.state.locale
@@ -264,7 +258,6 @@ export default {
   },
   data() {
     return {
-      mdiChevronRight,
       mdiClockOutline,
       mdiTrendingUp,
       viewCounter: null,
@@ -420,23 +413,6 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-.top-section-title {
-  max-width: 800px;
-  // text-align: center;
-  margin-bottom: 60px;
-  margin-top: 80px;
-  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  font-style: normal;
-  font-size: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 4px;
-
-  &:hover {
-    // letter-spacing: 6px;
-    // color: dark
-  }
-}
 .content-container {
   max-width: 1000px;
   width: 100%;
@@ -473,6 +449,7 @@ export default {
 .top-image {
   display: block;
   width: 100%;
+  min-height: 800px;
   max-height: 800px;
   object-fit: cover;
 }
@@ -594,6 +571,11 @@ export default {
     border: 2px solid transparent;
     letter-spacing: 2.8px;
     transition: all 0.2s ease;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .top-image {
+    min-height: auto;
   }
 }
 @media only screen and (max-width: 1200px) {

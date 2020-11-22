@@ -52,7 +52,8 @@
       "contactPage": "Kontakt",
       "aboutPage": "O mnie",
       "galleryPage": "Galeria",
-      "resourcesPage": "Zasoby"
+      "resourcesPage": "Zasoby",
+      "shortcuts": "Shortcuts"
     },
     "gallerySection": {
       "blog": "Blog",

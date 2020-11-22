@@ -36,7 +36,43 @@ export default {
   },
   head() {
     return {
-      title: this.project.title,
+      title: this.project.title + ' | Jakub Gania Software',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Projekt',
+        },
+        {
+          name: 'keywords',
+          content: '',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.$route.params.slug + ' | Jakub Gania Software',
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Jakub Gania Software',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io/' + this.$route.params.slug,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Projekt',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+      ],
     }
   },
 }
@@ -61,5 +97,15 @@ export default {
 }
 .post-content {
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .post-title {
+    font-size: 30px;
+  }
 }
 </style>

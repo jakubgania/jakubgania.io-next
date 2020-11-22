@@ -24,7 +24,9 @@
         <!-- breadcrumb -->
         <!-- subpage title section component -->
         <div class="grid grid-rows-1">
-          Opis moich projektów programistycznych
+          <p style="margin-bottom: 80px;">
+            Opis moich projektów programistycznych
+          </p>
         </div>
         <div class="grid grid-rows-1">
           <ul>
@@ -382,6 +384,7 @@ export default {
 
     if (this.$route.query.view === 'list') {
       this.view = 'list'
+      this.flag = true
     }
 
     if (this.view !== 'github' && this.view !== 'list') {
@@ -391,7 +394,7 @@ export default {
   methods: {
     changeView(viewType) {
       this.view = viewType
-      console.log('viewer ', this.viewer)
+
       // localStorage.setItem('projectsList', JSON.stringify(viewType))
       if (this.flag === false) {
         this.getApolloData()
@@ -536,7 +539,7 @@ export default {
   margin: 0;
 }
 .list-projects-container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
   margin-bottom: 80px;
@@ -638,8 +641,8 @@ export default {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 80px;
 }
 .button-sect {
   min-width: 240px;

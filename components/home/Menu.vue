@@ -90,6 +90,8 @@ export default {
   line-height: 1.28;
   margin-left: auto;
   margin-right: auto;
+  -webkit-overflow-scrolling: auto !important;
+  overflow: visible;
 }
 .list-section {
   position: fixed;
