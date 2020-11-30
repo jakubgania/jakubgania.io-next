@@ -78,6 +78,68 @@ export default {
 }
 </script>
 
+<style lang="scss">
+.nuxt-content div pre {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding-top: 3rem;
+  border-radius: 10px;
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fillRule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="%23FF5F56" stroke="%23E0443E" strokeWidth=".5" /><circle cx="26" cy="6" r="6" fill="%23FFBD2E" stroke="%23DEA123" strokeWidth=".5" /><circle cx="46" cy="6" r="6" fill="%2327C93F" stroke="%231AAB29" strokeWidth=".5" /></g></svg>');
+  background-repeat: no-repeat;
+  background-position: 16px 16px;
+  // box-shadow: 5px 5px 15px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 5px 5px 15px 0 rgba(190, 190, 190, 0.6);
+  // background-color: #1d262f;
+  background-color: #f0f0f0;
+  padding-bottom: 2px;
+  // padding-left: 4px;
+  // padding-right: 4px;
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar {
+    height: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+  }
+}
+// .nuxt-content div pre code {
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
+.nuxt-content div pre code .token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  background-color: #f0f0f0;
+}
+// .nuxt-content div pre code span > .token.operator {
+//   background-color: #f0f0f0;
+// }
+// .nuxt-content > div > pre > code > span > .token .operator {
+//   background-color: #f0f0f0;
+// }
+.nuxt-content li {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #06f;
+    position: absolute;
+    top: 9px;
+    left: -18px;
+  }
+}
+</style>
+
 <style lang="scss" scoped>
 .content-container {
   max-width: 1000px;

@@ -370,7 +370,7 @@ export default {
     border-radius: 100%;
     background: #06f;
     position: absolute;
-    top: 14px;
+    top: 12px;
     left: -18px;
   }
 }
