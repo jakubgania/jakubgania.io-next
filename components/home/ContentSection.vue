@@ -259,6 +259,7 @@ export default {
   &__title {
     margin-bottom: 24px;
     font-weight: 800;
+    // display: inline;
     // background-image: linear-gradient(101deg, #fc466b, #3f5efb);
     background-image: linear-gradient(101deg, #001e72, #55d2f5);
     -webkit-background-clip: text;

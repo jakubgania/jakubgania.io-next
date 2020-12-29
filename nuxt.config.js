@@ -52,6 +52,10 @@ export default {
         content: process.env.npm_package_description || '',
       },
       {
+        name: 'google-site-verification',
+        content: 'pCgwKh6Bl0udfAQC8PP37yLs6Rs26hwU19gmuDgpnZs',
+      },
+      {
         hid: 'og:image',
         property: 'og:image',
         conent: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
@@ -95,6 +99,7 @@ export default {
   plugins: [
     '~/plugins/i18n.js',
     { src: '~/plugins/aos', ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
   ],
   /*
    ** Auto import components
