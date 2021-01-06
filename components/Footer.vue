@@ -213,7 +213,7 @@ export default {
           value: 'de',
         },
       ],
-      copyrightText: '&copy; 2018 - 2020 Jakub Gania Software',
+      copyrightText: `&copy; 2018 - ${this.getFullYear()} Jakub Gania Software`,
       sites: [
         {
           titleColumn: 'Strony',
@@ -372,6 +372,10 @@ export default {
           this.following = data.viewer.following.totalCount
           this.starredRepositories = data.viewer.starredRepositories.totalCount
         })
+    },
+    getFullYear() {
+      const d = new Date()
+      return d.getFullYear()
     },
   },
 }

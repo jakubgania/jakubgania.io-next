@@ -44,6 +44,11 @@
         :alt="post.topImageAlt"
         class="top-image"
       />
+      <template v-if="post.imageDescription">
+        <span class="image-description">
+          {{ post.imageDescription }}
+        </span>
+      </template>
     </div>
     <div v-show="false" class="top-section-title">
       <nuxt-link :to="$i18n.path('blog')">
@@ -352,6 +357,13 @@ export default {
   font-weight: bold;
   font-size: 24px;
 }
+.nuxt-content h4 {
+  line-height: 1.1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
 .nuxt-content p {
   margin-bottom: 20px;
 }
@@ -444,7 +456,7 @@ export default {
   color: var(--post-page-post-additional-info-color);
 }
 .top-image-section {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .top-image {
   display: block;
@@ -452,6 +464,12 @@ export default {
   min-height: 800px;
   max-height: 800px;
   object-fit: cover;
+}
+.image-description {
+  font-size: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 1px;
 }
 .related-posts {
   max-width: 2000px;

@@ -17,28 +17,28 @@
           "part1": "Technologie",
           "part2": "Webowe"
         },
-        "description": "Główne technologie w jaki się specjalizję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt oraz backendowe takie jak Node czy Laravel. Tworzę różny skrypty z użyciem Bash czy Python. Większość mojej pracy i eksperymentów umieszczam na platformie Github."
+        "description": "Główne technologie w jakich się specjalizuję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt, Next oraz backendowe takie jak Node. Tworzę różne skrypty z użyciem jezyka Bash czy Python. Większość wyników mojej pracy i eksperymentów z kodem i projektami umieszczam na platformie GitHub."
       },
       {
         "title": {
           "part1": "Technologie",
           "part2": "Chmurowe"
         },
-        "description": "Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatej integrcji wielu komponentów. To naprawdę wiele zalet i możliwości oraz inne podejśćie do budowania złożonych struktór. Jest to kierunek w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga."
+        "description": "Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatwej integracji wielu różnych komponentów. Usługi chmurowe to naprawdę wiele możliwości oraz inne podejście do budowania złożonych struktur. Jest to kierunek w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga."
       },
       {
         "title": {
           "part1": "Software",
           "part2": "Engineering"
         },
-        "description": "Dziedina jaką jest inżynieria oprogramowania jest złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, wysublimowane architektury, bezpieczeńśtwo, bazy danych ... Wymieniać można bez końca a trndy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane."
+        "description": "Dziedzina jaką jest inżynieria oprogramowania jest niezwykle złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, różnorodne architektury, bezpieczeństwo, bazy danych ... Wymieniać można bez końca a trendy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane."
       },
       {
         "title": {
           "part1": "IT i",
           "part2": "Tchnologie"
         },
-        "description": "Szeroko pojęte IT i różne inne technologie cały czas zasakują i rozwijają się bardzo szybko. Takie zagadnienia jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko znaleźć duży zbiór danych niewspomagany czy to przez SI czy analizę Big Data."
+        "description": "Szeroko pojęte IT i różne inne technologie cały czas rozwijają się niesamowicie szybko. Takie zagadnienia jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko analizować duży zbiór danych niewspomagając procesu wyszukiwania systemami opartymi o SI czy ogólnie analizę I Big Data."
       }
     ],
     "projectsSection": {

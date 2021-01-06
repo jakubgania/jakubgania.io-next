@@ -1,8 +1,10 @@
 ---
 title: yourcity-frontend
-description: ''
+description: 'Projekt aplikacji do wyszukiwania miejsc i usług w danej okolicy/mieście.'
 keywords: 
 ---
+
+Projekt aplikacji do wyszukiwania miejsc i usług w danej okolicy/mieście.
 
 Repozytorium: [https://github.com/jakubgania/yourcity-frontend](https://github.com/jakubgania/yourcity-frontend)
 

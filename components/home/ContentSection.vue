@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="section-content-row__description">
-          {{ $t('home.contentSection[1].description') }}
+          {{ $t('home.contentSection[2].description') }}
         </div>
       </div>
       <div class="section-content-row">
@@ -178,7 +178,7 @@
           </div>
         </div>
         <div class="section-content-row__description">
-          {{ $t('home.contentSection[2].description') }}
+          {{ $t('home.contentSection[3].description') }}
         </div>
       </div>
     </div>
