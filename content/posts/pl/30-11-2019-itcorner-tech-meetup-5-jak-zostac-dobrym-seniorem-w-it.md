@@ -6,6 +6,7 @@ keywords: itcorner, meetup, tech, sernior, it, wrocław
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it/top-image.jpg'
 topImageAlt: ''
+imageDescription: Zdjęcie - wykonanie własne
 index: 10
 ---
 

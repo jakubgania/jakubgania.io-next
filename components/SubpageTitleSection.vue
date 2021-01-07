@@ -25,7 +25,7 @@ export default {
 }
 .title {
   font-weight: 700;
-  font-family: monospace;
+  color: var(--color-text);
   padding-bottom: 14px;
 }
 

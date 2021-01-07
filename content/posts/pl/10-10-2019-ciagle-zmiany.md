@@ -5,7 +5,8 @@ description: Ciągłe zmiany
 keywords: zmiany, ulepszenia, poprawki, dalszy rozwój
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/10-10-2019-ciagle-zmiany/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/10-10-2019-ciagle-zmiany/top-image.jpg'
-topImageAlt: 'Sky'
+topImageAlt: ''
+imageDescription: Zdjęcie - wykonanie własne
 index: 2
 ---
 

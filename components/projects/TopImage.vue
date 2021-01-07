@@ -1,7 +1,14 @@
 <template>
   <div class="content-container-next">
     <div class="top-image-container">
-      <div class="top-image-container__section">
+      <div
+        class="top-image-container__section"
+        :class="[
+          $device.isIos || $device.isMacOS
+            ? 'background-attachment-apple'
+            : 'background-attachment-fixed',
+        ]"
+      >
         <div class="top-image-container__content-section">
           <div class="top-image-container__title">
             <span style="font-size: 13vw;">
@@ -127,6 +134,13 @@
       transform: skew(0deg, -30deg);
     }
   }
+}
+
+.background-attachment-fixed::after {
+  background-attachment: fixed;
+}
+.background-attachment-apple::after {
+  background-attachment: scroll;
 }
 
 @keyframes move {

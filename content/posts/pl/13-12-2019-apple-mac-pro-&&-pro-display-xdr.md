@@ -6,6 +6,7 @@ keywords: apple
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/13-12-2019-apple-mac-pro-%26%26-pro-display-xdr/top-image.png'
 topImageAlt: 'Apple Mac Pro && Pro Display XDR'
+imageDescription: Zdjęcie - https://www.apple.com/newsroom/
 index: 13
 ---
 

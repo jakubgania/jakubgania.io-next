@@ -27,7 +27,7 @@ export default {
   text-align: center;
 }
 .more-posts-button {
-  border-radius: 6px;
+  border-radius: 26px;
   font-weight: bold;
   letter-spacing: 2px;
   padding: 0.5rem 3rem;

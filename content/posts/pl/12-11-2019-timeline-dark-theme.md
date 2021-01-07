@@ -6,6 +6,7 @@ thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/12-11-
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/12-11-2019-timeline-dark-theme/top-image.jpg'
 topImageAlt: ''
 keywords: dark, theme, dark theme, ciemny motyw, oś czasu, timeline
+imageDescription: Zdjęcie - wykonanie własne
 index: 6
 ---
 

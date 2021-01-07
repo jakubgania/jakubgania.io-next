@@ -6,6 +6,7 @@ keywords: programista, rozmowa, kwalifikacyjna
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-03-2020-programista-na-rozmowie-kwalifikacyjnej/top-image.jpg'
 topImageAlt: 'Programista na rozmowie kwalifikacyjnej'
+imageDescription: Zdjęcie - wykonanie własne
 index: 20
 ---
 

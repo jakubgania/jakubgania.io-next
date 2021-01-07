@@ -225,8 +225,8 @@ div .section .description img {
 
 <style lang="scss" scoped>
 // Colors
-$bg-color: hsl(255, 255, 255);
-$dot-color: hsl(0, 0, 0);
+$bg-color: var(--dotted-bg-color);
+$dot-color: var(--dots-bg-color);
 
 // Dimensions
 $dot-size: 1px;

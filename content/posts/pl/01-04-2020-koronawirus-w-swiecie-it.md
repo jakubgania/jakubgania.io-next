@@ -6,6 +6,7 @@ keywords: blog, it, post, it, wirus, koronawirus
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/01-04-2020-koronawirus-w-swiecie-it/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/01-04-2020-koronawirus-w-swiecie-it/top-image.PNG'
 topImageAlt: 'Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)'
+imageDescription: Zdjęcie - https://coronavirus.jhu.edu/map.html
 index: 24
 ---
 

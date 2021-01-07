@@ -5,6 +5,8 @@
 .light-mode {
   --bg: #fff;
   --logo-color: #000;
+  --color-text: #000;
+  --menu-code-list-hover-bg-color: #f2f2f2;
   --toolbar-header-container-background-color: hsla(0, 0%, 100%, 0.6);
   --menu-icon-hamburger-color: #000;
   --navigation-drawer-background-color: #fff;
@@ -41,11 +43,15 @@
   --home-page-menu-component-text-color: #000;
   --home-page-menu-component-close-icon-color: #000;
   --home-page-cheveron-color: #000;
+  --dotted-bg-color: hsl(0, 100%, 100%);
+  --dots-bg-color: hsl(0, 0%, 0%);
 }
 
 .dark-mode {
   --bg: #000;
   --logo-color: #fff;
+  --color-text: #fff;
+  --menu-code-list-hover-bg-color: #262626;
   --toolbar-header-container-background-color: hsla(0, 0%, 0%, 0.6);
   --menu-icon-hamburger-color: #fff;
   --navigation-drawer-background-color: #1a1a1a;
@@ -82,4 +88,6 @@
   --home-page-menu-component-text-color: #fff;
   --home-page-menu-component-close-icon-color: #fff;
   --home-page-cheveron-color: #fff;
+  --dotted-bg-color: hsl(0, 0%, 0%);
+  --dots-bg-color: hsl(0, 100%, 100%);
 }

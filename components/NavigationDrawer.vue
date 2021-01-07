@@ -138,6 +138,8 @@ export default {
   }
 }
 .list-item {
+  margin-top: 2px;
+  margin-bottom: 2px;
   &:hover {
     background-color: var(--navigation-drawer-list-item-hover-color);
   }
@@ -172,8 +174,8 @@ export default {
   }
 }
 .link-item {
-  font-family: monospace;
-  font-weight: 700;
+  // font-family: monospace;
+  font-weight: 500;
   letter-spacing: 2px;
   color: #000;
   padding-left: 10px;

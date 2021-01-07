@@ -6,6 +6,7 @@ keywords: meetup, ng-wroclaw, wroclavia, pgs software, angular
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-03-2020-meetup-ng-wroclaw-33/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-03-2020-meetup-ng-wroclaw-33/top-image.jpg'
 topImageAlt: 'Meetup ng-wroclaw #33'
+imageDescription: Zdjęcie - wykonanie własne
 index: 21
 ---
 

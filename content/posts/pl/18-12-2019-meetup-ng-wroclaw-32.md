@@ -6,6 +6,7 @@ keywords: meetup, wrocław, angular, pgs
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/18-12-2019-meetup-ng-wroclaw-32/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/18-12-2019-meetup-ng-wroclaw-32/top-image.jpg'
 topImageAlt: 'PGS Software - Wrocław'
+imageDescription: Zdjęcie - wykonanie własne
 index: 14
 ---
 

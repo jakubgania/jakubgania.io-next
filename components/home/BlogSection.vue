@@ -168,7 +168,7 @@ export default {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  // font-family: 'Roboto Mono', monospace;
 
   &:hover {
     .img-wrap-blog {
@@ -233,6 +233,7 @@ export default {
   letter-spacing: 2px;
   text-align: center;
   font-weight: 700;
+  color: var(--color-text);
 }
 .mobile-xs-a {
   display: none;

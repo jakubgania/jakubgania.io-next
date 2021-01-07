@@ -6,6 +6,7 @@ keywords: post, grudzień, podsumowanie
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/thumbnail.jpg'
 topImageSrc: https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/top-image.jpg
 topImageAlt: Wschód słońca z samolotu
+imageDescription: Zdjęcie - wykonanie własne
 index: 16
 ---
 

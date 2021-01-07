@@ -6,6 +6,7 @@ keywords: listopad, podsumowanie, plany, meetup, posty, blog, ulepszenia
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-12-2019-listopad-podsumowanie/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/03-12-2019-listopad-podsumowanie/top-image.png'
 topImageAlt: 'Google Analytics - Audience Overview in October'
+imageDescription: Zdjęcie - wykonanie własne
 index: 11
 ---
 

@@ -69,6 +69,7 @@ export default {
 
 body {
   background-color: var(--bg);
+  font-family: 'Montserrat', sans-serif;
 }
 .nuxt-container {
   padding-top: 64px;

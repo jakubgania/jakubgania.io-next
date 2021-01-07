@@ -6,6 +6,7 @@ keywords: logo, komponent, zmiana, kod, koncpecja
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-12-2019-tylko-logo-a-jednak-komponent/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-12-2019-tylko-logo-a-jednak-komponent/top-image.PNG'
 topImageAlt: 'Visual Studio Code - Logo component code'
+imageDescription: Zdjęcie - wykonanie własne
 index: 12
 ---
 

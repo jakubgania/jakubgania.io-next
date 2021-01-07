@@ -6,6 +6,7 @@ keywords: podsumowanie, post, blog, luty, książka, node.js, vue.js, konkurs, w
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/27-03-2020-luty-podsumowanie/top-image.jpg'
 topImageAlt: 'keyboard, code, mouse, cup, desk'
+imageDescription: Zdjęcie - wykonanie własne
 index: 22
 ---
 

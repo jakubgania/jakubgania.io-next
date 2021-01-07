@@ -6,6 +6,7 @@ keywords: ux, ui, uxui, design
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/15-02-2020-uxui-design-zoptymalizowany/top-image.jpg'
 topImageAlt: 'UXUI Design Zoptymalizowany Manual Book - Chris Badura'
+imageDescription: Zdjęcie - wykonanie własne
 index: 18
 ---
 

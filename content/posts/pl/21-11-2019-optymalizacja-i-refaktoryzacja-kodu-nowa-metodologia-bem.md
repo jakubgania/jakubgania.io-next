@@ -6,6 +6,7 @@ thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/21-11-
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/21-11-2019-optymalizacja-i-refaktoryzacja-kodu-nowa-podstrona-metodologia-bem/top-image.PNG'
 topImageAlt: ''
 keywords: optymalizacja, refaktoryzacja, kod, nowa podstrona, metodologia, bem
+imageDescription: Zdjęcie - wykonanie własne
 index: 8
 ---
 

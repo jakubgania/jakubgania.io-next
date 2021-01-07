@@ -5,7 +5,7 @@ description: W marcu napisałem cztery nowe posty oraz pewną część czasu sie
 keywords: marzec, podsumowanie, blog, post, rekrutacja, meetup, github
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/06-04-2020-marzec-podsumowanie/top-image.jpg'
-imageDescription: Zdjęcie - produkacja własna
+imageDescription: Zdjęcie - wykonanie własne
 topImageAlt: 'art'
 index: 25
 ---

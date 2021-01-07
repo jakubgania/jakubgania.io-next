@@ -256,17 +256,38 @@ export default {
     margin-bottom: 80px;
   }
 
+  // &__title {
+  //   margin-bottom: 24px;
+  //   font-weight: 800;
+  //   // display: inline;
+  //   // background-image: linear-gradient(101deg, #fc466b, #3f5efb);
+  //   background-image: linear-gradient(101deg, #001e72, #55d2f5);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+
+  //   & h2 br {
+  //     display: none;
+  //   }
+  // }
+
   &__title {
     margin-bottom: 24px;
     font-weight: 800;
     // display: inline;
     // background-image: linear-gradient(101deg, #fc466b, #3f5efb);
-    background-image: linear-gradient(101deg, #001e72, #55d2f5);
+    background-image: linear-gradient(101deg, rgba(0, 30, 114, 1), #55d2f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     & h2 br {
       display: none;
+    }
+
+    & h2::after {
+      content: '';
+      background-image: linear-gradient(101deg, rgba(0, 30, 114, 1), #55d2f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 

@@ -163,7 +163,7 @@ export default {
   text-decoration: none;
 }
 .link-text {
-  color: #000;
+  color: var(--color-text);
   letter-spacing: 1.5px;
   font-size: 12px;
   padding-top: 2px;
@@ -180,7 +180,7 @@ export default {
   color: #d9d9d9;
 }
 .link-section:hover {
-  background-color: #f2f2f2;
+  background-color: var(--menu-code-list-hover-bg-color);
   padding-left: 12px;
 
   .number-line {

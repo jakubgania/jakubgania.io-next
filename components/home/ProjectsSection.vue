@@ -119,6 +119,9 @@ export default {
   margin-left: -1em;
   font-size: 20px;
 }
+.project-list li:hover {
+  color: #06f;
+}
 .buttons-section {
   display: flex;
 

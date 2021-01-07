@@ -6,6 +6,7 @@ keywords: fail, pull request, zmiany, nowości
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/26-10-2019-nowosci-fail-pull-request/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/26-10-2019-nowosci-fail-pull-request/top-image.png'
 topImageAlt: ''
+imageDescription: Zdjęcie - wykonanie własne
 index: 3
 ---
 

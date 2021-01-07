@@ -338,8 +338,8 @@ export default {
 
 <style lang="scss">
 .post {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
+  // font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
   letter-spacing: 0.2px;
   line-height: 1.8;
   font-size: 17.4px;
@@ -485,8 +485,7 @@ export default {
 .related-posts-title {
   font-size: 50px;
   font-weight: 800;
-  // font-family: 'Roboto Mono', monospace;
-  // font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+  color: var(--color-text);
 }
 .related-posts-wrapper {
   display: flex;

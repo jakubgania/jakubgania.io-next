@@ -5,6 +5,7 @@ description: Podsumowanie roku 2020 i plany na rok 2021.
 keywords: rok 2020, stary rok, nowy rok, mijający rok, podsumowanie, post
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/31-12-2020-podsumowanie-roku-2020/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/31-12-2020-podsumowanie-roku-2020/top-image.jpg'
+imageDescription: Zdjęcie - wykonanie własne
 topImageAlt: Nowy rok 2021
 index: 26
 ---

@@ -336,7 +336,7 @@ export default {
   margin-top: 0;
   margin-bottom: 60px;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  // font-family: 'Roboto Mono', monospace;
 }
 .post-link-dark-theme {
   color: #bfbfbf;

@@ -7,7 +7,11 @@
       >
         {{ parentPageTitle }}
       </nuxt-link>
-      <IconComponent :path="mdiChevronRight" :size="14" :color="'#000'" />
+      <IconComponent
+        :path="mdiChevronRight"
+        :size="14"
+        :color="'var(--color-text)'"
+      />
       <span class="breadcrumbs-section__child-page-text">
         {{ childPageTitle }}
       </span>
@@ -80,10 +84,18 @@ export default {
 
   &__child-page-text {
     margin-left: 14px;
+    color: var(--color-text);
 
     &::first-letter {
       text-transform: uppercase;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .breadcrumbs-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 </style>

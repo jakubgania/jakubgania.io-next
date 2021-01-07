@@ -6,6 +6,7 @@ keywords: styczeń, podsumowanie, miesiąc
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/19-02-2020-styczen-podsumowanie/top-image.jpg'
 topImageAlt: 'Konkurs Sekurak - Bezpieczeństwo aplikacji webowych - SECURITUM'
+imageDescription: Zdjęcie - wykonanie własne
 index: 19
 ---
 

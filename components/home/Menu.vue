@@ -13,7 +13,7 @@
               class="list-item-link"
               @click.native="showScrollbar()"
             >
-              / {{ $t(item.title) }} /
+              { {{ $t(item.title) }} }
             </nuxt-link>
           </ul>
         </li>
@@ -67,19 +67,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.menu-wrapper {
+.menu-wrapper::before {
+  content: '';
+  display: block;
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  // transform: translate3d(0, 0, 0);
-  // top: 0;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  display: block;
   background-color: var(--home-page-menu-component-background-color);
-  margin-top: -64px;
-  z-index: 999999999;
+  z-index: 99999999;
 }
 .content-container-menu {
   max-width: 800px;
@@ -94,7 +92,9 @@ export default {
   overflow: visible;
 }
 .list-section {
-  position: fixed;
+  position: absolute;
+  z-index: 9999999999;
+  // position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -125,6 +125,7 @@ export default {
   opacity: 0.3;
   color: black;
   // color: var(--navigation-drawer-close-button-color);
+  z-index: 9999999999;
 }
 .close-icon:hover {
   opacity: 1;

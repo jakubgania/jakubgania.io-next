@@ -6,6 +6,7 @@ keywords: vue, informacje, post, blog
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/29-03-2020-informacje-o-nadchodzacym-frameworku-vuejs-3/top-image.PNG'
 topImageAlt: 'Vue.js - Logo'
+imageDescription: Zdjęcie - logotyp technologii Vue.js
 index: 23
 ---
 

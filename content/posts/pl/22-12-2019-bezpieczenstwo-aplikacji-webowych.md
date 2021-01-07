@@ -6,6 +6,7 @@ keywords: security
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/22-12-2019-bezpieczenstwo-aplikacji-webowych/thumbnail.jpg'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/22-12-2019-bezpieczenstwo-aplikacji-webowych/top-image.jpg'
 topImageAlt: 'Bezpieczeństwo aplikacji webowych - SECURITUM'
+imageDescription: Zdjęcie - wykonanie własne
 index: 15
 ---
 

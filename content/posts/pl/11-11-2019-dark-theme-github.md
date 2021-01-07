@@ -6,6 +6,7 @@ keywords: dark, theme, dark theme, github, ciemny motyw
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-11-2019-dark-theme-github/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/11-11-2019-dark-theme-github/top-image.png'
 topImageAlt: 'GitHub - dark theme'
+imageDescription: Zdjęcie - wykonanie własne
 index: 5
 ---
 

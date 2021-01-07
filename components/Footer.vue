@@ -2,7 +2,9 @@
   <footer class="footer-container">
     <div class="footer-container__sitemap-section">
       <div class="footer-container__logo-section">
-        <LogoComponent :normal-font-size="true" />
+        <nuxt-link :to="$i18n.path('')">
+          <LogoComponent :normal-font-size="true" />
+        </nuxt-link>
       </div>
       <div class="footer-container__x">
         <div class="footer-container__sites-section">
@@ -33,7 +35,12 @@
                       :to="$i18n.path(element.link)"
                       class="footer-container__site-column-link"
                     >
-                      {{ element.name }}
+                      <template v-if="element.name.length > 32">
+                        {{ element.name.substring(0, 32) }} ...
+                      </template>
+                      <template v-else>
+                        {{ element.name }}
+                      </template>
                     </nuxt-link>
                   </template>
                   <template v-if="element.href">
@@ -433,13 +440,13 @@ export default {
     padding-left: 10px;
   }
   &__site-column-title {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
+    // font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #4d4d4d;
-    font-size: 20px;
+    font-size: 18px;
   }
   &__site-column-link {
     color: #8a929c;

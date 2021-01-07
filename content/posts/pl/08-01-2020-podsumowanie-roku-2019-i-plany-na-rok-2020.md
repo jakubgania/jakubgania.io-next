@@ -6,6 +6,7 @@ keywords: rok 2019, stary rok, nowy rok, nowa dekada, rok 2020, plany, podsumowa
 thumbnail: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/08-01-2020-podsumowanie-roku-2019-i-plany-na-rok-2020/thumbnail.png'
 topImageSrc: 'https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/08-01-2020-podsumowanie-roku-2019-i-plany-na-rok-2020/top-image.png'
 topImageAlt: New Year 2020
+imageDescription: Zdjęcie - wykonanie własne
 index: 17
 ---
 
