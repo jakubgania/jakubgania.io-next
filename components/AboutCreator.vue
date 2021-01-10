@@ -77,6 +77,7 @@ export default {
     width: 100px;
   }
   .author-description-section {
+    width: calc(100% - 110px);
     padding-left: 20px;
   }
   .author-description {

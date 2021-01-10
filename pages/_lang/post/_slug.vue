@@ -382,7 +382,7 @@ export default {
     border-radius: 100%;
     background: #06f;
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: -18px;
   }
 }
@@ -644,6 +644,9 @@ export default {
     padding-left: 14px;
     padding-right: 14px;
   }
+  .top-image {
+    min-height: 240px;
+  }
   .post-title {
     margin-top: 0;
     font-size: 30px;
@@ -658,7 +661,7 @@ export default {
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 8vh;
-    padding-bottom: 10vh;
+    padding-bottom: 14vh;
   }
   .other-posts-button-section {
     margin-top: 80px;

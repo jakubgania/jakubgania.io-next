@@ -49,7 +49,7 @@
           </ul>
         </div>
       </div>
-      <template v-if="!data">
+      <template v-if="view == 'github' && !data">
         <div class="loader">Loading...</div>
       </template>
       <div
@@ -612,20 +612,17 @@ export default {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
 }
 .post-main-title {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.4px;
   display: flex;
-  // padding-top: 2px;
   padding-bottom: 4px;
 }
 .post-link {
   text-decoration: none;
   color: #000;
-  // font-size: 14px;
 
   &:hover {
     .post-main-title {

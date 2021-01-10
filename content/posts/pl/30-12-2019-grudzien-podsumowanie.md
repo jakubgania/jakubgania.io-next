@@ -11,8 +11,8 @@ index: 16
 ---
 
 Ostatni miesiąc tego roku. Grudzień to czas, kiedy przychodzi do nas
-Święty Mikołaj :santa:, 24 grudnia obchodzimy Wigilię i Boże Narodzenie :christmas_tree:,
-a potem już tylko odliczamy dni do Sylwestra :champagne:, który kończy rok. To wiele zadań, obowiązków i przygotowań. To różne wyjazdy - bliższe lub dalsze, do rodziny i najbliższych. Jest to czas, w którym nie ma już (zazwyczaj) aż tak dużej intensyfikacji jeśli chodzi o pracę i projekty.
+Święty Mikołaj &#x1F385, 24 grudnia obchodzimy Wigilię i Boże Narodzenie &#x1F384,
+a potem już tylko odliczamy dni do Sylwestra &#x1F37E, który kończy rok. To wiele zadań, obowiązków i przygotowań. To różne wyjazdy - bliższe lub dalsze, do rodziny i najbliższych. Jest to czas, w którym nie ma już (zazwyczaj) aż tak dużej intensyfikacji jeśli chodzi o pracę i projekty.
 
 ![Christmas tree - Dortmund 2019](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/xtree.jpg)
 
@@ -63,12 +63,12 @@ Dodałem również preloader, który jest widoczny, kiedy w przeglądarce wywoł
 Preloader jest animowany - tutaj jest tylko poglądowy screen
 ![Preloader](https://s3.eu-central-1.amazonaws.com/jakubgania.io-blog-data/30-12-2019-grudzien-podsumowanie/preloader.png)
 
-### Emoji :D
+### Emoji &#x1F609
 
 Zainstalowałem także moduł z emoji. Pełną listę można zobaczyć [tutaj](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json). Jest to bardzo ciekawy dodatek, ponieważ zamiast znaków interpunkcyjnych z literami, które były widoczne dotychczas, teraz będzie już dodany moduł do markdowna, który renderuje emoji.
 
 Kilka przykładów :
-:blush: :smiley: :smirk: :grin: :fearful: :neutral_face: :alien: :astonished: :waning_crescent_moon: :earth_africa: :computer: :twisted_rightwards_arrows: 
+&#x1F642 &#x2728 &#x1F30E &#x1F4BB
 
 ### Poprawki && optymalizacje
 

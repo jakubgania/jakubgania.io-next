@@ -8,6 +8,7 @@
     <div class="main-title">
       Kontakt
     </div>
+    <p>Email:</p>
     <div class="email">
       contact@jakubgania.io
     </div>

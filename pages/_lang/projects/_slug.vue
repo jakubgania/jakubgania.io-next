@@ -90,11 +90,8 @@ export default {
   background-position: 16px 16px;
   // box-shadow: 5px 5px 15px 0 rgba(50, 50, 50, 0.75);
   box-shadow: 5px 5px 15px 0 rgba(190, 190, 190, 0.6);
-  // background-color: #1d262f;
   background-color: #f0f0f0;
-  padding-bottom: 2px;
-  // padding-left: 4px;
-  // padding-right: 4px;
+  padding-bottom: 14px;
 
   ::-webkit-scrollbar-track {
     background: transparent;
