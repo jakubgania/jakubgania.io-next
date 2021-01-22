@@ -98,6 +98,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software | Shortcuts - ' + this.data.name,
       meta: [
         {
@@ -180,18 +183,12 @@ export default {
     background-color: #f0f0f5;
   }
 }
-// .shortcut-item-section:hover {
-//   background-color: #f0f0f5;
-// }
 .table-shortcut-section {
   width: 40%;
 }
 .table-description-section {
   width: 60%;
 }
-// table tr {
-//   border-bottom: 1px solid #f2f2f2;
-// }
 .shortcut-keys {
   padding-top: 10px;
   padding-bottom: 10px;

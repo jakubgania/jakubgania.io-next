@@ -1,39 +1,39 @@
 {
   "menu": [
     {
-      "title": "home.menuSection.homePage",
+      "name": "home.menuSection.homePage",
       "path": ""
     },
     {
-      "title": "home.menuSection.blogPage",
+      "name": "home.menuSection.blogPage",
       "path": "blog"
     },
     {
-      "title": "home.menuSection.projectsPage",
+      "name": "home.menuSection.projectsPage",
       "path": "projects"
     },
     {
-      "title": "home.menuSection.experiencePage",
+      "name": "home.menuSection.experiencePage",
       "path": "experience"
     },
     {
-      "title": "home.menuSection.contactPage",
+      "name": "home.menuSection.contactPage",
       "path": "contact"
     },
     {
-      "title": "home.menuSection.aboutPage",
+      "name": "home.menuSection.aboutPage",
       "path": "about"
     },
     {
-      "title": "home.menuSection.galleryPage",
+      "name": "home.menuSection.galleryPage",
       "path": "gallery"
     },
     {
-      "title": "home.menuSection.resourcesPage",
+      "name": "home.menuSection.resourcesPage",
       "path": "resources"
     },
     {
-      "title": "home.menuSection.shortcuts",
+      "name": "home.menuSection.shortcuts",
       "path": "shortcuts"
     }
   ]

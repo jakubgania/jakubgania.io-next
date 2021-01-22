@@ -3,7 +3,7 @@
     <div class="projects-section-wrapper">
       <div class="projects-section-title">
         <h2>
-          Projekty
+          {{ $t('home.projectsSection.title') }}
         </h2>
       </div>
       <div class="projects-sections-container">
@@ -53,13 +53,13 @@
       <div class="buttons-section">
         <div class="buttons-section__item">
           <MoreContentButtonComponent
-            :text="$t('moreContentButton.moreProjects')"
+            :text="$t('home.projectsSection.otherProjects')"
             :link="'projects'"
           />
         </div>
         <div class="buttons-section__item">
           <MoreContentButtonComponent
-            text="Wszystkie projekty"
+            :text="$t('home.projectsSection.allProjects')"
             :link="'projects?view=list'"
           />
         </div>

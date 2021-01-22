@@ -24,6 +24,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software | Kontakt',
       meta: [
         {

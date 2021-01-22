@@ -1,0 +1,71 @@
+{
+  "titleSection": "experience.content.sections.certificates.title",
+  "data": [
+    {
+      "date": "2020-06",
+      "title": "Internet of Things",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-001.jpg\">"
+    },
+    {
+      "date": "2020-06",
+      "title": "Artificial Intelligence and Machine Learning",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-002.jpg\">"
+    },
+    {
+      "date": "2020-06",
+      "title": "Advanced of AWS solutions",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-003.jpg\">"
+    },
+    {
+      "date": "2020-06",
+      "title": "Microsoft Azure",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-004.jpg\">"
+    },
+    {
+      "date": "2020-06",
+      "title": "Amazon Web Services",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-005.jpg\">"
+    },
+    {
+      "date": "2020-06",
+      "title": "Google Cloud Platform",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-006.jpg\">"
+    },
+    {
+      "date": "2020-06",
+      "title": "IBM Cloud",
+      "subtitle": "Certyfikat uzyskany w ramach studiów podyplomowych, kierunek Multi Cloud Architect - WYŻSZA SZKOŁA INFORMATYKI I ZARZĄDZANIA COPERNICUS WE WROCŁAWIU",
+      "description": "<img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/Certificate-MCA-ML-AI-IoT-page-007.jpg\">"
+    },
+    {
+      "date": "2019-08",
+      "title": "\"Docker - szybki start\"",
+      "subtitle": "",
+      "description": "<p>Miejsce szkolenia : Warszawa</p><img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/dock.jpeg\">"
+    },
+    {
+      "date": "2019-08",
+      "title": "\"Wprowadzenie do serverless w chmurze AWS\"",
+      "subtitle": "",
+      "description": "<p>Miejsce szkolenia : Wrocław</p><img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/dfv.jpeg\">"
+    },
+    {
+      "date": "2019-07",
+      "title": "\"Praktyczne sposoby wykrywania podatności w aplikacjach webowych\"",
+      "subtitle": "",
+      "description": "<p>Miejsce szkolenia : Warszawa</p><img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/dko.jpeg\">"
+    },
+    {
+      "date": "2014-03",
+      "title": "\"Informatyka Biznesowa\"",
+      "subtitle": "",
+      "description":  "<p>Miejsce szkolenia : Wrocław</p><img src=\"https://s3.eu-central-1.amazonaws.com/jakubgania.io-experience/k1.jpg\">"
+    }
+  ]
+}

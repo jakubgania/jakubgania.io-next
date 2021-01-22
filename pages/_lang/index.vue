@@ -109,7 +109,11 @@
       </div>
     </div>
     <ContentSectionComponent />
-    <BlogSectionComponent :posts="posts" :numberOfPosts="numberOfPosts" />
+    <BlogSectionComponent
+      :posts="posts"
+      :numberOfPosts="numberOfPosts"
+      :views="views"
+    />
     <img
       :src="ImageKeyboard($nuxt.$colorMode.preference)"
       alt=""
@@ -118,17 +122,22 @@
     <ProjectsSectionComponent />
     <MenuCodeListComponent />
     <SocialSectionComponent />
+    <YouTubeSectionComponent />
+    <TwitterSectionComponent />
     <ImagesSectionComponent />
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import MenuComponent from '../../components/home/Menu'
 import SocialSectionComponent from '../../components/home/SocialSection'
 import ContentSectionComponent from '../../components/home/ContentSection'
 import ImagesSectionComponent from '../../components/home/ImagesSection'
 import BlogSectionComponent from '../../components/home/BlogSection'
 import ProjectsSectionComponent from '../../components/home/ProjectsSection'
+import YouTubeSectionComponent from '../../components/home/YouTubeSection'
+import TwitterSectionComponent from '../../components/home/TwitterSection'
 import MenuCodeListComponent from '../../components/home/MenuCodeList'
 import ImageKeyboardLight from '../../assets/images/keyboard-light-webp.webp'
 import ImageKeyboardDark from '../../assets/images/keyboard-dark-webp.webp'
@@ -141,6 +150,8 @@ export default {
     ImagesSectionComponent,
     BlogSectionComponent,
     ProjectsSectionComponent,
+    YouTubeSectionComponent,
+    TwitterSectionComponent,
     MenuCodeListComponent,
   },
   async asyncData({ $content, params, store }) {
@@ -148,6 +159,10 @@ export default {
 
     if (params.lang === 'de') {
       language = 'de'
+    }
+
+    if (params.lang === 'en') {
+      language = 'en'
     }
 
     let numberOfPosts = await $content('posts/' + language, params.slug).fetch()
@@ -170,6 +185,7 @@ export default {
       ImageKeyboardLight,
       ImageKeyboardDark,
       showMenu: false,
+      views: [],
       head: {
         description:
           'Jakub Gania Software - Full Stack Web Developer. Vue.js, Vuex, Vuetify, TypeScript, NUXT, HTML, CSS, Node.js, PHP, Laravel, Symfony, Nginx, Docker.',
@@ -177,6 +193,25 @@ export default {
           'software, developer, it, programmer, coder, www, web, website, frontend, backend, full stack, software engineer, fullstack web developer ,vue.js, vuex, vuetify, typescript, nuxt.js, html, css, node.js, php, laravel, symfony, nginx, apache, server, blog, docker, github',
       },
     }
+  },
+  mounted() {
+    let slugsArray = []
+
+    slugsArray = this.posts.map(function (item) {
+      return item.slug
+    })
+
+    const queryParams = slugsArray.join(',')
+
+    axios
+      .get(process.env.LAMBDA_GET_POST_VIEWS, {
+        params: {
+          test: queryParams,
+        },
+      })
+      .then((response) => {
+        this.views = response.data.data
+      })
   },
   methods: {
     ImageKeyboard(colorMode) {
@@ -188,6 +223,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software',
       meta: [
         {
@@ -226,20 +264,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-
-/* .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
 .container-index::after {
   content: '';
   display: block;
@@ -285,7 +309,6 @@ export default {
   transition: letter-spacing 0.2s ease;
   font-size: 14px;
   font-weight: bold;
-  // background-color: #ffdd1a;
   background-color: #f3f3f6;
   padding-left: 44px;
   padding-right: 44px;

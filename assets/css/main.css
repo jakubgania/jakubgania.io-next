@@ -44,7 +44,9 @@
   --home-page-menu-component-close-icon-color: #000;
   --home-page-cheveron-color: #000;
   --dotted-bg-color: hsl(0, 100%, 100%);
-  --dots-bg-color: hsl(0, 0%, 0%);
+  --dots-bg-color: hsl(0, 0%, 47%);
+  --top-section-container-bg-color: #f7fafc;
+  --top-section-container-bracket-color: #f2f2f2;
 }
 
 .dark-mode {
@@ -89,5 +91,8 @@
   --home-page-menu-component-close-icon-color: #fff;
   --home-page-cheveron-color: #fff;
   --dotted-bg-color: hsl(0, 0%, 0%);
-  --dots-bg-color: hsl(0, 100%, 100%);
+  --dots-bg-color: hsl(0, 0%, 33%);
+  /* --top-section-container-bg-color: #1a1a1a; */
+  --top-section-container-bg-color: #020008;
+  --top-section-container-bracket-color: #f2f2f2;
 }

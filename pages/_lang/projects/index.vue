@@ -21,8 +21,6 @@
         </div>
       </div>
       <div v-show="view == 'list'" class="list-projects-container">
-        <!-- breadcrumb -->
-        <!-- subpage title section component -->
         <div class="grid grid-rows-1">
           <p style="margin-bottom: 80px;">
             Opis moich projektów programistycznych
@@ -428,6 +426,9 @@ export default {
   // },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software | Projekty',
       meta: [
         {

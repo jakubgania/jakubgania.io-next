@@ -67,7 +67,14 @@
                         :color="'#b3b3b3'"
                       />
                       <span style="margin-left: 6px;">
-                        {{ '186' }}
+                        <template v-if="views.length > 0">
+                          {{
+                            (views &&
+                              views.find(({ slug }) => slug === post.slug)
+                                .postViewCounter) ||
+                            '0'
+                          }}
+                        </template>
                       </span>
                     </div>
                   </div>
@@ -109,12 +116,21 @@ export default {
       type: Number,
       default: 0,
     },
+    views: {
+      type: Array,
+      default: () => {
+        return {}
+      },
+    },
   },
   data() {
     return {
       mdiClockOutline,
       mdiTrendingUp,
     }
+  },
+  mounted() {
+    console.log('moutned ', this.views)
   },
 }
 </script>

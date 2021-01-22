@@ -66,6 +66,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software | Zasoby',
       meta: [
         {
@@ -113,10 +116,8 @@ export default {
 .content-container {
   max-width: 800px;
   width: 100%;
-  // margin: auto;
   margin-left: auto;
   margin-right: auto;
-  // margin-top: 100px;
   margin-bottom: 100px;
 }
 .title-category {

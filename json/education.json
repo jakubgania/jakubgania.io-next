@@ -1,0 +1,23 @@
+{
+  "titleSection": "experience.content.sections.education.title",
+  "data": [
+    {
+      "date": "2019 - 2020",
+      "title": "Studia podyplomowe",
+      "subtitle": "",
+      "description": "<p>Uczelnia - Wyższa Szkoła Informatyki i Zarządzania \"Copernicus\" we Wrocławiu</p><p>Kierunek - Multi-Cloud Architect</p>"
+    },
+    {
+      "date": "2018 - 2020",
+      "title": "Magister",
+      "subtitle": "",
+      "description": "<p>Uczelnia - Wyższa Szkoła Informatyki i Zarządzania \"Copernicus\" we Wrocławiu</p><p>Kierunek - Informatyka</p>"
+    },
+    {
+      "date": "2014 - 2018",
+      "title": "Inżynier",
+      "subtitle": "",
+      "description": "<p>Uczelnia - Wyższa Szkoła Informatyki i Zarządzania \"Copernicus\" we Wrocławiu</p><p>Kierunek - Informatyka</p><p>Specjalność - Systemy i sieci komputerowe</p><p>Specjalizacja - Inżynieria systemów informatycznych</p>"
+    }
+  ]
+}

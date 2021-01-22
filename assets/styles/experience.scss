@@ -1,0 +1,65 @@
+.xtrox {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.section-test {
+  margin-bottom: 60px;
+  display: flex;
+}
+.title-section {
+  width: 30%;
+}
+.title-text {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 4px;
+  color: var(--color-text);
+}
+.title-description-section {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: var(--color-text);
+}
+.description-section {
+  width: 70%;
+}
+.subtitle-description-section {
+  font-style: italic;
+  color: var(--color-text);
+}
+.description {
+  line-height: 2;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+}
+
+@media only screen and (max-width: 600px) {
+  .xtrox {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .section {
+    display: block;
+  }
+  .section-test {
+    display: block;
+  }
+  .title-section {
+    width: 100%;
+  }
+  .description-section {
+    width: 100%;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .title-text {
+    font-size: 12px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .title-description-section {
+    font-size: 16px;
+  }
+}

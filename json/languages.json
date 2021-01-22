@@ -1,0 +1,23 @@
+{
+  "titleSection": "experience.content.sections.languages.title",
+  "data": [
+    {
+      "date": "experience.content.sections.languages.polish.title",
+      "title": "",
+      "subtitle": "",
+      "description": "experience.content.sections.languages.polish.description"
+    },
+    {
+      "date": "experience.content.sections.languages.german.title",
+      "title": "",
+      "subtitle": "",
+      "description": "experience.content.sections.languages.german.description"
+    },
+    {
+      "date": "experience.content.sections.languages.english.title",
+      "title": "",
+      "subtitle": "",
+      "description": "experience.content.sections.languages.english.description"
+    }
+  ]
+}

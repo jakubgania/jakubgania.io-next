@@ -42,17 +42,19 @@
       }
     ],
     "projectsSection": {
-      "title": "Projekty"
+      "title": "Projekte",
+      "otherProjects": "Weitere Projekte",
+      "allProjects": "Alle Projkete"
     },
     "menuSection": {
-      "homePage": "Strona główna",
+      "homePage": "Home",
       "blogPage": "Blog",
-      "projectsPage": "Projekty",
-      "experiencePage": "Doświadczenie",
+      "projectsPage": "Projekte",
       "contactPage": "Kontakt",
-      "aboutPage": "O mnie",
-      "galleryPage": "Galeria",
-      "resourcesPage": "Zasoby",
+      "experiencePage": "Erfahrung",
+      "aboutPage": "Über mich",
+      "galleryPage": "Galerie",
+      "resourcesPage": "Ressourcen",
       "shortcuts": "Shortcuts"
     },
     "gallerySection": {
@@ -62,12 +64,47 @@
       "gallery": "Galerie"
     }
   },
+  "blog": {
+    "header": {},
+    "description": "Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno i techniczne i nie techniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu."
+  },
   "about": {
     "test": "about me - pl",
     "head": {}
   },
   "experience": {
-    "head": {}
+    "head": {},
+    "content": {
+      "sections": {
+        "experience": {
+          "title": "Erfahrung"
+        },
+        "skills": {
+          "title": "Kompetenzen"
+        },
+        "education": {
+          "title": "Bildung"
+        },
+        "certs": {
+          "title": "Zertifikate"
+        },
+        "languages": {
+          "title": "Sprachen",
+          "polish": {
+            "title": "Polnisch",
+            "description": "Muttersprache"
+          },
+          "german": {
+            "title": "Deutsche",
+            "description": "<p>Grundstufe</p><p>Od 01.09.2020 Intensivkurs.</p>"
+          },
+          "english": {
+            "title": "Englisch",
+            "description": "Basic level"
+          }
+        }
+      }
+    }
   },
   "resources": {
     "title": "",

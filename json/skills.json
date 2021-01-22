@@ -1,0 +1,421 @@
+{
+  "titleSection": "experience.content.sections.skills.title",
+  "data": [
+    {
+      "date": "Stos technologiczny",
+      "title": "",
+      "subtitle": "",
+      "description": "Technologie których używam do budowania aplikacji webowych oraz takie z którymi miałem styczność przy projektach firmowych. Są to technologie frontendowe oraz backendowe.",
+      "tags": [
+        {
+          "title": "Vue 2.x"
+        },
+        {
+          "title": "Vuetify"
+        },
+        {
+          "title": "Vuex" 
+        },
+        {
+          "title": "Axios"
+        },
+        {
+          "title": "Nuxt"
+        },
+        {
+          "title": "AngularJS 1.x"
+        },
+        {
+          "title": "HTML 5"
+        },
+        {
+          "title": "CSS 3"
+        },
+        {
+          "title": "JavaScript"
+        },
+        {
+          "title": "jQuery"
+        },
+        {
+          "title": "PHP 7.x"
+        },
+        {
+          "title": "Symfony 4.2 / 3.4 / 2.8"
+        },
+        {
+          "title": "Twig"
+        },
+        {
+          "title": "Laravel 5.6"
+        },
+        {
+          "title": "Doctrine"
+        },
+        {
+          "title": "SQL"
+        }
+      ],
+      "icons": [
+        {
+          "path": "vue.png",
+          "website": "",
+          "alt": "Vue.js logo icon",
+          "description": "Vue 2.x",
+          "tooltip": ""
+        },
+        {
+          "path": "vuetify.png",
+          "website": "",
+          "alt": "Vuetify logo icon",
+          "description": "Vuetify",
+          "tooltip": ""
+        },
+        {
+          "path": "vuex.png",
+          "website": "",
+          "alt": "Vuex icon",
+          "description": "Vuex",
+          "tooltip": ""
+        },
+        {
+          "path": "axios.png",
+          "website": "",
+          "alt": "Axios icon",
+          "description": "Axios",
+          "tooltip": ""
+        },
+        {
+          "path": "nuxtjs.png",
+          "website": "",
+          "alt": "Nuxt.js logo icon",
+          "description": "Nuxt",
+          "tooltip": ""
+        },
+        {
+          "path": "angularjs.svg",
+          "website": "",
+          "alt": "Angular.js logo icon",
+          "description": "AngularJS",
+          "tooltip": ""
+        },
+        {
+          "path": "angular.png",
+          "website": "",
+          "alt": "Angular logo icon",
+          "description": "Angular",
+          "tooltip": ""
+        },
+        {
+          "path": "html5.png",
+          "website": "",
+          "alt": "HTML5 logo icon",
+          "description": "HTML 5",
+          "tooltip": ""
+        },
+        {
+          "path": "css3.png",
+          "website": "",
+          "alt": "CSS3 logo icon",
+          "description": "CSS 3",
+          "tooltip": ""
+        },
+        {
+          "path": "javascript.png",
+          "website": "",
+          "alt": "JavaScript logo icon",
+          "description": "JavaScript",
+          "tooltip": ""
+        },
+        {
+          "path": "jquery.png",
+          "website": "",
+          "alt": "jQuery logo icon",
+          "description": "jQuery",
+          "tooltip": ""
+        },
+        {
+          "path": "php.png",
+          "website": "",
+          "alt": "PHP logo icon",
+          "description": "PHP",
+          "tooltip": ""
+        },
+        {
+          "path": "symfony.png",
+          "website": "",
+          "alt": "Symfony logo icon",
+          "description": "Symfony",
+          "tooltip": ""
+        },
+        {
+          "path": "twig.png",
+          "website": "",
+          "alt": "Twig logo icon",
+          "description": "Twig",
+          "tooltip": ""
+        },
+        {
+          "path": "laravel.png",
+          "website": "",
+          "alt": "Laravel logo icon",
+          "description": "Laravel",
+          "tooltip": ""
+        },
+        {
+          "path": "doctrine.png",
+          "website": "",
+          "alt": "Doctrine logo icon",
+          "description": "Doctrine",
+          "tooltip": ""
+        },
+        {
+          "path": "sql.png",
+          "website": "",
+          "alt": "SQL icon",
+          "description": "SQL",
+          "tooltip": ""
+        }
+      ]
+    },
+    {
+      "date": "Pojęcia",
+      "title": "",
+      "subtitle": "",
+      "description": "Niektóre pojęcia z którymi spotkałem się tworząc aplikacje webowe.",
+      "tags": [
+        {
+          "title": "SPA"
+        },
+        {
+          "title": "RWD"
+        },
+        {
+          "title": "REST API"
+        },
+        {
+          "title": "PWA"
+        },
+        {
+          "title": "MVC"
+        },
+        {
+          "title": "AJAX"
+        }
+      ]
+    },
+    {
+      "date": "Podstawowa wiedza",
+      "title": "",
+      "subtitle": "",
+      "description": "Zbiór technologi/oprogramowania z którymi miałem styczność w większym lub mniejszym stopniu.",
+      "tags": [
+        {
+          "title": "Git"
+        },
+        {
+          "title": "GitLab"
+        },
+        {
+          "title": "Git Bash"
+        },
+        {
+          "title": "Bitbucket"
+        },
+        {
+          "title": "Linux Ubuntu 16/18/20"
+        },
+        {
+          "title": "Google Analytics"
+        },
+        {
+          "title": "phpMyAdmin"
+        },
+        {
+          "title": "Docker"
+        },
+        {
+          "title": "Jira"
+        },
+        {
+          "title": "Nginx"
+        },
+        {
+          "title": "Apache"
+        },
+        {
+          "title": "Powershell"
+        },
+        {
+          "title": "npm"
+        },
+        {
+          "title": "nvm"
+        },
+        {
+          "title": "yarn"
+        },
+        {
+          "title": "Composer"
+        },
+        {
+          "title": "TypeScript"
+        },
+        {
+          "title": "Node.js"
+        },
+        {
+          "title": "Express.js"
+        },
+        {
+          "title": "React"
+        },
+        {
+          "title": "Python"
+        }
+      ],
+      "icons": [
+        {
+          "path": "github.png",
+          "website": "",
+          "alt": "Github icon logo",
+          "description": "Git",
+          "tooltip": ""
+        },
+        {
+          "path": "gitlab.png",
+          "website": "",
+          "alt": "Gitlab icon logo",
+          "description": "GitLab",
+          "tooltip": ""
+        },
+        {
+          "path": "gitbash.png",  
+          "website": "",
+          "alt": "Git Bash icon logo",
+          "description": "Git Bash",
+          "tooltip": ""
+        },
+        {
+          "path": "bitbucket.svg",
+          "website": "",
+          "alt": "Bitbucket icon logo",
+          "description": "Bitbucket",
+          "tooltip": ""
+        },
+        {
+          "path": "ubuntu.png",
+          "website": "",
+          "alt": "Linux Ubuntu logo",
+          "description": "Linux Ubuntu",
+          "tooltip": ""
+        },
+        {
+          "path": "google-analitics.svg",
+          "website": "",
+          "alt": "Google Analytics logo",
+          "description": "Google Analytics",
+          "tooltip": ""
+        },
+        {
+          "path": "phpmyadmin.jpg",
+          "website": "",
+          "alt": "phpMyAdmin icon logo",
+          "description": "phpMyAdmin",
+          "tooltip": ""
+        },
+        {
+          "path": "docker.png",
+          "website": "",
+          "alt": "Docker icon logo",
+          "description": "Docker",
+          "tooltip": ""
+        },
+        {
+          "path": "jira.png",
+          "website": "",
+          "alt": "Jira icon logo",
+          "description": "Jira",
+          "tooltip": ""
+        },
+        {
+          "path": "nginx.png",
+          "website": "",
+          "alt": "Nginx icon logo",
+          "description": "Nginx",
+          "tooltip": ""
+        },
+        {
+          "path": "apache.png",
+          "website": "",
+          "alt": "Apache icon logo",
+          "description": "Apache",
+          "tooltip": ""
+        },
+        {
+          "path": "powershell.png",
+          "website": "",
+          "alt": "Powershell icon logo",
+          "description": "Powershell",
+          "tooltip": ""
+        },
+        {
+          "path": "npm.png",
+          "website": "",
+          "alt": "Npm icon logo",
+          "description": "npm / nvm",
+          "tooltip": ""
+        },
+        {
+          "path": "yarn.png",
+          "website": "",
+          "alt": "Yarn icon logo",
+          "description": "yarn",
+          "tooltip": ""
+        },
+        {
+          "path": "composer.png",
+          "website": "",
+          "alt": "Composer icon logo",
+          "description": "Composer",
+          "tooltip": ""
+        },
+        {
+          "path": "typescript.png",
+          "website": "",
+          "alt": "TypeScript icon logo",
+          "description": "TypeScript",
+          "tooltip": ""
+        },
+        {
+          "path": "node.png",
+          "website": "",
+          "alt": "Node.js icon logo",
+          "description": "Node.js",
+          "tooltip": ""
+        },
+        {
+          "path": "express.png",
+          "website": "",
+          "alt": "Express.js icon logo",
+          "description": "Express.js",
+          "tooltip": ""
+        },
+        {
+          "path": "react.png",
+          "website": "",
+          "alt": "React icon logo",
+          "description": "React",
+          "tooltip": ""
+        },
+        {
+          "path": "python.png",
+          "website": "",
+          "alt": "Python icon logo",
+          "description": "Python",
+          "tooltip": ""
+        }
+      ]
+    }
+  ]
+}

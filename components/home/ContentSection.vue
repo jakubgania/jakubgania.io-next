@@ -320,6 +320,18 @@ export default {
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .section-content-row {
+    line-height: 1.2;
+
+    &__title {
+      & h2 {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 860px) {
   .section-content-row {
     max-width: 100%;

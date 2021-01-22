@@ -21,28 +21,22 @@
         </div> -->
         <div class="two-column xpoo" style="margin-top: -38px;">
           <div class="left-column">
-            <div
-              class="item-section"
-              style="font-size: 44px; font-weight: 900; letter-spacing: 28px;"
-            >
+            <div class="item-section-name text-item-fl">
               Jakub
             </div>
           </div>
           <div class="right-column">
-            <div
-              class="item-section"
-              style="font-size: 44px; font-weight: 900; letter-spacing: 28px;"
-            >
+            <div class="item-section-name text-item-fl">
               Gania
             </div>
           </div>
         </div>
-        <div class="two-column">
+        <div class="two-column" style="margin-top: 5px;">
           <p class="description-text">
             {{ desc }}
           </p>
         </div>
-        <div class="two-column">
+        <div class="two-column gt-m960">
           <div class="left-column">
             <div
               v-for="item in personalData.additionalInformation.leftColumn"
@@ -92,6 +86,56 @@
         </div>
       </div>
     </div>
+    <div class="two-column m600-m960" style="width: 100%;">
+      <div class="left-column" style="display: flex; width: 50%;">
+        <div
+          v-for="item in personalData.additionalInformation.leftColumn"
+          :key="item.id"
+          class="item-section"
+          style="width: 50%;"
+        >
+          <span class="personal-data-title-section">
+            <!-- <v-icon class="personal-data-icon">
+              {{ item.icon }}
+            </v-icon> -->
+            {{ item.keyName }}
+            <span class="dash">{{ ' - ' }}</span> <br />
+          </span>
+          <template v-if="item.href">
+            <a :href="item.href" target="_blank" class="personal-data-link">
+              {{ item.keyValue }}
+            </a>
+          </template>
+          <template v-else>
+            {{ item.keyValue }}
+          </template>
+        </div>
+      </div>
+      <div class="right-column" style="display: inline-flex;">
+        <div
+          v-for="item in personalData.additionalInformation.rightColumn"
+          :key="item.id"
+          class="item-section"
+          style="width: 50%;"
+        >
+          <span class="personal-data-title-section">
+            <!-- <v-icon class="personal-data-icon">
+              {{ item.icon }}
+            </v-icon> -->
+            {{ item.keyName }}
+            <span class="dash">{{ ' - ' }}</span> <br />
+          </span>
+          <template v-if="item.href">
+            <a :href="item.href" target="_blank" class="personal-data-link">
+              {{ item.keyValue }}
+            </a>
+          </template>
+          <template v-else>
+            {{ item.keyValue }}
+          </template>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -128,10 +172,8 @@ export default {
 
 <style lang="scss" scoped>
 .top-section-container {
-  // font-family: 'Nunito', sans-serif;
-  background-color: #fafafa;
+  background-color: transparent;
   margin-top: 80px;
-  // margin-bottom: 140px;
   position: relative;
   z-index: 0;
 }
@@ -140,16 +182,17 @@ export default {
 }
 .img-section {
   width: 30%;
-  // margin-bottom: -6px;
 }
 .profile-image {
   width: 90%;
+  border-radius: 340px;
 }
 .full-name {
   font-size: 44px;
   text-align: left;
   margin-top: 20px;
   font-weight: 900;
+  color: var(--color-text);
 
   & br {
     display: none;
@@ -158,13 +201,18 @@ export default {
 .two-column {
   display: flex;
   margin-top: 25px;
-  padding-right: 20px;
+  // padding-right: 20px;
 }
 .left-column {
   width: 50%;
 }
 .right-column {
   width: 50%;
+}
+.text-item-fl {
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 28px;
 }
 .personal-data-section {
   width: 70%;
@@ -200,13 +248,54 @@ export default {
 .item-section {
   padding-bottom: 14px;
   font-size: 14px;
+  color: var(--color-text);
+}
+.item-section-name {
+  padding-bottom: 14px;
+  color: var(--color-text);
+}
+.m600-m960 {
+  display: none;
+}
+.gt-m960 {
+  display: flex;
+}
+.description-text {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f2f2f2;
+}
+
+@media only screen and (max-width: 1080px) {
+  .m600-m960 {
+    display: flex;
+  }
+  .gt-m960 {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 960px) {
   .full-name {
     font-size: 36px;
   }
+  .text-item-fl {
+    font-size: 3vw;
+    letter-spacing: 18px;
+  }
+  .item-section {
+    font-size: 12px;
+  }
+  // .personal-data-section {
+  //   padding-left: 10px;
+  // }
   .personal-data-title-section {
+    font-size: 12px;
     br {
       display: inline;
     }
@@ -217,6 +306,25 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
+  .gt-m960 {
+    display: flex;
+  }
+  .m600-m960 {
+    display: none;
+  }
+  .xpoo {
+    display: none;
+  }
+  .desktop-version {
+    display: none;
+  }
+  .mobile-version {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .top-section {
+    display: inline;
+  }
   .top-section-container {
     padding-left: 14px;
     padding-right: 14px;
@@ -231,47 +339,41 @@ export default {
   }
   .full-name {
     width: 66%;
-    font-size: 8vw;
+    font-size: 4.8vw;
     letter-spacing: 6px;
-    padding-left: 28px;
+    padding-left: 20px;
+    margin-top: 0;
     text-align: left;
-    line-height: 1;
+    line-height: 6;
 
-    & br {
-      display: flex;
-    }
+    // & br {
+    //   display: flex;
+    // }
   }
   .two-column {
     padding-bottom: 14px;
+    width: 100%;
   }
   .description-text {
     font-size: 14px;
     letter-spacing: 0.4px;
   }
-  .mobile-version {
-    display: inline;
-  }
-  .desktop-version {
-    display: none;
-  }
-  .top-section {
-    display: inline;
-  }
-  .personal-data-section {
-    width: 100%;
-  }
   .dash {
     display: none;
   }
+  .item-section {
+    font-size: 12px;
+  }
+  .personal-data-section {
+    padding-left: 0;
+    width: 100%;
+  }
   .personal-data-title-section {
-    font-size: 14px;
+    font-size: 12px;
 
     br {
       display: inline;
     }
-  }
-  .xpoo {
-    display: none;
   }
 }
 </style>

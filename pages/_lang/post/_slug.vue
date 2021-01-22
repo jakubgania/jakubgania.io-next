@@ -32,7 +32,14 @@
             Wyświetlenia
           </strong>
           <span style="display: block;">
-            {{ viewCounter }}
+            <template v-if="views.length > 0">
+              {{
+                (views &&
+                  views.find(({ slug }) => slug === post.slug)
+                    .postViewCounter) ||
+                '0'
+              }}
+            </template>
           </span>
         </div>
       </div>
@@ -87,9 +94,6 @@
           </div>
         </div>
         <div class="post-content">
-          <!-- <div>
-            breadcrumb
-          </div> -->
           <nuxt-content :document="post" class="post" />
         </div>
         <AboutCreator />
@@ -129,7 +133,14 @@
                   :color="'#000'"
                 />
                 <span style="margin-left: 6px;">
-                  {{ '424' }}
+                  <template v-if="views.length > 0">
+                    {{
+                      (views &&
+                        views.find(({ slug }) => slug === next.slug)
+                          .postViewCounter) ||
+                      '0'
+                    }}
+                  </template>
                 </span>
               </div>
               <div class="related-post-item-description">
@@ -167,7 +178,14 @@
                   :color="'#000'"
                 />
                 <span style="margin-left: 6px;">
-                  {{ '424' }}
+                  <template v-if="views.length > 0">
+                    {{
+                      (views &&
+                        views.find(({ slug }) => slug === prev.slug)
+                          .postViewCounter) ||
+                      '0'
+                    }}
+                  </template>
                 </span>
               </div>
               <div class="related-post-item-description">
@@ -266,12 +284,15 @@ export default {
       mdiClockOutline,
       mdiTrendingUp,
       viewCounter: null,
+      views: [],
     }
   },
   mounted() {
     if (process.env.NODE_ENV === 'production') {
+      const slug = this.$router.history.current.params.slug
+
       axios
-        .get(process.env.LAMBDA_PRODUCTION_URL_POST_VIEWS_COUNTER)
+        .get(process.env.LAMBDA_PRODUCTION_URL_POST_VIEWS_COUNTER + slug)
         .then((response) => {
           this.viewCounter = response.data.views
         })
@@ -284,9 +305,26 @@ export default {
           this.viewCounter = response.data.views
         })
     }
+
+    const slugsArray = [this.post.slug, this.next.slug, this.prev.slug]
+
+    const queryParams = slugsArray.join(',')
+
+    axios
+      .get(process.env.LAMBDA_GET_POST_VIEWS, {
+        params: {
+          test: queryParams,
+        },
+      })
+      .then((response) => {
+        this.views = response.data.data
+      })
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: this.post.title + ' | Jakub Gania Software',
       meta: [
         {
@@ -338,7 +376,6 @@ export default {
 
 <style lang="scss">
 .post {
-  // font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   letter-spacing: 0.2px;
   line-height: 1.8;
@@ -497,11 +534,6 @@ export default {
   position: relative;
   overflow: hidden;
 }
-// .related-posts-figure::after {
-//   content: '';
-//   display: table;
-//   clear: both;
-// }
 .related-posts-figure::before {
   display: block;
   content: '';
@@ -593,6 +625,9 @@ export default {
 @media only screen and (max-width: 1800px) {
   .top-image {
     min-height: auto;
+  }
+  .related-posts-item {
+    width: 48%;
   }
 }
 @media only screen and (max-width: 1200px) {

@@ -13,7 +13,7 @@
               class="list-item-link"
               @click.native="showScrollbar()"
             >
-              { {{ $t(item.title) }} }
+              { {{ $t(item.name) }} }
             </nuxt-link>
           </ul>
         </li>

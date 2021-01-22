@@ -1,3 +1,4 @@
+import getRoutes from "./utils/getRoutes";
 const webpack = require("webpack");
   
 // const BASE_PATH = process.env.BASE_PATH || '/jakubgania.io/'
@@ -130,6 +131,7 @@ export default {
     '@nuxt/content',
     '@nuxtjs/apollo',
     '@nuxtjs/device',
+    '@nuxtjs/sitemap',
   ],
 
   apollo: {
@@ -165,7 +167,28 @@ export default {
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
    */
-  content: {},
+  content: {
+    fullTextSearchFields: ['title', 'description'],
+  },
+
+  i18n: {
+    defaultLocale: 'pl',
+    locales: ['en', 'de'],
+  },
+
+  sitemap: {
+    hostname: 'https://jakubgania.io',
+    gzip: true,
+    // i18n: true,
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
+    },
+    routes() {
+      return getRoutes();
+    },
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

@@ -18,7 +18,7 @@
           <ul v-for="item in items" :key="item.title">
             <li class="list-item" @click="$emit('switchNavigationDrawer')">
               <nuxt-link :to="$i18n.path(item.path)" class="link-item">
-                {{ $t(item.title) }}
+                {{ $t(item.name) }}
               </nuxt-link>
             </li>
           </ul>
@@ -34,7 +34,8 @@
               class="social-link-item"
             >
               <IconComponent
-                :path="socialIcons[index]"
+                :path="socialIcons[index].value"
+                :size="socialIcons[index].size"
                 :color="'--navigation-drawer-social-icon-color'"
                 :var="true"
               />
@@ -47,7 +48,7 @@
 </template>
 
 <script>
-import { mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
+import { mdiGithub, mdiTwitter, mdiYoutube } from '@mdi/js'
 import socialLinksItems from '../json/social-links.json'
 import menuItems from '../json/menu.json'
 import IconComponent from '../components/Icon'
@@ -64,7 +65,29 @@ export default {
   },
   data() {
     return {
-      socialIcons: [mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube],
+      socialIcons: [
+        {
+          id: 'github',
+          value: mdiGithub,
+          size: 24,
+        },
+        {
+          id: 'linkedin',
+          value:
+            'M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z',
+          size: 20,
+        },
+        {
+          id: 'twitter',
+          value: mdiTwitter,
+          size: 24,
+        },
+        {
+          id: 'youtube',
+          value: mdiYoutube,
+          size: 24,
+        },
+      ],
       socialLinks: socialLinksItems.data,
       items: menuItems.menu,
     }

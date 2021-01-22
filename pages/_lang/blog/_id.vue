@@ -38,6 +38,40 @@
 
         <div style="height: 1px; border-top: 1px solid #f2f2f2;" />
 
+        <div style="position: relative;">
+          <input
+            v-model="searchQuery"
+            type="search"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Szukaj"
+            class="inp-sear-test"
+            id="search-input"
+          />
+          <div class="input-wrapper-svg" @click="clearInput()">
+            <svg class="input-icon-svg" viewBox="0 0 24 24">
+              <path
+                :d="
+                  articles.length || searchQuery.length ? mdiClose : mdiMagnify
+                "
+              />
+            </svg>
+          </div>
+          <ul v-if="articles.length" class="ul-ser-inp" id="results-list">
+            <li v-for="article of articles" :key="article.slug">
+              <div>
+                <NuxtLink
+                  :to="{ name: 'post-slug', params: { slug: article.slug } }"
+                >
+                  <div class="nuxt-link-list-article">
+                    {{ article.title }}
+                  </div>
+                </NuxtLink>
+              </div>
+            </li>
+          </ul>
+        </div>
+
         <ul style="margin-top: 60px;">
           <li v-for="post of posts" :key="post.slug" class="post-link-item">
             <nuxt-link :to="$i18n.path('post/' + post.slug)" class="post-link">
@@ -97,7 +131,14 @@
                         :color="'#b3b3b3'"
                       />
                       <span style="margin-left: 6px;">
-                        {{ '424' }}
+                        <template v-if="views.length > 0">
+                          {{
+                            (views &&
+                              views.find(({ slug }) => slug === post.slug)
+                                .postViewCounter) ||
+                            '0'
+                          }}
+                        </template>
                       </span>
                     </div>
                   </div>
@@ -113,7 +154,7 @@
           <div style="width: 50%;">
             <template v-if="$route.params.id > 1">
               <MoreContentButtonComponent
-                :text="'< Poprzednie'"
+                :text="'Poprzednie'"
                 :link="prevLink()"
               />
             </template>
@@ -127,9 +168,12 @@
               "
             >
               <MoreContentButtonComponent
-                :text="'Następne >'"
+                :text="'Następne'"
                 :link="getLink()"
               />
+              <!-- <nuxt-link :to="getLink()">
+                Natępne
+              </nuxt-link> -->
             </template>
           </div>
         </div>
@@ -140,7 +184,8 @@
 </template>
 
 <script>
-import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
+import axios from 'axios'
+import { mdiClockOutline, mdiMagnify, mdiClose, mdiTrendingUp } from '@mdi/js'
 import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 import MoreContentButtonComponent from '../../../components/MoreContentButton'
 import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
@@ -184,12 +229,6 @@ export default {
         Math.floor(numberOfPosts.length / paginationValue) + 1
     }
 
-    // const posts = await $content('posts/' + language, params.slug)
-    //   .only(['title', 'thumbnail', 'description', 'slug', 'creationDate'])
-    //   .sortBy('index', 'desc')
-    //   .limit(pageNumber * paginationValue)
-    //   .fetch()
-
     pageNumber = pageNumber - 1
 
     const posts = await $content('posts/' + language, params.slug)
@@ -209,11 +248,48 @@ export default {
     return {
       mdiClockOutline,
       mdiTrendingUp,
-      desc:
-        'Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno i techniczne i nie techniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu.',
+      mdiMagnify,
+      mdiClose,
+      desc: this.$t('blog.description'),
+      searchQuery: '',
+      articles: [],
+      views: [],
     }
   },
+  watch: {
+    async searchQuery(searchQuery) {
+      if (!searchQuery) {
+        this.articles = []
+        return
+      }
+      console.log('search query ', searchQuery)
+      this.articles = await this.$content('posts/pl')
+        .only(['title', 'slug'])
+        .sortBy('index', 'desc')
+        .limit(8)
+        .search(searchQuery)
+        .fetch()
+    },
+  },
   mounted() {
+    let slugsArray = []
+
+    slugsArray = this.posts.map(function (item) {
+      return item.slug
+    })
+
+    const queryParams = slugsArray.join(',')
+
+    axios
+      .get(process.env.LAMBDA_GET_POST_VIEWS, {
+        params: {
+          test: queryParams,
+        },
+      })
+      .then((response) => {
+        this.views = response.data.data
+      })
+
     // const topImageElement = document.querySelector('#top-image')
 
     // window.addEventListener('scroll', function () {
@@ -228,6 +304,19 @@ export default {
       const element = document.getElementById('content')
       if (element !== null) {
         element.scrollIntoView()
+      }
+    }
+
+    if (process.browser) {
+      document.onclick = function (e, el) {
+        console.log('e target ', e.target.id)
+
+        if (e.target.id !== 'search-input') {
+          // console.log('if e target close ', this.articles)
+          // this.articles = []
+        }
+
+        // console.log('this el ', this.$el.articles)
       }
     }
   },
@@ -252,9 +341,18 @@ export default {
       pageNumber++
       return 'blog/' + pageNumber
     },
+    clearInput() {
+      if (this.articles.length || this.searchQuery.length) {
+        this.articles = []
+        this.searchQuery = ''
+      }
+    },
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software | Blog',
       meta: [
         {
@@ -336,7 +434,6 @@ export default {
   margin-top: 0;
   margin-bottom: 60px;
   padding: 0;
-  // font-family: 'Roboto Mono', monospace;
 }
 .post-link-dark-theme {
   color: #bfbfbf;
@@ -418,6 +515,71 @@ export default {
 }
 .mobile-xs-b {
   display: inherit;
+}
+.inp-sear-test {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 44px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 60px;
+  background-color: #f7fafc;
+}
+.ul-ser-inp {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  flex: 1 1 0%;
+  padding-top: -2px;
+  padding-bottom: -2px;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.ul-ser-inp > li > a {
+  width: 100%;
+}
+.nuxt-link-list-article {
+  letter-spacing: 1px;
+  font-size: 12.8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+.nuxt-link-a {
+  width: 100%;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+.input-wrapper-svg {
+  position: absolute;
+  top: 76px;
+  right: 10px;
+}
+.input-icon-svg {
+  fill: #e2e8f0;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    fill: #d5dae1;
+  }
 }
 
 @media only screen and (max-width: 1240px) {

@@ -57,6 +57,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: 'Jakub Gania Software | Galeria',
       meta: [
         {
@@ -78,7 +81,6 @@ export default {
 }
 .top-section-title {
   max-width: 1000px;
-  // text-align: center;
   margin-bottom: 10px;
   padding-top: 80px;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
@@ -110,12 +112,10 @@ export default {
 .close-icon {
   position: absolute;
   right: 24px;
-  // top: 50%;
   width: 32px;
   height: 32px;
   opacity: 0.6;
   color: white;
-  // color: var(--navigation-drawer-close-button-color);
 }
 .close-icon:hover {
   opacity: 1;

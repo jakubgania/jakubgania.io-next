@@ -26,20 +26,27 @@
                   <template
                     v-if="
                       element.lang
-                        ? (element.link || element.link === '') &&
+                        ? (element.path || element.path === '') &&
                           element.lang === getLocale()
-                        : element.link || element.link === ''
+                        : element.path || element.path === ''
                     "
                   >
                     <nuxt-link
-                      :to="$i18n.path(element.link)"
+                      :to="$i18n.path(element.path)"
                       class="footer-container__site-column-link"
                     >
                       <template v-if="element.name.length > 32">
                         {{ element.name.substring(0, 32) }} ...
                       </template>
                       <template v-else>
-                        {{ element.name }}
+                        <template
+                          v-if="item.idColumn && item.idColumn == 'pages'"
+                        >
+                          {{ $t(element.name) }}
+                        </template>
+                        <template v-else>
+                          {{ element.name }}
+                        </template>
                       </template>
                     </nuxt-link>
                   </template>
@@ -60,9 +67,15 @@
         <div style="margin-left: 10px; margin-top: 20px; font-size: 12px;">
           <div v-if="$store.state.locale === 'pl'">
             <nuxt-link to="/de">DE</nuxt-link>
+            <nuxt-link to="/en">EN</nuxt-link>
           </div>
           <div v-if="$store.state.locale === 'de'">
             <nuxt-link to="/">PL</nuxt-link>
+            <nuxt-link to="/en">EN</nuxt-link>
+          </div>
+          <div v-if="$store.state.locale === 'en'">
+            <nuxt-link to="/">PL</nuxt-link>
+            <nuxt-link to="/de">DE</nuxt-link>
           </div>
         </div>
         <div class="footer-container__other-elements">
@@ -161,6 +174,7 @@ import { mdiChevronRight, mdiTranslate, mdiBrightness6 } from '@mdi/js'
 import gql from 'graphql-tag'
 import LogoComponent from '../components/Logo'
 import IconComponent from '../components/Icon'
+import menuItems from '../json/menu.json'
 
 const githubDataQuery = gql`
   query viewer {
@@ -219,45 +233,17 @@ export default {
           name: 'Germany',
           value: 'de',
         },
+        {
+          name: 'English',
+          value: 'en',
+        },
       ],
       copyrightText: `&copy; 2018 - ${this.getFullYear()} Jakub Gania Software`,
       sites: [
         {
+          idColumn: 'pages',
           titleColumn: 'Strony',
-          elements: [
-            {
-              name: 'Home',
-              link: '',
-            },
-            {
-              name: 'O mnie',
-              link: 'about',
-            },
-            {
-              name: 'Blog',
-              link: 'blog',
-            },
-            {
-              name: 'Doświadczenie',
-              link: 'experience',
-            },
-            {
-              name: 'Projekty',
-              link: 'projects',
-            },
-            {
-              name: 'Kontakt',
-              link: 'contact',
-            },
-            {
-              name: 'Galeria',
-              link: 'gallery',
-            },
-            {
-              name: 'Zasoby',
-              link: 'resources',
-            },
-          ],
+          elements: menuItems.menu,
         },
         {
           titleColumn: 'Posty',
@@ -265,29 +251,34 @@ export default {
             {
               lang: 'pl',
               name: 'Tylko logo a jednak komponent',
-              link: 'post/06-12-2019-tylko-logo-a-jednak-komponent',
+              path: 'post/06-12-2019-tylko-logo-a-jednak-komponent',
             },
             {
               lang: 'pl',
               name: 'Listopad - podsumowanie',
-              link: 'post/03-12-2019-listopad-podsumowanie',
+              path: 'post/03-12-2019-listopad-podsumowanie',
             },
             {
               lang: 'pl',
               name: 'ITCorner Tech Meetup #5 Jak zostać dobrym seniorem w IT ?',
-              link:
+              path:
                 'post/30-11-2019-itcorner-tech-meetup-5-jak-zostac-dobrym-seniorem-w-it',
             },
             {
               lang: 'pl',
               name: 'Nieskończone możliwości eksperymentowania i tworzenia',
-              link:
+              path:
                 'post/25-11-2019-nieskonczone-mozliwosci-eksperymentowania-i-tworzenia',
             },
             {
               lang: 'de',
               name: 'Start',
-              link: 'post/hello',
+              path: 'post/hallo',
+            },
+            {
+              lang: 'en',
+              name: 'Start',
+              path: 'post/hello',
             },
           ],
         },
@@ -348,14 +339,21 @@ export default {
     changeLanguage(e) {
       let route = ''
 
+      console.log('$route ', this.$route)
+
       if (this.$route.name === 'index') {
         this.routerPush('lang', e.target.value)
       } else {
         if (e.target.value === 'de') {
-          route = `lang-${this.$route.name}`
+          // route = `lang-${this.$route.name}`
+          route = 'lang'
+        } else if (e.target.value === 'en') {
+          route = `lang`
         } else {
           route = this.$route.name
         }
+
+        console.log('route ', route)
 
         this.routerPush(route, e.target.value)
       }
@@ -445,7 +443,7 @@ export default {
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #4d4d4d;
+    color: #cecece;
     font-size: 18px;
   }
   &__site-column-link {
@@ -632,44 +630,55 @@ export default {
     &__logo-section {
       width: 100%;
     }
+
     &__x {
       width: 100%;
       padding-left: 0;
     }
+
     &__sitemap-section {
       display: block;
       padding-left: 14px;
       padding-right: 14px;
     }
+
     &__sites-section {
       flex-wrap: wrap;
     }
+
     &__site-column-section {
       padding-left: 0;
       width: 100%;
     }
+
     &__site-column-title {
       font-size: 14px;
       font-weight: 600;
     }
+
     &__other-elements {
       display: inline-block;
     }
+
     &__copyright-section {
       padding-left: 14px;
       padding-right: 14px;
     }
+
     &__copyright-text {
       letter-spacing: 1px;
     }
+
     &__github-button-section {
       width: 100%;
       text-align: left;
       margin-top: 18px;
     }
+
     &__dark-theme-switch-section {
       width: 100%;
     }
+
     &__bottom-section {
       padding-left: 14px;
       padding-right: 14px;

@@ -33,8 +33,8 @@
             style="display: inline-flex;"
           >
             <IconComponent
-              :path="mdiLinkedin"
-              :size="44"
+              :path="linkedin"
+              :size="37"
               :color="'#0077b5'"
               :var="false"
             />
@@ -85,7 +85,7 @@
 </template>
 
 <script>
-import { mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
+import { mdiGithub, mdiTwitter, mdiYoutube } from '@mdi/js'
 import IconComponent from '../../components/Icon'
 
 export default {
@@ -95,9 +95,10 @@ export default {
   data() {
     return {
       mdiGithub,
-      mdiLinkedin,
       mdiTwitter,
       mdiYoutube,
+      linkedin:
+        'M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z',
       links: {
         github: 'https://github.com/jakubgania',
         linkedin: 'https://pl.linkedin.com/in/jakubgania',
@@ -105,6 +106,9 @@ export default {
         youtube: 'https://www.youtube.com/channel/UCpRXjQ_FgRfAqP6uIsA7UEQ',
       },
     }
+  },
+  mounted() {
+    console.log('icon ', mdiGithub)
   },
 }
 </script>

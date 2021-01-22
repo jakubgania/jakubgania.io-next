@@ -28,6 +28,10 @@ export default {
       language = 'de'
     }
 
+    if (params.lang === 'en') {
+      language = 'en'
+    }
+
     const project = await $content('projects/' + language, params.slug).fetch()
 
     return {
@@ -36,6 +40,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       title: this.project.title + ' | Jakub Gania Software',
       meta: [
         {
@@ -88,7 +95,6 @@ export default {
   background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fillRule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="%23FF5F56" stroke="%23E0443E" strokeWidth=".5" /><circle cx="26" cy="6" r="6" fill="%23FFBD2E" stroke="%23DEA123" strokeWidth=".5" /><circle cx="46" cy="6" r="6" fill="%2327C93F" stroke="%231AAB29" strokeWidth=".5" /></g></svg>');
   background-repeat: no-repeat;
   background-position: 16px 16px;
-  // box-shadow: 5px 5px 15px 0 rgba(50, 50, 50, 0.75);
   box-shadow: 5px 5px 15px 0 rgba(190, 190, 190, 0.6);
   background-color: #f0f0f0;
   padding-bottom: 14px;
@@ -104,10 +110,6 @@ export default {
     border-radius: 10px;
   }
 }
-// .nuxt-content div pre code {
-//   padding-left: 10px;
-//   padding-right: 10px;
-// }
 .nuxt-content div pre code .token.operator,
 .token.entity,
 .token.url,
@@ -115,12 +117,6 @@ export default {
 .style .token.string {
   background-color: #f0f0f0;
 }
-// .nuxt-content div pre code span > .token.operator {
-//   background-color: #f0f0f0;
-// }
-// .nuxt-content > div > pre > code > span > .token .operator {
-//   background-color: #f0f0f0;
-// }
 .nuxt-content li {
   position: relative;
 

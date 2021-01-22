@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default () =>
   new Vuex.Store({
     state: {
-      locales: ['pl', 'de'],
+      locales: ['pl', 'de', 'en'],
       locale: 'pl',
     },
     mutations: {

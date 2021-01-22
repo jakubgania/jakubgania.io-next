@@ -1,0 +1,137 @@
+{
+  "home": {
+    "test": "jakubgania.io - pl",
+    "menu": {
+      "homePage": "Home",
+      "blogPage": "Blog",
+      "projectsPage": "Projects",
+      "contactPage": "Contact",
+      "experiencePage": "Experience",
+      "aboutPage": "About",
+      "galleryPage": "Gallery",
+      "resourcesPage": "Resources"
+    },
+    "contentSection": [
+      {
+        "title": {
+          "part1": "Web",
+          "part2": "technologies"
+        },
+        "description": "The main technologies in which I specialize are technologies from the broadly understood web stack. These are frontend technologies such as React, Vue, Angular, Nuxt, Next and backend technologies such as Node. I create various scripts using Bash or Python. Most of the results of my work and experiments with code and projects are placed on the GitHub platform."
+      },
+      {
+        "title": {
+          "part1": "Cloud",
+          "part2": "technologies"
+        },
+        "description": "Cloud technologies are a very important aspect of modern IT systems. The cloud enables virtually unlimited scaling of the application and easy integration of many different components. Cloud services offer many possibilities and a different approach to building complex structures. This is the direction in which I have been developing since the fall of 2019 and it attracts me more and more."
+      },
+      {
+        "title": {
+          "part1": "Software",
+          "part2": "Engineering"
+        },
+        "description": "The field of software engineering is an extremely complex issue. Application development in various technologies, different concepts of programming languages, various architectures, security, databases ... You can exchange endlessly and trends and technologies are evolving. All this interests me very much, so I try to get to know better all the aspects related to it."
+      },
+      {
+        "title": {
+          "part1": "IT and",
+          "part2": "technologies"
+        },
+        "description": "Broadly understood IT and various other technologies are constantly developing incredibly fast. Issues such as artificial intelligence or Big Data are terms used on a daily basis around the world. Today, it is difficult to analyze a large set of data without supporting the search process with AI-based systems or in general I Big Data analysis."
+      }
+    ],
+    "projectsSection": {
+      "title": "Projects",
+      "otherProjects": "Other projects",
+      "allProjects": "All projects"
+    },
+    "menuSection": {
+      "homePage": "Home",
+      "blogPage": "Blog",
+      "projectsPage": "Projects",
+      "experiencePage": "Experience",
+      "contactPage": "Contact",
+      "aboutPage": "About me",
+      "galleryPage": "Gallery",
+      "resourcesPage": "Resources",
+      "shortcuts": "Shortcuts"
+    },
+    "gallerySection": {
+      "blog": "Blog",
+      "experience": "Experience",
+      "contact": "Contact",
+      "gallery": "Gallery"
+    }
+  },
+  "blog": {
+    "header": {},
+    "description": "Feel free to read my blog posts. I describe various topics, both technical and non-technical. Sometimes it's just my thoughts on a given situation, some opinion about a book I read, sometimes about technologies or projects I'm working on. Of course, posts are written only through the prism of my personal experiences and thoughts. Posts appear regularly sometimes and sometimes not, it all depends on the time available."
+  },
+  "about": {
+    "test": "about me - pl",
+    "head": {}
+  },
+  "experience": {
+    "head": {},
+    "content": {
+      "sections": {
+        "experience": {
+          "title": "Experience"
+        },
+        "skills": {
+          "title": "Skills"
+        },
+        "education": {
+          "title": "Education"
+        },
+        "certificates": {
+          "title": "Certificates",
+          "items": [
+            {
+              "": ""
+            }
+          ]
+        },
+        "languages": {
+          "title": "Languages",
+          "polish": {
+            "title": "Polish",
+            "description": "Native language"
+          },
+          "german": {
+            "title": "German",
+            "description": "<p>Basic level</p><p>Od 01.09.2020 intensive course.</p>"
+          },
+          "english": {
+            "title": "English",
+            "description": "Basic level"
+          }
+        }
+      }
+    }
+  },
+  "resources": {
+    "title": "",
+    "dataLinks": {
+      "categories": "Kategorie",
+      "programming": "Programowanie",
+      "software": "Software",
+      "google": "Google",
+      "technologicalPortals": "Portale technologiczne",
+      "blogs": "Blog",
+      "youtube": "Youtube",
+      "security": "Bezpieczeństwo",
+      "programmingTasks": "Zadania programistyczne",
+      "variousWebsites": "Różne strony",
+      "cryptocurrencies": "Kryptowaluty",
+      "githubCommands": "Github - polecenia",
+      "dockerCommands": "Docker - polecenia",
+      "otherCommands": "Inne"
+    }
+  },
+  "moreContentButton": {
+    "morePosts": "More posts",
+    "moreProjects": "Other projects"
+  }
+}
