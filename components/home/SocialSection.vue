@@ -107,9 +107,6 @@ export default {
       },
     }
   },
-  mounted() {
-    console.log('icon ', mdiGithub)
-  },
 }
 </script>
 

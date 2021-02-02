@@ -32,14 +32,7 @@
             Wyświetlenia
           </strong>
           <span style="display: block;">
-            <template v-if="views.length > 0">
-              {{
-                (views &&
-                  views.find(({ slug }) => slug === post.slug)
-                    .postViewCounter) ||
-                '0'
-              }}
-            </template>
+            <ViewsCounterComponent :views="views" :post-slug="post.slug" />
           </span>
         </div>
       </div>
@@ -133,14 +126,10 @@
                   :color="'#000'"
                 />
                 <span style="margin-left: 6px;">
-                  <template v-if="views.length > 0">
-                    {{
-                      (views &&
-                        views.find(({ slug }) => slug === next.slug)
-                          .postViewCounter) ||
-                      '0'
-                    }}
-                  </template>
+                  <ViewsCounterComponent
+                    :views="views"
+                    :post-slug="next.slug"
+                  />
                 </span>
               </div>
               <div class="related-post-item-description">
@@ -178,14 +167,10 @@
                   :color="'#000'"
                 />
                 <span style="margin-left: 6px;">
-                  <template v-if="views.length > 0">
-                    {{
-                      (views &&
-                        views.find(({ slug }) => slug === prev.slug)
-                          .postViewCounter) ||
-                      '0'
-                    }}
-                  </template>
+                  <ViewsCounterComponent
+                    :views="views"
+                    :post-slug="prev.slug"
+                  />
                 </span>
               </div>
               <div class="related-post-item-description">
@@ -214,22 +199,28 @@ import axios from 'axios'
 import AboutCreator from '@/components/AboutCreator'
 import IconComponent from '../../../components/Icon'
 import BreadcrumbsComponent from '../../../components/Breadcrumbs'
+import ViewsCounterComponent from '../../../components/post/ViewsCounter'
 
 export default {
   components: {
     AboutCreator,
     IconComponent,
     BreadcrumbsComponent,
+    ViewsCounterComponent,
   },
   async asyncData({ $content, params, store }) {
-    let language = store.state.locale
+    const language = store.state.locale
     let next = null
     let prev = null
     let numberOfPosts = null
 
-    if (params.lang === 'de') {
-      language = 'de'
-    }
+    // console.log('params.lang ', language)
+
+    // if (params.lang === 'de') {
+    //   language = 'de'
+    // }
+
+    // language = 'en'
 
     const post = await $content('posts/' + language, params.slug).fetch()
     const allPosts = await $content('posts/' + language, undefined).fetch()
@@ -306,7 +297,11 @@ export default {
         })
     }
 
-    const slugsArray = [this.post.slug, this.next.slug, this.prev.slug]
+    const slugsArray = []
+
+    if (this.post && this.post.slug) slugsArray.push(this.post.slug)
+    if (this.next && this.next.slug) slugsArray.push(this.next.slug)
+    if (this.prev && this.prev.slug) slugsArray.push(this.prev.slug)
 
     const queryParams = slugsArray.join(',')
 
@@ -317,7 +312,11 @@ export default {
         },
       })
       .then((response) => {
-        this.views = response.data.data
+        if (response && response.data.data) {
+          this.views = response.data.data
+        } else {
+          this.views = null
+        }
       })
   },
   head() {

@@ -3,7 +3,7 @@
     <div class="footer-container__sitemap-section">
       <div class="footer-container__logo-section">
         <nuxt-link :to="$i18n.path('')">
-          <LogoComponent :normal-font-size="true" />
+          <!-- <LogoComponent :normal-font-size="true" /> -->
         </nuxt-link>
       </div>
       <div class="footer-container__x">
@@ -64,20 +64,7 @@
             </div>
           </div>
         </div>
-        <div style="margin-left: 10px; margin-top: 20px; font-size: 12px;">
-          <div v-if="$store.state.locale === 'pl'">
-            <nuxt-link to="/de">DE</nuxt-link>
-            <nuxt-link to="/en">EN</nuxt-link>
-          </div>
-          <div v-if="$store.state.locale === 'de'">
-            <nuxt-link to="/">PL</nuxt-link>
-            <nuxt-link to="/en">EN</nuxt-link>
-          </div>
-          <div v-if="$store.state.locale === 'en'">
-            <nuxt-link to="/">PL</nuxt-link>
-            <nuxt-link to="/de">DE</nuxt-link>
-          </div>
-        </div>
+        <ShortLanguagesNamesComponent />
         <div class="footer-container__other-elements">
           <div class="footer-container__github-button-section">
             <a
@@ -160,7 +147,9 @@
           </div>
           <div class="footer-container__sect-copy">
             <div class="footer-container__copyright-text">
-              <div v-html="copyrightText" />
+              <div>
+                {{ '&copy; 2018 -' + copyrightText }}
+              </div>
             </div>
           </div>
         </div>
@@ -172,8 +161,9 @@
 <script>
 import { mdiChevronRight, mdiTranslate, mdiBrightness6 } from '@mdi/js'
 import gql from 'graphql-tag'
-import LogoComponent from '../components/Logo'
+// import LogoComponent from '../components/Logo'
 import IconComponent from '../components/Icon'
+import ShortLanguagesNamesComponent from '../components/footer/ShorLanguagesNames'
 import menuItems from '../json/menu.json'
 
 const githubDataQuery = gql`
@@ -194,8 +184,9 @@ const githubDataQuery = gql`
 
 export default {
   components: {
-    LogoComponent,
+    // LogoComponent,
     IconComponent,
+    ShortLanguagesNamesComponent,
   },
   apollo: {
     viewer: {
@@ -238,7 +229,7 @@ export default {
           value: 'en',
         },
       ],
-      copyrightText: `&copy; 2018 - ${this.getFullYear()} Jakub Gania Software`,
+      copyrightText: `${this.getFullYear()} Jakub Gania Software`,
       sites: [
         {
           idColumn: 'pages',
@@ -339,21 +330,16 @@ export default {
     changeLanguage(e) {
       let route = ''
 
-      console.log('$route ', this.$route)
-
       if (this.$route.name === 'index') {
         this.routerPush('lang', e.target.value)
       } else {
         if (e.target.value === 'de') {
-          // route = `lang-${this.$route.name}`
           route = 'lang'
         } else if (e.target.value === 'en') {
           route = `lang`
         } else {
           route = this.$route.name
         }
-
-        console.log('route ', route)
 
         this.routerPush(route, e.target.value)
       }
@@ -413,13 +399,16 @@ export default {
   padding-top: 3vw;
   padding-bottom: 3vw;
   border-top: 1px solid var(--footer-container-border-color);
+
   &__logo-section {
     width: 30%;
   }
+
   &__x {
     padding-left: 20px;
     width: 70%;
   }
+
   &__sitemap-section {
     width: 100%;
     margin: auto;
@@ -429,16 +418,18 @@ export default {
     padding-left: 10vw;
     padding-right: 10vw;
   }
+
   &__sites-section {
     display: flex;
     width: 100%;
   }
+
   &__site-column-section {
     width: 25%;
     padding-left: 10px;
   }
+
   &__site-column-title {
-    // font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -446,20 +437,24 @@ export default {
     color: #cecece;
     font-size: 18px;
   }
+
   &__site-column-link {
     color: #8a929c;
     font-size: 12px;
     font-weight: 500;
+
     &:hover {
       color: var(--footer-container-link-hover-color);
       transition: color 0.2s ease;
     }
   }
+
   &__other-elements {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
   }
+
   &__github-button-section {
     width: 100%;
     text-align: left;
@@ -467,42 +462,47 @@ export default {
     line-height: 1;
     order: 1;
   }
+
   &__dark-theme-switch-section {
     width: 50%;
     text-align: right;
     order: 2;
   }
+
   &__bottom-section {
     padding-left: 10vw;
     padding-right: 10vw;
     width: 100%;
     margin: auto;
   }
-  // &__copyright-wrapper {
-  //   border-top: 1px solid #e6e6e6;
-  // }
+
   &__line {
     border-top: 1px solid var(--footer-container-line-color);
     padding-top: 60px;
   }
+
   &__sect {
     display: flex;
     align-items: baseline;
   }
+
   &__sect-theme {
     text-align: left;
     width: 50%;
   }
+
   &__sect-copy {
     text-align: right;
     width: 50%;
   }
+
   &__copyright-section {
     padding-left: 10vw;
     padding-right: 10vw;
     width: 100%;
     margin: auto;
   }
+
   &__copyright-text {
     text-align: right;
     color: var(--footer-copyright-color);
@@ -512,11 +512,13 @@ export default {
     font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   }
 }
+
 .list-li {
   font-size: 12px;
   letter-spacing: 0.6px;
   margin-bottom: 10px;
 }
+
 .select-options {
   background: var(--footer-select-background-color);
   outline: none;
@@ -525,16 +527,19 @@ export default {
   color: var(--footer-select-language-color);
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }
+
 .git-ref-link {
   color: #8a929c;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.6px;
   display: flex;
+
   &:hover {
     color: #000;
     transition: color 0.2s ease;
   }
+
   &--dark-theme {
     &:hover {
       color: #b3b3b3;
@@ -546,85 +551,104 @@ export default {
   font-size: 12px;
   font-weight: 500;
 }
+
 @media only screen and (max-width: 1264px) {
   .footer-container {
     &__logo-section {
       width: 100%;
       padding-left: 10px;
     }
+
     &__x {
       width: 100%;
       padding-left: 0;
     }
+
     &__sitemap-section {
       display: block;
     }
+
     &__copyright-section {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
 }
+
 @media only screen and (max-width: 960px) {
   .footer-container {
     &__logo-section {
       width: 100%;
       padding-left: 0;
     }
+
     &__x {
       width: 100%;
       padding-left: 0;
     }
+
     &__sitemap-section {
       display: block;
     }
+
     &__sites-section {
       flex-wrap: wrap;
     }
+
     &__site-column-title {
       font-size: 18px;
     }
+
     &__site-column-section {
       display: block;
       padding-left: 0;
       padding-right: 10px;
       width: 50%;
     }
+
     &__copyright-section {
       padding-left: 20px;
       padding-right: 20px;
     }
+
     &__line {
       padding-top: 50px;
     }
   }
 }
+
 @media only screen and (max-width: 800px) {
   .footer-container {
     &__site-column-title {
       font-size: 16px;
     }
+
     &__line {
       padding-top: 40px;
     }
+
     &__sect {
       display: block;
     }
+
     &__sect-theme {
       text-align: left;
       width: 100%;
       padding-bottom: 30px;
     }
+
     &__sect-copy {
       text-align: left;
       width: 100%;
       padding-bottom: 30px;
     }
+
     &__copyright-text {
       text-align: left;
     }
   }
 }
+
 @media only screen and (max-width: 600px) {
   .footer-container {
     &__logo-section {

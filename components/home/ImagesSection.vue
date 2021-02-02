@@ -11,8 +11,8 @@
             <div class="img-inner">
               <header>
                 <p
-                  v-text="$t('home.gallerySection.blog')"
                   class="trending-post-title"
+                  v-text="$t('home.gallerySection.blog')"
                 />
               </header>
             </div>
@@ -27,8 +27,8 @@
             <div class="img-inner">
               <header>
                 <p
-                  v-text="$t('home.gallerySection.experience')"
                   class="trending-post-title"
+                  v-text="$t('home.gallerySection.experience')"
                 />
               </header>
             </div>
@@ -43,8 +43,8 @@
             <div class="img-inner">
               <header>
                 <p
-                  v-text="$t('home.gallerySection.contact')"
                   class="trending-post-title"
+                  v-text="$t('home.gallerySection.contact')"
                 />
               </header>
             </div>
@@ -59,8 +59,8 @@
             <div class="img-inner">
               <header>
                 <p
-                  v-text="$t('home.gallerySection.gallery')"
                   class="trending-post-title"
+                  v-text="$t('home.gallerySection.gallery')"
                 />
               </header>
             </div>

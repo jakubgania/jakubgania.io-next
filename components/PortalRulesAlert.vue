@@ -3,18 +3,18 @@
     <div class="content-section">
       <div class="rules-description-section">
         <div class="title-section">
-          {{ title }} <br />
+          {{ $t('portalRulesAlert.title') }} <br />
           <span style="color: #f2f2f2;">
             !important;
           </span>
         </div>
         <div class="description-section">
-          {{ message }}
+          {{ $t('portalRulesAlert.message') }}
         </div>
       </div>
       <div class="button-section">
         <button type="button" class="accept-rules-button" @click="accept()">
-          akceptuję
+          {{ $t('portalRulesAlert.buttonAcceptText') }}
         </button>
       </div>
     </div>

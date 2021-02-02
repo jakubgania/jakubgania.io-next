@@ -7,9 +7,9 @@
       :max-width-wrapper="1000"
     />
     <div class="title-section">
-      <h2>
+      <h1>
         {{ data.name }}
-      </h2>
+      </h1>
     </div>
     <div class="top-description">
       <p>
@@ -220,6 +220,31 @@ export default {
   .content-container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .title-section {
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+  .shortcut-keys {
+    font-size: 14px;
+  }
+  .shortcut-description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title-section {
+    & h1 {
+      font-size: 2rem;
+    }
+  }
+  .top-description {
+    margin-bottom: 40px;
+  }
+  .source-section {
+    margin-bottom: 40px;
   }
 }
 </style>

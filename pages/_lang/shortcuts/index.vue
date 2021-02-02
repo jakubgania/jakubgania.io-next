@@ -102,4 +102,11 @@ export default {
   margin-top: 14px;
   margin-bottom: 14px;
 }
+
+@media only screen and (max-width: 1240px) {
+  .content-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
 </style>

@@ -12,7 +12,23 @@
 
 <script>
 export default {
-  props: ['error'],
+  props: {
+    error: {
+      type: Object,
+      default: null,
+    },
+  },
+  layout: 'error',
+  head() {
+    const error = this.error.statusCode === 404 ? '404' : 'Error'
+
+    return {
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
+      title: 'Jakub Gania Software | ' + error,
+    }
+  },
 }
 </script>
 

@@ -133,5 +133,10 @@
   "moreContentButton": {
     "morePosts": "More posts",
     "moreProjects": "Other projects"
+  },
+  "portalRulesAlert": {
+    "title": "Privacy policy",
+    "message": "By clicking the \"Accept\" button or closing the window by clicking on the X, you agree to the following terms. The website uses cookies and Google Analytics only for statistical purposes to analyze network traffic. The local storage mechanism is also used for the proper operation of the application.",
+    "buttonAcceptText": "Accept"
   }
 }

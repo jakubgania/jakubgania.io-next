@@ -24,6 +24,9 @@ import { mdiChevronRight } from '@mdi/js'
 import IconComponent from './Icon'
 
 export default {
+  components: {
+    IconComponent,
+  },
   props: {
     parentPagePath: {
       type: String,
@@ -41,9 +44,6 @@ export default {
       type: Number,
       default: 1200,
     },
-  },
-  components: {
-    IconComponent,
   },
   data() {
     return {

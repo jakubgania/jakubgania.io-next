@@ -37,7 +37,7 @@ export default {
       profileImage,
       fullname: 'Jakub Gania',
       description:
-        'Kiedy tylko przyjdzie mi jakiś temat do głowy to staram się to opisać w formie postu na moim blogu. Zapraszam do zapoznania się z innymi postami oraz całą moją stroną. Staram się być również aktywny na Githubie i tworzyć różne projekty.',
+        'Kiedy tylko przyjdzie mi jakiś temat do głowy, to staram się go opisać w formie postu na moim blogu. Zapraszam do zapoznania się z innymi postami oraz całą moją stroną. Staram się być również aktywny na platformie GitHub i tworzyć różne projekty.',
     }
   },
 }

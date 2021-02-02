@@ -128,5 +128,10 @@
   "moreContentButton": {
     "morePosts": "Mehr Posts",
     "moreProjects": "Mehr Projekte"
+  },
+  "portalRulesAlert": {
+    "title": "Datenschutz-Bestimmungen",
+    "message": "Durch Klicken auf die Schaltfläche \"Akzeptieren\" oder Schließen des Fensters durch Klicken auf das X stimmen Sie den folgenden Bedingungen zu. Die Website verwendet Cookies und Google Analytics nur zu statistischen Zwecken, um den Netzwerkverkehr zu analysieren. Der lokale Speichermechanismus wird auch für den ordnungsgemäßen Betrieb der Anwendung verwendet.",
+    "buttonAcceptText": "Zustimmen"
   }
 }

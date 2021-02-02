@@ -17,28 +17,28 @@
           "part1": "Technologie",
           "part2": "Webowe"
         },
-        "description": "Główne technologie w jakich się specjalizuję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt, Next oraz backendowe takie jak Node. Tworzę różne skrypty z użyciem jezyka Bash czy Python. Większość wyników mojej pracy i eksperymentów z kodem i projektami umieszczam na platformie GitHub."
+        "description": "Główne technologie, w jakich się specjalizuję to technologie z szeroko rozumianego stosu webowego. Są to technologie zarówno frontendowe takie jak React, Vue, Angular, Nuxt, Next oraz backendowe takie jak Node. Tworzę różne skrypty z użyciem języka Bash czy Python. Większość wyników mojej pracy i eksperymentów z kodem i projektami umieszczam na platformie GitHub."
       },
       {
         "title": {
           "part1": "Technologie",
           "part2": "Chmurowe"
         },
-        "description": "Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatwej integracji wielu różnych komponentów. Usługi chmurowe to naprawdę wiele możliwości oraz inne podejście do budowania złożonych struktur. Jest to kierunek w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga."
+        "description": "Technologie chmurowe to bardzo ważny aspekt współczesnych systemów informatycznych. Chmura daje możliwości praktycznie nieograniczonego skalowania aplikacji oraz łatwej integracji wielu różnych komponentów. Usługi chmurowe to naprawdę wiele możliwości oraz inne podejście do budowania złożonych struktur. Jest to kierunek, w którym rozwijam się od jesieni 2019 roku i coraz bardziej mnie wciąga."
       },
       {
         "title": {
           "part1": "Software",
           "part2": "Engineering"
         },
-        "description": "Dziedzina jaką jest inżynieria oprogramowania jest niezwykle złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, różnorodne architektury, bezpieczeństwo, bazy danych ... Wymieniać można bez końca a trendy i technologie ewoluują. To wszystko bardzo mnie interesuje dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane."
+        "description": "Dziedzina, jaką jest inżynieria oprogramowania, jest niezwykle złożonym zagadnieniem. Tworzenie aplikacji w różnych technologiach, odmienne koncepcje języków programowania, różnorodne architektury, bezpieczeństwo, bazy danych ... Wymieniać można bez końca a trendy i technologie ewoluują. To wszystko bardzo mnie interesuje, dlatego staram się poznawać coraz lepiej wszelkie aspekty z tym związane."
       },
       {
         "title": {
           "part1": "IT i",
           "part2": "Tchnologie"
         },
-        "description": "Szeroko pojęte IT i różne inne technologie cały czas rozwijają się niesamowicie szybko. Takie zagadnienia jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko analizować duży zbiór danych niewspomagając procesu wyszukiwania systemami opartymi o SI czy ogólnie analizę I Big Data."
+        "description": "Szeroko pojęte IT i różne inne technologie cały czas rozwijają się niesamowicie szybko. Takie zagadnienia, jak sztuczna inteligencja czy Big Data to pojęcia wykorzystywane na porządku dziennym na całym świecie. Dziś ciężko analizować duży zbiór danych nie wspomagając procesu wyszukiwania systemami opartymi o SI czy ogólnie analizę I Big Data."
       }
     ],
     "projectsSection": {
@@ -66,7 +66,7 @@
   },
   "blog": {
     "header": {},
-    "description": "Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno i techniczne i nie techniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu."
+    "description": "Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno techniczne i nietechniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach, nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu."
   },
   "about": {
     "test": "about me - pl",
@@ -133,5 +133,10 @@
   "moreContentButton": {
     "morePosts": "Więcej postów",
     "moreProjects": "Inne projekty"
+  },
+  "portalRulesAlert": {
+    "title": "Polityka prywatności",
+    "message": "Klikając przycisk „Akceptuję” lub zamykając okno przez kliknięcie w znaczek X, zgadzasz się na poniższe warunki. Strona wykorzystuje pliki cookie oraz usługę Google Analytics jedynie w celach statystycznych do analizowania ruchu sieciowego. Wykorzystywany jest również mechanizm local storage do poprawnego działania aplikacji.",
+    "buttonAcceptText": "Akceptuję"
   }
 }

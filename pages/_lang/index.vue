@@ -111,7 +111,7 @@
     <ContentSectionComponent />
     <BlogSectionComponent
       :posts="posts"
-      :numberOfPosts="numberOfPosts"
+      :number-of-posts="numberOfPosts"
       :views="views"
     />
     <img
@@ -155,16 +155,7 @@ export default {
     MenuCodeListComponent,
   },
   async asyncData({ $content, params, store }) {
-    let language = store.state.locale
-
-    if (params.lang === 'de') {
-      language = 'de'
-    }
-
-    if (params.lang === 'en') {
-      language = 'en'
-    }
-
+    const language = store.state.locale
     let numberOfPosts = await $content('posts/' + language, params.slug).fetch()
 
     numberOfPosts = numberOfPosts.length
@@ -210,7 +201,11 @@ export default {
         },
       })
       .then((response) => {
-        this.views = response.data.data
+        if (response && response.data.data) {
+          this.views = response.data.data
+        } else {
+          this.views = []
+        }
       })
   },
   methods: {

@@ -6,14 +6,37 @@
       </button>
 
       <div class="list-section">
-        <li v-for="item in items" :key="item.id" style="list-style: none;">
+        <li
+          v-for="(item, index) in items"
+          :key="item.id"
+          style="list-style: none;"
+        >
           <ul class="list-item">
             <nuxt-link
               :to="$i18n.path(item.path)"
               class="list-item-link"
               @click.native="showScrollbar()"
             >
-              { {{ $t(item.name) }} }
+              <!-- { {{ $t(item.name) }} } -->
+              <div style="display: flex;">
+                <span class="span-bracket-left">
+                  {
+                </span>
+                <div style="display: flex; position: relative;">
+                  <span class="item-number">
+                    {{ '0' + (index + 1) }}
+                  </span>
+                  <span class="text-texm">
+                    {{ $t(item.name) }}
+                  </span>
+                </div>
+                <span class="span-bracket-right">
+                  }
+                </span>
+              </div>
+              <!-- <template v-if="index + 1 < 10">
+                { {{ $t(item.name) }} }
+              </template> -->
             </nuxt-link>
           </ul>
         </li>
@@ -100,18 +123,66 @@ export default {
   transform: translate(-50%, -50%);
   min-width: 300px;
 }
+.span-bracket-left {
+  position: relative;
+  // left: -7px;
+  left: -20px;
+  color: #e7e7e7;
+  opacity: 0;
+  transition: 0.25s;
+}
+.span-bracket-right {
+  position: relative;
+  // right: -7px;
+  right: -20px;
+  color: #e7e7e7;
+  opacity: 0;
+  transition: 0.2s;
+}
 .list-item-link {
-  font-size: 12px;
-  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
-  letter-spacing: 8px;
+  font-size: 12.4px;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 4px;
   transition: letter-spacing 0.2s ease;
   color: var(--home-page-menu-component-text-color);
 
   &:hover {
-    color: blue;
-    letter-spacing: 10px;
+    color: #06f;
     transition: letter-spacing 0.2s ease;
+
+    & .span-bracket-left {
+      // left: -20px;
+      left: -10px;
+      color: #e7e7e7;
+      opacity: 1;
+    }
+
+    & .span-bracket-right {
+      // right: -20px;
+      right: -10px;
+      color: #e7e7e7;
+      opacity: 1;
+    }
   }
+}
+.text-texm {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-right: 14px;
+  }
+  &::after {
+    margin-left: 14px;
+  }
+}
+.item-number {
+  color: #e7e7e7;
+  margin-right: 14px;
 }
 .list-item {
   margin-bottom: 40px;

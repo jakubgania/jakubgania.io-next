@@ -5,26 +5,28 @@
       parent-page-title="Home"
       child-page-title="Galeria"
     />
+    Strona w przygotowaniu.
     <div v-if="fullScreenImage" class="full-screen-image-wrapper">
-      <button class="close-button" @click="closeFullScreenImage()">
-        <div class="close-icon" />
-      </button>
+      <div class="toolbar">
+        <button class="close-button" @click="closeFullScreenImage()">
+          <div class="close-icon" />
+        </button>
+      </div>
       <img :src="fullImageUrl" alt="" class="full-screen-image" />
     </div>
     <div class="grid grid-cols-3 grid-flow-row gap-1 images-container">
       <div
-        v-for="index in 12"
-        :key="index"
+        v-for="item in images"
+        :key="item.id"
         class="image-item"
-        :style="`background-image: url(${ImageKeyboardHome})`"
-        @click="showFullScreenImage(ImageKeyboardHome)"
+        :style="`background-image: url(${item.url})`"
+        @click="showFullScreenImage(item.url)"
       />
     </div>
   </div>
 </template>
 
 <script>
-import ImageKeyboardHome from '../../../assets/images/keyboard-light-webp.webp'
 import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 
 export default {
@@ -33,9 +35,29 @@ export default {
   },
   data() {
     return {
-      ImageKeyboardHome,
       fullScreenImage: false,
       fullImageUrl: null,
+      images: [
+        {
+          name: '',
+          url:
+            'https://s3.eu-central-1.amazonaws.com/jakubgania.io-gallery/20190222_175234.jpg',
+        },
+        {
+          name: '',
+          url:
+            'https://s3.eu-central-1.amazonaws.com/jakubgania.io-gallery/20190721_054754.jpg',
+        },
+        {
+          name: '',
+          url:
+            'https://s3.eu-central-1.amazonaws.com/jakubgania.io-gallery/20190824_170039.jpg',
+        },
+      ],
+      head: {
+        description: 'Galeria zdjęć',
+        keywords: 'galeria, zdjęcia, fotografie, grafiki, obrazki',
+      },
     }
   },
   methods: {
@@ -65,7 +87,31 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'custom description',
+          content: 'Galeria zdjęć.',
+        },
+        {
+          name: 'keywords',
+          content: this.head.keywords,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.head.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
         },
       ],
     }
@@ -97,6 +143,7 @@ export default {
 .image-item {
   padding-top: 100%;
   background-color: #f2f2f2;
+  background-position: center;
 }
 .full-screen-image-wrapper {
   position: fixed;
@@ -126,7 +173,7 @@ export default {
   left: 15px;
   content: ' ';
   height: 33px;
-  width: 1px;
+  width: 2px;
   background-color: white;
 }
 .close-icon::before {
@@ -142,6 +189,22 @@ export default {
   transform: translate(-50%, -50%);
   max-height: 90vh;
 }
+.toolbar {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  // pointer-events: none;
+  height: 60px;
+  padding: 0 0 16px 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    transparent 100%
+  );
+}
+
 @media only screen and (max-width: 600px) {
   .top-section-title {
     margin-bottom: 10px;

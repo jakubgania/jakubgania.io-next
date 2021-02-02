@@ -129,9 +129,6 @@ export default {
       mdiTrendingUp,
     }
   },
-  mounted() {
-    console.log('moutned ', this.views)
-  },
 }
 </script>
 

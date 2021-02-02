@@ -6,6 +6,11 @@
           {{ $t('home.projectsSection.title') }}
         </h2>
       </div>
+      <div class="description-section">
+        <p class="description">
+          {{ description }}
+        </p>
+      </div>
       <div class="projects-sections-container">
         <div class="projects-item">
           <ul class="project-list">
@@ -75,6 +80,12 @@ export default {
   components: {
     MoreContentButtonComponent,
   },
+  data() {
+    return {
+      description:
+        'Tworzę różnej wielkości projekty. Są to bardziej zaawansowane aplikacje ale również prostsze statyczne strony. Programuję frontend jak i backend. Eksperymentuję z różnymi technologiami.',
+    }
+  },
 }
 </script>
 
@@ -92,8 +103,17 @@ export default {
 }
 .projects-section-title {
   font-weight: 800;
-  text-align: center;
+  text-align: left;
   color: var(--home-page-projects-section-color);
+}
+.description-section {
+  margin-top: 60px;
+  width: 100%;
+}
+.description {
+  max-width: 45%;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 .projects-sections-container {
   display: flex;
@@ -104,6 +124,16 @@ export default {
 .projects-item ul {
   list-style: none;
   margin-top: 80px;
+}
+.project-list li {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  & :hover {
+    color: #06f;
+  }
 }
 .projects-item ul li {
   margin-bottom: 40px;
@@ -116,11 +146,8 @@ export default {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  // margin-left: -1em;
   font-size: 20px;
-}
-.project-list li:hover {
-  color: #06f;
 }
 .buttons-section {
   display: flex;
@@ -130,16 +157,24 @@ export default {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .projects-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+@media only screen and (max-width: 1400px) {
+  .description {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .description {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .description {
+    max-width: 70%;
   }
   .projects-sections-container {
     flex-wrap: wrap;
-  }
-  .projects-section-title h2 {
-    font-size: 36px;
   }
   .projects-item {
     width: 100%;
@@ -147,12 +182,30 @@ export default {
   .projects-item:nth-child(2) ul {
     margin-top: inherit;
   }
+}
+
+@media only screen and (max-width: 700px) {
   .buttons-section {
     display: block;
 
     &__item {
       width: 100%;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .projects-section-title h2 {
+    font-size: 36px;
+  }
+  .description {
+    max-width: 100%;
   }
 }
 </style>

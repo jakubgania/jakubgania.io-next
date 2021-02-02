@@ -14,6 +14,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
+  ssr: true,
   manifest: {
     lang: 'pl',
     name: 'Jakub Gania Software',
@@ -43,6 +44,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Jakub Gania Software' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         name: 'google-site-verification',
         content: 'pCgwKh6Bl0udfAQC8PP37yLs6Rs26hwU19gmuDgpnZs',
@@ -77,8 +80,8 @@ export default {
       },
       {
         rel: 'icon',
-        type: 'image/png',
-        href: '/favicon.png',
+        type: 'image/x-ico',
+        href: '/favicon.ico',
       },
     ],
   },
@@ -100,7 +103,7 @@ export default {
   plugins: [
     '~/plugins/i18n.js',
     { src: '~/plugins/aos', ssr: false },
-    { src: '~plugins/ga.js', ssr: false }
+    { src: '~plugins/ga.js', ssr: false },
   ],
   /*
    ** Auto import components
@@ -118,7 +121,9 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    // '@nuxt/image', not work - remove all unnecessary dependencies and modules
     '@nuxtjs/color-mode',
+    '@nuxtjs/html-validator',
   ],
   /*
    ** Nuxt.js modules
@@ -131,6 +136,10 @@ export default {
     '@nuxt/content',
     '@nuxtjs/apollo',
     '@nuxtjs/device',
+    ['nuxt-lazy-load', {
+        // defaultImage: '/jakub-gania-software-logo-img.png',
+      }
+    ],
     '@nuxtjs/sitemap',
   ],
 

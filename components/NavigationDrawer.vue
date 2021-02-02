@@ -163,6 +163,7 @@ export default {
 .list-item {
   margin-top: 2px;
   margin-bottom: 2px;
+
   &:hover {
     background-color: var(--navigation-drawer-list-item-hover-color);
   }
@@ -241,11 +242,33 @@ export default {
 .close-icon::after {
   transform: rotate(-45deg);
 }
+
 @media only screen and (max-width: 600px) {
+  .navigation-drawer-container {
+    width: 100%;
+
+    & a {
+      padding: 12px 8px 8px 8px;
+    }
+
+    // centering icons for IconsComponent
+    & svg {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .list-item {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+  }
+
   .close-icon-section {
     height: 48px;
     line-height: 48px;
   }
+
   .close-icon {
     top: 8px;
   }

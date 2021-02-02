@@ -40,13 +40,13 @@
 
         <div style="position: relative;">
           <input
+            id="search-input"
             v-model="searchQuery"
             type="search"
             autocomplete="off"
             spellcheck="false"
             placeholder="Szukaj"
             class="inp-sear-test"
-            id="search-input"
           />
           <div class="input-wrapper-svg" @click="clearInput()">
             <svg class="input-icon-svg" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
               />
             </svg>
           </div>
-          <ul v-if="articles.length" class="ul-ser-inp" id="results-list">
+          <ul v-if="articles.length" id="results-list" class="ul-ser-inp">
             <li v-for="article of articles" :key="article.slug">
               <div>
                 <NuxtLink
@@ -131,7 +131,7 @@
                         :color="'#b3b3b3'"
                       />
                       <span style="margin-left: 6px;">
-                        <template v-if="views.length > 0">
+                        <template v-if="views && views.length > 0">
                           {{
                             (views &&
                               views.find(({ slug }) => slug === post.slug)
@@ -262,7 +262,7 @@ export default {
         this.articles = []
         return
       }
-      console.log('search query ', searchQuery)
+
       this.articles = await this.$content('posts/pl')
         .only(['title', 'slug'])
         .sortBy('index', 'desc')
@@ -304,19 +304,6 @@ export default {
       const element = document.getElementById('content')
       if (element !== null) {
         element.scrollIntoView()
-      }
-    }
-
-    if (process.browser) {
-      document.onclick = function (e, el) {
-        console.log('e target ', e.target.id)
-
-        if (e.target.id !== 'search-input') {
-          // console.log('if e target close ', this.articles)
-          // this.articles = []
-        }
-
-        // console.log('this el ', this.$el.articles)
       }
     }
   },
@@ -587,7 +574,7 @@ input[type='search']::-webkit-search-results-decoration {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
   .top-section-title {
     margin-bottom: 40px;
@@ -610,6 +597,12 @@ input[type='search']::-webkit-search-results-decoration {
     padding-right: 14px;
     margin-top: 40px;
     margin-bottom: 100px;
+  }
+  .top-image {
+    height: 60vw;
+  }
+  .x1 {
+    height: 60vw;
   }
   .top-section-title {
     margin-bottom: 30px;

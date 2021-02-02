@@ -1,9 +1,9 @@
 <template>
   <div>
-    <HeadTitleSection :sectionTitle="$t(headTtitleSection)" />
+    <HeadTitleSection :section-title="$t(headTtitleSection)" />
     <div class="xtrox">
       <template v-for="item in items">
-        <div class="section-test" :key="item.id">
+        <div :key="item.id" class="section-test">
           <div class="title-section">
             <div class="title-text">
               {{ item.date }}

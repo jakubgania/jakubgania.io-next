@@ -29,6 +29,12 @@ export default {
   padding-bottom: 14px;
 }
 
+@media only screen and (max-width: 960px) {
+  .title h2 {
+    font-size: 40px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .title-section {
     margin-bottom: 10px;

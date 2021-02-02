@@ -2,7 +2,7 @@
   <div class="social-section">
     <div class="social-icons-container">
       <template v-for="(item, index) in links">
-        <div class="social-item" :key="item.id">
+        <div :key="item.id" class="social-item">
           <a :href="item.href" target="_blank" rel="noopener noreferrer">
             {{ item.name }}
           </a>
