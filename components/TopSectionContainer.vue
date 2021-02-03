@@ -164,7 +164,7 @@ export default {
       profileImage,
       counter: 0,
       desc:
-        'Specjalizuję się w programowaniu webowym. Swoją wiedzę poszerzam z zakresu technologii chmurowych. Ukończyłem studia inżynierskie, magisterskie oraz podyplomowe. Cały czas poznaję różne nowe zagadnienia techniczne oraz eksperymentuję z różnymi projektami. Ta strona zwiera najważniejsze informacje o moim doświadczeniu, używanych technologiach oraz wykształceniu i certyfikatach.',
+        'Specjalizuję się w programowaniu webowym. Swoją wiedzę poszerzam z zakresu technologii chmurowych. Ukończyłem studia inżynierskie, magisterskie oraz podyplomowe. Cały czas poznaję różne nowe zagadnienia techniczne oraz eksperymentuję z różnymi projektami. Ta strona zawiera najważniejsze informacje o moim doświadczeniu, używanych technologiach oraz wykształceniu i certyfikatach.',
     }
   },
 }

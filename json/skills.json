@@ -5,7 +5,7 @@
       "date": "Stos technologiczny",
       "title": "",
       "subtitle": "",
-      "description": "Technologie których używam do budowania aplikacji webowych oraz takie z którymi miałem styczność przy projektach firmowych. Są to technologie frontendowe oraz backendowe.",
+      "description": "Technologie, których używam do budowania aplikacji webowych oraz takie, z którymi miałem styczność przy projektach firmowych. Są to technologie frontendowe oraz backendowe.",
       "tags": [
         {
           "title": "Vue 2.x"
@@ -182,7 +182,7 @@
       "date": "Pojęcia",
       "title": "",
       "subtitle": "",
-      "description": "Niektóre pojęcia z którymi spotkałem się tworząc aplikacje webowe.",
+      "description": "Część pojęć, jakie poznałem podczas tworzenia aplikacji webowych.",
       "tags": [
         {
           "title": "SPA"
@@ -208,7 +208,7 @@
       "date": "Podstawowa wiedza",
       "title": "",
       "subtitle": "",
-      "description": "Zbiór technologi/oprogramowania z którymi miałem styczność w większym lub mniejszym stopniu.",
+      "description": "Zbiór technologi/oprogramowania, z którymi miałem styczność w większym lub mniejszym stopniu.",
       "tags": [
         {
           "title": "Git"

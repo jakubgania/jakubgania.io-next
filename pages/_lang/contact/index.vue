@@ -53,7 +53,7 @@ export default {
   data() {
     return {
       description1:
-        'Tutaj znajdziesz różne sposoby kontaktu ze mną. Może zauważyłeś jakiś błąd na mojej stronie lub chcesz się podzielić przemyśleniami o projekcie ? Możesze do mnie napisać za pomocą różnych platform lub po po prostu za pomocą e-maila.',
+        'Tutaj znajdziesz różne sposoby kontaktu ze mną. Może zauważyłeś jakiś błąd na mojej stronie lub chcesz się podzielić przemyśleniami o projekcie ? Możesz do mnie napisać za pomocą różnych platform lub po prostu za pomocą e-maila.',
       description2: 'Masz jakieś pytanie ? Śmiało napisz.',
       items: [
         {

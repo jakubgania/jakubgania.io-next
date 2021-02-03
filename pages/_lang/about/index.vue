@@ -582,6 +582,13 @@ export default {
   text-align: right;
 }
 
+@media only screen and (max-width: 1040px) {
+  .description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .section-title {
     font-size: 24px;
@@ -591,8 +598,6 @@ export default {
   }
   .description {
     line-height: 1.6;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 // .content-container {

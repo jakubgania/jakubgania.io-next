@@ -10,7 +10,11 @@
     >
       <div>
         <div class="close-icon-section">
-          <button class="close-button" @click="$emit('switchNavigationDrawer')">
+          <button
+            class="close-button"
+            type="button"
+            @click="$emit('switchNavigationDrawer')"
+          >
             <div class="close-icon" />
           </button>
         </div>
