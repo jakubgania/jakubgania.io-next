@@ -178,10 +178,8 @@ export default {
       showMenu: false,
       views: [],
       head: {
-        description:
-          'Jakub Gania Software - Full Stack Web Developer. Vue.js, Vuex, Vuetify, TypeScript, NUXT, HTML, CSS, Node.js, PHP, Laravel, Symfony, Nginx, Docker.',
-        keywords:
-          'software, developer, it, programmer, coder, www, web, website, frontend, backend, full stack, software engineer, fullstack web developer ,vue.js, vuex, vuetify, typescript, nuxt.js, html, css, node.js, php, laravel, symfony, nginx, apache, server, blog, docker, github',
+        description: this.$i18n.t('home.head.meta.description'),
+        keywords: this.$i18n.t('home.head.meta.description'),
       },
     }
   },

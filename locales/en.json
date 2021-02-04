@@ -62,11 +62,40 @@
       "experience": "Experience",
       "contact": "Contact",
       "gallery": "Gallery"
+    },
+    "head": {
+      "meta": {
+        "description": "Jakub Gania Software - Full Stack Web Developer. Vue.js, Vuex, Vuetify, TypeScript, NUXT, HTML, CSS, Node.js, PHP, Laravel, Symfony, Nginx, Docker.",
+        "keywords": "software, developer, it, programmer, coder, www, web, website, frontend, backend, full stack, software engineer, fullstack web developer ,vue.js, vuex, vuetify, typescript, nuxt.js, html, css, node.js, php, laravel, symfony, nginx, apache, server, blog, docker, github"
+      }
     }
   },
   "blog": {
-    "header": {},
-    "description": "Feel free to read my blog posts. I describe various topics, both technical and non-technical. Sometimes it's just my thoughts on a given situation, some opinion about a book I read, sometimes about technologies or projects I'm working on. Of course, posts are written only through the prism of my personal experiences and thoughts. Posts appear regularly sometimes and sometimes not, it all depends on the time available."
+    "breadcrumbs": "Blog",
+    "title": "posts",
+    "description": "Feel free to read my blog posts. I describe various topics, both technical and non-technical. Sometimes it's just my thoughts on a given situation, some opinion about a book I read, sometimes about technologies or projects I'm working on. Of course, posts are written only through the prism of my personal experiences and thoughts. Posts appear regularly sometimes and sometimes not, it all depends on the time available.",
+    "inputSearch": "Search",
+    "head": {
+      "meta": {
+        "title": "Jakub Gania Software | Blog",
+        "keywords": "posts, entries, notes, blog",
+        "description": "Feel free to read the posts on my blog"
+      }
+    }
+  },
+  "projects": {
+    "title": "projects",
+    "breadcrumbs": "Projects",
+    "buttonGridView": "grid view",
+    "buttonListView": "list view",
+    "description": "My projects",
+    "head": {
+      "meta": {
+        "title": "Projects",
+        "description": "Description of my projects. Most of them are on the GitHub platform. In addition to entire web applications, I test other technologies and write various scripts.",
+        "keywords": "projects, technologies, programs, source code, repository, project description, new technologies, web technologies, frontend, backend, server"
+      }
+    }
   },
   "about": {
     "test": "about me - pl",
@@ -111,6 +140,19 @@
       }
     }
   },
+  "contact": {
+    "breadcrumbs": "Contact",
+    "title": "Contact",
+    "description1": "Here you will find different ways to contact me. Maybe you've noticed a bug on my website or want to share your design thoughts? You can write to me using different platforms or just by e-mail.",
+    "description2": "Do you have any question ? Go ahead and write.",
+    "head": {
+      "meta": {
+        "title": "Contact",
+        "description": "You can contact me in different ways.",
+        "keywords": "contact, writing, message, e-mail, twitter, linkedin, github, youtube"
+      }
+    }
+  },
   "resources": {
     "title": "",
     "dataLinks": {
@@ -129,6 +171,14 @@
       "dockerCommands": "Docker - polecenia",
       "otherCommands": "Inne"
     }
+  },
+  "footer": {
+    "sections": [
+      "Pages",
+      "Posts",
+      "Projects",
+      "Social"
+    ]
   },
   "moreContentButton": {
     "morePosts": "More posts",

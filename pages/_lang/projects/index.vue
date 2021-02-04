@@ -4,26 +4,26 @@
     <template>
       <BreadcrumbsComponent
         parent-page-path=""
-        parent-page-title="Home"
-        child-page-title="Projekty"
+        :parent-page-title="'Home'"
+        :child-page-title="$t('projects.breadcrumbs')"
         :max-width-wrapper="1000"
       />
       <div class="change-button-sect">
         <div class="button-sect">
           <div class="fgt" @click="changeView('github')">
-            widok kafelków
+            {{ $t('projects.buttonGridView') }}
           </div>
         </div>
         <div class="button-sect">
           <div class="fgt" @click="changeView('list')">
-            widok listy
+            {{ $t('projects.buttonListView') }}
           </div>
         </div>
       </div>
       <div v-show="view == 'list'" class="list-projects-container">
         <div class="grid grid-rows-1">
           <p style="margin-bottom: 80px;">
-            Opis moich projektów programistycznych
+            {{ $t('projects.description') }}
           </p>
         </div>
         <div class="grid grid-rows-1">
@@ -429,21 +429,23 @@ export default {
       htmlAttrs: {
         lang: this.$store.state.locale,
       },
-      title: 'Jakub Gania Software | Projekty',
+      title: 'Jakub Gania Software | ' + this.$t('projects.head.meta.title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Projekty',
+          content: this.$t('projects.head.meta.description'),
         },
         {
+          hid: 'keywords',
           name: 'keywords',
-          content: 'projekty',
+          content: this.$t('projects.head.meta.keywords'),
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Projekty | Jakub Gania Software',
+          content:
+            'Jakub Gania Software | ' + this.$t('projects.head.meta.title'),
         },
         {
           hid: 'og:site_name',
@@ -458,11 +460,16 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'Opis moich projektów',
+          content: this.$t('projects.head.meta.description'),
         },
         {
           hid: 'og:image',
           proprty: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
           content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
         },
       ],

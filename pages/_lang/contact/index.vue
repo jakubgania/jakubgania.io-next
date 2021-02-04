@@ -3,10 +3,10 @@
     <BreadcrumbsComponent
       parent-page-path=""
       parent-page-title="Home"
-      child-page-title="Kontakt"
+      :child-page-title="$t('contact.breadcrumbs')"
     />
     <div class="main-title">
-      Kontakt
+      {{ $t('contact.title') }}
     </div>
     <div class="html-text" v-text="'<h3>'" />
     <div class="p-section">
@@ -14,10 +14,10 @@
         <div>
           <div>
             <p class="question text-position">
-              {{ description1 }}
+              {{ $t('contact.description1') }}
             </p>
             <p class="question">
-              {{ description2 }}
+              {{ $t('contact.description2') }}
             </p>
           </div>
         </div>
@@ -52,9 +52,6 @@ export default {
   },
   data() {
     return {
-      description1:
-        'Tutaj znajdziesz różne sposoby kontaktu ze mną. Może zauważyłeś jakiś błąd na mojej stronie lub chcesz się podzielić przemyśleniami o projekcie ? Możesz do mnie napisać za pomocą różnych platform lub po prostu za pomocą e-maila.',
-      description2: 'Masz jakieś pytanie ? Śmiało napisz.',
       items: [
         {
           name: 'GitHub',
@@ -80,16 +77,37 @@ export default {
       htmlAttrs: {
         lang: this.$store.state.locale,
       },
-      title: 'Jakub Gania Software | Kontakt',
+      title: 'Jakub Gania Software | ' + this.$t('contact.head.meta.title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'custom description',
+          content: this.$t('contact.head.meta.description'),
         },
         {
+          hid: 'keywords',
           name: 'keywords',
-          contact: 'Kontakt',
+          contact: this.$t('contact.head.meat.keywords'),
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jakubgania.io',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$t('contact.head.meta.description'),
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
         },
       ],
     }

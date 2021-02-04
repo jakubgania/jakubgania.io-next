@@ -392,7 +392,7 @@ export default {
         'Cześć, nazywam się Jakub Gania. Jestem programistą. Szeroko pojętym IT interesuję się od wielu lat. Około roku 2015 moje zainteresowanie ukierunkowało się na programowanie. Początkowo poznawałem technologie i języki programowania, które były wykładane w ramach studiów informatycznych. Dopiero wraz z biegiem czasu zacząłem specjalizować się w technologiach webowych zarówno od strony frontendu, jak i backendu. Z czystej ciekawości czasami analizuję i czytam również o innych technologiach niż te, które służą do tworzenia aplikacji webowych.',
       description1: 'Moje stanowisko',
       text2:
-        'W ogólnie pojętym programowaniu fascynuje mnie nieskończona możliwość tworzenia. Za pomocą programowania i co za tym idzie oprogramowania, rozwiązuje się najróżniejsze problemy. Czasami niesamowicie skomplikowane a czasami mniej. Każda osoba, która tworzy trochę bardziej założony kod niż prosty skrypt, robi to w jakiś swój indywidualny sposób. Jednak to jak dana osoba lub grupa osób rozwiązuje jakiś programistyczny problem to wypadkowa umiejętności programistów oraz ich wizji i postrzegania danego problemu i języka programowania, oraz zbioru technologii. Powszechnie wiadomo, że istnieją pewne standardy oraz wytyczne przy tworzeniu oprogramowania jednak nigdy nie ma idealnej receptury do stworzenia nowego złożonego oprogramowania, czy to jakiejś platformy obliczeniowej, czy może portalu internetowego, który znacząco różni się od obecnych rozwiązań. Naturalnie programowanie nie zawsze dla mnie jest czymś łatwym i jasnym. Programowanie to wiele abstrakcji oraz mechanizmów, które poznaje się właściwie cały czas. Powiedzieć, że programowanie, tworzenie softu daje duże możliwości to jak powiedzieć nic. Za niezwykle interesujące uznaję również to, że za pomocą nawet niewielkich prostych skryptów można osiągać ciekawe efekty w postaci obliczeń, automatyzacji różnego rodzaju operacji, można badać zbiory danych, można integrować różne usługi sieciowe lub API. Możliwości jest po prostu bez końca. I to jest fascynujące w mojej opinii.',
+        'W ogólnie pojętym programowaniu fascynuje mnie nieskończona możliwość tworzenia. Za pomocą programowania i co za tym idzie oprogramowania, rozwiązuje się najróżniejsze problemy. Czasami niesamowicie skomplikowane a czasami mniej. Każda osoba, która tworzy trochę bardziej złożony kod niż prosty skrypt, robi to w jakiś swój indywidualny sposób. Jednak to jak dana osoba lub grupa osób rozwiązuje jakiś programistyczny problem to wypadkowa umiejętności programistów oraz ich wizji i postrzegania danego problemu i języka programowania, oraz zbioru technologii. Powszechnie wiadomo, że istnieją pewne standardy oraz wytyczne przy tworzeniu oprogramowania jednak nigdy nie ma idealnej receptury do stworzenia nowego złożonego oprogramowania, czy to jakiejś platformy obliczeniowej, czy może portalu internetowego, który znacząco różni się od obecnych rozwiązań. Naturalnie programowanie nie zawsze dla mnie jest czymś łatwym i jasnym. Programowanie to wiele abstrakcji oraz mechanizmów, które poznaje się właściwie cały czas. Powiedzieć, że programowanie, tworzenie softu daje duże możliwości to jak powiedzieć nic. Za niezwykle interesujące uznaję również to, że za pomocą nawet niewielkich prostych skryptów można osiągać ciekawe efekty w postaci obliczeń, automatyzacji różnego rodzaju operacji, można badać zbiory danych, można integrować różne usługi sieciowe lub API. Możliwości jest po prostu bez końca. To jest fascynujące w mojej opinii.',
       description2:
         'Wycinek pliku markdown z opisem moich skryptów w języku Python',
       text3:
@@ -400,7 +400,7 @@ export default {
       description3:
         'Meetup - RST CodeMeetings #12 Technologie Przyszłości - 29.05.2019 Wrocław, Polska',
       text4:
-        'Po gimnazjum uczęszczałem do liceum, w którym miałem rozszerzone przedmioty takie jak matematyka, fizyka czy informatyka. Wtedy jeszcze nie programowałem, ale już interesowały mnie komputery, co następnie skłoniło mnie do podjęcia studiów informatycznych. Z wykształcenia jestem inżynierem magistrem informatyki. Studia zrobiłem we Wrocławiu. Równolegle z ostatnim rokiem studiów magisterskich zrealizowałem studia podyplomowe z zakresu Cloud. Więcej szczegółowych informacji odnośnie do wykształcenia oraz certyfikatów można zobaczyć na podstronie Doświadczenie.',
+        'Po gimnazjum uczęszczałem do liceum, w którym miałem rozszerzone przedmioty takie jak matematyka, fizyka czy informatyka. Wtedy jeszcze nie programowałem, ale już interesowały mnie komputery, co następnie skłoniło mnie do podjęcia studiów informatycznych. Z wykształcenia jestem inżynierem magistrem informatyki. Studia zrobiłem we Wrocławiu. Równolegle z ostatnim rokiem studiów magisterskich zrealizowałem studia podyplomowe z zakresu Cloud. Więcej szczegółowych informacji odnośnie wykształcenia oraz certyfikatów można zobaczyć na podstronie Doświadczenie.',
       description4: 'Meetup - Wrocław PHP #2 - 23.07.2019 Wrocław, Polska',
       text5:
         'Posiadam już pewne doświadczenie zawodowe. Również ze względów zawodowych miałem okazję prowadzić działalność gospodarczą. Obecnie zdecydowana większość moich umiejętności oraz wiedzy bazuje na własnej nauce i własnych projektach, które nieustannie realizuję. Więcej o moim doświadczeniu można dowiedzieć się na podstronie Doświadczenie.',
@@ -428,7 +428,7 @@ export default {
       description10:
         'Test zestawu gogli wirtualnej rzeczywistości - Oculus Rift Development Kit 1 - Politechnika Wrocławska',
       text49:
-        'Od roku 2010 nieustannie obserwuję rozwój krypto walut, a co za tym idzie technologii Blockchain, która obecnie wykorzystywana jest już w wielu rozwiązaniach. Interesowałem się również kiedyś dosyć mocno zagadnieniem bezpieczeństwa komputerowego oraz testami penetracyjnymi i narzędziami do tego przeznaczonymi (Kali Linux, Wireshark, Metasploit). Obecnie wiedza z zakresu zabezpieczania aplikacji webowych dla webdevelopwera jest również bardzo ważna tzn. rozumienie zagrożeń i stosowanie, chociażby najbardziej elementarnych praktyk mających na celu przeciwdziałać próbom ataku.',
+        'Od roku 2010 nieustannie obserwuję rozwój krypto walut, a co za tym idzie technologii Blockchain, która obecnie wykorzystywana jest już w wielu rozwiązaniach. Interesowałem się również kiedyś dosyć mocno zagadnieniem bezpieczeństwa komputerowego oraz testami penetracyjnymi i narzędziami do tego przeznaczonymi (Kali Linux, Wireshark, Metasploit). Obecnie wiedza z zakresu zabezpieczania aplikacji webowych dla webdevelopera jest również bardzo ważna tzn. rozumienie zagrożeń i stosowanie, chociażby najbardziej elementarnych praktyk mających na celu przeciwdziałać próbom ataku.',
       description18:
         'Warsztaty - "Praktyczne sposoby wykrywania podatności w aplikacjach webowych", 21.07.2019, Warszawa, Polska',
       text:
@@ -525,7 +525,7 @@ export default {
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 2;
-  color: #b4b4b4;
+  color: #808080;
 }
 .about-top-section {
   margin-bottom: 140px;

@@ -62,11 +62,40 @@
       "experience": "Doświadczenie",
       "contact": "Kontakt",
       "gallery": "Galeria"
+    },
+    "head": {
+      "meta": {
+        "description": "Jakub Gania Software - Full Stack Web Developer. Vue.js, Vuex, Vuetify, TypeScript, NUXT, HTML, CSS, Node.js, PHP, Laravel, Symfony, Nginx, Docker.",
+        "keywords": "software, developer, it, programmer, coder, www, web, website, frontend, backend, full stack, software engineer, fullstack web developer ,vue.js, vuex, vuetify, typescript, nuxt.js, html, css, node.js, php, laravel, symfony, nginx, apache, server, blog, docker, github"
+      }
     }
   },
   "blog": {
-    "header": {},
-    "description": "Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno techniczne i nietechniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach, nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu."
+    "breadcrumbs": "Blog",
+    "title": "posty",
+    "description": "Zapraszam do czytania postów w ramach mojego bloga. Opisuję na nim różne tematy zarówno techniczne i nietechniczne. Czasami jest to po prostu moje przemyślenie na temat danej sytuacji, jakaś opinia na temat przeczytanej książki, czasami o technologiach lub projektach, nad którymi pracuję. Oczywiście posty są pisanie jedynie przez pryzmat moich osobistych doświadczeń i przemyśleń. Posty pojawiają się czasami regularnie a czasami nie, wszystko zależy od dostępnego czasu.",
+    "inputSearch": "Szukaj",
+    "head": {
+      "meta": {
+        "title": "Jakub Gania Software | Blog",
+        "keywords": "posty, wpisy, notatki, blog",
+        "description": "Zapraszam do czytania postów w ramach mojego bloga."
+      }
+    }
+  },
+  "projects": {
+    "title": "projekty",
+    "breadcrumbs": "Projekty",
+    "buttonGridView": "widok kafelków",
+    "buttonListView": "widok listy",
+    "description": "Moje projekty",
+    "head": {
+      "meta": {
+        "title": "Projekty",
+        "description": "Opis moich projektów. Większość z nich znajduje się na platformie GitHub. Poza całymi aplikacjami webowymi testuję inne technologie oraz piszę różne skrypty.",
+        "keywords": "projekty, technologie, programy, kod źródłowy, repozytorium, opis projektu, nowe technologie, technologie webowe, frontend, backend, serwer"
+      }
+    }
   },
   "about": {
     "test": "about me - pl",
@@ -111,6 +140,19 @@
       }
     }
   },
+  "contact": {
+    "breadcrumbs": "Kontakt",
+    "title": "Kontakt",
+    "description1": "Tutaj znajdziesz różne sposoby kontaktu ze mną. Może zauważyłeś jakiś błąd na mojej stronie lub chcesz się podzielić przemyśleniami o projekcie ? Możesz do mnie napisać za pomocą różnych platform lub po prostu za pomocą e-maila.",
+    "description2": "Masz jakieś pytanie ? Śmiało napisz.",
+    "head": {
+      "meta": {
+        "title": "Kontakt",
+        "description": "Możesz skontaktować się ze mną na różne sposoby.",
+        "keywords": "kontakt, email, twitter, linkedin, github, youtube, wiadomość"
+      }
+    }
+  },
   "resources": {
     "title": "",
     "dataLinks": {
@@ -129,6 +171,14 @@
       "dockerCommands": "Docker - polecenia",
       "otherCommands": "Inne"
     }
+  },
+  "footer": {
+    "sections": [
+      "Strony",
+      "Posty",
+      "Projekty",
+      "Social"
+    ]
   },
   "moreContentButton": {
     "morePosts": "Więcej postów",

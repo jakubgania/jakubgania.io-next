@@ -14,7 +14,7 @@
             class="footer-container__site-column-section"
           >
             <div class="footer-container__site-column-title">
-              {{ item.titleColumn }}
+              {{ $t(item.titleColumn) }}
             </div>
             <div class="footer-container__site-coulmn-list-section">
               <ul style="list-style-type: none; padding-left: 0;">
@@ -234,7 +234,7 @@ export default {
           value: 'pl',
         },
         {
-          name: 'Germany',
+          name: 'German',
           value: 'de',
         },
         {
@@ -246,11 +246,11 @@ export default {
       sites: [
         {
           idColumn: 'pages',
-          titleColumn: 'Strony',
+          titleColumn: 'footer.sections[0]',
           elements: menuItems.menu,
         },
         {
-          titleColumn: 'Posty',
+          titleColumn: 'footer.sections[1]',
           elements: [
             {
               lang: 'pl',
@@ -287,7 +287,7 @@ export default {
           ],
         },
         {
-          titleColumn: 'Projekty',
+          titleColumn: 'footer.sections[2]',
           elements: [
             {
               name: 'jakubgania.io',
@@ -309,7 +309,7 @@ export default {
           ],
         },
         {
-          titleColumn: 'Social',
+          titleColumn: 'footer.sections[3]',
           elements: [
             {
               name: 'GitHub',

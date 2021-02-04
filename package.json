@@ -30,12 +30,10 @@
     "aos": "^2.3.4",
     "babel-loader": "^8.2.2",
     "graphql-tag": "^2.11.0",
-    "jquery": "^3.5.1",
     "moment": "^2.29.0",
     "nuxt": "^2.14.0",
     "nuxt-lazy-load": "^1.2.4",
-    "vue-i18n": "^8.21.0",
-    "wheelzoom": "^4.0.1"
+    "vue-i18n": "^8.21.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
@@ -56,6 +54,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
     "node-sass": "^4.14.1",
+    "nuxt-purgecss": "^1.0.0",
     "prettier": "^2.0.5",
     "sass-loader": "^9.0.3",
     "stylelint": "^13.6.1",

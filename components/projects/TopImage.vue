@@ -14,7 +14,7 @@
             <span style="font-size: 13vw;">
               [
             </span>
-            projekty
+            {{ $t('projects.title') }}
             <span style="font-size: 13vw;">
               ]
             </span>

@@ -6,6 +6,12 @@
       child-page-title="Zasoby"
     />
 
+    <div class="title-section">
+      <h1>
+        Zasoby
+      </h1>
+    </div>
+
     <div class="title-category">
       Kategorie
     </div>
@@ -119,6 +125,9 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+}
+.title-section {
+  margin-bottom: 40px;
 }
 .title-category {
   font-size: 22px;

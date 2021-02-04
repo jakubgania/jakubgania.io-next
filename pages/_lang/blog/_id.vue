@@ -30,7 +30,9 @@
           child-page-title="Blog"
         />
 
-        <SubpageTitleSectionComponent :title="`{ posty - ${numberOfPosts} }`" />
+        <SubpageTitleSectionComponent
+          :title="`{ ${this.$t('blog.title')} - ${this.numberOfPosts} }`"
+        />
 
         <div style="height: 1px; border-top: 1px solid #f2f2f2;" />
 
@@ -46,7 +48,7 @@
             type="search"
             autocomplete="off"
             spellcheck="false"
-            placeholder="Szukaj"
+            :placeholder="$t('blog.inputSearch')"
             class="inp-sear-test"
           />
           <div class="input-wrapper-svg" @click="clearInput()">
@@ -249,10 +251,16 @@ export default {
       mdiTrendingUp,
       mdiMagnify,
       mdiClose,
+      // subpageTitleText: `{ ${this.$t('blog.title')} - ${this.numberOfPosts} }`,
       desc: this.$t('blog.description'),
       searchQuery: '',
       articles: [],
       views: [],
+      head: {
+        title: this.$i18n.t('blog.head.meta.title'),
+        keywords: this.$i18n.t('home.head.meta.keywords'),
+        description: this.$i18n.t('home.head.meta.description'),
+      },
     }
   },
   watch: {
@@ -339,21 +347,22 @@ export default {
       htmlAttrs: {
         lang: this.$store.state.locale,
       },
-      title: 'Jakub Gania Software | Blog',
+      title: this.head.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'custom description',
+          content: this.head.description,
         },
         {
+          hid: 'keywords',
           name: 'keywords',
-          content: 'posty, wpisy, notatki, blog',
+          content: this.head.keywords,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Jakub Gania Software | Blog',
+          content: this.head.title,
         },
         {
           hid: 'og:url',
@@ -363,7 +372,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'Zapraszam do czytania postów w ramach mojego bloga.',
+          content: this.head.description,
         },
         {
           hid: 'og:image',
