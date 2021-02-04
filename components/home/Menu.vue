@@ -1,23 +1,23 @@
 <template>
   <div v-show="showDrawerFlag" class="menu-wrapper">
     <div class="content-container-menu">
-      <button class="close-button" @click="$emit('switchNavigationDrawer')">
-        <div class="close-icon" />
+      <button
+        class="close-button"
+        type="button"
+        aria-label="Menu button"
+        @click="$emit('switchNavigationDrawer')"
+      >
+        <span class="close-icon" />
       </button>
 
       <div class="list-section">
-        <li
-          v-for="(item, index) in items"
-          :key="item.id"
-          style="list-style: none;"
-        >
-          <ul class="list-item">
+        <ul style="list-style: none;">
+          <li v-for="(item, index) in items" :key="item.id" class="list-item">
             <nuxt-link
               :to="$i18n.path(item.path)"
               class="list-item-link"
               @click.native="showScrollbar()"
             >
-              <!-- { {{ $t(item.name) }} } -->
               <div style="display: flex;">
                 <span class="span-bracket-left">
                   {
@@ -34,12 +34,9 @@
                   }
                 </span>
               </div>
-              <!-- <template v-if="index + 1 < 10">
-                { {{ $t(item.name) }} }
-              </template> -->
             </nuxt-link>
-          </ul>
-        </li>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

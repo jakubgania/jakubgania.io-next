@@ -33,7 +33,10 @@
                       :color="'#b3b3b3'"
                     />
                     <span style="margin-left: 6px;">
-                      {{ '186' }}
+                      <ViewsCounterComponent
+                        :views="views"
+                        :post-slug="post.slug"
+                      />
                     </span>
                   </div>
                 </div>
@@ -67,14 +70,10 @@
                         :color="'#b3b3b3'"
                       />
                       <span style="margin-left: 6px;">
-                        <template v-if="views.length > 0">
-                          {{
-                            (views &&
-                              views.find(({ slug }) => slug === post.slug)
-                                .postViewCounter) ||
-                            '0'
-                          }}
-                        </template>
+                        <ViewsCounterComponent
+                          :views="views"
+                          :post-slug="post.slug"
+                        />
                       </span>
                     </div>
                   </div>
@@ -98,11 +97,13 @@
 <script>
 import { mdiClockOutline, mdiTrendingUp } from '@mdi/js'
 import MoreContentButtonComponent from '../../components/MoreContentButton'
+import ViewsCounterComponent from '../../components/post/ViewsCounter'
 import IconComponent from '../../components/Icon'
 
 export default {
   components: {
     MoreContentButtonComponent,
+    ViewsCounterComponent,
     IconComponent,
   },
   props: {
@@ -181,7 +182,6 @@ export default {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0;
-  // font-family: 'Roboto Mono', monospace;
 
   &:hover {
     .img-wrap-blog {

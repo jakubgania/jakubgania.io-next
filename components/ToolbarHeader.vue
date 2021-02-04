@@ -1,8 +1,8 @@
 <template>
   <div v-if="displayHeader()" class="toolbar-header-container">
     <div>
-      <nuxt-link :to="$i18n.path('')">
-        <LogoComponent :normal-font-size="true" />
+      <nuxt-link :to="$i18n.path('')" aria-label="Jakub Gania Software Logo">
+        <LogoComponent :normal-font-size="true" :animation="true" />
       </nuxt-link>
     </div>
     <div class="spacer-class" />

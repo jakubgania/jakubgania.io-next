@@ -5,9 +5,9 @@
       parent-page-title="Projekty"
       child-page-title="Post"
     />
-    <div class="post-title">
+    <h1 class="post-title">
       {{ project.title }}
-    </div>
+    </h1>
     <div class="post-content">
       <nuxt-content :document="project" />
     </div>

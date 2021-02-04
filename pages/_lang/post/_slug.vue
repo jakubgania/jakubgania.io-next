@@ -7,9 +7,9 @@
         child-page-title="Blog post"
         :max-width-wrapper="800"
       />
-      <div class="post-title">
+      <h1 class="post-title">
         {{ post.title }}
-      </div>
+      </h1>
       <div class="additional-info">
         <div style="width: 33.33%; font-size: 12px;">
           <strong style="display: block;">
@@ -100,7 +100,7 @@
       </div>
       <div class="related-posts-wrapper">
         <div class="related-posts-item">
-          <nuxt-link :to="next.slug">
+          <nuxt-link :to="next.slug" aria-label="Next post">
             <div>
               <figure class="related-posts-figure">
                 <div
@@ -213,14 +213,6 @@ export default {
     let next = null
     let prev = null
     let numberOfPosts = null
-
-    // console.log('params.lang ', language)
-
-    // if (params.lang === 'de') {
-    //   language = 'de'
-    // }
-
-    // language = 'en'
 
     const post = await $content('posts/' + language, params.slug).fetch()
     const allPosts = await $content('posts/' + language, undefined).fetch()
@@ -434,6 +426,7 @@ export default {
   width: 100%;
   height: 450px;
 }
+
 @media only screen and (max-width: 960px) {
   .nuxt-content h3 {
     margin-top: 40px;
@@ -448,6 +441,7 @@ export default {
     }
   }
 }
+
 @media only screen and (max-width: 600px) {
   .nuxt-content h3 {
     font-size: 20px;
@@ -621,6 +615,7 @@ export default {
     transition: all 0.2s ease;
   }
 }
+
 @media only screen and (max-width: 1800px) {
   .top-image {
     min-height: auto;
@@ -629,11 +624,13 @@ export default {
     width: 48%;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .post-title {
     font-size: 52px;
   }
 }
+
 @media only screen and (max-width: 960px) {
   .content-container {
     padding-left: 14px;
@@ -667,6 +664,7 @@ export default {
     font-size: 18px;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .top-section-title {
     margin-top: 40px;

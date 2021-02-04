@@ -10,9 +10,9 @@
     <div class="about-top-section">
       <div class="about-me-text-section">
         <div class="top-experience-text">
-          <div class="experience-text">
+          <h1 class="experience-text">
             O mnie
-          </div>
+          </h1>
         </div>
         <div class="about-name-section">
           <div class="about-name">
@@ -558,6 +558,10 @@ export default {
   font-size: 10vw;
   font-weight: 700;
   letter-spacing: 6px;
+
+  & h1 {
+    font-size: inherit;
+  }
 }
 .experience-text {
   width: 100%;

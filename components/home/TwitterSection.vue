@@ -58,11 +58,6 @@
               January 12, 2021
             </a>
           </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          />
         </div>
         <div class="grid-item">
           <blockquote class="twitter-tweet">
@@ -121,7 +116,6 @@
               January 7, 2021
             </a>
           </blockquote>
-          <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
         <div class="grid-item">
           <blockquote class="twitter-tweet">
@@ -173,7 +167,6 @@
               January 6, 2021
             </a>
           </blockquote>
-          <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
         <div class="grid-item">
           <blockquote class="twitter-tweet">
@@ -219,7 +212,6 @@
               December 21, 2020
             </a>
           </blockquote>
-          <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
       </div>
     </div>
@@ -233,6 +225,7 @@
     margin-right: auto;
   }
 }
+
 @media only screen and (max-width: 780px) {
   .grid-renderer .grid-item .twitter-tweet {
     margin-left: auto;
@@ -252,7 +245,6 @@
 .grid-renderer {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: flex-start;
 }
 .section-title {
   font-weight: 800;
@@ -279,7 +271,6 @@
 }
 .grid-item {
   flex: 0 0 auto;
-  // padding-bottom: 10px;
   padding-left: 6px;
   padding-right: 20px;
 }

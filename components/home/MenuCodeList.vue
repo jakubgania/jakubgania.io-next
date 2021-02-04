@@ -321,7 +321,6 @@ export default {
   margin-top: 100px;
   margin-bottom: 100px;
   font-size: 12.8px;
-  // line-height: 1.28;
 }
 .link {
   text-decoration: none;
@@ -332,7 +331,6 @@ export default {
   font-size: 12px;
   padding-top: 2px;
   padding-bottom: 2px;
-  // font-weight: 500;
 }
 .link-text-dark-theme {
   color: #0fc;
@@ -425,9 +423,6 @@ export default {
     border-left: 2px solid #fff;
   }
 
-  // & span {
-  // }
-
   &__vue {
     background-image: url(../../assets/images/vue-icon.png);
     background-size: cover;
@@ -448,7 +443,6 @@ export default {
     display: none;
     width: 15px;
     height: 15px;
-    // opacity: 0.3;
     top: 12px;
     right: 3px;
     opacity: 1;
@@ -482,11 +476,7 @@ export default {
   background-color: #dbdbdb;
 }
 .terminal-content {
-  // padding-top: 3rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 10px 10px 10px;
 }
 .span-color-json {
   color: #f93;
@@ -512,13 +502,6 @@ export default {
 
   &:nth-child(3) {
     float: right;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .content-container {
-    // margin-left: 14px;
-    // margin-right: 14px;
   }
 }
 

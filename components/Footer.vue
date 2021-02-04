@@ -2,8 +2,8 @@
   <footer class="footer-container">
     <div class="footer-container__sitemap-section">
       <div class="footer-container__logo-section">
-        <nuxt-link :to="$i18n.path('')">
-          <!-- <LogoComponent :normal-font-size="true" /> -->
+        <nuxt-link :to="$i18n.path('')" aria-label="Jakub Gania Software Logo">
+          <LogoComponent :normal-font-size="true" :animation="false" />
         </nuxt-link>
       </div>
       <div class="footer-container__x">
@@ -120,10 +120,15 @@
       <div class="footer-container__line">
         <div class="footer-container__sect">
           <div class="footer-container__sect-theme">
+            <label for="theme" class="select-label">
+              Theme:
+            </label>
             <select
+              id="theme"
               v-model="$colorMode.preference"
               class="select-options"
               style="margin-right: 12px;"
+              name="theme"
             >
               <option
                 v-for="option in themes"
@@ -134,7 +139,15 @@
                 {{ option.name }}
               </option>
             </select>
-            <select class="select-options" @change="changeLanguage">
+            <label for="language" class="select-label">
+              Language:
+            </label>
+            <select
+              id="language"
+              class="select-options"
+              @change="changeLanguage"
+              name="language"
+            >
               <option
                 v-for="option in langs"
                 :key="option.value"
@@ -161,7 +174,7 @@
 <script>
 import { mdiChevronRight, mdiTranslate, mdiBrightness6 } from '@mdi/js'
 import gql from 'graphql-tag'
-// import LogoComponent from '../components/Logo'
+import LogoComponent from '../components/Logo'
 import IconComponent from '../components/Icon'
 import ShortLanguagesNamesComponent from '../components/footer/ShorLanguagesNames'
 import menuItems from '../json/menu.json'
@@ -184,7 +197,7 @@ const githubDataQuery = gql`
 
 export default {
   components: {
-    // LogoComponent,
+    LogoComponent,
     IconComponent,
     ShortLanguagesNamesComponent,
   },
@@ -519,11 +532,17 @@ export default {
   margin-bottom: 10px;
 }
 
+.select-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+}
+
 .select-options {
   background: var(--footer-select-background-color);
   outline: none;
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--footer-select-language-color);
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
 }

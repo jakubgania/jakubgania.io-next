@@ -18,7 +18,7 @@
         data-aos-once="true"
         class="experience-text"
       >
-        Experience
+        <h1>Experience</h1>
       </div>
       <div
         data-aos="fade-left"
@@ -57,6 +57,10 @@
   -webkit-text-fill-color: transparent;
   background-position: center;
   font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+
+  & h1 {
+    font-size: inherit;
+  }
 }
 
 @media only screen and (max-width: 960px) {

@@ -25,7 +25,6 @@ export default {
 .description {
   font-size: 16px;
   letter-spacing: 0.4px;
-  // font-family: 'Roboto Mono', monospace;
   font-weight: 500;
 }
 </style>

@@ -7,7 +7,7 @@
             <div
               class="img-wrap"
               :style="`background-image: url(${ImageBackgroundHome})`"
-            ></div>
+            />
             <div class="img-inner">
               <header>
                 <p
@@ -23,7 +23,7 @@
             <div
               class="img-wrap"
               :style="`background-image: url(${ImageStickersHome})`"
-            ></div>
+            />
             <div class="img-inner">
               <header>
                 <p
@@ -39,7 +39,7 @@
             <div
               class="img-wrap"
               :style="`background-image: url(${ImageKeyboardHome})`"
-            ></div>
+            />
             <div class="img-inner">
               <header>
                 <p
@@ -55,7 +55,7 @@
             <div
               class="img-wrap"
               :style="`background-image: url(${ImageDottedWawesLight})`"
-            ></div>
+            />
             <div class="img-inner">
               <header>
                 <p
@@ -208,6 +208,7 @@ export default {
   position: absolute;
   padding: 2em 1.5em 1.5em 2em;
 }
+
 @media only screen and (max-width: 1100px) {
   .trending-item-1 {
     width: 50%;
@@ -246,11 +247,13 @@ export default {
     padding-top: 56.25%;
   }
 }
+
 @media only screen and (max-width: 960px) {
   .trending-post-title {
     font-size: 1.8em;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .trending-post-title {
     font-size: 16px;

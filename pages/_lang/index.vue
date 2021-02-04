@@ -9,9 +9,9 @@
         <div class="split split--left">
           <div class="centered left-part">
             <div class="section">
-              <div class="fullname">
+              <h1 class="fullname">
                 Jakub Gania
-              </div>
+              </h1>
               <div class="link-section">
                 <button class="link" type="button" @click="showMenu = true">
                   <span style="color: #f00;">
@@ -251,6 +251,13 @@ export default {
           hid: 'twitter:image',
           property: 'twitter:image',
           content: 'https://jakubgania.io/jakub-gania-software-logo-img.png',
+        },
+      ],
+      script: [
+        {
+          src: 'https://platform.twitter.com/widgets.js',
+          async: true,
+          charset: 'utf-8',
         },
       ],
     }

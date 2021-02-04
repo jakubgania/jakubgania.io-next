@@ -7,6 +7,7 @@
       target="_blank"
       rel="noopener noreferrer"
       class="social-icon"
+      aria-label="Social icon"
     >
       <IconComponent
         :path="item.icon"

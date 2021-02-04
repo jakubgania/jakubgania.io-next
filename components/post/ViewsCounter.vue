@@ -19,8 +19,5 @@ export default {
       default: '',
     },
   },
-  mounted() {
-    console.log('porps views ', this.views)
-  },
 }
 </script>

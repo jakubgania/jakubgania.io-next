@@ -16,9 +16,6 @@
         <img :src="profileImage" alt="" class="profile-image" />
       </div>
       <div class="personal-data-section">
-        <!-- <div class="full-name desktop-version">
-          {{ fullName }}
-        </div> -->
         <div class="two-column xpoo" style="margin-top: -38px;">
           <div class="left-column">
             <div class="item-section-name text-item-fl">
@@ -44,9 +41,6 @@
               class="item-section"
             >
               <span class="personal-data-title-section">
-                <!-- <v-icon class="personal-data-icon">
-                  {{ item.icon }}
-                </v-icon> -->
                 {{ item.keyName }}
                 <span class="dash">{{ ' - ' }}</span> <br />
               </span>
@@ -67,9 +61,6 @@
               class="item-section"
             >
               <span class="personal-data-title-section">
-                <!-- <v-icon class="personal-data-icon">
-                  {{ item.icon }}
-                </v-icon> -->
                 {{ item.keyName }}
                 <span class="dash">{{ ' - ' }}</span> <br />
               </span>
@@ -95,9 +86,6 @@
           style="width: 50%;"
         >
           <span class="personal-data-title-section">
-            <!-- <v-icon class="personal-data-icon">
-              {{ item.icon }}
-            </v-icon> -->
             {{ item.keyName }}
             <span class="dash">{{ ' - ' }}</span> <br />
           </span>
@@ -119,9 +107,6 @@
           style="width: 50%;"
         >
           <span class="personal-data-title-section">
-            <!-- <v-icon class="personal-data-icon">
-              {{ item.icon }}
-            </v-icon> -->
             {{ item.keyName }}
             <span class="dash">{{ ' - ' }}</span> <br />
           </span>

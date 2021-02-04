@@ -15,9 +15,9 @@
         class="x1"
       >
         <div class="x2">
-          <div class="x3">
+          <h1 class="top-image-text">
             Blog
-          </div>
+          </h1>
         </div>
       </div>
     </div>
@@ -39,6 +39,7 @@
         <div style="height: 1px; border-top: 1px solid #f2f2f2;" />
 
         <div style="position: relative;">
+          <label for="search-input" style="visibility: hidden;" />
           <input
             id="search-input"
             v-model="searchQuery"
@@ -97,7 +98,10 @@
                       :color="'#b3b3b3'"
                     />
                     <span style="margin-left: 6px;">
-                      {{ '424' }}
+                      <ViewsCounterComponent
+                        :views="views"
+                        :post-slug="post.slug"
+                      />
                     </span>
                   </div>
                 </div>
@@ -131,14 +135,10 @@
                         :color="'#b3b3b3'"
                       />
                       <span style="margin-left: 6px;">
-                        <template v-if="views && views.length > 0">
-                          {{
-                            (views &&
-                              views.find(({ slug }) => slug === post.slug)
-                                .postViewCounter) ||
-                            '0'
-                          }}
-                        </template>
+                        <ViewsCounterComponent
+                          :views="views"
+                          :post-slug="post.slug"
+                        />
                       </span>
                     </div>
                   </div>
@@ -171,9 +171,6 @@
                 :text="'Następne'"
                 :link="getLink()"
               />
-              <!-- <nuxt-link :to="getLink()">
-                Natępne
-              </nuxt-link> -->
             </template>
           </div>
         </div>
@@ -190,6 +187,7 @@ import BreadcrumbsComponent from '../../../components/Breadcrumbs'
 import MoreContentButtonComponent from '../../../components/MoreContentButton'
 import SubpageTitleSectionComponent from '../../../components/SubpageTitleSection'
 import SubpageDescriptionSectionComponent from '../../../components/SubpageDescriptionSection'
+import ViewsCounterComponent from '../../../components/post/ViewsCounter'
 import IconComponent from '../../../components/Icon'
 
 export default {
@@ -199,6 +197,7 @@ export default {
     MoreContentButtonComponent,
     SubpageTitleSectionComponent,
     SubpageDescriptionSectionComponent,
+    ViewsCounterComponent,
     IconComponent,
   },
   async asyncData({ $content, params, store }) {
@@ -408,7 +407,7 @@ export default {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.x3 {
+.top-image-text {
   text-align: center;
   color: var(--blog-page-top-image-title-color);
   text-transform: uppercase;

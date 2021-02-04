@@ -13,9 +13,9 @@
               <iframe
                 class="ifrm"
                 src="https://www.youtube.com/embed/glEcJ_92rXs"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                title="YouTube - Coding Timelapse | 1"
               />
             </div>
           </div>
@@ -26,9 +26,9 @@
               <iframe
                 class="ifrm"
                 src="https://www.youtube.com/embed/for1ayFZD5g"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                title="YouTube - Computing cluster - BEM in WCSS"
               />
             </div>
           </div>
@@ -39,9 +39,9 @@
               <iframe
                 class="ifrm"
                 src="https://www.youtube.com/embed/uVX9MfeJrEQ"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                title="YouTube - GitHub - my profile and projects | 26-11-2020"
               />
             </div>
           </div>

@@ -649,9 +649,10 @@ export default {
 .fgt {
   cursor: default;
   text-align: center;
+  text-transform: uppercase;
   border-radius: 26px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 0.5rem 3rem;
   color: var(--more-content-button-text-color);
   font-size: 12px;
@@ -668,7 +669,7 @@ export default {
 
   &:hover {
     border: 2px solid transparent;
-    letter-spacing: 2.8px;
+    letter-spacing: 2px;
     background-image: none;
     transition: all 0.2s ease;
   }

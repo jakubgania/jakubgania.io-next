@@ -6,9 +6,9 @@
       child-page-title="Shortcuts"
     />
     <div class="title-section">
-      <h2>
+      <h1>
         Shortcuts
-      </h2>
+      </h1>
     </div>
     <div class="top-description">
       <p>

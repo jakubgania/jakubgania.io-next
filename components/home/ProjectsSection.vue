@@ -146,7 +146,6 @@ export default {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  // margin-left: -1em;
   font-size: 20px;
 }
 .buttons-section {

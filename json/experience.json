@@ -11,13 +11,13 @@
       "date": "2020-04",
       "title": "Blog - fizjonaturalnie.pl",
       "subtitle": "",
-      "description": "<p>Projekt i wykonanie statycznego bloga o fizjoterapii i zdrowiu. Posty tworzone są jako pliki markdown, a następnie kompilowane do plików HTML.</p><p>Technologie:</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Nuxt.js</li><li>Markdownit</li><li>Frontmatter markdown loader</li><li>Axios</li><li>PWA</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Hosting - usługa GitHub Pages na platformie GitHub wraz z możliwością wykorzystania HTTPS</li></ul></p>"
+      "description": "<p>Projekt i wykonanie statycznego bloga o fizjoterapii i zdrowiu. Posty tworzone są jako pliki markdown, a następnie kompilowane do plików HTML.</p><p>Technologie:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Nuxt.js</li><li>Markdownit</li><li>Frontmatter markdown loader</li><li>Axios</li><li>PWA</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Hosting - usługa GitHub Pages na platformie GitHub wraz z możliwością wykorzystania HTTPS</li></ul>"
     },
     {
       "date": "2020-03",
       "title": "Strona biznesowa - okna-system-serwis.pl - wersja 2",
       "subtitle": "",
-      "description": "<p>Projekt i wykonanie strony reklamującej działalność związaną głównie z serwisem okien. Kontynuacja projektu rozpoczętego w 2017 roku. Całkowite przeprojektowanie witryny od nowa. Wykorzystanie innych technologii. Zmiana sposobu hostownia.</p><p>Technologie:</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Nuxt.js</li><li>Bootstrap</li><li>PWA</li><li>AOS</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Hosting - usługa GitHub Pages na platformie GitHub wraz z możliwością wykorzystania HTTPS</li></ul></p>"
+      "description": "<p>Projekt i wykonanie strony reklamującej działalność związaną głównie z serwisem okien. Kontynuacja projektu rozpoczętego w 2017 roku. Całkowite przeprojektowanie witryny od nowa. Wykorzystanie innych technologii. Zmiana sposobu hostownia.</p><p>Technologie:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Nuxt.js</li><li>Bootstrap</li><li>PWA</li><li>AOS</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Hosting - usługa GitHub Pages na platformie GitHub wraz z możliwością wykorzystania HTTPS</li></ul>"
     },
     {
       "date": "2019-08 - 2020-02",
@@ -41,25 +41,25 @@
       "date": "2018 - do dziś",
       "title": "Aplikacja internetowa - yourcity.io (w ciągłym rozwoju)",
       "subtitle": "Obecnie tworzę nową wersję całkowicie od zera",
-      "description": "<p>Aplikacja typu SPA z podziałem na frontend i backend </p><p>Technologie frontendowe:</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Vue.js - 2.5</li><li>Vuex - 3.0.1</li><li>Vuetify - 1.2.4</li><li>NUXT - 2.0</li><li>i18n - 0.18</li></ul></p><p>Technologie backend:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Express- 4.16</li><li>Mongoose- 5.3</li><li>Facebook API</li><li>Nginx 1.15</li><li>Docker 17.12</li></ul></p>"
+      "description": "<p>Aplikacja typu SPA z podziałem na frontend i backend </p><p>Technologie frontendowe:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Vue.js - 2.5</li><li>Vuex - 3.0.1</li><li>Vuetify - 1.2.4</li><li>NUXT - 2.0</li><li>i18n - 0.18</li></ul><p>Technologie backend:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Express- 4.16</li><li>Mongoose- 5.3</li><li>Facebook API</li><li>Nginx 1.15</li><li>Docker 17.12</li></ul>"
     },
     {
       "date": "2018 - do dziś",
       "title": "Strona prywatna - jakubgania.io + blog",
       "subtitle": "Projekt w ciągłym rozwoju, uzupełniany o nowe sekcje i artykuły (posty/wpisy)",
-      "description": "<p>Strona z informacjami o mnie oraz moich projektach.</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Stos technologiczny - Nuxt 2.9</li><li>@nuxtjs/vuetify 1.8</li><li>@nuxtjs/axios 5.6</li></ul></p>"
+      "description": "<p>Strona z informacjami o mnie oraz moich projektach.</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Stos technologiczny - Nuxt 2.9</li><li>@nuxtjs/vuetify 1.8</li><li>@nuxtjs/axios 5.6</li></ul>"
     },
     {
       "date": "2018",
       "title": "Projekt inżynierski",
       "subtitle": "",
-      "description": "<p>Projekt i implementacja aplikacji webowej z wykorzystaniem frameworka Laravel.</p><p>Technologie:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Bootstrap - 3.3.7</li><li>jQuery 3.1.1</li><li>Laravel - 5.5</li><li>MySQL</li><li>stos LEMP</li></ul></p>"
+      "description": "<p>Projekt i implementacja aplikacji webowej z wykorzystaniem frameworka Laravel.</p><p>Technologie:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>Bootstrap - 3.3.7</li><li>jQuery 3.1.1</li><li>Laravel - 5.5</li><li>MySQL</li><li>stos LEMP</li></ul>"
     },
     {
       "date": "2017",
       "title": "Strona biznesowa - okna-system-serwis.pl",
       "subtitle": "",
-      "description": "<p>Projekt i wykonanie strony reklamującej działalność związaną głównie z serwisem okien.</p><p>Technologie:</p><p><ul style=\"padding-left: 20px; list-style: disc;\"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Hosting - serwer VPS na platformie OVH</li></ul></p>"
+      "description": "<p>Projekt i wykonanie strony reklamującej działalność związaną głównie z serwisem okien.</p><p>Technologie:</p><ul style=\"padding-left: 20px; list-style: disc;\"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Hosting - serwer VPS na platformie OVH</li></ul>"
     }
   ]
 }
