@@ -46,20 +46,32 @@
   padding-bottom: 120px;
   padding-left: 20px;
 }
+
 .bracket {
   color: var(--top-section-container-bracket-color);
 }
+
 .experience-text {
   width: 100%;
   padding: 14px;
+  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
   background: url(../../assets/images/background-abstract.jpg) no-repeat;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-position: center;
-  font-family: 'MaisonNeueExtended'; /* stylelint-disable-line */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   & h1 {
     font-size: inherit;
+  }
+
+  & h1::after {
+    content: '';
+    background: url(../../assets/images/background-abstract.jpg) no-repeat;
+    background-clip: text;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
